@@ -1,0 +1,60 @@
+{
+  "Timestamp": "2023-03-07T12:00:49.3513978+00:00",
+  "Files": {
+    "DGUV_PR_DiGUV_Base_Address.xml": {
+      "Length": 560,
+      "LastWriteTime": "2023-03-07T09:07:34+00:00",
+      "Hash": "A87E13A462674E16A610A6945CF931D4"
+    },
+    "DGUV_PR_DiGUV_Base_ContactPoint.xml": {
+      "Length": 849,
+      "LastWriteTime": "2023-03-07T09:07:34+00:00",
+      "Hash": "6AD222874F922A5D115AD630CC1FF8EA"
+    },
+    "DGUV_PR_DiGUV_Base_HumanName.xml": {
+      "Length": 568,
+      "LastWriteTime": "2023-03-07T09:07:34+00:00",
+      "Hash": "B984025377461529156F97725056C9EF"
+    },
+    "DGUV_PR_DiGUV_Base_Patient.xml": {
+      "Length": 4276,
+      "LastWriteTime": "2023-03-07T09:07:34+00:00",
+      "Hash": "799CB683AEF0B2F5102D713F0FB24F51"
+    },
+    "guides\\Dokumentation-der-Profilierung\\guide.yaml": {
+      "Length": 108,
+      "LastWriteTime": "2023-03-02T11:18:52+00:00",
+      "Hash": "67664C8E76B7632FCAA24E0890D4CC62"
+    },
+    "guides\\Dokumentation-der-Profilierung\\Home\\Index.page.md": {
+      "Length": 502,
+      "LastWriteTime": "2023-03-02T11:19:10+00:00",
+      "Hash": "F3233226C85DC035B164B582963EC20A"
+    },
+    "guides\\Dokumentation-der-Profilierung\\Home\\toc.yaml": {
+      "Length": 42,
+      "LastWriteTime": "2023-03-02T11:18:52+00:00",
+      "Hash": "10D5FFAF5706D57E8ABBD3FBD839FAEB"
+    },
+    "package.json": {
+      "Length": 62,
+      "LastWriteTime": "2023-03-07T09:07:34+00:00",
+      "Hash": "98321AFD12A56AC2461A46D46E17F214"
+    },
+    "project.yaml": {
+      "Length": 19,
+      "LastWriteTime": "2023-03-07T09:07:34+00:00",
+      "Hash": "DEE612657E1B3387115956B717639B80"
+    },
+    "README.md": {
+      "Length": 11,
+      "LastWriteTime": "2023-03-07T08:50:50+00:00",
+      "Hash": "918842CDF3479ED9CA7522EF23651F0E"
+    },
+    "guides\\Dokumentation-der-Profilierung\\toc.yaml": {
+      "Length": 32,
+      "LastWriteTime": "2023-03-02T11:18:52+00:00",
+      "Hash": "3E2BC1817DFD8F2BD16B380005C2838F"
+    }
+  }
+}
