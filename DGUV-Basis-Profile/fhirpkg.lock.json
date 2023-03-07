@@ -1,0 +1,8 @@
+{
+  "updated": "2023-03-07T13:01:59.3781207+01:00",
+  "dependencies": {
+    "de.basisprofil.r4": "1.4.0",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {}
+}
