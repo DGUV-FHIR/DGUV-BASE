@@ -122,5 +122,9 @@
         <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Address" />
       </type>
     </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <max value="0" />
+    </element>
   </differential>
 </StructureDefinition>
