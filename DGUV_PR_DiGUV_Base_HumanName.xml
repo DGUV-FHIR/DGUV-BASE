@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_HumanName" />
+  <name value="DGUV_PR_DiGUV_Base_HumanName" />
+  <status value="draft" />
+  <date value="2023-02-28T09:19:29.2091489+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="HumanName" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+  <derivation value="constraint" />
+</StructureDefinition>

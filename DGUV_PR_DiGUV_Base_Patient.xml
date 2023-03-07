@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Patient" />
+  <name value="DGUV_PR_DiGUV_Base_Patient" />
+  <status value="draft" />
+  <date value="2023-03-07T08:49:40.3681472+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.extension">
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Patient.extension:nationality">
+      <path value="Patient.extension" />
+      <sliceName value="nationality" />
+      <short value="Die Staatsangehörigkeit des Patienten." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient-nationality" />
+      </type>
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.extension:nationality.extension">
+      <path value="Patient.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Patient.extension:nationality.extension:period">
+      <path value="Patient.extension.extension" />
+      <sliceName value="period" />
+      <min value="0" />
+      <max value="0" />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.identifier:pid">
+      <path value="Patient.identifier" />
+      <sliceName value="pid" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-pid" />
+      </type>
+    </element>
+    <element id="Patient.identifier:versichertenId_GKV">
+      <path value="Patient.identifier" />
+      <sliceName value="versichertenId_GKV" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
+      </type>
+    </element>
+    <element id="Patient.identifier:versichertennummer_pkv">
+      <path value="Patient.identifier" />
+      <sliceName value="versichertennummer_pkv" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-pkv" />
+      </type>
+    </element>
+    <element id="Patient.gender.extension">
+      <path value="Patient.gender.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Patient.gender.extension:other-amtlich">
+      <path value="Patient.gender.extension" />
+      <sliceName value="other-amtlich" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gender-amtlich-de" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <type>
+        <code value="Address" />
+        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Address" />
+      </type>
+    </element>
+    <element id="Patient.contact.address">
+      <path value="Patient.contact.address" />
+      <type>
+        <code value="Address" />
+        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Address" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
