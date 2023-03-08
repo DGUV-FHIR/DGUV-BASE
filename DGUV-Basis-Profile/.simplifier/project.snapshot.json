@@ -2,9 +2,9 @@
   "Timestamp": "2023-03-07T12:00:49.3513978+00:00",
   "Files": {
     "DGUV_PR_DiGUV_Base_Address.xml": {
-      "Length": 560,
-      "LastWriteTime": "2023-03-07T09:07:34+00:00",
-      "Hash": "A87E13A462674E16A610A6945CF931D4"
+      "Length": 571,
+      "LastWriteTime": "2023-03-08T12:19:42.1207993+00:00",
+      "Hash": "F125FFC06AD1248342ACEAE3B01E3529"
     },
     "DGUV_PR_DiGUV_Base_ContactPoint.xml": {
       "Length": 849,
@@ -12,14 +12,14 @@
       "Hash": "6AD222874F922A5D115AD630CC1FF8EA"
     },
     "DGUV_PR_DiGUV_Base_HumanName.xml": {
-      "Length": 568,
-      "LastWriteTime": "2023-03-07T09:07:34+00:00",
-      "Hash": "B984025377461529156F97725056C9EF"
+      "Length": 2601,
+      "LastWriteTime": "2023-03-08T12:19:42.423846+00:00",
+      "Hash": "15F2258426B129CF5BB177CFF6F2F4AF"
     },
     "DGUV_PR_DiGUV_Base_Patient.xml": {
-      "Length": 4276,
-      "LastWriteTime": "2023-03-07T09:07:34+00:00",
-      "Hash": "799CB683AEF0B2F5102D713F0FB24F51"
+      "Length": 14781,
+      "LastWriteTime": "2023-03-08T12:19:42.9585487+00:00",
+      "Hash": "7B70797D4F449C9A82E278166FA6D455"
     },
     "guides\\Dokumentation-der-Profilierung\\guide.yaml": {
       "Length": 108,
@@ -37,9 +37,9 @@
       "Hash": "10D5FFAF5706D57E8ABBD3FBD839FAEB"
     },
     "package.json": {
-      "Length": 62,
-      "LastWriteTime": "2023-03-07T09:07:34+00:00",
-      "Hash": "98321AFD12A56AC2461A46D46E17F214"
+      "Length": 105,
+      "LastWriteTime": "2023-03-07T12:01:58.6153451+00:00",
+      "Hash": "961D13AA02A8BA883296A427FB6CA50E"
     },
     "project.yaml": {
       "Length": 19,
