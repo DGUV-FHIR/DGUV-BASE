@@ -3,7 +3,7 @@
   <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_HumanName" />
   <name value="DGUV_PR_DiGUV_Base_HumanName" />
   <status value="draft" />
-  <date value="2023-02-28T09:19:29.2091489+00:00" />
+  <date value="2023-03-08T12:19:42.120177+00:00" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
