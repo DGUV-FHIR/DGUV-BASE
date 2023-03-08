@@ -10,4 +10,62 @@
   <type value="HumanName" />
   <baseDefinition value="http://fhir.de/StructureDefinition/humanname-de-basis" />
   <derivation value="constraint" />
+  <differential>
+    <element id="HumanName.use">
+      <path value="HumanName.use" />
+      <min value="1" />
+    </element>
+    <element id="HumanName.text">
+      <path value="HumanName.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family">
+      <path value="HumanName.family" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family.extension">
+      <path value="HumanName.family.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="HumanName.family.extension:namenszusatz">
+      <path value="HumanName.family.extension" />
+      <sliceName value="namenszusatz" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family.extension:namenszusatz.value[x]">
+      <path value="HumanName.family.extension.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family.extension:nachname">
+      <path value="HumanName.family.extension" />
+      <sliceName value="nachname" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family.extension:nachname.value[x]">
+      <path value="HumanName.family.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family.extension:vorsatzwort">
+      <path value="HumanName.family.extension" />
+      <sliceName value="vorsatzwort" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HumanName.family.extension:vorsatzwort.value[x]">
+      <path value="HumanName.family.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>
