@@ -323,35 +323,6 @@
         <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Address" />
       </type>
     </element>
-    <element id="Patient.address:Postfach.line.extension">
-      <path value="Patient.address.line.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Patient.address:Postfach.line.extension:Strasse">
-      <path value="Patient.address.line.extension" />
-      <sliceName value="Strasse" />
-      <min value="0" />
-      <max value="0" />
-    </element>
-    <element id="Patient.address:Postfach.line.extension:Hausnummer">
-      <path value="Patient.address.line.extension" />
-      <sliceName value="Hausnummer" />
-      <min value="0" />
-      <max value="0" />
-    </element>
-    <element id="Patient.address:Postfach.line.extension:Adresszusatz">
-      <path value="Patient.address.line.extension" />
-      <sliceName value="Adresszusatz" />
-      <min value="0" />
-      <max value="0" />
-    </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
       <max value="0" />
@@ -404,7 +375,7 @@
     </element>
     <element id="Patient.link">
       <path value="Patient.link" />
-      <max value="1" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
