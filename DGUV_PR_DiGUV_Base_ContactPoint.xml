@@ -143,17 +143,11 @@
       </mapping>
     </element>
     <element id="ContactPoint.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="ContactPoint.system" />
       <short value="phone | fax | email | pager | url | sms | other" />
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="ContactPoint.system" />
@@ -200,18 +194,12 @@
       </mapping>
     </element>
     <element id="ContactPoint.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="ContactPoint.value" />
       <short value="The actual contact point details" />
       <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." />
       <comment value="Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value." />
       <requirements value="Need to support legacy numbers that are not in a tightly controlled format." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="ContactPoint.value" />
@@ -249,12 +237,6 @@
       </mapping>
     </element>
     <element id="ContactPoint.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="ContactPoint.use" />
       <short value="home | work | temp | old | mobile - purpose of this contact point" />
       <definition value="Identifies the purpose for the contact point." />
@@ -308,12 +290,6 @@
       </mapping>
     </element>
     <element id="ContactPoint.rank">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="ContactPoint.rank" />
       <short value="Specify preferred order of use (1 = highest)" />
       <definition value="Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values." />
@@ -413,6 +389,14 @@
     </element>
   </snapshot>
   <differential>
+    <element id="ContactPoint.system">
+      <path value="ContactPoint.system" />
+      <min value="1" />
+    </element>
+    <element id="ContactPoint.value">
+      <path value="ContactPoint.value" />
+      <min value="1" />
+    </element>
     <element id="ContactPoint.rank">
       <path value="ContactPoint.rank" />
       <max value="0" />
