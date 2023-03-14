@@ -1567,7 +1567,7 @@
         <map value=".id" />
       </mapping>
     </element>
-    <element id="Patient.identifier:Pid.id">
+    <element id="Patient.identifier:pid.id">
       <path value="Patient.identifier.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
