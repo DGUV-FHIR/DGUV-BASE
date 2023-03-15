@@ -295,7 +295,7 @@
       <definition value="Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values." />
       <comment value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ContactPoint.rank" />
         <min value="0" />
@@ -335,7 +335,7 @@
       <definition value="Time period when the contact point was/is in use." />
       <comment value="A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).&#xA;&#xA;Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration)." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ContactPoint.period" />
         <min value="0" />
@@ -396,14 +396,6 @@
     <element id="ContactPoint.value">
       <path value="ContactPoint.value" />
       <min value="1" />
-    </element>
-    <element id="ContactPoint.rank">
-      <path value="ContactPoint.rank" />
-      <max value="0" />
-    </element>
-    <element id="ContactPoint.period">
-      <path value="ContactPoint.period" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
