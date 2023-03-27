@@ -71,7 +71,7 @@
     <element id="Patient.extension:nationality">
       <path value="Patient.extension" />
       <sliceName value="nationality" />
-      <short value="Die Staatsangehörigkeit des Patienten." />
+      <short value="Die Staatsangehörigkeit des Patienten" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -283,6 +283,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
       <min value="1" />
       <type>
         <code value="HumanName" />
@@ -293,6 +294,7 @@
     <element id="Patient.name:Name">
       <path value="Patient.name" />
       <sliceName value="Name" />
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
@@ -301,6 +303,7 @@
     <element id="Patient.name:Geburtsname">
       <path value="Patient.name" />
       <sliceName value="Geburtsname" />
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
@@ -323,6 +326,8 @@
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
+      <short value="männlich | weiblich | unbestimmt | divers" />
+      <comment value="Für die Geschlechtskennzeichen &quot;unbestimmt&quot; und &quot;divers&quot; ist der code &quot;other&quot; zu verwenden. Falls ein administratives Geschlecht 'divers' abzubilden ist (z.B. da dieses Geschlecht auf offiziellen Ausweisen eingetragen ist) muss eine Differenzierung zwischen 'other' und 'divers' als positiver Geschlechtseintrag erfolgen. Hierfür ist die 'other-amtlich'-Extension zu verwenden." />
       <min value="1" />
     </element>
     <element id="Patient.gender.extension">
@@ -339,6 +344,7 @@
     <element id="Patient.gender.extension:gender-amtlich">
       <path value="Patient.gender.extension" />
       <sliceName value="gender-amtlich" />
+      <definition value="Extension zur genaueren Differenzierung des administrativen Geschlechts." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -406,6 +412,7 @@
     <element id="Patient.address:Postfach">
       <path value="Patient.address" />
       <sliceName value="Postfach" />
+      <short value="Hier können Angaben zu einem Postfach gemacht werden" />
       <max value="1" />
       <type>
         <code value="Address" />
