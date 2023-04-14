@@ -3,6 +3,7 @@
   <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Insurance_Institution" />
   <name value="DGUV_PR_DiGUV_Base_Organization_Accident_Insurance_Institution" />
   <status value="draft" />
+  <description value="Dieses Profil bildet den Unfallversicherungsträger ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -12,7 +13,7 @@
   <snapshot>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses FHIR Profil bildet den Unfallversicherungsträger ab." />
+      <short value="Dieses Profil bildet den Unfallversicherungsträger ab." />
       <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc." />
       <min value="0" />
       <max value="*" />
@@ -11873,7 +11874,7 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses FHIR Profil bildet den Unfallversicherungsträger ab." />
+      <short value="Dieses Profil bildet den Unfallversicherungsträger ab." />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer">
       <path value="Organization.identifier" />
