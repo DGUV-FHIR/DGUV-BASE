@@ -13,7 +13,7 @@
     <element id="Organization">
       <path value="Organization" />
       <short value="Dieses FHIR Profil bildet die Krankenkasse ab." />
-      <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc." />
+      <definition value="Dieses FHIR Profil bildet die Krankenkasse ab." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -12475,6 +12475,7 @@
     <element id="Organization">
       <path value="Organization" />
       <short value="Dieses FHIR Profil bildet die Krankenkasse ab." />
+      <definition value="Dieses FHIR Profil bildet die Krankenkasse ab." />
     </element>
     <element id="Organization.extension">
       <path value="Organization.extension" />
