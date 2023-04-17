@@ -1,8 +1,9 @@
 {
-  "updated": "2023-03-09T10:37:14.4375801+01:00",
+  "updated": "2023-04-17T12:15:13.5864888+02:00",
   "dependencies": {
     "de.basisprofil.r4": "1.4.0",
-    "hl7.fhir.r4.core": "4.0.1"
+    "hl7.fhir.r4.core": "4.0.1",
+    "kbv.basis": "1.4.0"
   },
   "missing": {}
 }
