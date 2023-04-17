@@ -14738,9 +14738,9 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Patient.contact.name" />
-      <short value="A name associated with the contact person" />
-      <definition value="A name associated with the contact person." />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <short value="Personenname" />
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person." />
       <min value="0" />
       <max value="1" />
@@ -14751,7 +14751,7 @@
       </base>
       <type>
         <code value="HumanName" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14761,6 +14761,34 @@
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="hum-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
+      <constraint>
+        <key value="hum-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
+      <constraint>
+        <key value="hum-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
+      <constraint>
+        <key value="hum-4" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
+        <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -14881,7 +14909,6 @@
       </base>
       <type>
         <code value="Address" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Address" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -16298,7 +16325,7 @@
       <path value="Patient.contact.name" />
       <type>
         <code value="HumanName" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
     </element>
     <element id="Patient.contact.telecom">
@@ -16306,13 +16333,6 @@
       <type>
         <code value="ContactPoint" />
         <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
-      </type>
-    </element>
-    <element id="Patient.contact.address">
-      <path value="Patient.contact.address" />
-      <type>
-        <code value="Address" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Address" />
       </type>
     </element>
     <element id="Patient.contact.organization">
