@@ -5931,7 +5931,7 @@
       <definition value="Time period during which identifier is/was valid for use." />
       <comment value="A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).&#xA;&#xA;Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration)." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Identifier.period" />
         <min value="0" />
@@ -16117,6 +16117,10 @@
         <code value="Identifier" />
         <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Identifier_KVK" />
       </type>
+    </element>
+    <element id="Patient.identifier:KVK.period">
+      <path value="Patient.identifier.period" />
+      <max value="0" />
     </element>
     <element id="Patient.active">
       <path value="Patient.active" />
