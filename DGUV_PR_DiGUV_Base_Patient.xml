@@ -14570,7 +14570,7 @@
       <comment value="There is no assumption that linked patient records have mutual links." />
       <requirements value="There are multiple use cases:   &#xA;&#xA;* Duplicate patient records due to the clerical errors associated with the difficulties of identifying humans consistently, and &#xA;* Distribution of patient information across multiple servers." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Patient.link" />
         <min value="0" />
@@ -15362,7 +15362,7 @@
     </element>
     <element id="Patient.link">
       <path value="Patient.link" />
-      <max value="0" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>
