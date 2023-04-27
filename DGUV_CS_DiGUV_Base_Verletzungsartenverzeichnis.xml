@@ -30,8 +30,7 @@
             - gegebener oder abzuklärender Replantationsmöglichkeit
             - operativer Stumpfkorrektur im Verlauf
             - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
-            - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im
-              Verlauf." />
+            - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
     </concept>
     <concept>
         <code value="1.2V" />
@@ -61,16 +60,12 @@ chemischen Schädigungen in Kombination mit
 - relevanten Verletzungen entsprechend VAV
 - Schock
 - Beteiligung von Händen, Füßen, Gesicht oder Anogenitalregion. 
-Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B.
-Flusssäure) insbesondere an Gesicht, Händen oder Füßen. 
-" />
+Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssäure) insbesondere an Gesicht, Händen oder Füßen." />
     </concept>
     <concept>
         <code value="1.5V" />
-        <display value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit
-            akuten oder drohenden Ernährungsstörungen" />
-        <definition value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit
-            akuten oder drohenden Ernährungsstörungen" />
+        <display value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit akuten oder drohenden Ernährungsstörungen" />
+        <definition value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit akuten oder drohenden Ernährungsstörungen" />
     </concept>
     <concept>
         <code value="1.5S" />
@@ -127,12 +122,12 @@ Brüche des Gehirnschädels bei gegebener oder abzuklärender Operationsnotwendi
 
 
     <concept>
-        <code value="X.1V" />
+        <code value="9.1V" />
         <display value="" />
         <definition value="" />
     </concept>
     <concept>
-        <code value="X.1V" />
+        <code value="9.1S" />
         <display value="" />
         <definition value="" />
     </concept>
