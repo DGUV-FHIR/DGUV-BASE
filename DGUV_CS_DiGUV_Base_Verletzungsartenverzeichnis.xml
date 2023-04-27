@@ -13,15 +13,38 @@
     <caseSensitive value="true" />
     <content value="complete" />
     <concept>
-        <code value="1V" />
+        <code value="1" />
         <display value="Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels" />
         <definition value="Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels; Amputationsverletzungen;
         Muskelkompressionssyndrome (Kompartmentsyndrome); thermische oder chemische Schädigungen" />
     </concept>
     <concept>
-        <code value="1S" />
-        <display value="Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels" />
-        <definition value="Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels; Amputationsverletzungen;
-        Muskelkompressionssyndrome (Kompartmentsyndrome); thermische oder chemische Schädigungen" />
+        <code value="1.1V" />
+        <display value="Alle Amputationsverletzungen" />
+        <definition value="Alle Amputationsverletzungen (total oder subtotal), auch der Großzehe, ausgenommen Zehenendglieder (Hand siehe Ziffer 8)." />
+    </concept>
+    <concept>
+        <code value="1.1S" />
+        <display value="Vorgenannte Amputationsverletzungen" />
+        <definition value="Vorgenannte Amputationsverletzungen bei
+            - gegebener oder abzuklärender Replantationsmöglichkeit
+            - operativer Stumpfkorrektur im Verlauf
+            - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
+            - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im
+              Verlauf." />
+    </concept>
+    <concept>
+        <code value="1.2V" />
+        <display value="Muskelkompressionssyndrome (Kompartmentsyndrome)" />
+        <definition value="Muskelkompressionssyndrome (Kompartmentsyndrome) in allen Lokalisationen bei
+            - gegebener oder abzuklärender Operationsnotwendigkeit
+            - engmaschiger Überwachung." />
+    </concept>
+    <concept>
+        <code value="1.2S" />
+        <display value="Vorgenannte Muskelkompressionssyndrome (Kompartmentsyndrome)" />
+        <definition value="Vorgenannte Muskelkompressionssyndrome (Kompartmentsyndrome) bei
+        - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
+        - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf" />
     </concept>
 </CodeSystem>
