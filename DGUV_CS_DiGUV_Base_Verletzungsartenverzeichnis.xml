@@ -68,7 +68,20 @@ Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssä
     </concept>
 	<concept>
         <code value="1.5V" />
-        <display value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit akuten oder drohenden Ernährungsstörungen" />
+        <display value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement)" />
         <definition value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit akuten oder drohenden Ernährungsstörungen" />
+    </concept>
+	<concept>
+        <code value="1.5S" />
+        <display value="Vorgenannte Weichteilverletzungen" />
+        <definition value="Vorgenannte Weichteilverletzungen bei
+            - gegebener bzw. abzuklärender Notwendigkeit einer Lappenplastik
+            - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
+            - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
+    </concept>
+    <concept>
+        <code value="2.1V" />
+        <display value="Durchtrennungen, Zerreißungen oder andere akute traumatische Schädigungen" />
+        <definition value="Durchtrennungen, Zerreißungen oder andere akute traumatische Schädigungen insbesondere mit Verschlüssen der großen Gefäße des Körperstammes, der Transportarterien an einer Extremität einschließlich des Unterschenkels (Hand und Unterarm siehe Ziffer 8) sowie der großen Begleitvenen proximal von Ellenbogen- oder Kniegelenk." />
     </concept>
 </CodeSystem>
