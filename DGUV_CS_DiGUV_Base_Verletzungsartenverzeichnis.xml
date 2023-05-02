@@ -89,4 +89,9 @@ Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssä
         <display value="Verletzungen des Rückenmarks" />
         <definition value="Verletzungen des Rückenmarks." />
     </concept>
+	<concept>
+        <code value="2.2S" />
+        <display value="Vorgenannte Gefäßverletzungen" />
+        <definition value="Vorgenannte Gefäßverletzungen in Kombination mit - Knochen-, Gelenk-Verletzungen - hochgradiger Weichteilschädigung (Vorrang der Notfallindikation, siehe Erläuterungen) - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
+	</concept>
 </CodeSystem>
