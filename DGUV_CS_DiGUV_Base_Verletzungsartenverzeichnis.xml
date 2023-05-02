@@ -109,6 +109,6 @@ Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssä
 	<concept>
         <code value="4.1V" />
         <display value="Gedeckte " />
-        <definition value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS 13), alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren." />
+        <definition value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II \n  (GCS 13), alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren." />
     </concept>
 </CodeSystem>
