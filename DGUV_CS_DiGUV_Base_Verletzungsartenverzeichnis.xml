@@ -45,4 +45,20 @@
         - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
         - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf" />
     </concept>
+	<concept>
+        <code value="1.3S" />
+        <display value="Thermische Schädigungen" />
+        <definition value="Thermische Schädigungen einschließlich Stromverletzungen oder chemische Schädigungen mit einer Ausdehnung über 15 % der Körperoberfläche (2.-gradig), 3.-gradige Schädigungen über 10 % (beachte abweichende Berechnung der brandverletzten Körperoberfläche bei Kindern)." />
+    </concept>
+	 <concept>
+        <code value="1.4S" />
+        <display value="Alle thermischen Schädigungen" />
+        <definition value="Alle thermischen Schädigungen einschließlich Stromverletzungen und alle
+chemischen Schädigungen in Kombination mit
+- Inhalationstrauma
+- relevanten Verletzungen entsprechend VAV
+- Schock
+- Beteiligung von Händen, Füßen, Gesicht oder Anogenitalregion. 
+Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssäure) insbesondere an Gesicht, Händen oder Füßen." />
+    </concept>
 </CodeSystem>
