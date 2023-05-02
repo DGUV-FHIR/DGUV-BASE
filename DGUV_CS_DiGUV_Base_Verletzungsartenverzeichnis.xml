@@ -31,4 +31,23 @@
             - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
             - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
     </concept>
+	<concept>
+        <code value="1.2V" />
+        <display value="Muskelkompressionssyndrome (Kompartmentsyndrome)" />
+        <definition value="Muskelkompressionssyndrome (Kompartmentsyndrome) in allen Lokalisationen bei
+            - gegebener oder abzuklärender Operationsnotwendigkeit
+            - engmaschiger Überwachung." />
+    </concept>
+    <concept>
+        <code value="1.2S" />
+        <display value="Vorgenannte Muskelkompressionssyndrome (Kompartmentsyndrome)" />
+        <definition value="Vorgenannte Muskelkompressionssyndrome (Kompartmentsyndrome) bei
+        - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
+        - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf" />
+    </concept>
+    <concept>
+        <code value="1.3S" />
+        <display value="Thermische Schädigungen" />
+        <definition value="Thermische Schädigungen einschließlich Stromverletzungen oder chemische Schädigungen mit einer Ausdehnung über 15 % der Körperoberfläche (2.-gradig), 3.-gradige Schädigungen über 10 % (beachte abweichende Berechnung der brandverletzten Körperoberfläche bei Kindern)." />
+    </concept>
 </CodeSystem>
