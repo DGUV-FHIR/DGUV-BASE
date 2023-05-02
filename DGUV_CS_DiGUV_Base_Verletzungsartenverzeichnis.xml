@@ -109,6 +109,28 @@ Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssä
 	<concept>
         <code value="4.1V" />
         <display value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS&lt;13)" />
-        <definition value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS&lt;13), &lt;br/&gt; alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren." />
+        <definition value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS&lt;13), alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren." />
+    </concept>
+	<concept>
+        <code value="4.1S" />
+        <display value="Alle offenen Verletzungen mit Hirnbeteiligung, alle schweren Schädel-HirnVerletzungen" />
+        <definition value="Alle offenen Verletzungen mit Hirnbeteiligung, alle schweren Schädel-HirnVerletzungen mit
+- substantiell lokalisierter Hirnverletzung
+- diffus-axonaler Hirnverletzung
+- intrakranieller Blutung
+- wesentlicher Verschlechterung im Verlauf.
+Brüche des Gehirnschädels bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
+    </concept>
+
+
+    <concept>
+        <code value="9.1V" />
+        <display value="" />
+        <definition value="" />
+    </concept>
+    <concept>
+        <code value="9.1S" />
+        <display value="" />
+        <definition value="" />
     </concept>
 </CodeSystem>
