@@ -101,16 +101,4 @@ Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssä
         <display value="Verletzungen der Nervenwurzeln oder der großen Nervengeflechte des Armes oder des Beines mit entsprechendem Funktionsausfall." />
         <definition value="Verletzungen der Nervenwurzeln oder der großen Nervengeflechte des Armes oder des Beines mit entsprechendem Funktionsausfall." />
     </concept>
-    <concept>
-        <code value="3.3S" />
-        <display value="Rekonstruktionsbedürftige Verletzungen der Stammnerven" />
-        <definition value="Rekonstruktionsbedürftige Verletzungen der Stammnerven z.B.: des Armes (Nervus radialis, Nervus medianus, Nervus ulnaris), siehe auch Ziffer 8  oder des Beines (Nervus ischiadicus, Nervus fermoralis) einschließlich des Unterschenkels (Nervus peronaeus, Nervus tibialis)" />
-    </concept>
-	<!-- -->
-    <concept>
-        <code value="4.1V" />
-        <display value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS<13)" />
-        <definition value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS<13), alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren" />
-    </concept>
-	
 </CodeSystem>
