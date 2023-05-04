@@ -25,7 +25,7 @@
     </concept>
     <concept>
         <code value="1.1S" />
-        <display value="Vorgenannte Amputationsverletzungen bei &#10;
+        <display value="Vorgenannte Amputationsverletzungen bei 
             - gegebener oder abzuklärender Replantationsmöglichkeit 
             - operativer Stumpfkorrektur im Verlauf" />
         <definition value="Vorgenannte Amputationsverletzungen bei 
@@ -116,6 +116,18 @@
     </concept>
 	<concept>
         <code value="4.1S" />
+        <display value="" />
+        <definition value="Alle offenen Verletzungen mit Hirnbeteiligung, alle schweren Schädel-HirnVerletzungen mit
+			- substantiell lokalisierter Hirnverletzung
+			- diffus-axonaler Hirnverletzung
+			- intrakranieller Blutung
+			- wesentlicher Verschlechterung im Verlauf.
+			Brüche des Gehirnschädels bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
+    </concept>
+
+<!-- ############################################################################################-->
+    <concept>
+        <code value="9.1V" />
         <display value="Verletzungen der Gelenke bei Kindern als Verrenkung oder gelenkbetreffende
 Brüche mit potentieller Störung des Wachstums entsprechend Aitken Typ II und
 Typ III (Typ E3 und E4 der AO-Klassifikation), bei gegebener oder abzuklärender
@@ -129,18 +141,6 @@ Operationsnotwendigkeit, insbesondere
 − Innen- und Außenknöchelbrüche
 − Brüche der Metaphysen, z.B. körpernahe Oberarmbrüche, distale
 (suprakondyläre) Oberarmbrüche, Radiushalsbrüche, Brüche des Oberschenkelha" />
-        <definition value="Alle offenen Verletzungen mit Hirnbeteiligung, alle schweren Schädel-HirnVerletzungen mit
-			- substantiell lokalisierter Hirnverletzung
-			- diffus-axonaler Hirnverletzung
-			- intrakranieller Blutung
-			- wesentlicher Verschlechterung im Verlauf.
-			Brüche des Gehirnschädels bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
-    </concept>
-
-<!-- ############################################################################################-->
-    <concept>
-        <code value="9.1V" />
-        <display value="" />
         <definition value="" />
     </concept>
     <concept>
