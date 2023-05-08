@@ -551,13 +551,13 @@
     </concept>
 	<concept>
         <code value="11.5S" />
-        <display value=") Spezielle Komplikationen und Unfallfolgen wie z. B.
+        <display value="Spezielle Komplikationen und Unfallfolgen wie z. B.
 			− Chronische Schmerzsyndrome mit der Notwendigkeit einer besonderen (z. B. schmerzmedizinischen oder handchirurgischen) Behandlung oder bei der Notwendigkeit zur Abklärung
 			− Komplexes regionales Schmerzsyndrom (CRPS)
 			− Phantomschmerzen nach Amputationen
 			− Schmerzen nach Nervenverletzungen." />
     </concept>
-<!-- ############################################################################################-->
+<!-- ############################################################################################
     
     <concept>
         <code value="9.1V" />
@@ -567,4 +567,5 @@
         <code value="9.1S" />
         <display value="" />
     </concept>
+-->
 </CodeSystem>
