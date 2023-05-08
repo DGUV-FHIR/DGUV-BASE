@@ -1,9 +1,0 @@
-{
-  "updated": "2023-05-04T12:32:03.518565+02:00",
-  "dependencies": {
-    "de.basisprofil.r4": "1.4.0",
-    "hl7.fhir.r4.core": "4.0.1",
-    "kbv.basis": "1.4.0"
-  },
-  "missing": {}
-}
