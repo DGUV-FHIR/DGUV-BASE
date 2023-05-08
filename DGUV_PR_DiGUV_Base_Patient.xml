@@ -295,7 +295,6 @@
     <element id="Patient.identifier:versichertennummer_KVK">
       <path value="Patient.identifier" />
       <sliceName value="versichertennummer_KVK" />
-      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Identifier_KVK" />
