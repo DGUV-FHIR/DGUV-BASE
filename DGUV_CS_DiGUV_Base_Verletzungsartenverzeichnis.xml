@@ -15,8 +15,7 @@
 	<!-- 1. Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels; Amputationsverletzungen; Muskelkompressionssyndrome (Kompartmentsyndrome); Thermische oder chemische Schädigungen -->
     <concept>
         <code value="1.1V" />
-        <display value="Alle Amputationsverletzungen" />
-        <definition value="Alle Amputationsverletzungen (total oder subtotal), auch der Großzehe, ausgenommen Zehenendglieder (Hand siehe Ziffer 8)." />
+        <display value="Alle Amputationsverletzungen (total oder subtotal), auch der Großzehe, ausgenommen Zehenendglieder (Hand siehe Ziffer 8)." />
     </concept>
     <concept>
         <code value="1.1S" />
@@ -115,14 +114,119 @@
     </concept>
 	<concept>
         <code value="5.1S" />
-        <display value="" />
+        <display value="Alle Verletzungen des Brustkorbs bei
+			- gegebener oder abzuklärender Operationsnotwendigkeit
+			- septischen Verläufen z. B. mit Verschlechterung der Beatmungssituation. " />
     </concept>
 	<concept>
         <code value="5.2V" />
-        <display value="" />
+        <display value="Bauchverletzungen mit gegebener oder abzuklärender Operationsnotwendigkeit bei
+			− transfusionsbedürftigen Blutungen
+			− Verletzungen der Hohlorgane
+			− Verletzung der parenchymatösen Organe." />
     </concept>
-	
-
+	<!-- 6. Komplexe Brüche der großen Röhrenknochen, insbesondere mehrfache oder offene Brüche-->
+	<concept>
+        <code value="6.1V" />
+        <display value="Im Kindesalter alle Schaftbrüche an Oberarm, Unterarm (Elle und Speiche kombiniert oder einzeln, insbesondere Monteggia-Frakturen), Oberschenkel, Unterschenkel (auch isolierte Brüche von Schienbein oder Wadenbein) bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+    </concept>
+	<concept>
+        <code value="6.1S" />
+        <display value="Vorgenannte Schaftbrüche im Kindesalter bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="6.2V" />
+        <display value="Brüche des Schlüsselbeines bei gegebener oder abzuklärender Operationsnotwendigkeit mit
+			− komplexer Bruchform entsprechend Typ C der AO-Klassifikation
+			− endständiger körpernaher oder körperferner Lokalisation. " />
+    </concept>
+	<concept>
+        <code value="6.2S" />
+        <display value="Brüche des Schlüsselbeins bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="6.3V" />
+        <display value="Brüche des Oberarmes bei
+			− Mehrteilebruch entsprechend Typ C der AO-Klassifikation
+			− Etagenfrakturen bei gegebener oder abzuklärender Operationsnotwendigkeit" />
+    </concept>
+	<concept>
+        <code value="6.3S" />
+        <display value="Brüche des Oberarmes bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="6.4V" />
+        <display value="Brüche des Unterarmes (Elle und Speiche kombiniert oder einzeln) bei gegebener oder abzuklärender Operationsnotwendigkeit bei
+			− Mehrteilebruch entsprechend Typ C der AO-Klassifikation
+			− Etagenbruch
+			− Gelenkbeteiligung insbesondere Monteggia, Galeazzi oder Essex-Lopresti(siehe auch Ziffer 7)." />
+    </concept>
+	<concept>
+        <code value="6.4S" />
+        <display value="Brüche des Unterarmes bei
+			− Gefäßverletzungen
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="6.5V" />
+        <display value="Hüftgelenknahe Brüche des Oberschenkels." />
+    </concept>
+	<concept>
+        <code value="6.5S" />
+        <display value="Hüftgelenknahe Brüche des Oberschenkels bei
+			− Gelenkbeteiligung (z.B. Pipkin-Fraktur)
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung" />
+    </concept>
+	<concept>
+        <code value="6.6V" />
+        <display value="Brüche des Oberschenkelschafts bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+    </concept>
+	<concept>
+        <code value="6.6S" />
+        <display value="Brüche des Oberschenkelschafts bei
+			− Gefäßverletzung
+		− Nervenverletzung
+		− hochgradiger Weichteilschädigung
+		− Kombination mit Gelenkfrakturen hüftgelenknah (siehe auch Ziffer 6.5 (V) und 6.5 (S)) oder das Kniegelenk betreffend (siehe auch Ziffer 7.8 (V) und 7.8 (S))." />
+    </concept>
+	<concept>
+        <code value="6.7V" />
+        <display value="Brüche des Unterschenkels (Schienbein isoliert oder in Verbindung mit dem Wadenbein) bei
+			− Mehrteilebruch entsprechend Typ C der AO-Klassifikation
+			− Etagenbruch
+			− Gelenkbeteiligung (siehe auch Ziffer 7)." />
+    </concept>
+	<concept>
+        <code value="6.7S" />
+        <display value="Brüche des Unterschenkels bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="6.8V" />
+        <display value="Brüche mehrerer Röhrenknochen an einer Extremität bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
+    </concept>
+	<concept>
+        <code value="6.8S" />
+        <display value=") Vorgenannte Brüche mehrerer Röhrenknochen bei
+			− komplexen Bruchformen entsprechend Typ C der AO-Klassifikation
+			− hochgradiger Weichteilschädigung
+			− Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln
+			− Muskelkompressionssyndromen (Kompartmentsyndromen)." />
+    </concept>
 <!-- ############################################################################################-->
     <concept>
         <code value="9.1V" />
@@ -144,6 +248,5 @@ Operationsnotwendigkeit, insbesondere
     <concept>
         <code value="9.1S" />
         <display value="" />
-        <definition value="" />
     </concept>
 </CodeSystem>
