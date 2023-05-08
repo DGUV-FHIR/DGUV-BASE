@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "de.basisprofil.r4": "1.4.0"
+    "de.basisprofil.r4": "1.4.0",
+    "kbv.basis": "1.4.0"
   },
   "fhirVersions": [
     "4.0.1"
