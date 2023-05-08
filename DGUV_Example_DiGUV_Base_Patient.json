@@ -1,0 +1,78 @@
+{
+    "resource": {
+        "resourceType": "Patient",
+        "id": "Patient1",
+        "meta": {
+            "profile":  [
+                "https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Patient|0.1"
+            ]
+        },
+        "extension":  [
+            {
+                "url": "https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beruf",
+                "valueString": "IT Architect"
+                
+            },{
+                "url": "https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beschaeftigungsbeginn",
+                "valueDate": "2022-05-01"
+                
+            }
+        ],
+        "identifier":  [
+            {
+                "type": {
+                    "coding":  [
+                        {
+                            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+                            "code": "GKV"
+                        }
+                    ]
+                },
+                "system": "http://fhir.de/sid/gkv/kvid-10",
+                "value": "A123456789"
+            }
+        ],
+        "name":  [
+            {
+                "use": "official",
+                "family": "Mustermann",
+                "given":  [
+                    "Max"
+                ]
+            }
+        ],
+        "telecom": [
+            {
+               "system": "phone",
+               "value": "030 123456"
+            }                
+        ],
+        "gender": "male",
+        "birthDate": "1980-01-01",
+        "address":  [
+            {
+                "type": "physical",
+                "_line":  [
+                         "Musterweg 14"     
+                ],
+                "_line":  [
+                    {
+                        "extension":  [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                "valueString": "Musterweg"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                "valueString": "14"
+                            }
+                        ]
+                    }
+                ],
+                "city": "Berlin",
+                "postalCode": "14000",
+                "country": "D"
+            }
+        ]
+    }
+}

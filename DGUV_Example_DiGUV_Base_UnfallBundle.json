@@ -1,0 +1,172 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="BundleId1"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_Bundle|1.0"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:BundleId1"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2023-03-20"/>
+	<entry>
+		<fullUrl value="urn:uuid:CompositionId1"/>
+		<resource>
+			<Composition xmlns="http://hl7.org/fhir">
+				<id value="CompositionId1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_Composition|1.0"/>
+				</meta>
+				
+
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:0d777b11-6570-4644-9ef7-d2e396a3667e"/>
+		<resource>
+			<Organization>
+                <id value="123"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_Organization|0.1"/>
+                </meta>
+                <name value="Unfallkrankenhaus Berlin, Klinik für Kardiologie"/>
+                <telecom>
+                    <system value="phone">
+                        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                            <extension url="content">
+                                <valueString value="Telefon"/>
+                            </extension>
+                        </extension>
+                    </system>
+                    <value value="030 56810"/>
+                </telecom>
+                <address>
+                    <text value="Straße 2, 10102 Berlin"/>
+                        <line value="Warener Str. 7">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                                <valueString value="Warener Str."/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="7"/>
+                        </extension>
+                        </line>
+                        <city value="Berlin"/>
+                        <postalCode value="12683 "/>
+                    </address>
+            </Organization>
+		</resource>
+	</entry>
+    <entry>
+		<fullUrl value="urn:uuid:Arzt1"/>
+		<resource>
+			<Practitioner>
+				<id value="Arzt1"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_Practitioner|1.0"/>
+				</meta>
+                <extension url="http://hl7.org/fhir/StructureDefinition/DGUV_PR_ENLA_Rolle">
+                    <value value="Author"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/StructureDefinition/DGUV_PR_ENLA_Rolle">
+                     <value value="Unterzeichner"/>
+               </extension>
+				<name>
+					<use value="official"/>
+					<family value="Müller">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Müller"/>
+						</extension>
+					</family>
+					<given value="Max"/>
+					<prefix value="Dr.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+    <entry>
+		<fullUrl value="urn:uuid:Arzt2"/>
+		<resource>
+			<Practitioner>
+				<id value="Arzt2"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_Practitioner|1.0"/>
+				</meta>
+                <extension url="http://hl7.org/fhir/StructureDefinition/DGUV_PR_ENLA_Rolle">
+                    <value value="DArzt"/>
+               </extension>
+				<name>
+					<use value="official"/>
+					<family value="Becker">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Becker"/>
+						</extension>
+					</family>
+					<given value="Anna"/>
+					<prefix value="Dr.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+    <entry>
+		<fullUrl value="urn:uuid:Arzt3"/>
+		<resource>
+			<Practitioner>
+				<id value="Arzt3"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_Practitioner|1.0"/>
+				</meta>
+				<name>
+					<use value="official"/>
+					<family value="Schmidt">
+						<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+							<valueString value="Schmidt"/>
+						</extension>
+					</family>
+					<given value="Lena"/>
+					<prefix value="Dr.">
+						<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+							<valueCode value="AC"/>
+						</extension>
+					</prefix>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+    <entry>
+		<fullUrl value="urn:uuid:92f0fdf1-ae7d-4df7-8ed4-7cb810b803cb"/>
+		<resource>
+			<PractitionerRole>
+				<id value="92f0fdf1-ae7d-4df7-8ed4-7cb810b803cb"/>
+				<meta>
+					<profile value="https://fhir.kbv.de/StructureDefinition/DGUV_PR_ENLA_RolleAuthor"/>
+				</meta>
+                <extension url="http://hl7.org/fhir/StructureDefinition/DGUV_PR_ENLA_Rolle">
+                    <value value="Author"/>
+               </extension>
+               <extension url="http://hl7.org/fhir/StructureDefinition/DGUV_PR_ENLA_Rolle">
+                <value value="Unterzeichner"/>
+           </extension>
+				<practitioner>
+					<reference value="urn:uuid:Arzt1"/>
+				</practitioner>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+						<code value="446050000"/>
+						<display value="Primary care physician (occupation)"/>
+					</coding>
+				</code>
+			</PractitionerRole>
+		</resource>
+	</entry>
+</Bundle>
