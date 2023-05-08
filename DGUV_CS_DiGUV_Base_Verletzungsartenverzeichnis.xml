@@ -227,6 +227,151 @@
 			− Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln
 			− Muskelkompressionssyndromen (Kompartmentsyndromen)." />
     </concept>
+	<!-- 7. Schwere Verletzungen großer Gelenke -->
+	<concept>
+        <code value="7.1V" />
+        <display value="Verletzungen der Gelenke bei Kindern als Verrenkung oder gelenkbetreffende Brüche mit potentieller Störung des Wachstums entsprechend Aitken Typ II und Typ III (Typ E3 und E4 der AO-Klassifikation), bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere
+			− Brüche der Oberarmkondylen
+			− Ellenbogenverrenkung mit Abriss der Oberarm-Epikondylen
+			− Ellenbogenbrüche
+			− traumatische Verrenkungen der Kniescheibe
+			− Kreuzbandverletzungen und knöcherne Ausrisse der Interkondylenhöcker
+			− körperferne Schienbeinbrüche einschl. Übergangsbrüche
+			− Innen- und Außenknöchelbrüche
+			− Brüche der Metaphysen, z.B. körpernahe Oberarmbrüche, distale (suprakondyläre) Oberarmbrüche, Radiushalsbrüche, Brüche des Oberschenkelhalses, körperferne Oberschenkelbrüche, körpernahe Unterschenkelbrüche." />
+    </concept>
+	<concept>
+        <code value="7.1S" />
+        <display value="Vorgenannte Verletzungen bei Kindern mit
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung" />
+    </concept>
+	<concept>
+        <code value="7.2S" />
+        <display value="Verrenkungen des Brustbein-Schlüsselbein-Gelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
+    </concept>
+	<concept>
+        <code value="7.3V" />
+        <display value="Verrenkungen oder Brüche des Schultereckgelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit" />
+    </concept>
+	<concept>
+        <code value="7.4S" />
+        <display value="Brüche des Schulterblatts bei gegebener oder abzuklärender Operationsnotwendigkeit" />
+    </concept>
+	<concept>
+        <code value="7.5V" />
+        <display value="Verrenkungen oder Verrenkungsbrüche des Schultergelenkes, mehrfragmentäre Brüche des Oberarmkopfes bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere bei
+			− traumatischer Ruptur der Rotatorenmanschette
+			− instabilen Verletzungsformen mit Abriss der Gelenklippe
+			− knöchernen Begleitverletzungen (Hill-Sachs-Läsion, Bankart-Läsion)." />
+    </concept>
+	<concept>
+        <code value="7.5S" />
+        <display value="Verrenkungsbrüche des Schultergelenkes oder Brüche des Oberarmkopfes bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung
+			− gegebener oder abzuklärender Indikation zum Gelenkersatz." />
+    </concept>
+	<concept>
+        <code value="7.6V" />
+        <display value="Brüche oder Verrenkungen des Ellenbogengelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
+    </concept>
+	<concept>
+        <code value="7.6S" />
+        <display value="Brüche oder Verrenkungen des Ellenbogengelenkes bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung
+			− gegebener oder abzuklärender Indikation zum Gelenkersatz. " />
+    </concept>
+	<concept>
+        <code value="7.7V" />
+        <display value="Körperferne Speichenbrüche bei starker Verschiebung um Schaftbreite oder Gelenkbeteiligung entsprechend Typ C3 der AO-Klassifikation" />
+    </concept>
+	<concept>
+        <code value="7.8V" />
+        <display value="Gelenkbetreffende Brüche des körperfernen Oberschenkels bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
+    </concept>
+	<concept>
+        <code value="7.8S" />
+        <display value="Gelenkbetreffende Brüche des körperfernen Oberschenkels bei
+			− Typ B3 oder C3 der AO-Klassifikation
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="7.9V" />
+        <display value="Instabilitäten des Kniegelenks bei Verletzungen des vorderen Kreuzbands (Subluxation), in Kombination mit
+			− Seitenbandverletzung
+			− Knorpelverletzung
+			− Meniskusverletzung." />
+    </concept>
+	<concept>
+        <code value="7.10S" />
+        <display value="Verletzungen des hinteren Kreuzbands, Kniegelenksverrenkungen mit Rupturen von mehreren Bandstrukturen oder knöchernen Begleitverletzungen." />
+    </concept>
+	<concept>
+        <code value="7.11V" />
+        <display value="Brüche des körpernahen Unterschenkels mit Gelenkbeteiligung bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+    </concept>
+	<concept>
+        <code value="7.11S" />
+        <display value="Brüche des körpernahen Unterschenkels mit Gelenkbeteiligung bei
+			− Typ B3 und C der AO-Klassifikation
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung" />
+    </concept>
+	<concept>
+        <code value="7.12V" />
+        <display value="Brüche der Kniescheibe. Traumatische Verrenkung der Kniescheibe mit Knorpel-Knochen-Abbrüchen bei bestehender oder abzuklärender Operationsnotwendigkeit." />
+    </concept>
+	<concept>
+        <code value="7.13V" />
+        <display value="Brüche des körperfernen Schienbeines mit Gelenkbeteiligung bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+    </concept>
+	<concept>
+        <code value="7.13S" />
+        <display value="Brüche des körperfernen Schienbeines mit Gelenkbeteiligung bei
+			− Typ C der AO-Klassifikation
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="7.14V" />
+        <display value="Brüche des Außenknöchels/Wadenbeins oder Verrenkungen der Knöchelgabel bei
+			− Riss des Zwischenknochenbandes (Typ Weber C, Typ B3 und C der AO-Klassifikation)
+			− verschobenem Abriss des Volkmann'schen Dreiecks
+			− Riss des Deltabandes
+			− Bruch des Innenknöchels." />
+    </concept>
+	<concept>
+        <code value="7.14S" />
+        <display value="Brüche des Außenknöchels/Wadenbeins oder Verrenkungen der Knöchelgabel bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradiger Weichteilschädigung." />
+    </concept>
+	<concept>
+        <code value="7.15V" />
+        <display value="Brüche oder Verrenkungen am Fuß bei gegebener oder abzuklärender Operationsnotwendigkeit
+			− des Sprungbeins
+			− des Fersenbeins
+			− der Fußwurzel einschließlich instabiler Verletzungen der Lisfranc-Gelenkreihe" />
+    </concept>
+	<concept>
+        <code value="7.15S" />
+        <display value="Vorgenannte Verletzungen bei
+			− Gefäßverletzung
+			− Nervenverletzung
+			− hochgradigem Weichteilschaden
+			− Fersenbeinfraktur mit komplexer Bruchform (Sanders III/IV).
+			Sprungbeinfraktur mit komplexer Bruchform (Hawkins II bis IV)." />
+    </concept>
 <!-- ############################################################################################-->
     <concept>
         <code value="9.1V" />
