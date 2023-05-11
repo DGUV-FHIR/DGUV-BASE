@@ -428,15 +428,7 @@
 	<!-- 9. Komplexe Brüche des Gesichtsschädels und des Rumpfskeletts -->
 	<concept>
         <code value="9.1V" />
-        <display value="Verletzungen der Gelenke bei Kindern als Verrenkung oder gelenkbetreffende Brüche mit potentieller Störung des Wachstums entsprechend Aitken Typ II und Typ III (Typ E3 und E4 der AO-Klassifikation), bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere
-			− Brüche der Oberarmkondylen
-			− Ellenbogenverrenkung mit Abriss der Oberarm-Epikondylen
-			− Ellenbogenbrüche
-			− traumatische Verrenkungen der Kniescheibe
-			− Kreuzbandverletzungen und knöcherne Ausrisse der Interkondylenhöcker
-			− körperferne Schienbeinbrüche einschl. Übergangsbrüche
-			− Innen- und Außenknöchelbrüche
-			− Brüche der Metaphysen, z.B. körpernahe Oberarmbrüche, distale (suprakondyläre) Oberarmbrüche, Radiushalsbrüche, Brüche des Oberschenkelha." />
+        <display value="Brüche des Gesichtsschädels bei gegebener oder abzuklärender Operationsnotwendigkeit." />
     </concept>
 	<concept>
         <code value="9.1S" />
