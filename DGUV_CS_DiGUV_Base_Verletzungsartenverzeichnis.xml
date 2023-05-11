@@ -5,11 +5,12 @@
         <system value="urn:ietf:rfc" />
         <value value="urn:oid:" />
     </identifier>-->
-    <version value="4.0.1" />
+    <version value="2.1" />
+	<date value="01.06.2022"/>
     <name value="DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
     <status value="draft" />
     <publisher value="DGUV" />  
-    <description value="This example value set defines a set of codes that can be used to indicate the physical form of the Location." />
+    <description value="Verletzungsartenverzeichnis mit Erläuterungen unter Einschluss des Schwerstverletzungsartenverfahrens" />
     <caseSensitive value="true" />
     <content value="complete" />
 	<!-- 1. Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels; Amputationsverletzungen; Muskelkompressionssyndrome (Kompartmentsyndrome); Thermische oder chemische Schädigungen -->
