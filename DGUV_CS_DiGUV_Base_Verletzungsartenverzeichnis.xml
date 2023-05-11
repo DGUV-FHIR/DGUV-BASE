@@ -6,7 +6,7 @@
         <value value="urn:oid:" />
     </identifier>-->
     <version value="2.1" />
-	<date value="01.06.2022"/>
+	<date value="2022-06-01"/>
     <name value="DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
     <status value="draft" />
     <publisher value="DGUV" />  
