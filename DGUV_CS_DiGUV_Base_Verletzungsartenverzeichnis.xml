@@ -1,564 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="DGUV_PR_DiGUV_Base_Verletzungsartenverzeichnis" />
-    <url value="https://fhir.dguv.de/CodeSystem/DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
-   <!-- <identifier>      Prüfen 
-        <system value="urn:ietf:rfc" />
-        <value value="urn:oid:" />
-    </identifier>-->
-    <version value="2.1" />
-	<date value="2022-06-01"/>
-    <name value="DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
-    <status value="draft" />
-    <publisher value="DGUV" />  
-    <description value="Verletzungsartenverzeichnis mit Erläuterungen unter Einschluss des Schwerstverletzungsartenverfahrens" />
-    <caseSensitive value="true" />
-    <content value="complete" />
-	<!-- 1. Ausgedehnte oder tiefgehende Verletzungen der Haut und des Weichteilmantels; Amputationsverletzungen; Muskelkompressionssyndrome (Kompartmentsyndrome); Thermische oder chemische Schädigungen -->
-    <concept>
-        <code value="1.1V" />
-        <display value="Alle Amputationsverletzungen (total oder subtotal), auch der Großzehe, ausgenommen Zehenendglieder (Hand siehe Ziffer 8)." />
-    </concept>
-    <concept>
-        <code value="1.1S" />
-        <display value="Vorgenannte Amputationsverletzungen bei 
-            - gegebener oder abzuklärender Replantationsmöglichkeit 
-            - operativer Stumpfkorrektur im Verlauf
-            - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
-            - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
-    </concept>
-	<concept>
-        <code value="1.2V" />
-        <display value="Muskelkompressionssyndrome (Kompartmentsyndrome) in allen Lokalisationen bei
-            - gegebener oder abzuklärender Operationsnotwendigkeit
-            - engmaschiger Überwachung." />
-    </concept>
-		<concept>
-        <code value="1.2S" />
-        <display value="Vorgenannte Muskelkompressionssyndrome (Kompartmentsyndrome) bei
-        - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
-        - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
-    </concept>
-	<concept>
-        <code value="1.3S" />
-        <display value="Thermische Schädigungen einschließlich Stromverletzungen oder chemische Schädigungen mit einer Ausdehnung über 15 % der Körperoberfläche (2.-gradig), 3.-gradige Schädigungen über 10 % (beachte abweichende Berechnung der brandverletzten Körperoberfläche bei Kindern)." />
-    </concept>
-	<concept>
-        <code value="1.3S" />
-        <display value="Thermische Schädigungen einschließlich Stromverletzungen oder chemische Schädigungen mit einer Ausdehnung über 15 % der Körperoberfläche (2.-gradig), 3.-gradige Schädigungen über 10 % (beachte abweichende Berechnung der brandverletzten Körperoberfläche bei Kindern)." />
-    </concept>
-	 <concept>
-        <code value="1.4S" />
-        <display value="Alle thermischen Schädigungen einschließlich Stromverletzungen und alle chemischen Schädigungen in Kombination mit
-			- Inhalationstrauma
-			- relevanten Verletzungen entsprechend VAV
-			- Schock
-			- Beteiligung von Händen, Füßen, Gesicht oder Anogenitalregion. 
-			Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssäure) insbesondere an Gesicht, Händen oder Füßen." />
-    </concept>
-	<concept>
-        <code value="1.5V" />
-        <display value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit akuten oder drohenden Ernährungsstörungen." />
-    </concept>
-	<concept>
-        <code value="1.5S" />
-        <display value="Vorgenannte Weichteilverletzungen bei
-            - gegebener bzw. abzuklärender Notwendigkeit einer Lappenplastik
-            - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen
-            - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
-        <definition value="" />
-    </concept>
-	<!--  2. Verletzungen der großen Gefäße  -->
-    <concept>
-        <code value="2.1V" />
-        <display value="Durchtrennungen, Zerreißungen oder andere akute traumatische Schädigungen insbesondere mit Verschlüssen der großen Gefäße des Körperstammes, der Transportarterien an einer Extremität einschließlich des Unterschenkels (Hand und Unterarm siehe Ziffer 8) sowie der großen Begleitvenen proximal von Ellenbogen- oder Kniegelenk." />
-    </concept>
-	<concept>
-        <code value="2.2S" />
-        <display value="Vorgenannte Gefäßverletzungen in Kombination mit - Knochen-, Gelenk-Verletzungen - hochgradiger Weichteilschädigung (Vorrang der Notfallindikation, siehe Erläuterungen) - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
-	</concept>
-	<!-- 3. Verletzungen der großen Nervenbahnen einschließlich Wirbelsäulenverletzungen mit neurologischer Symptomatik -->
-    <concept>
-        <code value="3.1S" />
-        <display value="Verletzungen des Rückenmarks." />
-    </concept>
-	<concept>
-        <code value="3.2S" />
-        <display value="Verletzungen der Nervenwurzeln oder der großen Nervengeflechte des Armes oder des Beines mit entsprechendem Funktionsausfall." />
-    </concept>
-	 <concept>
-        <code value="3.3S" />
-        <display value="Rekonstruktionsbedürftige Verletzungen der Stammnerven z.B.: des Armes (Nervus radialis, Nervus medianus, Nervus ulnaris), siehe auch Ziffer 8  oder des Beines (Nervus ischiadicus, Nervus fermoralis) einschließlich des Unterschenkels (Nervus peronaeus, Nervus tibialis)." />
-    </concept>
-	<!-- 4. Offene oder gedeckte mittelschwere oder schwere Schädel-Hirnverletzungen (ab SHT Grad II) -->
-	<concept>
-        <code value="4.1V" />
-        <display value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS&lt;13), alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren." />
-    </concept>
-	<concept>
-        <code value="4.1S" />
-        <display value="Alle offenen Verletzungen mit Hirnbeteiligung, alle schweren Schädel-HirnVerletzungen mit
-			- substantiell lokalisierter Hirnverletzung
-			- diffus-axonaler Hirnverletzung
-			- intrakranieller Blutung
-			- wesentlicher Verschlechterung im Verlauf.
-			Brüche des Gehirnschädels bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
-    </concept>
-	<!-- 5. Schwere Brustkorb- oder Bauch-Verletzungen einschließlich Verletzungen der Nieren oder Harnwege-->
-	<concept>
-        <code value="5.1V" />
-        <display value="Alle Verletzungen des Brustkorbs mit
-			- ausgedehnter Organbeteiligung der Lunge
-			- transfusionsbedürftigen Blutungen
-			- Behinderung der Atemmechanik und des Gasaustausches mit drohender oder gegebener Beatmungsnotwendigkeit
-			- Notwendigkeit zur Einlage einer Brustkorbdrainage
-			- stumpfen Herzverletzungen (z. B. Kontusion, Perikarderguss)." />
-    </concept>
-	<concept>
-        <code value="5.1S" />
-        <display value="Alle Verletzungen des Brustkorbs bei
-			- gegebener oder abzuklärender Operationsnotwendigkeit
-			- septischen Verläufen z. B. mit Verschlechterung der Beatmungssituation. " />
-    </concept>
-	<concept>
-        <code value="5.2V" />
-        <display value="Bauchverletzungen mit gegebener oder abzuklärender Operationsnotwendigkeit bei
-			− transfusionsbedürftigen Blutungen
-			− Verletzungen der Hohlorgane
-			− Verletzung der parenchymatösen Organe." />
-    </concept>
-	<!-- 6. Komplexe Brüche der großen Röhrenknochen, insbesondere mehrfache oder offene Brüche-->
-	<concept>
-        <code value="6.1V" />
-        <display value="Im Kindesalter alle Schaftbrüche an Oberarm, Unterarm (Elle und Speiche kombiniert oder einzeln, insbesondere Monteggia-Frakturen), Oberschenkel, Unterschenkel (auch isolierte Brüche von Schienbein oder Wadenbein) bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="6.1S" />
-        <display value="Vorgenannte Schaftbrüche im Kindesalter bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="6.2V" />
-        <display value="Brüche des Schlüsselbeines bei gegebener oder abzuklärender Operationsnotwendigkeit mit
-			− komplexer Bruchform entsprechend Typ C der AO-Klassifikation
-			− endständiger körpernaher oder körperferner Lokalisation. " />
-    </concept>
-	<concept>
-        <code value="6.2S" />
-        <display value="Brüche des Schlüsselbeins bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="6.3V" />
-        <display value="Brüche des Oberarmes bei
-			− Mehrteilebruch entsprechend Typ C der AO-Klassifikation
-			− Etagenfrakturen bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="6.3S" />
-        <display value="Brüche des Oberarmes bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="6.4V" />
-        <display value="Brüche des Unterarmes (Elle und Speiche kombiniert oder einzeln) bei gegebener oder abzuklärender Operationsnotwendigkeit bei
-			− Mehrteilebruch entsprechend Typ C der AO-Klassifikation
-			− Etagenbruch
-			− Gelenkbeteiligung insbesondere Monteggia, Galeazzi oder Essex-Lopresti(siehe auch Ziffer 7)." />
-    </concept>
-	<concept>
-        <code value="6.4S" />
-        <display value="Brüche des Unterarmes bei
-			− Gefäßverletzungen
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="6.5V" />
-        <display value="Hüftgelenknahe Brüche des Oberschenkels." />
-    </concept>
-	<concept>
-        <code value="6.5S" />
-        <display value="Hüftgelenknahe Brüche des Oberschenkels bei
-			− Gelenkbeteiligung (z.B. Pipkin-Fraktur)
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="6.6V" />
-        <display value="Brüche des Oberschenkelschafts bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="6.6S" />
-        <display value="Brüche des Oberschenkelschafts bei
-			− Gefäßverletzung
-		− Nervenverletzung
-		− hochgradiger Weichteilschädigung
-		− Kombination mit Gelenkfrakturen hüftgelenknah (siehe auch Ziffer 6.5 (V) und 6.5 (S)) oder das Kniegelenk betreffend (siehe auch Ziffer 7.8 (V) und 7.8 (S))." />
-    </concept>
-	<concept>
-        <code value="6.7V" />
-        <display value="Brüche des Unterschenkels (Schienbein isoliert oder in Verbindung mit dem Wadenbein) bei
-			− Mehrteilebruch entsprechend Typ C der AO-Klassifikation
-			− Etagenbruch
-			− Gelenkbeteiligung (siehe auch Ziffer 7)." />
-    </concept>
-	<concept>
-        <code value="6.7S" />
-        <display value="Brüche des Unterschenkels bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="6.8V" />
-        <display value="Brüche mehrerer Röhrenknochen an einer Extremität bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
-    </concept>
-	<concept>
-        <code value="6.8S" />
-        <display value="Vorgenannte Brüche mehrerer Röhrenknochen bei
-			− komplexen Bruchformen entsprechend Typ C der AO-Klassifikation
-			− hochgradiger Weichteilschädigung
-			− Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln
-			− Muskelkompressionssyndromen (Kompartmentsyndromen)." />
-    </concept>
-	<!-- 7. Schwere Verletzungen großer Gelenke -->
-	<concept>
-        <code value="7.1V" />
-        <display value="Verletzungen der Gelenke bei Kindern als Verrenkung oder gelenkbetreffende Brüche mit potentieller Störung des Wachstums entsprechend Aitken Typ II und Typ III (Typ E3 und E4 der AO-Klassifikation), bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere
-			− Brüche der Oberarmkondylen
-			− Ellenbogenverrenkung mit Abriss der Oberarm-Epikondylen
-			− Ellenbogenbrüche
-			− traumatische Verrenkungen der Kniescheibe
-			− Kreuzbandverletzungen und knöcherne Ausrisse der Interkondylenhöcker
-			− körperferne Schienbeinbrüche einschl. Übergangsbrüche
-			− Innen- und Außenknöchelbrüche
-			− Brüche der Metaphysen, z.B. körpernahe Oberarmbrüche, distale (suprakondyläre) Oberarmbrüche, Radiushalsbrüche, Brüche des Oberschenkelhalses, körperferne Oberschenkelbrüche, körpernahe Unterschenkelbrüche." />
-    </concept>
-	<concept>
-        <code value="7.1S" />
-        <display value="Vorgenannte Verletzungen bei Kindern mit
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="7.2S" />
-        <display value="Verrenkungen des Brustbein-Schlüsselbein-Gelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit. " />
-    </concept>
-	<concept>
-        <code value="7.3V" />
-        <display value="Verrenkungen oder Brüche des Schultereckgelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.4S" />
-        <display value="Brüche des Schulterblatts bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.5V" />
-        <display value="Verrenkungen oder Verrenkungsbrüche des Schultergelenkes, mehrfragmentäre Brüche des Oberarmkopfes bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere bei
-			− traumatischer Ruptur der Rotatorenmanschette
-			− instabilen Verletzungsformen mit Abriss der Gelenklippe
-			− knöchernen Begleitverletzungen (Hill-Sachs-Läsion, Bankart-Läsion)." />
-    </concept>
-	<concept>
-        <code value="7.5S" />
-        <display value="Verrenkungsbrüche des Schultergelenkes oder Brüche des Oberarmkopfes bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung
-			− gegebener oder abzuklärender Indikation zum Gelenkersatz." />
-    </concept>
-	<concept>
-        <code value="7.6V" />
-        <display value="Brüche oder Verrenkungen des Ellenbogengelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.6S" />
-        <display value="Brüche oder Verrenkungen des Ellenbogengelenkes bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung
-			− gegebener oder abzuklärender Indikation zum Gelenkersatz." />
-    </concept>
-	<concept>
-        <code value="7.7V" />
-        <display value="Körperferne Speichenbrüche bei starker Verschiebung um Schaftbreite oder Gelenkbeteiligung entsprechend Typ C3 der AO-Klassifikation." />
-    </concept>
-	<concept>
-        <code value="7.8V" />
-        <display value="Gelenkbetreffende Brüche des körperfernen Oberschenkels bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.8S" />
-        <display value="Gelenkbetreffende Brüche des körperfernen Oberschenkels bei
-			− Typ B3 oder C3 der AO-Klassifikation
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="7.9V" />
-        <display value="Instabilitäten des Kniegelenks bei Verletzungen des vorderen Kreuzbands (Subluxation), in Kombination mit
-			− Seitenbandverletzung
-			− Knorpelverletzung
-			− Meniskusverletzung." />
-    </concept>
-	<concept>
-        <code value="7.10S" />
-        <display value="Verletzungen des hinteren Kreuzbands, Kniegelenksverrenkungen mit Rupturen von mehreren Bandstrukturen oder knöchernen Begleitverletzungen." />
-    </concept>
-	<concept>
-        <code value="7.11V" />
-        <display value="Brüche des körpernahen Unterschenkels mit Gelenkbeteiligung bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.11S" />
-        <display value="Brüche des körpernahen Unterschenkels mit Gelenkbeteiligung bei
-			− Typ B3 und C der AO-Klassifikation
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung" />
-    </concept>
-	<concept>
-        <code value="7.12V" />
-        <display value="Brüche der Kniescheibe. Traumatische Verrenkung der Kniescheibe mit Knorpel-Knochen-Abbrüchen bei bestehender oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.13V" />
-        <display value="Brüche des körperfernen Schienbeines mit Gelenkbeteiligung bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="7.13S" />
-        <display value="Brüche des körperfernen Schienbeines mit Gelenkbeteiligung bei
-			− Typ C der AO-Klassifikation
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="7.14V" />
-        <display value="Brüche des Außenknöchels/Wadenbeins oder Verrenkungen der Knöchelgabel bei
-			− Riss des Zwischenknochenbandes (Typ Weber C, Typ B3 und C der AO-Klassifikation)
-			− verschobenem Abriss des Volkmann'schen Dreiecks
-			− Riss des Deltabandes
-			− Bruch des Innenknöchels." />
-    </concept>
-	<concept>
-        <code value="7.14S" />
-        <display value="Brüche des Außenknöchels/Wadenbeins oder Verrenkungen der Knöchelgabel bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<concept>
-        <code value="7.15V" />
-        <display value="Brüche oder Verrenkungen am Fuß bei gegebener oder abzuklärender Operationsnotwendigkeit
-			− des Sprungbeins
-			− des Fersenbeins
-			− der Fußwurzel einschließlich instabiler Verletzungen der Lisfranc-Gelenkreihe." />
-    </concept>
-	<concept>
-        <code value="7.15S" />
-        <display value="Vorgenannte Verletzungen bei
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradigem Weichteilschaden
-			− Fersenbeinfraktur mit komplexer Bruchform (Sanders III/IV).
-			Sprungbeinfraktur mit komplexer Bruchform (Hawkins II bis IV)." />
-    </concept>
-	<!-- 8. Schwere Verletzungen der Hand -->
-	<concept>
-        <code value="8.1S" />
-        <display value="Schwere Verletzungen der Hand" />
-    </concept>
-	<concept>
-        <code value="8.2V" />
-        <display value="Alle Brüche des ersten Fingerstrahles. Brüche der Langfinger oder der Mittelhandknochen 2-5 mit
-			− Gelenkbeteiligung
-			− Betroffenheit mehrerer Strahlen
-			− schwere Weichteilverletzungen entsprechend 1.5(V)." />
-    </concept>
-	 <concept>
-        <code value="8.3V" />
-        <display value="Brüche einzelner Handwurzelknochen bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="8.3S" />
-        <display value="Verletzungen der Handwurzel bei 
-			− Brüchen mehrerer Handwurzelknochen
-			− singulären oder mehrfachen Bandverletzungen
-			− Verrenkungen
-			− Verrenkungsbrüchen. " />
-    </concept>
-	<concept>
-        <code value="8.4S" />
-        <display value="Verletzungen der Stammnerven und der funktionell bedeutsamen Nerven
-			− Nervus medianus
-			− Nervus ulnaris
-			− Ramus profundus
-			− Nervus radialis
-			− Fingernerven z. B. in der Greifzone des Daumens, des Zeigefingers oder der Außenseite des Kleinfingers." />
-    </concept>
-	<concept>
-        <code value="8.5S" />
-        <display value="Gefäßverletzungen an Fingern, Hand oder Unterarm mit akuten oder drohenden Ernährungsstörungen, auch bei abzuklärender Operationsnotwendigkeit. " />
-    </concept>
-	<concept>
-        <code value="8.6V" />
-        <display value="Verletzungen an der Hand (auch am Unterarm):
-			− einer oder mehrerer Beugesehnen außerhalb (proximal) der Zonen I-III
-			− mehrerer Strecksehnen." />
-    </concept>
-	<concept>
-        <code value="8.6S" />
-        <display value="Verletzung einer oder mehrerer Beugesehnen in den Zonen I-III der Hand." />
-    </concept>
-	<concept>
-        <code value="8.7S" />
-        <display value="Alle Verletzungen an der Hand (auch am Unterarm) bei
-			− tiefgehenden oder ausgedehnten oder fortschreitenden Entzündungen (siehe auch Ziffer 11)
-			− Hochdruckeinspritzverletzungen." />
-    </concept>
-	<!-- 9. Komplexe Brüche des Gesichtsschädels und des Rumpfskeletts -->
-	<concept>
-        <code value="9.1V" />
-        <display value="Brüche des Gesichtsschädels bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="9.1S" />
-        <display value="Vorgenannte Brüche des Gesichtsschädels bei 
-			− starker Verschiebung (z.B. Okklusionsstörung)
-			− hoher Komplexität (z.B. beidseitige Kieferfraktur, panfaziale Fraktur)
-			− hochgradiger Weichteilschädigung (z.B. Verletzung des Tränenkanals, Verletzungen mehrerer Gesichtsanteile, Amputationen von Gesichtsanteilen)." />
-    </concept>
-	<concept>
-        <code value="9.2V" />
-        <display value="Wirbelbrüche mit Fehlstellung oder Instabilität bei gegebener oder abzuklärender Operationsnotwendigkeit (Typ A2, A3, A4, B und C der neuen AO-Klassifikation)." />
-    </concept>
-	<concept>
-        <code value="9.2S" />
-        <display value="Wirbelbrüche bei 
-			− neurologischen Ausfällen
-			− Notwendigkeit der Rekonstruktion der vorderen Säule an unterer HWS (C3-C7), BWS, LWS. Verletzungen der oberen Halswirbelsäule (Segmente C0-C2/C3) bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="9.3V" />
-        <display value="Beckenringbrüche mit Fehlstellung oder Instabilität bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="9.3S" />
-        <display value="Beckenringbrüche bei hoher Instabilität (insbesondere Typ B3 und C der AO-Klassifikation) bei
-			− Rekonstruktionsnotwendigkeit des hinteren Beckenrings
-			− Gefäßverletzung
-			− Nervenverletzung
-			− Organverletzung
-			− hochgradiger Weichteilverletzung." />
-    </concept>
-	<concept>
-        <code value="9.4V" />
-        <display value="Brüche der Hüftpfanne oder Verrenkungen des Hüftgelenks bei gegebener oder abzuklärender Operationsnotwendigkeit." />
-    </concept>
-	<concept>
-        <code value="9.4S" />
-        <display value="Vorgenannte Verletzungen bei
-			− Rekonstruktionsnotwendigkeit der Hüftpfanne infolge von Ein- oder Zweipfeilerbrüchen
-			− Kombination mit Beckenringverletzungen
-			− Gefäßverletzung
-			− Nervenverletzung
-			− hochgradiger Weichteilschädigung." />
-    </concept>
-	<!-- 10. Mehrfachverletzungen mit schwerer Ausprägung; besondere Verletzungskonstellationen bei Kindern -->
-	<concept>
-        <code value="10.1V" />
-        <display value="Schwere Verletzungen und Verletzungskombinationen (Polytrauma) mit einem Injury Severity Score (ISS) zwischen 16 und 24." />
-    </concept>
-	<concept>
-        <code value="10.1S" />
-        <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma)
-			− bei Erwachsenen mit ISS ab 25
-			− bei Kindern mit ISS ab 16.
-			Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)." />
-    </concept>
-	<concept>
-        <code value="10.2S" />
-        <display value="Kombinationsverletzungen oder Verletzungskonstellationen, die z. B.
-			− zwei oder mehr Extremitäten mit Ausprägung entsprechend VAV betreffen
-			− keine Belastungsfähigkeit simultan beider unterer Extremitäten zulassen
-			− im weiteren Verlauf einen erheblich erhöhten Rehabilitationsaufwand erwarten lassen." />
-    </concept>
-	<concept>
-        <code value="10.3S" />
-        <display value="Verletzungskombination oder –konstellation bei Kindern, die eine besondere kindertraumatologische Kompetenz erfordern wie z. B.:
-			− Kopfverletzung mit Schädel-Hirn-Trauma II. oder III. Grades oder Impressionsfraktur
-			− Organverletzung wie Thoraxtrauma mit Lungenkontusion
-			− Abdominaltrauma mit Organverletzung
-			− Instabile Beckenfraktur
-			− Frakturen von zwei langen Röhrenknochen der unteren Extremität
-			− Intensivtherapie über 24 Stunden." />
-    </concept>
-	<concept>
-        <code value="10.4S" />
-        <display value="Kombinationen von Verletzungsformen (Ausprägung entsprechend VAV) mit bestehenden Erkrankungen oder Störungen, die den Heilverlauf oder die Rehabilitation erheblich beeinflussen wie z. B. schwerwiegende Vorerkrankungen kardialer oder pulmonaler Genese, Störungen des Sehens." />
-    </concept>
-	<!-- 11. Komplikationen -->
-	<concept>
-        <code value="11.1S" />
-        <display value="Infektionen /Infektiöse Komplikationen wie z.B.
-			− systemische Infektionen, Sepsis oder Organversagen vor allem bei Indikation zu Organersatzverfahren
-			− tiefgehende oder ausgedehnte oder fortschreitende postoperative Infektionen sowohl nach offenen wie auch nach geschlossenen Verletzungen, auch bei Verdacht
-			− tiefgehende oder ausgedehnte oder fortschreitende postoperative Infektionen des Implantats, auch bei Verdacht 
-			− tiefgehende oder ausgedehnte oder fortschreitende postoperative Infektionen bei Osteitis, auch bei Verdacht
-			− tiefgehende oder ausgedehnte Infektionen an der Hand (siehe auch 8.7 (S))
-			− neu auftretende oder weitergehende Infektionen nach Verletzungen der Ziffern 1 bis 10 bei Nachweis von multiresistenten Keimen (z. B. MRE, MRSA,MRGN)." />
-    </concept>
-	<concept>
-        <code value="11.2S" />
-        <display value="Defektheilung des Weichteilmantels mit instabiler Narbenbildung, Funktionsbehinderungen oder gestörter Ästhetik nach Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln (z. B. nach Kompartmentsyndromen). " />
-    </concept>
-	<concept>
-        <code value="11.3S" />
-        <display value="Notwendigkeit ausgedehnter und aufwändiger Revisionseingriffe z. B. bei
-			− schmerzhaften oder funktionsbehindernden Fehlstellungen oder Instabilitäten
-			− unzureichender Osteosynthese
-			− notwendiger Knochenaufbau nach Osteitis
-			− posttraumatisch aufgetretenen oder iatrogenen Gefäß- oder Nervenläsionen
-			− Knochenheilungsstörung oder Pseudarthrosenbildung
-			− Knickbildung der Wirbelsäule insbesondere bei neurologischen Ausfällen
-			− Fehlheilung oder Deformitäten des Beckenrings
-			− schmerzhaften oder funktionsbehindernden Gelenkveränderungen
-			− Wiederherstellungseingriffen für die Funktionsfähigkeit der Hand wie Nerventransplantation, Sehnentransfer." />
-    </concept>
-	<concept>
-        <code value="11.4S" />
-        <display value="Verletzungs-Folgezustände beim Kind wie z. B.
-			− Gelenkeinsteifung insbesondere am Ellenbogen
-			− Fehlstellungen oder Wachstumsstörungen nach Schädigungen der Wachstumsfugen
-			− Beinlängendifferenzen nach Frakturen an den unteren Extremitäten." />
-    </concept>
-	<concept>
-        <code value="11.5S" />
-        <display value="Spezielle Komplikationen und Unfallfolgen wie z. B.
-			− Chronische Schmerzsyndrome mit der Notwendigkeit einer besonderen (z. B. schmerzmedizinischen oder handchirurgischen) Behandlung oder bei der Notwendigkeit zur Abklärung
-			− Komplexes regionales Schmerzsyndrom (CRPS)
-			− Phantomschmerzen nach Amputationen
-			− Schmerzen nach Nervenverletzungen." />
-    </concept>
-<!-- ############################################################################################
-    
-    <concept>
-        <code value="9.1V" />
-        <display value="" />
-    </concept>
-	<concept>
-        <code value="9.1S" />
-        <display value="" />
-    </concept>
--->
+  <id value="DGUV-PR-DiGUV-Base-Verletzungsartenverzeichnis" />
+  <url value="https://fhir.dguv.de/CodeSystem/DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
+  <version value="2.1" />
+  <name value="DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
+  <status value="draft" />
+  <date value="2022-06-01" />
+  <publisher value="DGUV" />
+  <description value="Verletzungsartenverzeichnis mit Erläuterungen unter Einschluss des Schwerstverletzungsartenverfahrens" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="1.1V" />
+    <display value="Alle Amputationsverletzungen (total oder subtotal), auch der Großzehe, ausgenommen Zehenendglieder (Hand siehe Ziffer 8)." />
+  </concept>
+  <concept>
+    <code value="1.1S" />
+    <display value="Vorgenannte Amputationsverletzungen bei              - gegebener oder abzuklärender Replantationsmöglichkeit              - operativer Stumpfkorrektur im Verlauf             - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen             - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
+  </concept>
+  <concept>
+    <code value="1.2V" />
+    <display value="Muskelkompressionssyndrome (Kompartmentsyndrome) in allen Lokalisationen bei             - gegebener oder abzuklärender Operationsnotwendigkeit             - engmaschiger Überwachung." />
+  </concept>
+  <concept>
+    <code value="1.2S" />
+    <display value="Vorgenannte Muskelkompressionssyndrome (Kompartmentsyndrome) bei         - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen         - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
+  </concept>
+  <concept>
+    <code value="1.3S" />
+    <display value="Thermische Schädigungen einschließlich Stromverletzungen oder chemische Schädigungen mit einer Ausdehnung über 15 % der Körperoberfläche (2.-gradig), 3.-gradige Schädigungen über 10 % (beachte abweichende Berechnung der brandverletzten Körperoberfläche bei Kindern)." />
+  </concept>
+  <concept>
+    <code value="1.3S" />
+    <display value="Thermische Schädigungen einschließlich Stromverletzungen oder chemische Schädigungen mit einer Ausdehnung über 15 % der Körperoberfläche (2.-gradig), 3.-gradige Schädigungen über 10 % (beachte abweichende Berechnung der brandverletzten Körperoberfläche bei Kindern)." />
+  </concept>
+  <concept>
+    <code value="1.4S" />
+    <display value="Alle thermischen Schädigungen einschließlich Stromverletzungen und alle chemischen Schädigungen in Kombination mit    - Inhalationstrauma    - relevanten Verletzungen entsprechend VAV    - Schock    - Beteiligung von Händen, Füßen, Gesicht oder Anogenitalregion.     Alle Verletzten mit ausgedehnten oder tiefgreifenden Verätzungen (z.B. Flusssäure) insbesondere an Gesicht, Händen oder Füßen." />
+  </concept>
+  <concept>
+    <code value="1.5V" />
+    <display value="Ausgedehnte offene oder geschlossene Weichteilabhebungen (Decollement) mit akuten oder drohenden Ernährungsstörungen." />
+  </concept>
+  <concept>
+    <code value="1.5S" />
+    <display value="Vorgenannte Weichteilverletzungen bei             - gegebener bzw. abzuklärender Notwendigkeit einer Lappenplastik             - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen             - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
+  </concept>
+  <concept>
+    <code value="2.1V" />
+    <display value="Durchtrennungen, Zerreißungen oder andere akute traumatische Schädigungen insbesondere mit Verschlüssen der großen Gefäße des Körperstammes, der Transportarterien an einer Extremität einschließlich des Unterschenkels (Hand und Unterarm siehe Ziffer 8) sowie der großen Begleitvenen proximal von Ellenbogen- oder Kniegelenk." />
+  </concept>
+  <concept>
+    <code value="2.2S" />
+    <display value="Vorgenannte Gefäßverletzungen in Kombination mit - Knochen-, Gelenk-Verletzungen - hochgradiger Weichteilschädigung (Vorrang der Notfallindikation, siehe Erläuterungen) - tiefgehenden, ausgedehnten oder fortschreitenden Entzündungen - Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln im Verlauf." />
+  </concept>
+  <concept>
+    <code value="3.1S" />
+    <display value="Verletzungen des Rückenmarks." />
+  </concept>
+  <concept>
+    <code value="3.2S" />
+    <display value="Verletzungen der Nervenwurzeln oder der großen Nervengeflechte des Armes oder des Beines mit entsprechendem Funktionsausfall." />
+  </concept>
+  <concept>
+    <code value="3.3S" />
+    <display value="Rekonstruktionsbedürftige Verletzungen der Stammnerven z.B.: des Armes (Nervus radialis, Nervus medianus, Nervus ulnaris), siehe auch Ziffer 8  oder des Beines (Nervus ischiadicus, Nervus fermoralis) einschließlich des Unterschenkels (Nervus peronaeus, Nervus tibialis)." />
+  </concept>
+  <concept>
+    <code value="4.1V" />
+    <display value="Gedeckte Schädel-Hirn-Verletzungen mit mittelschwerer Ausprägung klinisch ab SHT Grad II (GCS&lt;13), alle traumatisch bedingten strukturellen Veränderungen oder Blutungen in bildgebenden Verfahren." />
+  </concept>
+  <concept>
+    <code value="4.1S" />
+    <display value="Alle offenen Verletzungen mit Hirnbeteiligung, alle schweren Schädel-HirnVerletzungen mit    - substantiell lokalisierter Hirnverletzung    - diffus-axonaler Hirnverletzung    - intrakranieller Blutung    - wesentlicher Verschlechterung im Verlauf.    Brüche des Gehirnschädels bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="5.1V" />
+    <display value="Alle Verletzungen des Brustkorbs mit    - ausgedehnter Organbeteiligung der Lunge    - transfusionsbedürftigen Blutungen    - Behinderung der Atemmechanik und des Gasaustausches mit drohender oder gegebener Beatmungsnotwendigkeit    - Notwendigkeit zur Einlage einer Brustkorbdrainage    - stumpfen Herzverletzungen (z. B. Kontusion, Perikarderguss)." />
+  </concept>
+  <concept>
+    <code value="5.1S" />
+    <display value="Alle Verletzungen des Brustkorbs bei    - gegebener oder abzuklärender Operationsnotwendigkeit    - septischen Verläufen z. B. mit Verschlechterung der Beatmungssituation." />
+  </concept>
+  <concept>
+    <code value="5.2V" />
+    <display value="Bauchverletzungen mit gegebener oder abzuklärender Operationsnotwendigkeit bei    − transfusionsbedürftigen Blutungen    − Verletzungen der Hohlorgane    − Verletzung der parenchymatösen Organe." />
+  </concept>
+  <concept>
+    <code value="6.1V" />
+    <display value="Im Kindesalter alle Schaftbrüche an Oberarm, Unterarm (Elle und Speiche kombiniert oder einzeln, insbesondere Monteggia-Frakturen), Oberschenkel, Unterschenkel (auch isolierte Brüche von Schienbein oder Wadenbein) bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="6.1S" />
+    <display value="Vorgenannte Schaftbrüche im Kindesalter bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="6.2V" />
+    <display value="Brüche des Schlüsselbeines bei gegebener oder abzuklärender Operationsnotwendigkeit mit    − komplexer Bruchform entsprechend Typ C der AO-Klassifikation    − endständiger körpernaher oder körperferner Lokalisation." />
+  </concept>
+  <concept>
+    <code value="6.2S" />
+    <display value="Brüche des Schlüsselbeins bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="6.3V" />
+    <display value="Brüche des Oberarmes bei    − Mehrteilebruch entsprechend Typ C der AO-Klassifikation    − Etagenfrakturen bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="6.3S" />
+    <display value="Brüche des Oberarmes bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="6.4V" />
+    <display value="Brüche des Unterarmes (Elle und Speiche kombiniert oder einzeln) bei gegebener oder abzuklärender Operationsnotwendigkeit bei    − Mehrteilebruch entsprechend Typ C der AO-Klassifikation    − Etagenbruch    − Gelenkbeteiligung insbesondere Monteggia, Galeazzi oder Essex-Lopresti(siehe auch Ziffer 7)." />
+  </concept>
+  <concept>
+    <code value="6.4S" />
+    <display value="Brüche des Unterarmes bei    − Gefäßverletzungen    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="6.5V" />
+    <display value="Hüftgelenknahe Brüche des Oberschenkels." />
+  </concept>
+  <concept>
+    <code value="6.5S" />
+    <display value="Hüftgelenknahe Brüche des Oberschenkels bei    − Gelenkbeteiligung (z.B. Pipkin-Fraktur)    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="6.6V" />
+    <display value="Brüche des Oberschenkelschafts bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="6.6S" />
+    <display value="Brüche des Oberschenkelschafts bei    − Gefäßverletzung   − Nervenverletzung   − hochgradiger Weichteilschädigung   − Kombination mit Gelenkfrakturen hüftgelenknah (siehe auch Ziffer 6.5 (V) und 6.5 (S)) oder das Kniegelenk betreffend (siehe auch Ziffer 7.8 (V) und 7.8 (S))." />
+  </concept>
+  <concept>
+    <code value="6.7V" />
+    <display value="Brüche des Unterschenkels (Schienbein isoliert oder in Verbindung mit dem Wadenbein) bei    − Mehrteilebruch entsprechend Typ C der AO-Klassifikation    − Etagenbruch    − Gelenkbeteiligung (siehe auch Ziffer 7)." />
+  </concept>
+  <concept>
+    <code value="6.7S" />
+    <display value="Brüche des Unterschenkels bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="6.8V" />
+    <display value="Brüche mehrerer Röhrenknochen an einer Extremität bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="6.8S" />
+    <display value="Vorgenannte Brüche mehrerer Röhrenknochen bei    − komplexen Bruchformen entsprechend Typ C der AO-Klassifikation    − hochgradiger Weichteilschädigung    − Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln    − Muskelkompressionssyndromen (Kompartmentsyndromen)." />
+  </concept>
+  <concept>
+    <code value="7.1V" />
+    <display value="Verletzungen der Gelenke bei Kindern als Verrenkung oder gelenkbetreffende Brüche mit potentieller Störung des Wachstums entsprechend Aitken Typ II und Typ III (Typ E3 und E4 der AO-Klassifikation), bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere    − Brüche der Oberarmkondylen    − Ellenbogenverrenkung mit Abriss der Oberarm-Epikondylen    − Ellenbogenbrüche    − traumatische Verrenkungen der Kniescheibe    − Kreuzbandverletzungen und knöcherne Ausrisse der Interkondylenhöcker    − körperferne Schienbeinbrüche einschl. Übergangsbrüche    − Innen- und Außenknöchelbrüche    − Brüche der Metaphysen, z.B. körpernahe Oberarmbrüche, distale (suprakondyläre) Oberarmbrüche, Radiushalsbrüche, Brüche des Oberschenkelhalses, körperferne Oberschenkelbrüche, körpernahe Unterschenkelbrüche." />
+  </concept>
+  <concept>
+    <code value="7.1S" />
+    <display value="Vorgenannte Verletzungen bei Kindern mit    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="7.2S" />
+    <display value="Verrenkungen des Brustbein-Schlüsselbein-Gelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.3V" />
+    <display value="Verrenkungen oder Brüche des Schultereckgelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.4S" />
+    <display value="Brüche des Schulterblatts bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.5V" />
+    <display value="Verrenkungen oder Verrenkungsbrüche des Schultergelenkes, mehrfragmentäre Brüche des Oberarmkopfes bei gegebener oder abzuklärender Operationsnotwendigkeit, insbesondere bei    − traumatischer Ruptur der Rotatorenmanschette    − instabilen Verletzungsformen mit Abriss der Gelenklippe    − knöchernen Begleitverletzungen (Hill-Sachs-Läsion, Bankart-Läsion)." />
+  </concept>
+  <concept>
+    <code value="7.5S" />
+    <display value="Verrenkungsbrüche des Schultergelenkes oder Brüche des Oberarmkopfes bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung    − gegebener oder abzuklärender Indikation zum Gelenkersatz." />
+  </concept>
+  <concept>
+    <code value="7.6V" />
+    <display value="Brüche oder Verrenkungen des Ellenbogengelenkes bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.6S" />
+    <display value="Brüche oder Verrenkungen des Ellenbogengelenkes bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung    − gegebener oder abzuklärender Indikation zum Gelenkersatz." />
+  </concept>
+  <concept>
+    <code value="7.7V" />
+    <display value="Körperferne Speichenbrüche bei starker Verschiebung um Schaftbreite oder Gelenkbeteiligung entsprechend Typ C3 der AO-Klassifikation." />
+  </concept>
+  <concept>
+    <code value="7.8V" />
+    <display value="Gelenkbetreffende Brüche des körperfernen Oberschenkels bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.8S" />
+    <display value="Gelenkbetreffende Brüche des körperfernen Oberschenkels bei    − Typ B3 oder C3 der AO-Klassifikation    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="7.9V" />
+    <display value="Instabilitäten des Kniegelenks bei Verletzungen des vorderen Kreuzbands (Subluxation), in Kombination mit    − Seitenbandverletzung    − Knorpelverletzung    − Meniskusverletzung." />
+  </concept>
+  <concept>
+    <code value="7.10S" />
+    <display value="Verletzungen des hinteren Kreuzbands, Kniegelenksverrenkungen mit Rupturen von mehreren Bandstrukturen oder knöchernen Begleitverletzungen." />
+  </concept>
+  <concept>
+    <code value="7.11V" />
+    <display value="Brüche des körpernahen Unterschenkels mit Gelenkbeteiligung bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.11S" />
+    <display value="Brüche des körpernahen Unterschenkels mit Gelenkbeteiligung bei    − Typ B3 und C der AO-Klassifikation    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung" />
+  </concept>
+  <concept>
+    <code value="7.12V" />
+    <display value="Brüche der Kniescheibe. Traumatische Verrenkung der Kniescheibe mit Knorpel-Knochen-Abbrüchen bei bestehender oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.13V" />
+    <display value="Brüche des körperfernen Schienbeines mit Gelenkbeteiligung bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="7.13S" />
+    <display value="Brüche des körperfernen Schienbeines mit Gelenkbeteiligung bei    − Typ C der AO-Klassifikation    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="7.14V" />
+    <display value="Brüche des Außenknöchels/Wadenbeins oder Verrenkungen der Knöchelgabel bei    − Riss des Zwischenknochenbandes (Typ Weber C, Typ B3 und C der AO-Klassifikation)    − verschobenem Abriss des Volkmann'schen Dreiecks    − Riss des Deltabandes    − Bruch des Innenknöchels." />
+  </concept>
+  <concept>
+    <code value="7.14S" />
+    <display value="Brüche des Außenknöchels/Wadenbeins oder Verrenkungen der Knöchelgabel bei    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="7.15V" />
+    <display value="Brüche oder Verrenkungen am Fuß bei gegebener oder abzuklärender Operationsnotwendigkeit    − des Sprungbeins    − des Fersenbeins    − der Fußwurzel einschließlich instabiler Verletzungen der Lisfranc-Gelenkreihe." />
+  </concept>
+  <concept>
+    <code value="7.15S" />
+    <display value="Vorgenannte Verletzungen bei    − Gefäßverletzung    − Nervenverletzung    − hochgradigem Weichteilschaden    − Fersenbeinfraktur mit komplexer Bruchform (Sanders III/IV).    Sprungbeinfraktur mit komplexer Bruchform (Hawkins II bis IV)." />
+  </concept>
+  <concept>
+    <code value="8.1S" />
+    <display value="Schwere Verletzungen der Hand" />
+  </concept>
+  <concept>
+    <code value="8.2V" />
+    <display value="Alle Brüche des ersten Fingerstrahles. Brüche der Langfinger oder der Mittelhandknochen 2-5 mit    − Gelenkbeteiligung    − Betroffenheit mehrerer Strahlen    − schwere Weichteilverletzungen entsprechend 1.5(V)." />
+  </concept>
+  <concept>
+    <code value="8.3V" />
+    <display value="Brüche einzelner Handwurzelknochen bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="8.3S" />
+    <display value="Verletzungen der Handwurzel bei     − Brüchen mehrerer Handwurzelknochen    − singulären oder mehrfachen Bandverletzungen    − Verrenkungen    − Verrenkungsbrüchen." />
+  </concept>
+  <concept>
+    <code value="8.4S" />
+    <display value="Verletzungen der Stammnerven und der funktionell bedeutsamen Nerven    − Nervus medianus    − Nervus ulnaris    − Ramus profundus    − Nervus radialis    − Fingernerven z. B. in der Greifzone des Daumens, des Zeigefingers oder der Außenseite des Kleinfingers." />
+  </concept>
+  <concept>
+    <code value="8.5S" />
+    <display value="Gefäßverletzungen an Fingern, Hand oder Unterarm mit akuten oder drohenden Ernährungsstörungen, auch bei abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="8.6V" />
+    <display value="Verletzungen an der Hand (auch am Unterarm):    − einer oder mehrerer Beugesehnen außerhalb (proximal) der Zonen I-III    − mehrerer Strecksehnen." />
+  </concept>
+  <concept>
+    <code value="8.6S" />
+    <display value="Verletzung einer oder mehrerer Beugesehnen in den Zonen I-III der Hand." />
+  </concept>
+  <concept>
+    <code value="8.7S" />
+    <display value="Alle Verletzungen an der Hand (auch am Unterarm) bei    − tiefgehenden oder ausgedehnten oder fortschreitenden Entzündungen (siehe auch Ziffer 11)    − Hochdruckeinspritzverletzungen." />
+  </concept>
+  <concept>
+    <code value="9.1V" />
+    <display value="Brüche des Gesichtsschädels bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="9.1S" />
+    <display value="Vorgenannte Brüche des Gesichtsschädels bei     − starker Verschiebung (z.B. Okklusionsstörung)    − hoher Komplexität (z.B. beidseitige Kieferfraktur, panfaziale Fraktur)    − hochgradiger Weichteilschädigung (z.B. Verletzung des Tränenkanals, Verletzungen mehrerer Gesichtsanteile, Amputationen von Gesichtsanteilen)." />
+  </concept>
+  <concept>
+    <code value="9.2V" />
+    <display value="Wirbelbrüche mit Fehlstellung oder Instabilität bei gegebener oder abzuklärender Operationsnotwendigkeit (Typ A2, A3, A4, B und C der neuen AO-Klassifikation)." />
+  </concept>
+  <concept>
+    <code value="9.2S" />
+    <display value="Wirbelbrüche bei     − neurologischen Ausfällen    − Notwendigkeit der Rekonstruktion der vorderen Säule an unterer HWS (C3-C7), BWS, LWS. Verletzungen der oberen Halswirbelsäule (Segmente C0-C2/C3) bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="9.3V" />
+    <display value="Beckenringbrüche mit Fehlstellung oder Instabilität bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="9.3S" />
+    <display value="Beckenringbrüche bei hoher Instabilität (insbesondere Typ B3 und C der AO-Klassifikation) bei    − Rekonstruktionsnotwendigkeit des hinteren Beckenrings    − Gefäßverletzung    − Nervenverletzung    − Organverletzung    − hochgradiger Weichteilverletzung." />
+  </concept>
+  <concept>
+    <code value="9.4V" />
+    <display value="Brüche der Hüftpfanne oder Verrenkungen des Hüftgelenks bei gegebener oder abzuklärender Operationsnotwendigkeit." />
+  </concept>
+  <concept>
+    <code value="9.4S" />
+    <display value="Vorgenannte Verletzungen bei    − Rekonstruktionsnotwendigkeit der Hüftpfanne infolge von Ein- oder Zweipfeilerbrüchen    − Kombination mit Beckenringverletzungen    − Gefäßverletzung    − Nervenverletzung    − hochgradiger Weichteilschädigung." />
+  </concept>
+  <concept>
+    <code value="10.1V" />
+    <display value="Schwere Verletzungen und Verletzungskombinationen (Polytrauma) mit einem Injury Severity Score (ISS) zwischen 16 und 24." />
+  </concept>
+  <concept>
+    <code value="10.1S" />
+    <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma)    − bei Erwachsenen mit ISS ab 25    − bei Kindern mit ISS ab 16.    Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)." />
+  </concept>
+  <concept>
+    <code value="10.2S" />
+    <display value="Kombinationsverletzungen oder Verletzungskonstellationen, die z. B.    − zwei oder mehr Extremitäten mit Ausprägung entsprechend VAV betreffen    − keine Belastungsfähigkeit simultan beider unterer Extremitäten zulassen    − im weiteren Verlauf einen erheblich erhöhten Rehabilitationsaufwand erwarten lassen." />
+  </concept>
+  <concept>
+    <code value="10.3S" />
+    <display value="Verletzungskombination oder –konstellation bei Kindern, die eine besondere kindertraumatologische Kompetenz erfordern wie z. B.:    − Kopfverletzung mit Schädel-Hirn-Trauma II. oder III. Grades oder Impressionsfraktur    − Organverletzung wie Thoraxtrauma mit Lungenkontusion    − Abdominaltrauma mit Organverletzung    − Instabile Beckenfraktur    − Frakturen von zwei langen Röhrenknochen der unteren Extremität    − Intensivtherapie über 24 Stunden." />
+  </concept>
+  <concept>
+    <code value="10.4S" />
+    <display value="Kombinationen von Verletzungsformen (Ausprägung entsprechend VAV) mit bestehenden Erkrankungen oder Störungen, die den Heilverlauf oder die Rehabilitation erheblich beeinflussen wie z. B. schwerwiegende Vorerkrankungen kardialer oder pulmonaler Genese, Störungen des Sehens." />
+  </concept>
+  <concept>
+    <code value="11.1S" />
+    <display value="Infektionen /Infektiöse Komplikationen wie z.B.    − systemische Infektionen, Sepsis oder Organversagen vor allem bei Indikation zu Organersatzverfahren    − tiefgehende oder ausgedehnte oder fortschreitende postoperative Infektionen sowohl nach offenen wie auch nach geschlossenen Verletzungen, auch bei Verdacht    − tiefgehende oder ausgedehnte oder fortschreitende postoperative Infektionen des Implantats, auch bei Verdacht     − tiefgehende oder ausgedehnte oder fortschreitende postoperative Infektionen bei Osteitis, auch bei Verdacht    − tiefgehende oder ausgedehnte Infektionen an der Hand (siehe auch 8.7 (S))    − neu auftretende oder weitergehende Infektionen nach Verletzungen der Ziffern 1 bis 10 bei Nachweis von multiresistenten Keimen (z. B. MRE, MRSA,MRGN)." />
+  </concept>
+  <concept>
+    <code value="11.2S" />
+    <display value="Defektheilung des Weichteilmantels mit instabiler Narbenbildung, Funktionsbehinderungen oder gestörter Ästhetik nach Weichteiluntergang mit Nekrosen von Haut, Faszien oder Muskeln (z. B. nach Kompartmentsyndromen)." />
+  </concept>
+  <concept>
+    <code value="11.3S" />
+    <display value="Notwendigkeit ausgedehnter und aufwändiger Revisionseingriffe z. B. bei    − schmerzhaften oder funktionsbehindernden Fehlstellungen oder Instabilitäten    − unzureichender Osteosynthese    − notwendiger Knochenaufbau nach Osteitis    − posttraumatisch aufgetretenen oder iatrogenen Gefäß- oder Nervenläsionen    − Knochenheilungsstörung oder Pseudarthrosenbildung    − Knickbildung der Wirbelsäule insbesondere bei neurologischen Ausfällen    − Fehlheilung oder Deformitäten des Beckenrings    − schmerzhaften oder funktionsbehindernden Gelenkveränderungen    − Wiederherstellungseingriffen für die Funktionsfähigkeit der Hand wie Nerventransplantation, Sehnentransfer." />
+  </concept>
+  <concept>
+    <code value="11.4S" />
+    <display value="Verletzungs-Folgezustände beim Kind wie z. B.    − Gelenkeinsteifung insbesondere am Ellenbogen    − Fehlstellungen oder Wachstumsstörungen nach Schädigungen der Wachstumsfugen    − Beinlängendifferenzen nach Frakturen an den unteren Extremitäten." />
+  </concept>
+  <concept>
+    <code value="11.5S" />
+    <display value="Spezielle Komplikationen und Unfallfolgen wie z. B.    − Chronische Schmerzsyndrome mit der Notwendigkeit einer besonderen (z. B. schmerzmedizinischen oder handchirurgischen) Behandlung oder bei der Notwendigkeit zur Abklärung    − Komplexes regionales Schmerzsyndrom (CRPS)    − Phantomschmerzen nach Amputationen    − Schmerzen nach Nervenverletzungen." />
+  </concept>
 </CodeSystem>
