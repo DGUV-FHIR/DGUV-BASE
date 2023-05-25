@@ -3,6 +3,7 @@
   <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Subsequent_Treatment" />
   <name value="DGUV_PR_DiGUV_Base_Organization_Subsequent_Treatment" />
   <status value="draft" />
+  <description value="Dieses Profil bildet die Weiterbehandelnde Organisation ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -12,7 +13,7 @@
   <snapshot>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses FHIR Profil bildet die Weiterbehandelnde Organisation ab." />
+      <short value="Dieses Profil bildet die Weiterbehandelnde Organisation ab." />
       <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc." />
       <min value="0" />
       <max value="*" />
@@ -498,8 +499,8 @@
       </extension>
       <path value="Organization.identifier" />
       <sliceName value="Institutionskennzeichen" />
-      <short value="An identifier intended for computation" />
-      <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
+      <short value="Institutionskennzeichen (IKNR)" />
+      <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
       <max value="*" />
@@ -11873,7 +11874,7 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses FHIR Profil bildet die Weiterbehandelnde Organisation ab." />
+      <short value="Dieses Profil bildet die Weiterbehandelnde Organisation ab." />
     </element>
   </differential>
 </StructureDefinition>

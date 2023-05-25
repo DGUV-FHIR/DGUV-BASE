@@ -3,6 +3,7 @@
   <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_PractitionerRole" />
   <name value="DGUV_PR_DiGUV_Base_PractitionerRole" />
   <status value="draft" />
+  <description value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -12,7 +13,7 @@
   <snapshot>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Roles/organizations the practitioner is associated with" />
+      <short value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
       <definition value="A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time." />
       <min value="0" />
       <max value="*" />
@@ -6125,6 +6126,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+      <short value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
+    </element>
     <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier" />
       <slicing>
