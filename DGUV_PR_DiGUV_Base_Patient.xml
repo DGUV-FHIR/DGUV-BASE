@@ -630,7 +630,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="2" />
       <max value="*" />
       <base>
         <path value="DomainResource.extension" />
@@ -1380,12 +1380,12 @@
       </extension>
       <path value="Patient.extension" />
       <sliceName value="Beruf" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit." />
+      <definition value="Konkreter Beschreibung der Tätigkeit" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -1574,7 +1574,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -15886,7 +15886,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="2" />
     </element>
     <element id="Patient.extension:nationality">
       <path value="Patient.extension" />
@@ -15921,7 +15921,9 @@
     <element id="Patient.extension:Beruf">
       <path value="Patient.extension" />
       <sliceName value="Beruf" />
-      <min value="0" />
+      <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit." />
+      <definition value="Konkreter Beschreibung der Tätigkeit" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -15932,7 +15934,7 @@
     <element id="Patient.extension:Beschaeftigungsbeginn">
       <path value="Patient.extension" />
       <sliceName value="Beschaeftigungsbeginn" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
