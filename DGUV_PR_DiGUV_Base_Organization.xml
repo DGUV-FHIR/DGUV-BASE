@@ -3,6 +3,7 @@
   <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
   <name value="DGUV_PR_DiGUV_Base_Organization" />
   <status value="draft" />
+  <description value="Dieses Profil bildet eine Einrichtung ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -12,7 +13,7 @@
   <snapshot>
     <element id="Organization">
       <path value="Organization" />
-      <short value="A grouping of people or organizations with a common purpose" />
+      <short value="Dieses Profil bildet eine Einrichtung ab." />
       <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc." />
       <min value="0" />
       <max value="*" />
@@ -11871,6 +11872,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <short value="Dieses Profil bildet eine Einrichtung ab." />
+    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <slicing>
