@@ -1044,7 +1044,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality">
+    <element id="Patient.extension:nationality">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -1052,7 +1052,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Patient.extension" />
-      <sliceName value="Nationality" />
+      <sliceName value="nationality" />
       <short value="Staatsbürgerschaft" />
       <definition value="Staatsbürgerschaft der Person, rechtlichen Zugehörigkeit zur Gemeinschaft (Rechtsgemeinschaft) von Bürgern eines Staates" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -1097,7 +1097,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.id">
+    <element id="Patient.extension:nationality.id">
       <path value="Patient.extension.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -1120,7 +1120,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension">
+    <element id="Patient.extension:nationality.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -1177,7 +1177,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:code">
+    <element id="Patient.extension:nationality.extension:code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -1227,7 +1227,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:code.id">
+    <element id="Patient.extension:nationality.extension:code.id">
       <path value="Patient.extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -1250,7 +1250,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:code.extension">
+    <element id="Patient.extension:nationality.extension:code.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -1307,7 +1307,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:code.url">
+    <element id="Patient.extension:nationality.extension:code.url">
       <path value="Patient.extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -1332,7 +1332,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:code.value[x]">
+    <element id="Patient.extension:nationality.extension:code.value[x]">
       <path value="Patient.extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -1364,7 +1364,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:period">
+    <element id="Patient.extension:nationality.extension:period">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -1414,7 +1414,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:period.id">
+    <element id="Patient.extension:nationality.extension:period.id">
       <path value="Patient.extension.extension.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -1437,7 +1437,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:period.extension">
+    <element id="Patient.extension:nationality.extension:period.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -1494,7 +1494,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:period.url">
+    <element id="Patient.extension:nationality.extension:period.url">
       <path value="Patient.extension.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -1519,7 +1519,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.extension:period.value[x]">
+    <element id="Patient.extension:nationality.extension:period.value[x]">
       <path value="Patient.extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -1551,7 +1551,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.url">
+    <element id="Patient.extension:nationality.url">
       <path value="Patient.extension.url" />
       <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
@@ -1576,7 +1576,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Patient.extension:Nationality.value[x]">
+    <element id="Patient.extension:nationality.value[x]">
       <path value="Patient.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -15920,13 +15920,12 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Patient.extension:Nationality">
+    <element id="Patient.extension:nationality">
       <path value="Patient.extension" />
-      <sliceName value="Nationality" />
+      <sliceName value="nationality" />
       <short value="Staatsbürgerschaft" />
       <definition value="Staatsbürgerschaft der Person, rechtlichen Zugehörigkeit zur Gemeinschaft (Rechtsgemeinschaft) von Bürgern eines Staates" />
       <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-nationality" />
