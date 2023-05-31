@@ -1053,8 +1053,8 @@
       </extension>
       <path value="Patient.extension" />
       <sliceName value="Nationality" />
-      <short value="Nationality" />
-      <definition value="The nationality of the patient." />
+      <short value="Staatsbürgerschaft" />
+      <definition value="Staatsbürgerschaft der Person, rechtlichen Zugehörigkeit zur Gemeinschaft (Rechtsgemeinschaft) von Bürgern eines Staates" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1086,6 +1086,7 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
       </constraint>
+      <mustSupport value="true" />
       <isModifier value="false" />
       <mapping>
         <identity value="rim" />
@@ -1344,7 +1345,6 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ValueSet/country" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -9282,7 +9282,7 @@
       <definition value="Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc." />
       <comment value="A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone)." />
       <requirements value="People have (primary) ways to contact them in some way such as phone, email." />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Patient.telecom" />
@@ -9310,6 +9310,7 @@
         <xpath value="not(exists(f:value)) or exists(f:system)" />
         <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -15922,36 +15923,16 @@
     <element id="Patient.extension:Nationality">
       <path value="Patient.extension" />
       <sliceName value="Nationality" />
+      <short value="Staatsbürgerschaft" />
+      <definition value="Staatsbürgerschaft der Person, rechtlichen Zugehörigkeit zur Gemeinschaft (Rechtsgemeinschaft) von Bürgern eines Staates" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-nationality" />
       </type>
+      <mustSupport value="true" />
       <isModifier value="false" />
-    </element>
-    <element id="Patient.extension:Nationality.extension">
-      <path value="Patient.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Patient.extension:Nationality.extension:code">
-      <path value="Patient.extension.extension" />
-      <sliceName value="code" />
-      <min value="0" />
-    </element>
-    <element id="Patient.extension:Nationality.extension:code.value[x]">
-      <path value="Patient.extension.extension.value[x]" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ValueSet/country" />
-      </type>
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
@@ -16185,10 +16166,12 @@
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
+      <min value="1" />
       <type>
         <code value="ContactPoint" />
         <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
