@@ -6691,7 +6691,7 @@
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Patient.name" />
@@ -6739,6 +6739,7 @@
         <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
         <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -6951,7 +6952,7 @@
       <definition value="Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt." />
       <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)." />
       <alias value="surname" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="HumanName.family" />
@@ -7040,7 +7041,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Element.extension" />
@@ -7286,7 +7287,7 @@
       <comment value="If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's &quot;maiden name&quot;." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -11302,6 +11303,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -11376,7 +11378,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="2" />
       <max value="*" />
       <base>
         <path value="Element.extension" />
@@ -11426,7 +11428,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -11454,6 +11456,7 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
       </constraint>
+      <mustSupport value="false" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -11626,7 +11629,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -11654,6 +11657,7 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
       </constraint>
+      <mustSupport value="false" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -12241,7 +12245,7 @@
       <definition value="The name of the city, town, suburb, village or other community or delivery center." />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
       <alias value="Municpality" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Address.city" />
@@ -12395,7 +12399,7 @@
       <definition value="Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen" />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
       <alias value="Zip" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Address.postalCode" />
@@ -12453,7 +12457,7 @@
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger SO-LändercoIde).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben&#xD;&#xA;http://hl7.org/fhir/ValueSet/country" />
       <comment value="ISO 3166 3 letter codes can be used in place of a human readable country name." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Address.country" />
@@ -13341,6 +13345,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -13415,7 +13420,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Element.extension" />
@@ -14065,7 +14070,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Element.extension" />
@@ -14280,7 +14285,7 @@
       <definition value="The name of the city, town, suburb, village or other community or delivery center." />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
       <alias value="Municpality" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Address.city" />
@@ -14492,7 +14497,7 @@
       <short value="Staat" />
       <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben" />
       <comment value="ISO 3166 3 letter codes can be used in place of a human readable country name." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Address.country" />
@@ -16644,11 +16649,33 @@
       <path value="Patient.name" />
       <sliceName value="Name" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name:Name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name:Name.family.extension">
+      <path value="Patient.name.family.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.name:Name.family.extension:nachname">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="nachname" />
+      <min value="1" />
     </element>
     <element id="Patient.name:Geburtsname">
       <path value="Patient.name" />
@@ -16766,6 +16793,10 @@
       <path value="Patient.address.type" />
       <min value="1" />
     </element>
+    <element id="Patient.address:Strassenanschrift.line">
+      <path value="Patient.address.line" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.address:Strassenanschrift.line.extension">
       <path value="Patient.address.line.extension" />
       <slicing>
@@ -16775,7 +16806,19 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="2" />
+    </element>
+    <element id="Patient.address:Strassenanschrift.line.extension:Strasse">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Strasse" />
+      <min value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Patient.address:Strassenanschrift.line.extension:Hausnummer">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Hausnummer" />
+      <min value="1" />
+      <mustSupport value="false" />
     </element>
     <element id="Patient.address:Strassenanschrift.line.extension:Postfach">
       <path value="Patient.address.line.extension" />
@@ -16783,9 +16826,18 @@
       <min value="0" />
       <max value="0" />
     </element>
+    <element id="Patient.address:Strassenanschrift.city">
+      <path value="Patient.address.city" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address:Strassenanschrift.postalCode">
+      <path value="Patient.address.postalCode" />
+      <min value="1" />
+    </element>
     <element id="Patient.address:Strassenanschrift.country">
       <path value="Patient.address.country" />
       <definition value="Staat (vorzugsweise als 2-Stelliger SO-LändercoIde).&#xD;&#xA;Es obliegt abgeleiteten Profilen, hier die Verwendung der ISO-Ländercodes verbindlich vorzuschreiben&#xD;&#xA;http://hl7.org/fhir/ValueSet/country" />
+      <min value="1" />
     </element>
     <element id="Patient.address:Postfach">
       <path value="Patient.address" />
@@ -16797,6 +16849,10 @@
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
     </element>
+    <element id="Patient.address:Postfach.line">
+      <path value="Patient.address.line" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.address:Postfach.line.extension">
       <path value="Patient.address.line.extension" />
       <slicing>
@@ -16806,7 +16862,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Patient.address:Postfach.line.extension:Strasse">
       <path value="Patient.address.line.extension" />
@@ -16825,6 +16881,19 @@
       <sliceName value="Adresszusatz" />
       <min value="0" />
       <max value="0" />
+    </element>
+    <element id="Patient.address:Postfach.line.extension:Postfach">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Postfach" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address:Postfach.city">
+      <path value="Patient.address.city" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address:Postfach.country">
+      <path value="Patient.address.country" />
+      <min value="1" />
     </element>
     <element id="Patient.photo">
       <path value="Patient.photo" />
