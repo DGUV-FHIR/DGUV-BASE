@@ -1272,7 +1272,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1321,9 +1321,6 @@
         <max value="1" />
       </base>
       <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="uri" />
-        </extension>
         <code value="uri" />
       </type>
       <fixedUri value="code" />
@@ -1947,7 +1944,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1996,9 +1993,6 @@
         <max value="1" />
       </base>
       <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="uri" />
-        </extension>
         <code value="uri" />
       </type>
       <fixedUri value="period" />
@@ -9798,7 +9792,7 @@
         <xpath value="not(exists(f:value)) or exists(f:system)" />
         <source value="http://hl7.org/fhir/StructureDefinition/ContactPoint" />
       </constraint>
-      <mustSupport value="true" />
+      <mustSupport value="false" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -16681,7 +16675,7 @@
         <code value="ContactPoint" />
         <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
