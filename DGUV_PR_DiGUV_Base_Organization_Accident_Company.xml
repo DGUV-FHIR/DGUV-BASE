@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Location" />
-  <name value="DGUV_PR_DiGUV_Base_Organization_Accident_Location" />
+  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Company" />
+  <name value="DGUV_PR_DiGUV_Base_Organization_Accident_Company" />
   <status value="draft" />
   <description value="Dieses Profil bildet den Unfallbetrieb ab." />
   <fhirVersion value="4.0.1" />
@@ -1682,7 +1682,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <mustSupport value="false" />
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -7028,7 +7028,7 @@
       <definition value="A name associated with the organization." />
       <comment value="If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <requirements value="Need to use the name as the label of the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Organization.name" />
@@ -7197,8 +7197,8 @@
       <definition value="An address for the organization." />
       <comment value="Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used." />
       <requirements value="May need to keep track of the organization's addresses for contacting, billing or reporting requirements." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.address" />
         <min value="0" />
@@ -7268,7 +7268,7 @@
       <comment value="Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource)." />
       <requirements value="May need to keep track of the organization's addresses for contacting, billing or reporting requirements." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Organization.address" />
         <min value="0" />
@@ -9315,7 +9315,7 @@
       <comment value="Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource)." />
       <requirements value="May need to keep track of the organization's addresses for contacting, billing or reporting requirements." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Organization.address" />
         <min value="0" />
@@ -11886,7 +11886,7 @@
       <path value="Organization.identifier" />
       <sliceName value="Betriebsstaettennummer" />
       <max value="1" />
-      <mustSupport value="false" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:VKNR">
       <path value="Organization.identifier" />
@@ -11906,6 +11906,25 @@
     <element id="Organization.type">
       <path value="Organization.type" />
       <max value="0" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Organization.address:Strassenanschrift">
+      <path value="Organization.address" />
+      <sliceName value="Strassenanschrift" />
+      <max value="1" />
+    </element>
+    <element id="Organization.address:Postfach">
+      <path value="Organization.address" />
+      <sliceName value="Postfach" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>

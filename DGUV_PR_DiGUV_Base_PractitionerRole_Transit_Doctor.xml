@@ -513,6 +513,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -2829,6 +2830,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -4475,6 +4477,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -5062,7 +5065,7 @@
       <short value="Practitioner that is able to provide the defined services for the organization" />
       <definition value="Dieses Profil stellt eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung dar." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="PractitionerRole.practitioner" />
@@ -5116,7 +5119,7 @@
       <short value="Organization where the roles are available" />
       <definition value="The organization where the Practitioner performs the roles associated." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="PractitionerRole.organization" />
@@ -7244,6 +7247,29 @@
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
       <short value="Dieses Profil bildet den Durchgangsarzt ab." />
+    </element>
+    <element id="PractitionerRole.identifier:ANR">
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="ANR" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:ZANR">
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="ZANR" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:Institutionskennzeichen">
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="Institutionskennzeichen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <min value="1" />
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />

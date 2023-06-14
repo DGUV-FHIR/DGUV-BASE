@@ -1296,7 +1296,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Location.managingOrganization" />
-      <short value="Organization responsible for provisioning and upkeep" />
+      <short value="Referenz auf den Unfallbetrieb." />
       <definition value="The organization responsible for the provisioning and upkeep of the location." />
       <comment value="This can also be used as the part of the organization hierarchy where this location provides services. These services can be defined through the HealthcareService resource." />
       <requirements value="Need to know who manages the location." />
@@ -1309,7 +1309,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Location" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Company" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1812,10 +1812,11 @@
     </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
+      <short value="Referenz auf den Unfallbetrieb." />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Location" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Company" />
       </type>
     </element>
   </differential>

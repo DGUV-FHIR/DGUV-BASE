@@ -3,6 +3,7 @@
   <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Mitgliedsname" />
   <name value="DGUV_EX_DiGUV_Base_Mitgliedsname" />
   <status value="draft" />
+  <description value="Name des Mitglieds bei der Krankenkasse. Auszufüllen, wenn die verunfallte Person selbst nicht die versicherte Person ist" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

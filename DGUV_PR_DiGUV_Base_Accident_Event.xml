@@ -14,7 +14,7 @@
   <snapshot>
     <element id="AdverseEvent">
       <path value="AdverseEvent" />
-      <short value="Medical care, research study or other healthcare event causing physical injury" />
+      <short value="Dieses Profil bildet das Unfallereignis ab." />
       <definition value="Actual or  potential/avoided event causing unintended physical injury resulting from or contributed to by medical care, a research study or other healthcare setting factors that requires additional monitoring, treatment, or hospitalization, or that results in death." />
       <alias value="AE" />
       <min value="0" />
@@ -3673,6 +3673,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="AdverseEvent">
+      <path value="AdverseEvent" />
+      <short value="Dieses Profil bildet das Unfallereignis ab." />
+    </element>
     <element id="AdverseEvent.extension">
       <path value="AdverseEvent.extension" />
       <slicing>
