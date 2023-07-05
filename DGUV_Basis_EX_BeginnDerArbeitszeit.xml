@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit" />
+  <url value="https://fhir.dguv.de/Basis/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit" />
   <name value="DGUV_Basis_EX_BeginnDerArbeitszeit" />
   <title value="Beginn der Arbeitszeit" />
   <status value="draft" />
@@ -157,7 +157,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -199,7 +199,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

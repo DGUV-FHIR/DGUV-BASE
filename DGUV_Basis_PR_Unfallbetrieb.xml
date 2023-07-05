@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Unfallbetrieb" />
+  <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
   <name value="DGUV_Basis_PR_Unfallbetrieb" />
   <title value="Unfallbetrieb" />
   <status value="draft" />
@@ -7122,7 +7122,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <condition value="org-3" />
@@ -11907,6 +11907,13 @@
     <element id="Organization.type">
       <path value="Organization.type" />
       <max value="0" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+      </type>
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV-Basis-PR-DArzt" />
+  <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   <name value="DGUV_Basis_PR_DArzt" />
   <title value="Durchgangsarzt" />
   <status value="draft" />
@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
+  <baseDefinition value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
   <derivation value="constraint" />
   <snapshot>
     <element id="PractitionerRole">
@@ -5076,7 +5076,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5130,7 +5130,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6552,7 +6552,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7285,10 +7285,20 @@
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
+      </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+      </type>
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />

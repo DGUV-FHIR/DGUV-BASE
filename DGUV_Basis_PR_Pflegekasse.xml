@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Pflegekasse" />
+  <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Pflegekasse" />
   <name value="DGUV_Basis_PR_Pflegekasse" />
   <title value="Pflegekasse" />
   <status value="draft" />
@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
+  <baseDefinition value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Organization">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Unfallversicherungstraeger" />
+  <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallversicherungstraeger" />
   <name value="DGUV_Basis_PR_Unfallversicherungstraeger" />
   <title value="Unfallversicherungstraeger" />
   <status value="draft" />
@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
+  <baseDefinition value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Organization">
@@ -7122,7 +7122,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <condition value="org-3" />
@@ -11914,6 +11914,13 @@
       <path value="Organization.type.coding" />
       <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
       <max value="0" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+      </type>
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />

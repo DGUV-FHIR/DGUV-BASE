@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+  <url value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
   <name value="DGUV_Basis_PR_KontaktDaten" />
   <status value="draft" />
   <date value="2023-02-28T10:57:10.3953523+00:00" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Krankenkasse" />
+  <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse" />
   <name value="DGUV_Basis_PR_Krankenkasse" />
   <title value="Krankenkasse" />
   <status value="draft" />
@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
+  <baseDefinition value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Organization">
@@ -368,8 +368,8 @@
       </extension>
       <path value="Organization.extension" />
       <sliceName value="Mitgliedsname" />
-      <short value="Name des Mitglieds bei der Krankenkasse" />
-      <definition value="Auszufüllen, wenn die verunfallte Person selbst nicht die versicherte Person ist." />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -382,7 +382,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Mitgliedsname" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -510,7 +510,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Mitgliedsname" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -7723,7 +7723,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <condition value="org-3" />
@@ -12494,13 +12494,11 @@
     <element id="Organization.extension:Mitgliedsname">
       <path value="Organization.extension" />
       <sliceName value="Mitgliedsname" />
-      <short value="Name des Mitglieds bei der Krankenkasse" />
-      <definition value="Auszufüllen, wenn die verunfallte Person selbst nicht die versicherte Person ist." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Mitgliedsname" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
       </type>
       <isModifier value="false" />
     </element>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
+  <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
   <name value="DGUV_Basis_PR_WeiterbehandelnderArzt" />
   <title value="Weiterbehandelnder Arzt" />
   <status value="draft" />
@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
+  <baseDefinition value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
   <derivation value="constraint" />
   <snapshot>
     <element id="PractitionerRole">
@@ -5434,7 +5434,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <constraint>

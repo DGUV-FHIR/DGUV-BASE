@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Patient/DGUV-Basis-PR-Patient" />
+  <url value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
   <version value="0.1" />
   <name value="DGUV_Basis_PR_Patient" />
   <title value="Patient" />
@@ -1883,7 +1883,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Beruf" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2011,7 +2011,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Beruf" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -2072,7 +2072,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2200,7 +2200,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -9775,7 +9775,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11242,8 +11242,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Patient.contact.telecom" />
-      <short value="Angaben zu bestehenden Kontaktmöglichkeiten. (Telefon, Fax, E-Mail usw.)" />
-      <definition value="Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc." />
+      <short value="A contact detail for the person" />
+      <definition value="A contact detail for the person, e.g. a telephone number or an email address." />
       <comment value="Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification." />
       <requirements value="People have (primary) ways to contact them in some way such as phone, email." />
       <min value="0" />
@@ -12346,7 +12346,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Beruf" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf" />
       </type>
       <isModifier value="false" />
     </element>
@@ -12358,7 +12358,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn" />
       </type>
       <isModifier value="false" />
     </element>
@@ -12619,7 +12619,7 @@
       <min value="1" />
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <mustSupport value="false" />
     </element>
