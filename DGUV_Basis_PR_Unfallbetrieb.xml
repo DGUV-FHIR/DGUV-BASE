@@ -11908,13 +11908,6 @@
       <path value="Organization.type" />
       <max value="0" />
     </element>
-    <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <type>
-        <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
-      </type>
-    </element>
     <element id="Organization.address">
       <path value="Organization.address" />
       <min value="1" />
