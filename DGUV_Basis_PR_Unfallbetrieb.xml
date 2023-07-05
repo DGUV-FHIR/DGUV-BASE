@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
+  <baseDefinition value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Organization">
