@@ -11242,8 +11242,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Patient.contact.telecom" />
-      <short value="A contact detail for the person" />
-      <definition value="A contact detail for the person, e.g. a telephone number or an email address." />
+      <short value="Angaben zu bestehenden Kontaktmöglichkeiten. (Telefon, Fax, E-Mail usw.)" />
+      <definition value="Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc." />
       <comment value="Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification." />
       <requirements value="People have (primary) ways to contact them in some way such as phone, email." />
       <min value="0" />
@@ -11255,7 +11255,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12714,7 +12714,7 @@
       <path value="Patient.contact.telecom" />
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
     </element>
     <element id="Patient.contact.organization">
