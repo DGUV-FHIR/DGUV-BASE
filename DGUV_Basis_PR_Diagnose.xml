@@ -1176,7 +1176,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Patient" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2315,7 +2315,7 @@
       <path value="Condition.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Patient" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
       </type>
     </element>
   </differential>
