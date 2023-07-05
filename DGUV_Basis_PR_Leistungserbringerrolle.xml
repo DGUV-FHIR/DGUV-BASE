@@ -5073,7 +5073,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5127,7 +5127,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6196,7 +6196,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
     </element>
     <element id="PractitionerRole.organization">
@@ -6204,7 +6204,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
       </type>
     </element>
     <element id="PractitionerRole.telecom">
