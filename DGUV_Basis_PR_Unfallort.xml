@@ -1310,7 +1310,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Company" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1817,7 +1817,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Company" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
       </type>
     </element>
   </differential>
