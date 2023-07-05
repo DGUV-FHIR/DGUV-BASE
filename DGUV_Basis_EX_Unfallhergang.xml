@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beschaeftigungsbeginn" />
-  <name value="DGUV_EX_DiGUV_Base_Beschaeftigungsbeginn" />
+  <url value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Unfallhergang" />
+  <name value="DGUV_Basis_EX_Unfallhergang" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Patient" />
+    <expression value="AdverseEvent" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -156,23 +156,17 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beschaeftigungsbeginn" />
+      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Unfallhergang" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -180,7 +174,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="date" />
+        <code value="string" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -204,13 +198,12 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beschaeftigungsbeginn" />
+      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Unfallhergang" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <min value="1" />
       <type>
-        <code value="date" />
+        <code value="string" />
       </type>
     </element>
   </differential>

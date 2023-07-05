@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_PractitionerRole_Transit_Doctor" />
-  <name value="DGUV_PR_DiGUV_Base_PractitionerRole_Transit_Doctor" />
+  <url value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV-Basis-PR-DArzt" />
+  <name value="DGUV_Basis_PR_DArzt" />
+  <title value="Durchgangsarzt" />
   <status value="draft" />
   <description value="Dieses Profil bildet den Durchgangsarzt ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_PractitionerRole" />
+  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
   <derivation value="constraint" />
   <snapshot>
     <element id="PractitionerRole">
@@ -428,7 +429,7 @@
       <short value="Business Identifiers that are specific to a role/location" />
       <definition value="Business Identifiers that are specific to a role/location." />
       <requirements value="Often, specific identities are assigned for the agent." />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="PractitionerRole.identifier" />
@@ -494,7 +495,7 @@
       <definition value="Dieses Element dient der Darstellung der Arztnummer gemäß § 108 SGB V, die umgangssprachlich auch als Lebenslange Arztnummer (LANR) bezeichnet wird." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -1653,7 +1654,7 @@
       <definition value="In diesem Element wird die einheitliche Fortbildungsnummer (EFN) dargestellt." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -2811,7 +2812,7 @@
       <definition value="In diesem Element wird die Zahnarztnummer analog zur ANR abgebildet." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -3970,7 +3971,7 @@
       <definition value="Bei der Telematik-ID handelt es sich um eine eindeutige elektronische Identität von Leistungserbringenden und medizinischen Institutionen in der Telematik-Infrastruktur." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -4457,8 +4458,8 @@
       <short value="Institutionskennzeichen (IKNR)" />
       <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
       <requirements value="Often, specific identities are assigned for the agent." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -5075,7 +5076,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Practitioner" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5129,7 +5130,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5415,7 +5416,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Rolecare" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7248,19 +7249,37 @@
       <path value="PractitionerRole" />
       <short value="Dieses Profil bildet den Durchgangsarzt ab." />
     </element>
+    <element id="PractitionerRole.identifier">
+      <path value="PractitionerRole.identifier" />
+      <min value="1" />
+    </element>
     <element id="PractitionerRole.identifier:ANR">
       <path value="PractitionerRole.identifier" />
       <sliceName value="ANR" />
+      <max value="0" />
       <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:EFN">
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="EFN" />
+      <max value="0" />
     </element>
     <element id="PractitionerRole.identifier:ZANR">
       <path value="PractitionerRole.identifier" />
       <sliceName value="ZANR" />
+      <max value="0" />
       <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.identifier:Telematik-ID">
+      <path value="PractitionerRole.identifier" />
+      <sliceName value="Telematik-ID" />
+      <max value="1" />
     </element>
     <element id="PractitionerRole.identifier:Institutionskennzeichen">
       <path value="PractitionerRole.identifier" />
       <sliceName value="Institutionskennzeichen" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.practitioner">
@@ -7295,7 +7314,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Rolecare" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
       </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleDerEinrichtung.system">

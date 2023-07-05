@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="DGUV-PR-DiGUV-Base-Verletzungsartenverzeichnis" />
-  <url value="https://fhir.dguv.de/CodeSystem/DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
+  <id value="DGUV-Basis-CS-Verletzungsartenverzeichnis" />
+  <url value="https://fhir.dguv.de/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
   <version value="2.1" />
-  <name value="DGUV_CS_DiGUV_Base_Verletzungsartenverzeichnis" />
+  <name value="DGUV_Basis_CS_Verletzungsartenverzeichnis" />
+  <title value="Verletzungsartenverzeichnis" />
   <status value="draft" />
   <date value="2022-06-01" />
   <publisher value="DGUV" />

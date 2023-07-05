@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
-  <name value="DGUV_PR_DiGUV_Base_Organization" />
+  <url value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
+  <name value="DGUV_Basis_PR_WeiterbehandelndeOrganisation" />
+  <title value="Weiterbehandelnde Organisation" />
   <status value="draft" />
-  <description value="Dieses Profil bildet eine Einrichtung ab." />
+  <description value="Dieses Profil bildet die Weiterbehandelnde Organisation ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses Profil bildet eine Einrichtung ab." />
+      <short value="Dieses Profil bildet die Weiterbehandelnde Organisation ab." />
       <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc." />
       <min value="0" />
       <max value="*" />
@@ -11874,235 +11875,7 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses Profil bildet eine Einrichtung ab." />
-    </element>
-    <element id="Organization.identifier">
-      <path value="Organization.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.identifier:Institutionskennzeichen">
-      <path value="Organization.identifier" />
-      <sliceName value="Institutionskennzeichen" />
-      <short value="Institutionskennzeichen (IKNR)" />
-      <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-kzva" />
-      </type>
-    </element>
-    <element id="Organization.identifier:Betriebsstaettennummer">
-      <path value="Organization.identifier" />
-      <sliceName value="Betriebsstaettennummer" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-bsnr" />
-      </type>
-    </element>
-    <element id="Organization.identifier:VKNR">
-      <path value="Organization.identifier" />
-      <sliceName value="VKNR" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-vknr" />
-      </type>
-    </element>
-    <element id="Organization.identifier:KZV-Abrechnungsnummer">
-      <path value="Organization.identifier" />
-      <sliceName value="KZV-Abrechnungsnummer" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-kzva" />
-      </type>
-    </element>
-    <element id="Organization.identifier:Telematik-ID">
-      <path value="Organization.identifier" />
-      <sliceName value="Telematik-ID" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-telematik-id" />
-      </type>
-    </element>
-    <element id="Organization.type.coding">
-      <path value="Organization.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.type.coding:IHE-Code">
-      <path value="Organization.type.coding" />
-      <sliceName value="IHE-Code" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://ihe-d.de/ValueSets/IHEXDShealthcareFacilityTypeCode" />
-      </binding>
-    </element>
-    <element id="Organization.type.coding:IHE-Code.system">
-      <path value="Organization.type.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:IHE-Code.version">
-      <path value="Organization.type.coding.version" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:IHE-Code.code">
-      <path value="Organization.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:IHE-Code.display">
-      <path value="Organization.type.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe">
-      <path value="Organization.type.coding" />
-      <sliceName value="HL7-Fachschluesselgruppe" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel" />
-      </binding>
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.system">
-      <path value="Organization.type.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.version">
-      <path value="Organization.type.coding.version" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.code">
-      <path value="Organization.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.display">
-      <path value="Organization.type.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert">
-      <path value="Organization.type.coding" />
-      <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert" />
-      </binding>
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.system">
-      <path value="Organization.type.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.version">
-      <path value="Organization.type.coding.version" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.code">
-      <path value="Organization.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.display">
-      <path value="Organization.type.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Organization.name">
-      <path value="Organization.name" />
-      <min value="1" />
-    </element>
-    <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <type>
-        <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
-      </type>
-    </element>
-    <element id="Organization.address">
-      <path value="Organization.address" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Organization.address:Strassenanschrift">
-      <path value="Organization.address" />
-      <sliceName value="Strassenanschrift" />
-      <type>
-        <code value="Address" />
-        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
-      </type>
-    </element>
-    <element id="Organization.address:Strassenanschrift.type">
-      <path value="Organization.address.type" />
-      <min value="1" />
-    </element>
-    <element id="Organization.address:Strassenanschrift.line.extension">
-      <path value="Organization.address.line.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Organization.address:Strassenanschrift.line.extension:Postfach">
-      <path value="Organization.address.line.extension" />
-      <sliceName value="Postfach" />
-      <min value="0" />
-      <max value="0" />
-    </element>
-    <element id="Organization.address:Postfach">
-      <path value="Organization.address" />
-      <sliceName value="Postfach" />
-      <type>
-        <code value="Address" />
-        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
-      </type>
-    </element>
-    <element id="Organization.address:Postfach.type">
-      <path value="Organization.address.type" />
-      <min value="1" />
-    </element>
-    <element id="Organization.address:Postfach.line.extension">
-      <path value="Organization.address.line.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Organization.address:Postfach.line.extension:Strasse">
-      <path value="Organization.address.line.extension" />
-      <sliceName value="Strasse" />
-      <min value="0" />
-      <max value="0" />
-    </element>
-    <element id="Organization.address:Postfach.line.extension:Hausnummer">
-      <path value="Organization.address.line.extension" />
-      <sliceName value="Hausnummer" />
-      <min value="0" />
-      <max value="0" />
-    </element>
-    <element id="Organization.address:Postfach.line.extension:Adresszusatz">
-      <path value="Organization.address.line.extension" />
-      <sliceName value="Adresszusatz" />
-      <min value="0" />
-      <max value="0" />
+      <short value="Dieses Profil bildet die Weiterbehandelnde Organisation ab." />
     </element>
   </differential>
 </StructureDefinition>

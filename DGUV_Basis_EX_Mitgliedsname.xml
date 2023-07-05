@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beruf" />
-  <name value="DGUV_EX_DiGUV_Base_Beruf" />
+  <url value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Mitgliedsname" />
+  <name value="DGUV_Basis_EX_Mitgliedsname" />
+  <title value="Mitgliedsname" />
   <status value="draft" />
+  <description value="Name des Mitglieds bei der Krankenkasse. Auszufüllen, wenn die verunfallte Person selbst nicht die versicherte Person ist" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Patient" />
+    <expression value="Organization" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -156,7 +158,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beruf" />
+      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Mitgliedsname" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -170,9 +172,10 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
-      <min value="1" />
+      <short value="Personenname" />
+      <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -180,7 +183,8 @@
         <max value="1" />
       </base>
       <type>
-        <code value="string" />
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -191,6 +195,34 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <constraint>
+        <key value="hum-1" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
+      <constraint>
+        <key value="hum-2" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
+      <constraint>
+        <key value="hum-3" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
+        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
+      <constraint>
+        <key value="hum-4" />
+        <severity value="error" />
+        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
+        <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
+        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -199,18 +231,30 @@
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="XPN" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="EN (actually, PN)" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="ProviderName" />
+      </mapping>
     </element>
   </snapshot>
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Beruf" />
+      <fixedUri value="https://fhir.dguv.de/StructureDefinition/Extension/DGUV-Basis-EX-Mitgliedsname" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <min value="1" />
       <type>
-        <code value="string" />
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
     </element>
   </differential>

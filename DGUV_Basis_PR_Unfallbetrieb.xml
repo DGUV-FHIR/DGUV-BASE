@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization_Accident_Insurance_Institution" />
-  <name value="DGUV_PR_DiGUV_Base_Organization_Accident_Insurance_Institution" />
+  <url value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Unfallbetrieb" />
+  <name value="DGUV_Basis_PR_Unfallbetrieb" />
+  <title value="Unfallbetrieb" />
   <status value="draft" />
-  <description value="Dieses Profil bildet den Unfallversicherungsträger ab." />
+  <description value="Dieses Profil bildet den Unfallbetrieb ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
+  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses Profil bildet den Unfallversicherungsträger ab." />
+      <short value="Dieses Profil bildet den Unfallbetrieb ab." />
       <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc." />
       <min value="0" />
       <max value="*" />
@@ -502,8 +503,8 @@
       <short value="Institutionskennzeichen (IKNR)" />
       <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -523,7 +524,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -1663,7 +1663,7 @@
       <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -1683,6 +1683,7 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -5140,7 +5141,7 @@
       <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -5679,7 +5680,7 @@
       <comment value="Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes&#xA;&#xA;When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.&#xA;&#xA;We expect that some jurisdictions will profile this optionality to be a single cardinality." />
       <requirements value="Need to be able to track the kind of organization that this is - different organization types have different uses." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Organization.type" />
         <min value="0" />
@@ -5901,7 +5902,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -6264,7 +6265,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -6627,7 +6628,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -11361,7 +11362,7 @@
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Need to be able to track the hierarchy of organizations within an organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.partOf" />
         <min value="0" />
@@ -11875,19 +11876,18 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <short value="Dieses Profil bildet den Unfallversicherungsträger ab." />
+      <short value="Dieses Profil bildet den Unfallbetrieb ab." />
     </element>
     <element id="Organization.identifier:Institutionskennzeichen">
       <path value="Organization.identifier" />
       <sliceName value="Institutionskennzeichen" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <max value="0" />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer">
       <path value="Organization.identifier" />
       <sliceName value="Betriebsstaettennummer" />
-      <max value="0" />
+      <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:VKNR">
       <path value="Organization.identifier" />
@@ -11899,24 +11899,14 @@
       <sliceName value="KZV-Abrechnungsnummer" />
       <max value="0" />
     </element>
-    <element id="Organization.type.coding:IHE-Code">
-      <path value="Organization.type.coding" />
-      <sliceName value="IHE-Code" />
+    <element id="Organization.identifier:Telematik-ID">
+      <path value="Organization.identifier" />
+      <sliceName value="Telematik-ID" />
       <max value="0" />
     </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe">
-      <path value="Organization.type.coding" />
-      <sliceName value="HL7-Fachschluesselgruppe" />
+    <element id="Organization.type">
+      <path value="Organization.type" />
       <max value="0" />
-    </element>
-    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert">
-      <path value="Organization.type.coding" />
-      <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
-      <max value="0" />
-    </element>
-    <element id="Organization.name">
-      <path value="Organization.name" />
-      <min value="1" />
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
@@ -11932,10 +11922,6 @@
       <path value="Organization.address" />
       <sliceName value="Postfach" />
       <max value="1" />
-    </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

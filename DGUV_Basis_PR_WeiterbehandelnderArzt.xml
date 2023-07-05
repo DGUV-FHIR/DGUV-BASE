@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_PractitionerRole" />
-  <name value="DGUV_PR_DiGUV_Base_PractitionerRole" />
+  <url value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
+  <name value="DGUV_Basis_PR_WeiterbehandelnderArzt" />
+  <title value="Weiterbehandelnder Arzt" />
   <status value="draft" />
-  <description value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
+  <description value="Deses Profil bildet den Weiterbehandelnder Arzt (z. B. D-Arzt, Allgemeinarzt) ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <baseDefinition value="https://fhir.dguv.de/StructureDefinition/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
   <derivation value="constraint" />
   <snapshot>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
+      <short value="Deses Profil bildet den Weiterbehandelnder Arzt (z. B. D-Arzt, Allgemeinarzt) ab." />
       <definition value="A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time." />
       <min value="0" />
       <max value="*" />
@@ -5072,7 +5073,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Practitioner" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5126,7 +5127,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Organization/DGUV-Basis-PR-Einrichtung" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6128,90 +6129,7 @@
   <differential>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
-    </element>
-    <element id="PractitionerRole.identifier">
-      <path value="PractitionerRole.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type.coding.code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="PractitionerRole.identifier:ANR">
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="ANR" />
-      <short value="Identifier-Profil für die Abbildung einer lebenslanger Arztnummer" />
-      <definition value="Dieses Element dient der Darstellung der Arztnummer gemäß § 108 SGB V, die umgangssprachlich auch als Lebenslange Arztnummer (LANR) bezeichnet wird." />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-lanr" />
-      </type>
-    </element>
-    <element id="PractitionerRole.identifier:EFN">
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="EFN" />
-      <short value="Identifier-Profil für die Abbildung der Einheitlichen Fortbildungsnummer (EFN)" />
-      <definition value="In diesem Element wird die einheitliche Fortbildungsnummer (EFN) dargestellt." />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-zanr" />
-      </type>
-    </element>
-    <element id="PractitionerRole.identifier:ZANR">
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="ZANR" />
-      <short value="Identifier-Profil für die Abbildung einer lebenslangen Zahnarztnummer" />
-      <definition value="In diesem Element wird die Zahnarztnummer analog zur ANR abgebildet." />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-zanr" />
-      </type>
-    </element>
-    <element id="PractitionerRole.identifier:Telematik-ID">
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="Telematik-ID" />
-      <definition value="Bei der Telematik-ID handelt es sich um eine eindeutige elektronische Identität von Leistungserbringenden und medizinischen Institutionen in der Telematik-Infrastruktur." />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-telematik-id" />
-      </type>
-    </element>
-    <element id="PractitionerRole.identifier:Institutionskennzeichen">
-      <path value="PractitionerRole.identifier" />
-      <sliceName value="Institutionskennzeichen" />
-      <short value="Institutionskennzeichen (IKNR)" />
-      <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
-      </type>
-    </element>
-    <element id="PractitionerRole.practitioner">
-      <path value="PractitionerRole.practitioner" />
-      <definition value="Dieses Profil stellt eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung dar." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Practitioner" />
-      </type>
-    </element>
-    <element id="PractitionerRole.organization">
-      <path value="PractitionerRole.organization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_Organization" />
-      </type>
-    </element>
-    <element id="PractitionerRole.telecom">
-      <path value="PractitionerRole.telecom" />
-      <type>
-        <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
-      </type>
+      <short value="Deses Profil bildet den Weiterbehandelnder Arzt (z. B. D-Arzt, Allgemeinarzt) ab." />
     </element>
   </differential>
 </StructureDefinition>
