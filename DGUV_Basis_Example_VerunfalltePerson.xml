@@ -10,6 +10,21 @@
       <h1>Hier finden Sie ein Beispiel einer verunfallten Person entsprechend des Patients-Profils der DGUV</h1>
     </div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
+    <extension url="code" >
+        <valueCoding>
+            <system value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
+            <code value="DE" />
+            <display value="Germany" />
+        </valueCoding>
+    </extension>
+  </extension>
+  <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf">
+    <valueString value= "Schüller" />
+  </extension>
+  <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn">
+    <valueString value= "2022-11-03" />
+  </extension>
   <identifier>
     <type>
         <coding>
