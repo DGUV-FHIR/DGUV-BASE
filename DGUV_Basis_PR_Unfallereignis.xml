@@ -1884,7 +1884,6 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
       </type>
       <condition value="ele-1" />
@@ -2382,7 +2381,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3771,7 +3770,6 @@
       <path value="AdverseEvent.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
       </type>
     </element>
@@ -3786,6 +3784,10 @@
     <element id="AdverseEvent.location">
       <path value="AdverseEvent.location" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="AdverseEvent.location.reference">
