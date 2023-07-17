@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Diagnose" />
-  <name value="DGUV_Basis_PR_Diagnose" />
-  <title value="Diagnose" />
+  <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Unfalldiagnose" />
+  <name value="DGUV_Basis_PR_Unfalldiagnose" />
+  <title value="Unfalldiagnose" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
