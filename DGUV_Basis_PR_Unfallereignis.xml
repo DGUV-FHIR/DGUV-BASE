@@ -2498,7 +2498,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4408,7 +4408,7 @@
       <path value="AdverseEvent.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
       </type>
     </element>
     <element id="AdverseEvent.subject.reference">
