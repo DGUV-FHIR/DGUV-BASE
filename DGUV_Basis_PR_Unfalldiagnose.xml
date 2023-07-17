@@ -348,7 +348,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="DomainResource.extension" />
@@ -398,7 +398,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -1705,7 +1705,7 @@
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -1767,7 +1767,7 @@
       <definition value="In Deutschland ist der ICD-Code das maßgebliche Code-System für die Abrechnung im ambulanten und stationären Bereich." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
@@ -4952,12 +4952,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Condition.extension:Jargondiagnose">
       <path value="Condition.extension" />
       <sliceName value="Jargondiagnose" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -4979,7 +4979,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Coding" />
         <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
@@ -4989,7 +4988,6 @@
       <path value="Condition.code.coding" />
       <sliceName value="ICD-10-GM" />
       <definition value="In Deutschland ist der ICD-Code das maßgebliche Code-System für die Abrechnung im ambulanten und stationären Bereich." />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Coding" />
