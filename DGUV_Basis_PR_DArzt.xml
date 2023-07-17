@@ -770,10 +770,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1402,10 +1398,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1928,10 +1920,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/kzbv/zahnarztnummer" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -2560,10 +2548,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3087,10 +3071,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/kzbv/zahnarztnummer" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3719,10 +3699,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4244,10 +4220,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="https://gematik.de/fhir/sid/telematik-id" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4733,10 +4705,6 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
-      <example>
-        <label value="General" />
-        <valueUri value="http://www.acme.com/identifiers/patient" />
-      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
