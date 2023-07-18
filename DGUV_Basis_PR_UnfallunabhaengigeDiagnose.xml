@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Unfalldiagnose" />
-  <name value="DGUV_Basis_PR_Unfalldiagnose" />
-  <title value="Unfalldiagnose" />
+  <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-UnfallunabhaengigeDiagnose" />
+  <name value="DGUV_Basis_PR_UnfallunabhaengigeDiagnose" />
+  <title value="Unfallunabhaengige Diagnose" />
   <status value="draft" />
-  <description value="Dieses Profil bildet die Unfalldiagnose ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -15,7 +14,7 @@
     <element id="Condition">
       <path value="Condition" />
       <short value="Detailed information about conditions, problems or diagnoses" />
-      <definition value="Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind." />
+      <definition value="A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -5917,10 +5916,6 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Condition">
-      <path value="Condition" />
-      <definition value="Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind." />
-    </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
       <slicing>
