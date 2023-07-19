@@ -13,8 +13,8 @@
   <snapshot>
     <element id="Condition">
       <path value="Condition" />
-      <short value="Detailed information about conditions, problems or diagnoses" />
-      <definition value="A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern." />
+      <short value="Unfallunabhaengige Diagnose" />
+      <definition value="Die Unfallunabhaengige Diagnose kann verschiedene Dinge umfassen, wie Komplikationen der Unfalldiagnose, bereits vorhandene chronische Erkrankungen, begleitende Symptome oder andere Gesundheitszustände, die bei der Behandlung berücksichtigt werden müssen." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -5916,6 +5916,11 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <short value="Unfallunabhaengige Diagnose" />
+      <definition value="Die Unfallunabhaengige Diagnose kann verschiedene Dinge umfassen, wie Komplikationen der Unfalldiagnose, bereits vorhandene chronische Erkrankungen, begleitende Symptome oder andere Gesundheitszustände, die bei der Behandlung berücksichtigt werden müssen." />
+    </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
       <slicing>
