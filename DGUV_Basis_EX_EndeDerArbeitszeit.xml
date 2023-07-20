@@ -4,6 +4,7 @@
   <name value="DGUV_Basis_EX_EndeDerArbeitszeit" />
   <title value="Ende der Arbeitszeit" />
   <status value="draft" />
+  <description value="Diese Extension beschreibt das Ende der Arbeitszeit" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

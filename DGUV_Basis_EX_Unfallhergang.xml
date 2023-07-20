@@ -3,6 +3,7 @@
   <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfallhergang" />
   <name value="DGUV_Basis_EX_Unfallhergang" />
   <status value="draft" />
+  <description value="Diese Extension beschreibt den von der versicherten Person und/oder Angehörigen vorgetragener Unfallhergang." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
