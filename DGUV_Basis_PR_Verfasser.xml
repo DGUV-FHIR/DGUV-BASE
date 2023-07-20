@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-AnsprechpartnerFuerRueckfragen" />
-  <name value="DGUV_Basis_PR_AnsprechpartnerFuerRueckfragen" />
-  <title value="Ansprechpartner fuer Rueckfragen" />
+  <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_Verfasser" />
+  <name value="DGUV_Basis_PR_Verfasser" />
   <status value="draft" />
-  <description value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -14,7 +12,7 @@
   <snapshot>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen.." />
+      <short value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
       <definition value="A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time." />
       <min value="0" />
       <max value="*" />
@@ -7240,10 +7238,4 @@
       </mapping>
     </element>
   </snapshot>
-  <differential>
-    <element id="PractitionerRole">
-      <path value="PractitionerRole" />
-      <short value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen.." />
-    </element>
-  </differential>
 </StructureDefinition>

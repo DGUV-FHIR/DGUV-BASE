@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   <name value="DGUV_Basis_PR_DArzt" />
-  <title value="Durchgangsarzt" />
+  <title value="D-Arzt" />
   <status value="draft" />
   <description value="Dieses Profil bildet den Durchgangsarzt ab." />
   <fhirVersion value="4.0.1" />

@@ -14,7 +14,7 @@
   <snapshot>
     <element id="Condition">
       <path value="Condition" />
-      <short value="Detailed information about conditions, problems or diagnoses" />
+      <short value="Unfalldiagnose" />
       <definition value="Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind." />
       <min value="0" />
       <max value="*" />
@@ -180,12 +180,6 @@
       </mapping>
     </element>
     <element id="Condition.implicitRules">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.implicitRules" />
       <short value="A set of rules under which this content was created" />
       <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." />
@@ -218,12 +212,6 @@
       </mapping>
     </element>
     <element id="Condition.language">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.language" />
       <short value="Language of the resource content" />
       <definition value="The base language in which the resource is written." />
@@ -406,7 +394,7 @@
       </extension>
       <path value="Condition.extension" />
       <sliceName value="Jargondiagnose" />
-      <short value="Optional Extensions Element" />
+      <short value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)." />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -420,7 +408,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_Base_EX_Jargondiagnose" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -685,12 +673,6 @@
       </mapping>
     </element>
     <element id="Condition.extension:Jargondiagnose.extension:Jargondiagnose-Text.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -878,12 +860,6 @@
       </mapping>
     </element>
     <element id="Condition.extension:Jargondiagnose.extension:AO-Klassifikation.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -934,19 +910,13 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_Base_EX_Jargondiagnose" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="Condition.extension:Jargondiagnose.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -2085,12 +2055,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -2207,12 +2171,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen.value[x].system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -2256,12 +2214,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen.value[x].version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -2304,12 +2256,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen.value[x].code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -2353,12 +2299,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2405,12 +2345,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Mehrfachcodierungs-Kennzeichen.value[x].userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -2610,12 +2544,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -2732,12 +2660,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation.value[x].system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -2781,12 +2703,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation.value[x].version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -2829,12 +2745,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation.value[x].code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -2878,12 +2788,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2930,12 +2834,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Seitenlokalisation.value[x].userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x].userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -3135,12 +3033,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.extension:Diagnosesicherheit.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -3205,12 +3097,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.system" />
       <short value="Canonische CodeSystem URL für ICD-10-GM" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -3255,12 +3141,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.version" />
       <short value="Die Jahresversion von ICD-10-GM. Angegeben wird immer die vierstellige Jahreszahl (z.B. &quot;2017&quot;)" />
       <definition value="Bie Verwendung von ICD-10-GM ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von ICD-10-GM ein neues Codesystem darstellt." />
@@ -3303,12 +3183,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.code" />
       <short value="Der ICD-10-Code" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -3363,12 +3237,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3415,12 +3283,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:ICD-10-GM.userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -3611,12 +3473,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:snomed.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -3661,12 +3517,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:snomed.version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -3709,12 +3559,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:snomed.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -3758,12 +3602,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:snomed.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3810,12 +3648,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:snomed.userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -4002,12 +3834,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:alphaId.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.system" />
       <short value="Canonische CodeSystem URL für Alpha-ID" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -4052,12 +3878,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:alphaId.version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.version" />
       <short value="Die Jahresversion von Alpha-ID. Angegeben wird immer die vierstellige Jahreszahl (z.B. &quot;2017&quot;)" />
       <definition value="Bie Verwendung von Alpha-ID ist die Angabe der Version zwingend erforderlich.&#xD;&#xA;Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu erscheinenden Fassung von Alpha-ID ein neues Codesystem darstellt." />
@@ -4100,12 +3920,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:alphaId.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.code" />
       <short value="Der Alpha-ID-Code" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -4149,12 +3963,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:alphaId.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4201,12 +4009,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:alphaId.userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -4392,12 +4194,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:orphanet.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -4442,12 +4238,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:orphanet.version">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -4490,12 +4280,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:orphanet.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -4539,12 +4323,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:orphanet.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4591,12 +4369,6 @@
       </mapping>
     </element>
     <element id="Condition.code.coding:orphanet.userSelected">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -4640,12 +4412,6 @@
       </mapping>
     </element>
     <element id="Condition.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4703,7 +4469,7 @@
       <definition value="The anatomical location where this condition manifests itself." />
       <comment value="Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Condition.bodySite" />
         <min value="0" />
@@ -4896,12 +4662,6 @@
       </mapping>
     </element>
     <element id="Condition.onset[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.onset[x]" />
       <short value="Estimated or actual date,  date-time, or age" />
       <definition value="Estimated or actual date or date-time  the condition began, in the opinion of the clinician." />
@@ -4960,12 +4720,6 @@
       </mapping>
     </element>
     <element id="Condition.abatement[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.abatement[x]" />
       <short value="When in resolution/remission" />
       <definition value="The date or estimated date that the condition resolved or went into remission. This is called &quot;abatement&quot; because of the many overloaded connotations associated with &quot;remission&quot; or &quot;resolution&quot; - Conditions are never really resolved, but they can abate." />
@@ -5016,12 +4770,6 @@
       </mapping>
     </element>
     <element id="Condition.recordedDate">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.recordedDate" />
       <short value="Date record was first recorded" />
       <definition value="The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date." />
@@ -5082,6 +4830,8 @@
       </base>
       <type>
         <code value="Reference" />
+        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+        <profile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
@@ -5919,6 +5669,7 @@
   <differential>
     <element id="Condition">
       <path value="Condition" />
+      <short value="Unfalldiagnose" />
       <definition value="Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind." />
     </element>
     <element id="Condition.extension">
@@ -5935,11 +5686,12 @@
     <element id="Condition.extension:Jargondiagnose">
       <path value="Condition.extension" />
       <sliceName value="Jargondiagnose" />
+      <short value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_Base_EX_Jargondiagnose" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
       </type>
       <isModifier value="false" />
     </element>
@@ -6024,13 +5776,21 @@
     </element>
     <element id="Condition.bodySite">
       <path value="Condition.bodySite" />
-      <max value="0" />
+      <max value="1" />
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
+      </type>
+    </element>
+    <element id="Condition.recorder">
+      <path value="Condition.recorder" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+        <profile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
     </element>
   </differential>

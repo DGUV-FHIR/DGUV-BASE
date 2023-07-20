@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/DGUV_Base_EX_Jargondiagnose" />
-  <name value="DGUV_Base_EX_Jargondiagnose" />
+  <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
+  <name value="DGUV_Basis_EX_Jargondiagnose" />
+  <title value="Jargondiagnose und AO-Klassifikation" />
   <status value="draft" />
+  <description value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en), sowie die Angabe eines AO-Klassifikationscodes." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -530,7 +532,7 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_Base_EX_Jargondiagnose" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -764,7 +766,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.dguv.de/StructureDefinition/DGUV_Base_EX_Jargondiagnose" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
