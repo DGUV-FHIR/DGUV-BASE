@@ -4,7 +4,7 @@
   <name value="DGUV_Basis_PR_Einrichtung" />
   <title value="Einrichtung" />
   <status value="draft" />
-  <description value="Dieses FHIR Profil bildet die behandelnde Einrichtung ab." />
+  <description value="Dieses Profil bildet die behandelnde Einrichtung ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
