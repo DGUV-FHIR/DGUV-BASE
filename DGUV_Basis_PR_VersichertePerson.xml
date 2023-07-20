@@ -7,7 +7,7 @@
   <status value="draft" />
   <date value="2023-03-08T12:19:42+00:00" />
   <publisher value="DGUV" />
-  <description value="Dieses Profil beschreibt eine verunfallte Person." />
+  <description value="Dieses Profil beschreibt die versicherte Person." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -1870,7 +1870,7 @@
       <path value="Patient.extension" />
       <sliceName value="Beruf" />
       <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
-      <definition value="Konkreter Beschreibung der Tätigkeit" />
+      <definition value="Konkreter Beschreibung der aktuellen oder zuletzt ausgeübten Tätigkeit." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2059,7 +2059,7 @@
       <path value="Patient.extension" />
       <sliceName value="Beschaeftigungsbeginn" />
       <short value="Beginn der Beschäftigung" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <definition value="Seit wann führt der Versicherte die Tätigkeit aus?" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -16359,7 +16359,7 @@
       <path value="Patient.extension" />
       <sliceName value="Beruf" />
       <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
-      <definition value="Konkreter Beschreibung der Tätigkeit" />
+      <definition value="Konkreter Beschreibung der aktuellen oder zuletzt ausgeübten Tätigkeit." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -16372,6 +16372,7 @@
       <path value="Patient.extension" />
       <sliceName value="Beschaeftigungsbeginn" />
       <short value="Beginn der Beschäftigung" />
+      <definition value="Seit wann führt der Versicherte die Tätigkeit aus?" />
       <min value="1" />
       <max value="1" />
       <type>
