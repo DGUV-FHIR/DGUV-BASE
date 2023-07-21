@@ -918,7 +918,7 @@
       <path value="AdverseEvent.extension" />
       <sliceName value="VerhaltenDesPatienten" />
       <short value="Verhalten des Patienten" />
-      <definition value="Verhalten der versicherten Person nach dem Unfal" />
+      <definition value="Verhalten der versicherten Person nach dem Unfall" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -4537,7 +4537,7 @@
       <path value="AdverseEvent.extension" />
       <sliceName value="VerhaltenDesPatienten" />
       <short value="Verhalten des Patienten" />
-      <definition value="Verhalten der versicherten Person nach dem Unfal" />
+      <definition value="Verhalten der versicherten Person nach dem Unfall" />
       <min value="0" />
       <max value="1" />
       <type>

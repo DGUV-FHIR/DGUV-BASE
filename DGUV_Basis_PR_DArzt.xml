@@ -7298,24 +7298,10 @@
         <profile value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
       </type>
     </element>
-    <element id="PractitionerRole.code.coding">
-      <path value="PractitionerRole.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="PractitionerRole.code.coding:RolleDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
       <sliceName value="RolleDerEinrichtung" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleDerEinrichtung.system">
       <path value="PractitionerRole.code.coding.system" />
@@ -7333,24 +7319,9 @@
       <path value="PractitionerRole.code.coding.display" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.specialty.coding">
-      <path value="PractitionerRole.specialty.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
       <path value="PractitionerRole.specialty.coding" />
       <sliceName value="KBV-Fachgruppe" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
-      </binding>
     </element>
     <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.system">
       <path value="PractitionerRole.specialty.coding.system" />
