@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   <name value="DGUV_Basis_PR_DArzt" />
-  <title value="Durchgangsarzt" />
+  <title value="D-Arzt" />
   <status value="draft" />
   <description value="Dieses Profil bildet den Durchgangsarzt ab." />
   <fhirVersion value="4.0.1" />
@@ -770,6 +770,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1398,6 +1402,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1920,6 +1928,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/kzbv/zahnarztnummer" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -2548,6 +2560,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3071,6 +3087,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/kzbv/zahnarztnummer" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3699,6 +3719,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4220,6 +4244,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="https://gematik.de/fhir/sid/telematik-id" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4705,6 +4733,10 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.de/sid/arge-ik/iknr" />
+      <example>
+        <label value="General" />
+        <valueUri value="http://www.acme.com/identifiers/patient" />
+      </example>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5974,7 +6006,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -5982,13 +6014,13 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="PractitionerRole.specialty.coding" />
-      <sliceName value="sliceCoding" />
+      <sliceName value="KBV-Fachgruppe" />
       <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -6040,7 +6072,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.id">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.id">
       <path value="PractitionerRole.specialty.coding.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -6063,7 +6095,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.extension">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -6120,7 +6152,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.system">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.system">
       <path value="PractitionerRole.specialty.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -6163,7 +6195,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.version">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.version">
       <path value="PractitionerRole.specialty.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -6205,7 +6237,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.code">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.code">
       <path value="PractitionerRole.specialty.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -6248,7 +6280,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.display">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -6294,7 +6326,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.userSelected">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.userSelected">
       <path value="PractitionerRole.specialty.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -6520,7 +6552,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7253,20 +7285,10 @@
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
-      </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
-      </type>
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
@@ -7276,24 +7298,10 @@
         <profile value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
       </type>
     </element>
-    <element id="PractitionerRole.code.coding">
-      <path value="PractitionerRole.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="PractitionerRole.code.coding:RolleDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
       <sliceName value="RolleDerEinrichtung" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleDerEinrichtung.system">
       <path value="PractitionerRole.code.coding.system" />
@@ -7311,37 +7319,23 @@
       <path value="PractitionerRole.code.coding.display" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.specialty.coding">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
       <path value="PractitionerRole.specialty.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+      <sliceName value="KBV-Fachgruppe" />
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding">
-      <path value="PractitionerRole.specialty.coding" />
-      <sliceName value="sliceCoding" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
-      </binding>
-    </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.system">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.system">
       <path value="PractitionerRole.specialty.coding.system" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.version">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.version">
       <path value="PractitionerRole.specialty.coding.version" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.code">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.code">
       <path value="PractitionerRole.specialty.coding.code" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.specialty.coding:sliceCoding.display">
+    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.display">
       <path value="PractitionerRole.specialty.coding.display" />
       <min value="1" />
     </element>

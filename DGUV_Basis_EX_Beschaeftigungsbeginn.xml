@@ -4,7 +4,7 @@
   <name value="DGUV_EX_DiGUV_Base_Beschaeftigungsbeginn" />
   <title value="Beschaeftigungsbeginn" />
   <status value="draft" />
-  <description value="Beschaeftigungsbeginn" />
+  <description value="Seit wann führt der Versicherte die Tätigkeit aus?" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

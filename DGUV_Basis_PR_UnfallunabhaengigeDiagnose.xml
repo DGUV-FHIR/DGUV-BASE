@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Unfalldiagnose" />
-  <name value="DGUV_Basis_PR_Unfalldiagnose" />
-  <title value="Unfalldiagnose" />
+  <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-UnfallunabhaengigeDiagnose" />
+  <name value="DGUV_Basis_PR_UnfallunabhaengigeDiagnose" />
+  <title value="Unfallunabhaengige Diagnose" />
   <status value="draft" />
-  <description value="Dieses Profil bildet die Unfalldiagnose ab." />
+  <description value="Dieses Profil bildet die Unfallunabhaengige Diagnose ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -14,8 +14,8 @@
   <snapshot>
     <element id="Condition">
       <path value="Condition" />
-      <short value="Unfalldiagnose" />
-      <definition value="Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind." />
+      <short value="Unfallunabhaengige Diagnose" />
+      <definition value="Die Unfallunabhaengige Diagnose kann verschiedene Dinge umfassen, wie Komplikationen der Unfalldiagnose, bereits vorhandene chronische Erkrankungen, begleitende Symptome oder andere Gesundheitszustände, die bei der Behandlung berücksichtigt werden müssen." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -394,7 +394,7 @@
       </extension>
       <path value="Condition.extension" />
       <sliceName value="Jargondiagnose" />
-      <short value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)." />
+      <short value="Jargondiagnose" />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -4469,7 +4469,7 @@
       <definition value="The anatomical location where this condition manifests itself." />
       <comment value="Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Condition.bodySite" />
         <min value="0" />
@@ -5669,8 +5669,8 @@
   <differential>
     <element id="Condition">
       <path value="Condition" />
-      <short value="Unfalldiagnose" />
-      <definition value="Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind." />
+      <short value="Unfallunabhaengige Diagnose" />
+      <definition value="Die Unfallunabhaengige Diagnose kann verschiedene Dinge umfassen, wie Komplikationen der Unfalldiagnose, bereits vorhandene chronische Erkrankungen, begleitende Symptome oder andere Gesundheitszustände, die bei der Behandlung berücksichtigt werden müssen." />
     </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
@@ -5686,7 +5686,7 @@
     <element id="Condition.extension:Jargondiagnose">
       <path value="Condition.extension" />
       <sliceName value="Jargondiagnose" />
-      <short value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)." />
+      <short value="Jargondiagnose" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -5776,7 +5776,7 @@
     </element>
     <element id="Condition.bodySite">
       <path value="Condition.bodySite" />
-      <max value="1" />
+      <max value="0" />
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
