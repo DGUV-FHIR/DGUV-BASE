@@ -1,0 +1,34 @@
+<AdverseEvent>
+    <id value="Unfallereignise-1" />
+    <meta>
+        <profile value="https://fhir.dguv.de/Basis/AdverseEvent/DGUV-Basis-PR-Unfallereignis" />
+    </meta>
+    <extension url="https://fhir.dguv.de/Basis/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit">
+        <valueDateTime value="2018-08-24T08:00:00Z"/>
+    </extension>
+    <extension url=" https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfallhergang">
+        <valueString value="Der Versicherte ist auf dem Weg zum Sechstagerennen mit seinem Motorrad mit einer geschätzten Geschwindigkeit von 60 km/h gegen eine Leitplanke gefahren"/>
+    </extension>
+    <extension url=" https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-VerhaltenDesPatienten">
+        <valueString value="Patient ist wach, ansprechbar und vollständig orientiert."/>
+    </extension>
+    <actuality value="actual"/>
+    <!--Angabe der SAV-->
+    <category>
+        <coding>
+            <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"/>
+            <code value="10.1V"/>
+            <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma) − bei Erwachsenen mit ISS ab 25 − bei Kindern mit ISS ab 16. Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)."/>
+        </coding>
+    </category>
+    <!--Referenz auf Patient Rudi Farad-->
+    <subject>
+        <reference value="Patient/111-222-333-444"/>
+    </subject>
+    <!--Aus Beispiel: "Unfalltag"-->
+    <date value="2018-08-24T10:15:28Z"/>
+    <!--Referenz auf den Unfallort-->
+    <location>
+        <reference value="Location/Ort-123"/>
+    </location>
+</AdverseEvent>
