@@ -1,0 +1,28 @@
+<Condition>
+	<id value="Diagnose-1-Gehirnerschütterung" />
+	<meta>
+		<profile value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Unfalldiagnose" />
+	</meta>
+	 <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+            <code value="confirmed" />
+            <display value="Confirmed" />
+        </coding>
+    </verificationStatus>
+	<!--Frage: Ist die Jargondiagnose passend zum ICD-10 Code? Muss das beachtet werden. Was passiert wenn dies nicht passend ist? Welche Diagnose ist führend?-->
+	<extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose">
+		<valueString value="Schädelprellung"/>
+	</extension>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+			<code value="S06.0"/>
+			<display value="Gehirnerschütterung"/>
+		</coding>
+	</code>
+	<recordedDate value="2019-02-21" />
+	<subject>
+		<reference value="Patient/111-222-333-444"/>
+	</subject>
+</Condition>
