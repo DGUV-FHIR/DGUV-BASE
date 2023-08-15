@@ -499,6 +499,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.extension:BeginnDerArbeitszeit.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -688,6 +694,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.extension:EndeDerArbeitszeit.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -877,6 +889,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.extension:Unfallhergang.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -1066,6 +1084,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.extension:VerhaltenDesPatienten.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -1120,7 +1144,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-VerhaltenDesPatienten" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenBeiAufnahme" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1248,13 +1272,19 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-VerhaltenDesPatienten" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenBeiAufnahme" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="AdverseEvent.extension:BeschwerdenBeiAufnahme.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -1396,6 +1426,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.actuality">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.actuality" />
       <short value="actual | potential" />
       <definition value="Whether the event actually happened, or just had the potential to. Note that this is independent of whether anyone was affected or harmed or how severely." />
@@ -1790,6 +1826,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -1838,6 +1880,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.version">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -1880,6 +1928,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.code" />
       <short value="Code nach VAV oder SAV" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -1923,6 +1977,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -1969,6 +2029,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.userSelected">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -2012,6 +2078,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2340,6 +2412,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:DAV.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -2383,6 +2461,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:DAV.coding.version">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -2425,6 +2509,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:DAV.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -2469,6 +2559,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:DAV.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2516,6 +2612,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:DAV.coding.userSelected">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.category.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -2559,6 +2661,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.category:DAV.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -2800,6 +2908,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.subject.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.subject.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -2835,6 +2949,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.subject.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.subject.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -2929,6 +3049,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.subject.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3019,6 +3145,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.date">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.date" />
       <short value="Unfallzeitpunkt" />
       <definition value="The date (and perhaps time) when the adverse event occurred." />
@@ -3052,6 +3184,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.detected">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.detected" />
       <short value="When the event was detected" />
       <definition value="Estimated or actual date the AdverseEvent began, in the opinion of the reporter." />
@@ -3081,6 +3219,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.recordedDate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.recordedDate" />
       <short value="When the event was recorded" />
       <definition value="The date on which the existence of the AdverseEvent was first recorded." />
@@ -3294,6 +3438,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.location.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.location.reference" />
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
@@ -3329,6 +3479,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.location.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.location.type" />
       <short value="Type the reference refers to (e.g. &quot;Patient&quot;)" />
       <definition value="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.&#xA;&#xA;The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)." />
@@ -3423,6 +3579,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.location.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4185,6 +4347,12 @@
       </mapping>
     </element>
     <element id="AdverseEvent.suspectEntity.causality.productRelatedness">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AdverseEvent.suspectEntity.causality.productRelatedness" />
       <short value="AdverseEvent.suspectEntity.causalityProductRelatedness" />
       <definition value="AdverseEvent.suspectEntity.causalityProductRelatedness." />
@@ -4554,13 +4722,9 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-VerhaltenDesPatienten" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenBeiAufnahme" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="AdverseEvent.extension:BeschwerdenBeiAufnahme.value[x]">
-      <path value="AdverseEvent.extension.value[x]" />
-      <min value="1" />
     </element>
     <element id="AdverseEvent.actuality">
       <path value="AdverseEvent.actuality" />

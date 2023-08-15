@@ -295,6 +295,12 @@
       </mapping>
     </element>
     <element id="Extension.extension:Jargondiagnose-Text.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -482,6 +488,12 @@
       </mapping>
     </element>
     <element id="Extension.extension:AO-Klassifikation.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -539,6 +551,12 @@
       </mapping>
     </element>
     <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
