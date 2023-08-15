@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
+  <url value="https://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
   <version value="0.1" />
   <name value="DGUV_Basis_PR_Unfallort" />
   <title value="Unfallort" />
@@ -793,7 +793,7 @@
       <short value="Contact details of the location" />
       <definition value="The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Location.telecom" />
         <min value="0" />
@@ -852,7 +852,7 @@
       <definition value="Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.&#xD;&#xA;&#xD;&#xA;Die verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.&#xD;&#xA;&#xD;&#xA;Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend." />
       <comment value="Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource)." />
       <requirements value="If locations can be visited, we need to keep track of their address." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Location.address" />
@@ -1799,13 +1799,8 @@
       <definition value="Beschreibt den Ort an dem der Arbeitsunfall passiert ist." />
       <min value="1" />
     </element>
-    <element id="Location.telecom">
-      <path value="Location.telecom" />
-      <max value="1" />
-    </element>
     <element id="Location.address">
       <path value="Location.address" />
-      <min value="1" />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />

@@ -1377,7 +1377,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -3184,7 +3183,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4563,10 +4562,6 @@
       <path value="AdverseEvent.extension.value[x]" />
       <min value="1" />
     </element>
-    <element id="AdverseEvent.identifier">
-      <path value="AdverseEvent.identifier" />
-      <mustSupport value="true" />
-    </element>
     <element id="AdverseEvent.actuality">
       <path value="AdverseEvent.actuality" />
       <fixedCode value="actual" />
@@ -4645,7 +4640,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
       </type>
       <mustSupport value="true" />
     </element>
