@@ -7121,7 +7121,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/StructureDefinition/DGUV_PR_DiGUV_Base_ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <condition value="org-3" />
@@ -11711,8 +11711,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Organization.contact.telecom" />
-      <short value="Contact details (telephone, email, etc.)  for a contact" />
-      <definition value="A contact detail (e.g. a telephone number or an email address) by which the party may be contacted." />
+      <short value="Angaben zu bestehenden Kontaktmöglichkeiten. (Telefon, Fax, E-Mail usw.)" />
+      <definition value="Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc." />
       <requirements value="People have (primary) ways to contact them in some way such as phone, email." />
       <min value="0" />
       <max value="*" />
@@ -11723,6 +11723,7 @@
       </base>
       <type>
         <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
       <condition value="ele-1" />
       <constraint>

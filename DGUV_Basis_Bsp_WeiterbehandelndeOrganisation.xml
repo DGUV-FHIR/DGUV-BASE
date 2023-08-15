@@ -1,79 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns="http://hl7.org/fhir">
-  <id value="111-222-333-444"/>
-  <meta>
-    <profile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient"/>
-  </meta>   
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <h1>Hier finden Sie ein vollständiges Beispiel einer verunfallten Person entsprechend des Patients-Profils der DGUV</h1>
-    </div>
-  </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
-    <extension url="code" >
-        <valueCoding>
-            <system value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
-            <code value="DE" />
-            <display value="Germany" />
-        </valueCoding>
-    </extension>
-  </extension>
-  <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf">
-    <valueString value= "Maurer" />
-  </extension>
-  <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn">
-    <valueDate value="2010" />
-  </extension>
-  <!-- Patientennummer slice als Fallnummer abgebildet. Ist das an dieser Stelle sinnvoll? Wir ordnen in diesem Kontext einem Patienten einen konkreten Fall zu. Wird der Patient wegen einem anderen Fall eingewiesen, so muss eine neue Instanz für diesen Patienten angelegt werden. -->
-  <identifier>
-    <type>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-            <code value="MR" />
-        </coding>
-    </type>
-    <system value="http://www.acme.com/identifiers/patient" /> <!--hier eventuell ein passenderes system finden-->
-    <value value="RA-171819-009" />
-  </identifier>
-  <!--KVID-->
-  <identifier>
-    <type>
-        <coding>
-            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
-            <code value="GKV" />
-        </coding>
-    </type>
-    <system value="http://fhir.de/sid/gkv/kvid-10" />
-    <value value="T995030511" />
-  </identifier>
-  <name>
-    <use value="official" />
-    <family value="Farad">
-        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-            <valueString value="Farad" />
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="WeiterbehandelndeOrganisation-cf042e44-086a-4d51-9c77-172f9a972e3b" />
+    <meta>
+        <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
+    </meta>
+    <!--   BSNR   -->
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="BSNR" />
+                <display value="Primary physician office number" />
+            </coding>
+        </type>
+        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR" />
+        <value value="012300004" />
+    </identifier>
+    <!--   Institutionskennzeichen   -->
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="XX" />
+                <display value="Organisations-ID" />
+            </coding>
+        </type>
+        <system value="http://fhir.de/sid/arge-ik/iknr" />
+        <value value="123456789" />
+    </identifier>
+    <name value="Praxis Dr. med. Hans Peter Haas" />
+    <address>
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
+            <valueString value="Mitte" />
         </extension>
-    </family>
-    <given value="Rudi" />
-  </name>
-  <telecom>
-    <system value="phone"/>
-    <value value="+49-228-12345678"/>
-  </telecom>
-  <gender value="male"/>
-  <birthDate value="1946-12-20"/>
-  <address>
-    <type value="physical" />
-    <line value="Fritz-Müntefering-Weg 2">
-        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-            <valueString value="Fritz-Müntefering-Weg" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-            <valueString value="2" />
-        </extension>
-    </line>
-    <city value="Bonn-Vilich" />
-    <postalCode value="53225" />
-    <country value="DE" />
-  </address>
-</Patient>
+        <type value="postal" />
+        <line value="Musterstr. 99">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                <valueString value="99" />
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                <valueString value="Musterstr." />
+            </extension>
+        </line>
+        <line value="Mitte" />
+        <city value="Dortmund" />
+        <postalCode value="44227" />
+        <country value="D" />
+    </address>
+    <address>
+        <type value="postal" />
+        <line value="45678">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+                <valueString value="45678" />
+            </extension>
+        </line>
+        <city value="Dortmund" />
+    </address>
+	<telecom>
+		<system value="phone"/>
+		<value value="0049 458 66 888"/>
+	</telecom>
+</Organization>
