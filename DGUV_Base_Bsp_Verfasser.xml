@@ -1,0 +1,41 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="Verfasser"/>
+    <meta>
+        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_Verfasser" />
+    </meta>
+	<identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="LANR" />
+                <display value="Lifelong physician number" />
+            </coding>
+        </type>
+        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+        <value value="4444-444-4444" />
+    </identifier>
+    <practitioner>
+        <reference value="Practitioner/1234" />
+    </practitioner>
+    <organization>
+        <reference value="Organization/234" />
+    </organization>
+    <code>
+        <coding>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+            <code value="FA" />
+            <display value="Fachärztin/-arzt" />
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+            <code value="01" />
+            <display value="Allgemeinmedizin" />
+        </coding>
+    </specialty>
+	<telecom>
+		<system value="phone"/>
+		<value value="0049 7895 66 97852"/>
+	</telecom>
+</PractitionerRole>
