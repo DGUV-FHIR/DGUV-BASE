@@ -1,0 +1,35 @@
+<Organization>
+    <id value="Behandelnde-Einrichtung-1" />
+    <meta>
+        <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="XX" />
+                <display value="Organisations-ID" />
+            </coding>
+        </type>
+        <system value="http://fhir.de/sid/arge-ik/iknr" />
+        <value value="260530784" />
+    </identifier>
+    <name value="Unfallkrankenhaus Frechen"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="+1-1234565789"/>
+    </telecom>
+    <address>
+        <line value="Genesungsweg 4">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                <valueString value="Genesungsweg"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                <valueString value="4"/>
+            </extension>
+        </line>
+        <city value="Frechen"/>
+        <postalCode value="50226"/>
+        <country value="DE"/>
+    </address>
+</Organization>

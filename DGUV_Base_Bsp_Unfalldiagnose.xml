@@ -1,0 +1,26 @@
+<Condition>
+    <id value="Diagnose-1" />
+    <meta>
+        <profile value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Unfalldiagnose" />
+    </meta>
+    <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose">
+        <valueString value="Schädelprellung"/>
+    </extension>
+    <code>
+        <coding>
+             <extension url="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit">
+                <valueCoding>
+                    <system value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT" />
+                    <code value="G" />
+                    <display value="gesicherte Diagnose"/>
+                </valueCoding>
+            </extension>
+            <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+            <code value="S06.0"/>
+            <display value="Gehirnerschütterung"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/111-222-333-444"/>
+    </subject>
+</Condition>

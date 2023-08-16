@@ -1,0 +1,26 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="Instanz eines Durchgangsarztes"/>
+    <meta>
+        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/4567" />
+    </practitioner>
+    <organization>
+        <reference value="organization/234" />
+    </organization>
+    <code>
+        <coding>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+            <code value="OA" />
+            <display value="Oberärztin/-arzt" />
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+            <code value="01" />
+            <display value="Allgemeinmedizin" />
+        </coding>
+    </specialty>
+</PractitionerRole>
