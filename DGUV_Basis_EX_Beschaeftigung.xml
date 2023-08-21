@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf" />
-  <name value="DGUV_Basis_EX_Beruf" />
-  <title value="Beruf" />
+  <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigung" />
+  <name value="DGUV_Basis_EX_Beschaeftigung" />
+  <title value="Beschaeftigung" />
   <status value="draft" />
   <description value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
   <fhirVersion value="4.0.1" />
@@ -295,12 +295,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Beruf.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -312,154 +306,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="base64Binary" />
-      </type>
-      <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="canonical" />
-      </type>
-      <type>
-        <code value="code" />
-      </type>
-      <type>
-        <code value="date" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="decimal" />
-      </type>
-      <type>
-        <code value="id" />
-      </type>
-      <type>
-        <code value="instant" />
-      </type>
-      <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="markdown" />
-      </type>
-      <type>
-        <code value="oid" />
-      </type>
-      <type>
-        <code value="positiveInt" />
-      </type>
-      <type>
         <code value="string" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="unsignedInt" />
-      </type>
-      <type>
-        <code value="uri" />
-      </type>
-      <type>
-        <code value="url" />
-      </type>
-      <type>
-        <code value="uuid" />
-      </type>
-      <type>
-        <code value="Address" />
-      </type>
-      <type>
-        <code value="Age" />
-      </type>
-      <type>
-        <code value="Annotation" />
-      </type>
-      <type>
-        <code value="Attachment" />
-      </type>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Coding" />
-      </type>
-      <type>
-        <code value="ContactPoint" />
-      </type>
-      <type>
-        <code value="Count" />
-      </type>
-      <type>
-        <code value="Distance" />
-      </type>
-      <type>
-        <code value="Duration" />
-      </type>
-      <type>
-        <code value="HumanName" />
-      </type>
-      <type>
-        <code value="Identifier" />
-      </type>
-      <type>
-        <code value="Money" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <type>
-        <code value="Quantity" />
-      </type>
-      <type>
-        <code value="Range" />
-      </type>
-      <type>
-        <code value="Ratio" />
-      </type>
-      <type>
-        <code value="Reference" />
-      </type>
-      <type>
-        <code value="SampledData" />
-      </type>
-      <type>
-        <code value="Signature" />
-      </type>
-      <type>
-        <code value="Timing" />
-      </type>
-      <type>
-        <code value="ContactDetail" />
-      </type>
-      <type>
-        <code value="Contributor" />
-      </type>
-      <type>
-        <code value="DataRequirement" />
-      </type>
-      <type>
-        <code value="Expression" />
-      </type>
-      <type>
-        <code value="ParameterDefinition" />
-      </type>
-      <type>
-        <code value="RelatedArtifact" />
-      </type>
-      <type>
-        <code value="TriggerDefinition" />
-      </type>
-      <type>
-        <code value="UsageContext" />
-      </type>
-      <type>
-        <code value="Dosage" />
-      </type>
-      <type>
-        <code value="Meta" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -635,12 +482,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Beschaeftigungsbeginn.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -652,7 +493,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="string" />
+        <code value="dateTime" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -691,19 +532,13 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigung" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -908,6 +743,12 @@
       <path value="Extension.extension.url" />
       <fixedUri value="Beruf" />
     </element>
+    <element id="Extension.extension:Beruf.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.extension:Beschaeftigungsbeginn">
       <path value="Extension.extension" />
       <sliceName value="Beschaeftigungsbeginn" />
@@ -923,12 +764,12 @@
     <element id="Extension.extension:Beschaeftigungsbeginn.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="string" />
+        <code value="dateTime" />
       </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigung" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
