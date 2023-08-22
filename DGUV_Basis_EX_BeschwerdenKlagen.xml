@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenBeiAufnahme" />
-  <name value="DGUV_Basis_EX_BeschwerdenBeiAufnahme" />
-  <title value="Beschwerden bei Aufnahme" />
+  <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenKlagen" />
+  <name value="DGUV_Basis_EX_BeschwerdenKlagen" />
+  <title value="Beschwerden und Klagen" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
@@ -23,8 +23,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension" />
-      <short value="Beschwerden bei Aufnahme" />
-      <definition value="Von der versicherten Person und/oder Angehörigen vorgetragene subjektive Beschwerden" />
+      <short value="Beschwerden und Klagen" />
+      <definition value="Von der versicherten Person und/oder Angehörigen vorgetragene subjektive Beschwerden. Bei Erstaufnahme, aber auch bei allen Folgebehandlungen." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -157,19 +157,13 @@
         </extension>
         <code value="http://hl7.org/fhirpath/System.String" />
       </type>
-      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenBeiAufnahme" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenKlagen" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -205,13 +199,13 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Beschwerden bei Aufnahme" />
-      <definition value="Von der versicherten Person und/oder Angehörigen vorgetragene subjektive Beschwerden" />
+      <short value="Beschwerden und Klagen" />
+      <definition value="Von der versicherten Person und/oder Angehörigen vorgetragene subjektive Beschwerden. Bei Erstaufnahme, aber auch bei allen Folgebehandlungen." />
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenBeiAufnahme" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenKlagen" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
