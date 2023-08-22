@@ -12288,7 +12288,7 @@
       <definition value="The date of birth for the practitioner." />
       <requirements value="Needed for identification." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Practitioner.birthDate" />
         <min value="0" />
@@ -13547,6 +13547,10 @@
         <profile value="http://fhir.de/StructureDefinition/gender-amtlich-de" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Practitioner.birthDate">
+      <path value="Practitioner.birthDate" />
+      <max value="0" />
     </element>
     <element id="Practitioner.birthDate.extension">
       <path value="Practitioner.birthDate.extension" />
