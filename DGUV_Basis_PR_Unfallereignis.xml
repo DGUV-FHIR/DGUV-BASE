@@ -305,7 +305,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="*" />
       <base>
         <path value="DomainResource.extension" />
@@ -922,7 +922,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="DomainResource.extension" />
@@ -2985,7 +2985,7 @@
       <short value="Location where adverse event occurred" />
       <definition value="The information about where the adverse event occurred." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="AdverseEvent.location" />
@@ -3013,7 +3013,6 @@
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/Reference" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -4300,7 +4299,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
     </element>
     <element id="AdverseEvent.extension:BeginnDerArbeitszeit">
       <path value="AdverseEvent.extension" />
@@ -4346,10 +4345,7 @@
     <element id="AdverseEvent.extension:BeschwerdenKlagen">
       <path value="AdverseEvent.extension" />
       <sliceName value="BeschwerdenKlagen" />
-      <short value="Beschwerden und Klagen" />
-      <definition value="Von der versicherten Person und/oder Angehörigen vorgetragene subjektive Beschwerden. Bei Erstaufnahme, aber auch bei allen Folgebehandlungen." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-BeschwerdenKlagen" />
@@ -4431,12 +4427,10 @@
     </element>
     <element id="AdverseEvent.location">
       <path value="AdverseEvent.location" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="AdverseEvent.location.reference">
       <path value="AdverseEvent.location.reference" />
