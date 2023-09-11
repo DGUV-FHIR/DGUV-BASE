@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson" />
+  <name value="DGUV_Basis_PR_Kontaktperson" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Person" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Person" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Person.name">
+      <path value="Person.name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Person.telecom">
+      <path value="Person.telecom" />
+      <min value="1" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

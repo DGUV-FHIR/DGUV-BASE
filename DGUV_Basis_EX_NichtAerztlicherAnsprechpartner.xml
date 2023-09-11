@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-NichtAerztlicherAnsprechpartner" />
+  <name value="DGUV_Basis_EX_NichtAerztlicherAnsprechpartner" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="PractitionerRole" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:Person">
+      <path value="Extension.extension" />
+      <sliceName value="Person" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:Person.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Person" />
+    </element>
+    <element id="Extension.extension:Person.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Extension.extension:Funktionseinheit">
+      <path value="Extension.extension" />
+      <sliceName value="Funktionseinheit" />
+      <min value="0" />
+    </element>
+    <element id="Extension.extension:Funktionseinheit.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Funktionseinheit" />
+    </element>
+    <element id="Extension.extension:Funktionseinheit.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-NichtAerztlicherAnsprechpartner" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
