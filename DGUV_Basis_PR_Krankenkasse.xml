@@ -339,7 +339,7 @@
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
       </type>
-      <fixedCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung|1.0" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse|1.0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12295,6 +12295,13 @@
     <element id="Organization">
       <path value="Organization" />
       <short value="Dieses Profil bildet die Krankenkasse ab." />
+    </element>
+    <element id="Organization.meta">
+      <path value="Organization.meta" />
+    </element>
+    <element id="Organization.meta.profile">
+      <path value="Organization.meta.profile" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse|1.0" />
     </element>
     <element id="Organization.extension:Mitgliedsname">
       <path value="Organization.extension" />

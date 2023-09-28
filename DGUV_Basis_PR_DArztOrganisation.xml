@@ -338,7 +338,7 @@
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
       </type>
-      <fixedCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation|1.1" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation|1.0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12242,7 +12242,7 @@
     </element>
     <element id="Organization.meta.profile">
       <path value="Organization.meta.profile" />
-      <fixedCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation|1.1" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation|1.0" />
     </element>
     <element id="Organization.identifier:Institutionskennzeichen">
       <path value="Organization.identifier" />

@@ -2,7 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Jargondiagnose" />
   <name value="DGUV_Basis_PR_Jargondiagnose" />
+  <title value="Jargondiagnose" />
   <status value="draft" />
+  <description value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -664,7 +666,7 @@
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
-      <min value="1" />
+      <min value="2" />
       <max value="*" />
       <base>
         <path value="DomainResource.extension" />
@@ -724,6 +726,58 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() or (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
+      </constraint>
+      <isModifier value="false" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Condition.extension:UnfalldiagnoseOderNicht">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.extension" />
+      <sliceName value="UnfalldiagnoseOderNicht" />
+      <short value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfalldiagnose" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2500,7 +2554,7 @@
     </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
-      <min value="1" />
+      <min value="2" />
     </element>
     <element id="Condition.extension:JargondiagnoseText">
       <path value="Condition.extension" />
@@ -2510,6 +2564,17 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Condition.extension:UnfalldiagnoseOderNicht">
+      <path value="Condition.extension" />
+      <sliceName value="UnfalldiagnoseOderNicht" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfalldiagnose" />
       </type>
       <isModifier value="false" />
     </element>
