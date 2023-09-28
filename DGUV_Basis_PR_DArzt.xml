@@ -331,7 +331,7 @@
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
       </type>
-      <fixedCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt|1.0" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt|1.0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4030,7 +4030,7 @@
     </element>
     <element id="PractitionerRole.meta.profile">
       <path value="PractitionerRole.meta.profile" />
-      <fixedCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt|1.0" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt|1.0" />
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />

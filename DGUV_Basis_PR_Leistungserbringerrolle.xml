@@ -331,7 +331,7 @@
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
       </type>
-      <patternCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle|1.0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -2968,7 +2968,7 @@
       <path value="PractitionerRole.meta.profile" />
       <min value="1" />
       <max value="1" />
-      <patternCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
+      <patternCanonical value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle|1.0" />
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
