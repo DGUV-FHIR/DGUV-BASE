@@ -1195,7 +1195,7 @@
       </extension>
       <path value="Condition.code" />
       <short value="Identification of the condition, problem or diagnosis" />
-      <definition value="Identification of the condition, problem or diagnosis." />
+      <definition value="In diesem Element wird der Diagnosecode aufgeführt. Eine ICD-10 Codierung ist an dieser Stelle verpflichtent." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="0..1 to account for primarily narrative only resources." />
       <alias value="type" />
@@ -5093,6 +5093,7 @@
     </element>
     <element id="Condition.code">
       <path value="Condition.code" />
+      <definition value="In diesem Element wird der Diagnosecode aufgeführt. Eine ICD-10 Codierung ist an dieser Stelle verpflichtent." />
       <min value="1" />
     </element>
     <element id="Condition.code.coding">

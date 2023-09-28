@@ -754,7 +754,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Condition.extension:UnfalldiagnoseOderNicht">
+    <element id="Condition.extension:UnfallJargondiagnoseOderNicht">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -762,7 +762,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Condition.extension" />
-      <sliceName value="UnfalldiagnoseOderNicht" />
+      <sliceName value="UnfallJargondiagnoseOderNicht" />
       <short value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -2567,9 +2567,9 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Condition.extension:UnfalldiagnoseOderNicht">
+    <element id="Condition.extension:UnfallJargondiagnoseOderNicht">
       <path value="Condition.extension" />
-      <sliceName value="UnfalldiagnoseOderNicht" />
+      <sliceName value="UnfallJargondiagnoseOderNicht" />
       <min value="1" />
       <max value="1" />
       <type>
