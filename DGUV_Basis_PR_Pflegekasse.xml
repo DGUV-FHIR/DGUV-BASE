@@ -16,7 +16,7 @@
       <path value="Organization" />
       <short value="Dieses FHIR Profil bildet die Pflegekasse ab." />
       <definition value="Pflegekasse der pflegebedürftigen Person, anzugeben wenn ein Pflegeunfall vorliegt." />
-      <comment value="Bei einem Pflegeunfall müssen im Profil Unfallbetrieb die Informationen der zu pflegende Person angeben werden." />
+      <comment value="Bei einem Pflegeunfall müssen im Profil Unfallbetrieb die Informationen (Name, Adresse) der zu pflegende Person angeben werden." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -12244,7 +12244,7 @@
       <path value="Organization" />
       <short value="Dieses FHIR Profil bildet die Pflegekasse ab." />
       <definition value="Pflegekasse der pflegebedürftigen Person, anzugeben wenn ein Pflegeunfall vorliegt." />
-      <comment value="Bei einem Pflegeunfall müssen im Profil Unfallbetrieb die Informationen der zu pflegende Person angeben werden." />
+      <comment value="Bei einem Pflegeunfall müssen im Profil Unfallbetrieb die Informationen (Name, Adresse) der zu pflegende Person angeben werden." />
     </element>
     <element id="Organization.meta">
       <path value="Organization.meta" />
