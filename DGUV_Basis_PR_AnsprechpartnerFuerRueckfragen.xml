@@ -815,7 +815,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -1010,7 +1010,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -4036,11 +4036,13 @@
       <path value="PractitionerRole.extension.extension" />
       <sliceName value="Person" />
       <short value="Kontaktperson" />
+      <max value="1" />
     </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit">
       <path value="PractitionerRole.extension.extension" />
       <sliceName value="Funktionseinheit" />
       <short value="Funktionseinheit wie z.B. Abteilung/Station/Sekretariat" />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>
