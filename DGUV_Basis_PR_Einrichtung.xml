@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_Einrichtung" />
   <title value="Einrichtung" />
   <status value="draft" />
@@ -5033,7 +5034,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -7663,6 +7664,10 @@
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
+    </element>
+    <element id="Organization.address:Postfach.extension">
+      <path value="Organization.address.extension" />
+      <max value="1" />
     </element>
     <element id="Organization.address:Postfach.type">
       <path value="Organization.address.type" />

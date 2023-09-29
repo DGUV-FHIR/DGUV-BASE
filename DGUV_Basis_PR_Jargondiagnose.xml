@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Jargondiagnose" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_Jargondiagnose" />
   <title value="Jargondiagnose" />
   <status value="draft" />
@@ -754,7 +755,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Condition.extension:UnfallJargondiagnoseOderNicht">
+    <element id="Condition.extension:UnfallJargondiagnose">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -762,7 +763,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Condition.extension" />
-      <sliceName value="UnfallJargondiagnoseOderNicht" />
+      <sliceName value="UnfallJargondiagnose" />
       <short value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
       <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
@@ -2567,9 +2568,9 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Condition.extension:UnfallJargondiagnoseOderNicht">
+    <element id="Condition.extension:UnfallJargondiagnose">
       <path value="Condition.extension" />
-      <sliceName value="UnfallJargondiagnoseOderNicht" />
+      <sliceName value="UnfallJargondiagnose" />
       <min value="1" />
       <max value="1" />
       <type>

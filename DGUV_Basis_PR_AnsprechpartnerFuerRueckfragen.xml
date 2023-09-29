@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-AnsprechpartnerFuerRueckfragen" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_AnsprechpartnerFuerRueckfragen" />
   <title value="Ansprechpartner fuer Rueckfragen" />
   <status value="draft" />
