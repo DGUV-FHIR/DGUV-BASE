@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
-  <version value="0.1" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_VersichertePerson" />
   <title value="Versicherte Person" />
   <status value="draft" />
@@ -231,7 +231,7 @@
       <definition value="The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted." />
       <comment value="The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Meta.versionId" />
         <min value="0" />
@@ -261,7 +261,7 @@
       <definition value="When the resource last changed - e.g. when the version changed." />
       <comment value="This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant. This is equivalent to the HTTP Last-Modified and SHOULD have the same value on a [read](http.html#read) interaction." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Meta.lastUpdated" />
         <min value="0" />
@@ -291,7 +291,7 @@
       <definition value="A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc." />
       <comment value="In the provenance resource, this corresponds to Provenance.entity.what[x]. The exact use of the source (and the implied Provenance.entity.role) is left to implementer discretion. Only one nominated source is allowed; for additional provenance details, a full Provenance resource should be used. &#xA;&#xA;This element can be used to indicate where the current master source of a resource that has a canonical URL if the resource is no longer hosted at the canonical URL." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Meta.source" />
         <min value="0" />
@@ -359,7 +359,7 @@
       <definition value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure." />
       <comment value="The security labels can be updated without changing the stated version of the resource. The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Meta.security" />
         <min value="0" />
@@ -418,7 +418,7 @@
       <definition value="Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource." />
       <comment value="The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Meta.tag" />
         <min value="0" />
@@ -710,7 +710,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
         <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
       </constraint>
-      <mustSupport value="true" />
       <isModifier value="false" />
       <mapping>
         <identity value="rim" />
@@ -2028,7 +2027,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -5948,7 +5946,7 @@
         <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
         <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </constraint>
-      <mustSupport value="true" />
+      <mustSupport value="false" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -13358,31 +13356,11 @@
       <path value="Patient.meta" />
       <min value="1" />
     </element>
-    <element id="Patient.meta.versionId">
-      <path value="Patient.meta.versionId" />
-      <max value="0" />
-    </element>
-    <element id="Patient.meta.lastUpdated">
-      <path value="Patient.meta.lastUpdated" />
-      <max value="0" />
-    </element>
-    <element id="Patient.meta.source">
-      <path value="Patient.meta.source" />
-      <max value="0" />
-    </element>
     <element id="Patient.meta.profile">
       <path value="Patient.meta.profile" />
       <min value="1" />
       <max value="1" />
       <fixedCanonical value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson|1.0" />
-    </element>
-    <element id="Patient.meta.security">
-      <path value="Patient.meta.security" />
-      <max value="0" />
-    </element>
-    <element id="Patient.meta.tag">
-      <path value="Patient.meta.tag" />
-      <max value="0" />
     </element>
     <element id="Patient.implicitRules">
       <path value="Patient.implicitRules" />
@@ -13409,7 +13387,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-nationality" />
       </type>
-      <mustSupport value="true" />
       <isModifier value="false" />
     </element>
     <element id="Patient.extension:nationality.extension:code">
@@ -13444,7 +13421,6 @@
       </slicing>
       <short value="Ein Identifikator für den Patienten" />
       <definition value="Ein Identifikator für den Patienten." />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
@@ -13645,7 +13621,7 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Patient.name:Name.family">
       <path value="Patient.name.family" />

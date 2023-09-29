@@ -15,7 +15,7 @@
   <snapshot>
     <element id="Person">
       <path value="Person" />
-      <short value="A generic person record" />
+      <short value="Dies Profil bildet die Daten von einer Kontaktperson ab." />
       <definition value="Demographics and administrative information about a person independent of a specific health-related context." />
       <comment value="The Person resource does justice to person registries that keep track of persons regardless of their role. The Person resource is also a primary resource to point to for people acting in a particular role such as SubjectofCare, Practitioner, and Agent. Very few attributes are specific to any role and so Person is kept lean. Most attributes are expected to be tied to the role the Person plays rather than the Person himself. Examples of that are Guardian (SubjectofCare), ContactParty (SubjectOfCare, Practitioner), and multipleBirthInd (SubjectofCare)." />
       <min value="0" />
@@ -325,7 +325,7 @@
         <code value="canonical" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
       </type>
-      <fixedCanonical value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson|1.1" />
+      <fixedCanonical value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson|1.0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1472,6 +1472,10 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Person">
+      <path value="Person" />
+      <short value="Dies Profil bildet die Daten von einer Kontaktperson ab." />
+    </element>
     <element id="Person.meta">
       <path value="Person.meta" />
       <min value="1" />
@@ -1480,7 +1484,7 @@
       <path value="Person.meta.profile" />
       <min value="1" />
       <max value="1" />
-      <fixedCanonical value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson|1.1" />
+      <fixedCanonical value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson|1.0" />
     </element>
     <element id="Person.name">
       <path value="Person.name" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_Verfasser" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_Verfasser" />
   <title value="Verfasser" />
   <status value="draft" />
@@ -812,7 +813,7 @@
       <definition value="Dieses Element dient der Darstellung der Arztnummer gemäß § 108 SGB V, die umgangssprachlich auch als Lebenslange Arztnummer (LANR) bezeichnet wird." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -878,7 +879,7 @@
       <definition value="In diesem Element wird die einheitliche Fortbildungsnummer (EFN) dargestellt." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -944,7 +945,7 @@
       <definition value="In diesem Element wird die Zahnarztnummer analog zur ANR abgebildet." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -1076,7 +1077,7 @@
       <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
       <requirements value="Often, specific identities are assigned for the agent." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="PractitionerRole.identifier" />
         <min value="0" />
@@ -3640,6 +3641,7 @@
       <sliceName value="ANR" />
       <short value="Identifier-Profil für die Abbildung einer lebenslanger Arztnummer" />
       <definition value="Dieses Element dient der Darstellung der Arztnummer gemäß § 108 SGB V, die umgangssprachlich auch als Lebenslange Arztnummer (LANR) bezeichnet wird." />
+      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-lanr" />
@@ -3650,6 +3652,7 @@
       <sliceName value="EFN" />
       <short value="Identifier-Profil für die Abbildung der Einheitlichen Fortbildungsnummer (EFN)" />
       <definition value="In diesem Element wird die einheitliche Fortbildungsnummer (EFN) dargestellt." />
+      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-zanr" />
@@ -3660,6 +3663,7 @@
       <sliceName value="ZANR" />
       <short value="Identifier-Profil für die Abbildung einer lebenslangen Zahnarztnummer" />
       <definition value="In diesem Element wird die Zahnarztnummer analog zur ANR abgebildet." />
+      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-zanr" />
@@ -3679,6 +3683,7 @@
       <sliceName value="Institutionskennzeichen" />
       <short value="Institutionskennzeichen (IKNR)" />
       <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
+      <max value="0" />
       <type>
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_Krankenkasse" />
   <title value="Krankenkasse" />
   <status value="draft" />
@@ -893,7 +894,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -7257,7 +7257,6 @@
         <xpath value="count(f:use[@value='home']) = 0" />
         <source value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </constraint>
-      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -9539,7 +9538,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -12319,8 +12318,6 @@
       <path value="Organization.identifier" />
       <sliceName value="Institutionskennzeichen" />
       <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:Betriebsstaettennummer">
       <path value="Organization.identifier" />
@@ -12354,17 +12351,6 @@
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Organization.address:Strassenanschrift">
-      <path value="Organization.address" />
-      <sliceName value="Strassenanschrift" />
-      <max value="1" />
-    </element>
-    <element id="Organization.address:Postfach">
-      <path value="Organization.address" />
-      <sliceName value="Postfach" />
       <max value="1" />
     </element>
     <element id="Organization.partOf">

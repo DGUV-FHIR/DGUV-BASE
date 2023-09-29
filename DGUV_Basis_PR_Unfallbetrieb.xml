@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
+  <version value="1.0" />
   <name value="DGUV_Basis_PR_Unfallbetrieb" />
   <title value="Unfallbetrieb" />
   <status value="draft" />
@@ -754,8 +755,8 @@
       <short value="Identifies this organization  across multiple systems" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Organization.identifier" />
         <min value="0" />
@@ -1316,7 +1317,7 @@
       <short value="An identifier intended for computation" />
       <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
       <requirements value="Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Organization.identifier" />
@@ -1337,7 +1338,6 @@
         <xpath value="@value|f:*|h:div" />
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -9486,7 +9486,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -12250,6 +12250,11 @@
       <path value="Organization.meta.profile" />
       <patternCanonical value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb|1.0" />
     </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Organization.identifier:Institutionskennzeichen">
       <path value="Organization.identifier" />
       <sliceName value="Institutionskennzeichen" />
@@ -12258,8 +12263,7 @@
     <element id="Organization.identifier:Betriebsstaettennummer">
       <path value="Organization.identifier" />
       <sliceName value="Betriebsstaettennummer" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <min value="1" />
     </element>
     <element id="Organization.identifier:VKNR">
       <path value="Organization.identifier" />
@@ -12283,16 +12287,6 @@
     <element id="Organization.address">
       <path value="Organization.address" />
       <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Organization.address:Strassenanschrift">
-      <path value="Organization.address" />
-      <sliceName value="Strassenanschrift" />
-      <max value="1" />
-    </element>
-    <element id="Organization.address:Postfach">
-      <path value="Organization.address" />
-      <sliceName value="Postfach" />
       <max value="1" />
     </element>
   </differential>
