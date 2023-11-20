@@ -713,7 +713,7 @@
       <path value="Condition.extension" />
       <sliceName value="Unfalldiagnose" />
       <short value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <definition value="true = Unfallabhängige &#xD;&#xA;false = Unfallunabhängige" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />

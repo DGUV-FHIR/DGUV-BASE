@@ -3,7 +3,9 @@
   <url value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfalldiagnose" />
   <version value="1.0" />
   <name value="DGUV_Basis_EX_Unfalldiagnose" />
+  <title value="Unfalldiagnose" />
   <status value="draft" />
+  <description value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -206,6 +208,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
+      <definition value="true = Unfallabhängige &#xD;&#xA;false = Unfallunabhängige" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
@@ -214,6 +217,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <definition value="true = Dieses Profil bezieht sich auf die Feststellung und Beurteilung von Verletzungen, Schäden oder anderen gesundheitlichen Folgen, die als Ergebnis eines Unfalls aufgetreten sind.&#xD;&#xA;false = Dieses Profil bezieht sich auf NICHTunfallbedingte Verletzungen, Schäden oder andere Gesundheitsfolgen." />
+      <comment value="true = Unfallabhängige &#xD;&#xA;false = Unfallunabhängige" />
       <min value="1" />
       <type>
         <code value="boolean" />

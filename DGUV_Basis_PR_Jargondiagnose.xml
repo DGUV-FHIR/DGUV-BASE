@@ -5,7 +5,7 @@
   <name value="DGUV_Basis_PR_Jargondiagnose" />
   <title value="Jargondiagnose" />
   <status value="draft" />
-  <description value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)." />
+  <description value="Die vom Arzt verfasste Freitextbeschreibung diagnostisch relevanter Informationen." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -713,7 +713,7 @@
       <path value="Condition.extension" />
       <sliceName value="JargondiagnoseText" />
       <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <definition value="Die vom Arzt verfasste Freitextbeschreibung diagnostisch relevanter Informationen." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -765,7 +765,7 @@
       <path value="Condition.extension" />
       <sliceName value="UnfallJargondiagnose" />
       <short value="Handelt es sich um Unfallabhängige oder Unfallunabhängige Daten?" />
-      <definition value="Optional Extension Element - found in all resources." />
+      <definition value="true = Unfallabhängige &#xD;&#xA;false = Unfallunabhängige" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -2560,6 +2560,7 @@
     <element id="Condition.extension:JargondiagnoseText">
       <path value="Condition.extension" />
       <sliceName value="JargondiagnoseText" />
+      <definition value="Die vom Arzt verfasste Freitextbeschreibung diagnostisch relevanter Informationen." />
       <min value="1" />
       <max value="1" />
       <type>
