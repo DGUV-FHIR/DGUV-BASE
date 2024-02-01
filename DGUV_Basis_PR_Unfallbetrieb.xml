@@ -20,7 +20,6 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Organization.identifier:Institutionskennzeichen">
@@ -68,7 +67,6 @@
     <element id="Organization.address">
       <path value="Organization.address" />
       <min value="1" />
-      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>
