@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/AdverseEvent/DGUV-Basis-PR-Unfallereignis" />
-  <version value="1.1" />
+  <version value="1.2-kommentierung" />
   <name value="DGUV_Basis_PR_Unfallereignis" />
   <title value="Unfallereignis" />
   <status value="draft" />
@@ -90,15 +90,15 @@
       <sliceName value="SAV-VAV" />
       <short value="Es Liegt eine Verletzung nach dem Verletzungsartenverzeichnis vor." />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Angabe der Verletzung nach dem Verletzungsartenverzeichnis" />
+        <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis" />
+      </binding>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.system">
       <path value="AdverseEvent.category.coding.system" />
       <min value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="Verletzungsartenverzeichnis" />
-        <valueSet value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
-      </binding>
     </element>
     <element id="AdverseEvent.category:SAV-VAV.coding.code">
       <path value="AdverseEvent.category.coding.code" />
