@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
-  <version value="1.2-kommentierung" />
+  <version value="1.1" />
   <name value="DGUV_Basis_PR_WeiterbehandelnderArzt" />
   <title value="Weiterbehandelnder Arzt" />
   <status value="draft" />

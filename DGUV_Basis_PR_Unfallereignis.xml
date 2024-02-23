@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.dguv.de/Basis/AdverseEvent/DGUV-Basis-PR-Unfallereignis" />
-  <version value="1.2-kommentierung" />
+  <version value="1.1" />
   <name value="DGUV_Basis_PR_Unfallereignis" />
   <title value="Unfallereignis" />
   <status value="draft" />

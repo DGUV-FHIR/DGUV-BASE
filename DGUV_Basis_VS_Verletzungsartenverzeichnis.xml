@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DGUV-Basis-VS-Verletzungsartenverzeichnis" />
     <url value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis" />
-    <version value="1.2-kommentierung" />
+    <version value="1.1" />
     <name value="DGUV_Basis_VS_Verletzungsartenverzeichnis" />
     <title value="Verletzungsartenverzeichnis" />
     <status value="draft" />
