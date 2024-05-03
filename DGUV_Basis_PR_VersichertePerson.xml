@@ -58,16 +58,6 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
       </binding>
     </element>
-    <element id="Patient.extension:Beschaeftigung">
-      <path value="Patient.extension" />
-      <sliceName value="Beschaeftigung" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigung" />
-      </type>
-      <isModifier value="false" />
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>

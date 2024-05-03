@@ -44,7 +44,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
