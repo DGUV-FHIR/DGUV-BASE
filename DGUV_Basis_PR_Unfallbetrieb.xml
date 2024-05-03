@@ -47,19 +47,6 @@
       <sliceName value="Telematik-ID" />
       <max value="0" />
     </element>
-    <element id="Organization.identifier:Unternehmensnummer">
-      <path value="Organization.identifier" />
-      <sliceName value="Unternehmensnummer" />
-      <max value="1" />
-    </element>
-    <element id="Organization.identifier:Unternehmensnummer.system">
-      <path value="Organization.identifier.system" />
-      <min value="1" />
-    </element>
-    <element id="Organization.identifier:Unternehmensnummer.value">
-      <path value="Organization.identifier.value" />
-      <min value="1" />
-    </element>
     <element id="Organization.type">
       <path value="Organization.type" />
       <max value="0" />
