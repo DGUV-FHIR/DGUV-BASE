@@ -35,10 +35,6 @@
       <path value="Location.managingOrganization" />
       <short value="Referenz auf den Unfallbetrieb." />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
