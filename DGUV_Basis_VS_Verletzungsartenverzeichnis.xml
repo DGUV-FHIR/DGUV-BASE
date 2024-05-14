@@ -6,10 +6,10 @@
     <title value="Verletzungsartenverzeichnis" />
     <status value="draft" />
     <publisher value="Deutsche Gesetzliche Unfallversicherung" />
-    <description value="Shows the different types of the ePrescription according to the prescription forms." />
+    <description value="Terminologien für die Verwendung des Verletzungsartenverzeichnis " />
     <compose>
         <include>
-            <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
+            <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnisses" />
         </include>
     </compose>
 </ValueSet>

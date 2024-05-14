@@ -1,0 +1,15 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="DGUV-Basis-VS-UnfallereignisAttribute" />
+    <url value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
+    <version value="1.1" />
+    <name value="DGUV_Basis_VS_UnfallereignisAttribute" />
+    <title value="UnfallereignisAttribute" />
+    <status value="draft" />
+    <publisher value="Deutsche Gesetzliche Unfallversicherung" />
+    <description value="Terminologien zur Angabe von Eigenschaften eines Unfallereignisses." />
+    <compose>
+        <include>
+            <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
+        </include>
+    </compose>
+</ValueSet>
