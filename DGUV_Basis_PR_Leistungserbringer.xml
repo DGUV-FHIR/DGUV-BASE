@@ -157,6 +157,11 @@
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
     </element>
+    <element id="Practitioner.address:Strassenanschrift.type">
+      <path value="Practitioner.address.type" />
+      <min value="1" />
+      <fixedCode value="both" />
+    </element>
     <element id="Practitioner.address:Postfach">
       <path value="Practitioner.address" />
       <sliceName value="Postfach" />
@@ -164,6 +169,10 @@
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
+    </element>
+    <element id="Practitioner.address:Postfach.type">
+      <path value="Practitioner.address.type" />
+      <fixedCode value="postal" />
     </element>
     <element id="Practitioner.gender.extension:gender-amtlich">
       <path value="Practitioner.gender.extension" />
