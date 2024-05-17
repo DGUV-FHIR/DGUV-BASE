@@ -366,16 +366,6 @@
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
     </element>
-    <element id="Patient.address:Strassenanschrift.type">
-      <path value="Patient.address.type" />
-      <min value="1" />
-      <fixedCode value="both" />
-    </element>
-    <element id="Patient.address:Strassenanschrift.line.extension:Postfach">
-      <path value="Patient.address.line.extension" />
-      <sliceName value="Postfach" />
-      <max value="0" />
-    </element>
     <element id="Patient.address:Postfach">
       <path value="Patient.address" />
       <sliceName value="Postfach" />
@@ -384,11 +374,6 @@
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
-    </element>
-    <element id="Patient.address:Postfach.type">
-      <path value="Patient.address.type" />
-      <min value="1" />
-      <fixedCode value="postal" />
     </element>
     <element id="Patient.address:Postfach.line.extension:Strasse">
       <path value="Patient.address.line.extension" />
