@@ -10,14 +10,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <max value="1" />
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <min value="1" />
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
-      <short value="Angaben zu bestehenden Kontaktmöglichkeiten. (Telefon, Fax, E-Mail usw.)" />
-      <definition value="Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc." />
       <type>
         <code value="ContactPoint" />
         <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
