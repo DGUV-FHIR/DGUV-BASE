@@ -108,20 +108,29 @@
         <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
       </binding>
     </element>
+    <element id="Observation.component:BeginnDerArbeitszeit.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Observation.component:BeginnDerArbeitszeit.code.coding.system">
       <path value="Observation.component.code.coding.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
     </element>
     <element id="Observation.component:BeginnDerArbeitszeit.code.coding.code">
       <path value="Observation.component.code.coding.code" />
+      <min value="1" />
       <fixedCode value="01" />
     </element>
     <element id="Observation.component:BeginnDerArbeitszeit.code.coding.display">
       <path value="Observation.component.code.coding.display" />
-      <fixedString value="BeginnDerArbeitszeit" />
+      <min value="1" />
+      <fixedString value="Beginn Der Arbeitszeit" />
     </element>
     <element id="Observation.component:BeginnDerArbeitszeit.value[x]">
       <path value="Observation.component.value[x]" />
+      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
@@ -138,16 +147,29 @@
         <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
       </binding>
     </element>
+    <element id="Observation.component:EndeDerArbeitszeit.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Observation.component:EndeDerArbeitszeit.code.coding.system">
       <path value="Observation.component.code.coding.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
     </element>
     <element id="Observation.component:EndeDerArbeitszeit.code.coding.code">
       <path value="Observation.component.code.coding.code" />
+      <min value="1" />
       <fixedCode value="02" />
+    </element>
+    <element id="Observation.component:EndeDerArbeitszeit.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Ende der Arbeitszeit" />
     </element>
     <element id="Observation.component:EndeDerArbeitszeit.value[x]">
       <path value="Observation.component.value[x]" />
+      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
@@ -164,16 +186,29 @@
         <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
       </binding>
     </element>
+    <element id="Observation.component:Unfallhergang.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Observation.component:Unfallhergang.code.coding.system">
       <path value="Observation.component.code.coding.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
     </element>
     <element id="Observation.component:Unfallhergang.code.coding.code">
       <path value="Observation.component.code.coding.code" />
+      <min value="1" />
       <fixedCode value="03" />
+    </element>
+    <element id="Observation.component:Unfallhergang.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Unfallhergang" />
     </element>
     <element id="Observation.component:Unfallhergang.value[x]">
       <path value="Observation.component.value[x]" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>
@@ -190,19 +225,143 @@
         <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
       </binding>
     </element>
+    <element id="Observation.component:BeschwerdenKlagen.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Observation.component:BeschwerdenKlagen.code.coding.system">
       <path value="Observation.component.code.coding.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
     </element>
     <element id="Observation.component:BeschwerdenKlagen.code.coding.code">
       <path value="Observation.component.code.coding.code" />
+      <min value="1" />
       <fixedCode value="04" />
+    </element>
+    <element id="Observation.component:BeschwerdenKlagen.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Beschwerden/Klagen" />
     </element>
     <element id="Observation.component:BeschwerdenKlagen.value[x]">
       <path value="Observation.component.value[x]" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="Observation.component:Unfallort">
+      <path value="Observation.component" />
+      <sliceName value="Unfallort" />
+    </element>
+    <element id="Observation.component:Unfallort.code">
+      <path value="Observation.component.code" />
+      <binding>
+        <strength value="required" />
+        <description value="Codes identifying names of an accident attribute." />
+        <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
+      </binding>
+    </element>
+    <element id="Observation.component:Unfallort.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:Unfallort.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
+    </element>
+    <element id="Observation.component:Unfallort.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="05" />
+    </element>
+    <element id="Observation.component:Unfallort.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Unfallort" />
+    </element>
+    <element id="Observation.component:Unfallort.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Observation.component:Beruf">
+      <path value="Observation.component" />
+      <sliceName value="Beruf" />
+    </element>
+    <element id="Observation.component:Beruf.code">
+      <path value="Observation.component.code" />
+      <binding>
+        <strength value="required" />
+        <description value="Codes identifying names of an accident attribute." />
+        <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
+      </binding>
+    </element>
+    <element id="Observation.component:Beruf.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:Beruf.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
+    </element>
+    <element id="Observation.component:Beruf.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="06" />
+    </element>
+    <element id="Observation.component:Beruf.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Beruf" />
+    </element>
+    <element id="Observation.component:Beruf.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn">
+      <path value="Observation.component" />
+      <sliceName value="Beschaeftigungsbeginn" />
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn.code">
+      <path value="Observation.component.code" />
+      <binding>
+        <strength value="required" />
+        <description value="Codes identifying names of an accident attribute." />
+        <valueSet value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisAttribute" />
+      </binding>
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="07" />
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn.code.coding.display">
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Beschaeftigungsbeginn" />
+    </element>
+    <element id="Observation.component:Beschaeftigungsbeginn.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

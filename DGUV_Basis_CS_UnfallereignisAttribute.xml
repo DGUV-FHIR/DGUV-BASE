@@ -28,4 +28,12 @@
         <code value="05" />
         <display value="Unfallort" />
     </concept>
+     <concept>
+        <code value="06" />
+        <display value="Beruf" />
+    </concept>
+     <concept>
+        <code value="07" />
+        <display value="Beschaeftigungsbeginn" />
+    </concept>
 </CodeSystem>
