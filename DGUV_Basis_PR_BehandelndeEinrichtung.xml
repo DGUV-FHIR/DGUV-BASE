@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
+  <version value="1.1" />
+  <name value="DGUV_Basis_PR_BehandelndeEinrichtung" />
+  <title value="BehandelndeEinrichtung" />
+  <status value="draft" />
+  <date value="2024-01-31" />
+  <description value="Dieses Profil bildet die behandelnde Einrichtung ab." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <short value="Dieses Profil bildet eine Einrichtung ab." />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.identifier:Institutionskennzeichen">
+      <path value="Organization.identifier" />
+      <sliceName value="Institutionskennzeichen" />
+      <short value="Institutionskennzeichen (IKNR)" />
+      <definition value="Als eindeutiges Merkmal zur Identifizierung von Vertragspartnern, die für die Sozialversicherungsträger Leistungen erbringen wird die IKNR durch die Arbeitsgemeinschaft Institutionskennzeichen vergeben." />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
+      </type>
+    </element>
+    <element id="Organization.identifier:Betriebsstaettennummer">
+      <path value="Organization.identifier" />
+      <sliceName value="Betriebsstaettennummer" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-bsnr" />
+      </type>
+    </element>
+    <element id="Organization.identifier:VKNR">
+      <path value="Organization.identifier" />
+      <sliceName value="VKNR" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-vknr" />
+      </type>
+    </element>
+    <element id="Organization.identifier:KZV-Abrechnungsnummer">
+      <path value="Organization.identifier" />
+      <sliceName value="KZV-Abrechnungsnummer" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-kzva" />
+      </type>
+    </element>
+    <element id="Organization.identifier:Telematik-ID">
+      <path value="Organization.identifier" />
+      <sliceName value="Telematik-ID" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-telematik-id" />
+      </type>
+    </element>
+    <element id="Organization.type.coding">
+      <path value="Organization.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.type.coding:IHE-Code">
+      <path value="Organization.type.coding" />
+      <sliceName value="IHE-Code" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://ihe-d.de/ValueSets/IHEXDShealthcareFacilityTypeCode" />
+      </binding>
+    </element>
+    <element id="Organization.type.coding:IHE-Code.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:IHE-Code.version">
+      <path value="Organization.type.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:IHE-Code.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:IHE-Code.display">
+      <path value="Organization.type.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe">
+      <path value="Organization.type.coding" />
+      <sliceName value="HL7-Fachschluesselgruppe" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel" />
+      </binding>
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.version">
+      <path value="Organization.type.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe.display">
+      <path value="Organization.type.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert">
+      <path value="Organization.type.coding" />
+      <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert" />
+      </binding>
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.version">
+      <path value="Organization.type.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert.display">
+      <path value="Organization.type.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+      </type>
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.address:Strassenanschrift">
+      <path value="Organization.address" />
+      <sliceName value="Strassenanschrift" />
+      <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Organization.address:Strassenanschrift.type">
+      <path value="Organization.address.type" />
+      <min value="1" />
+      <fixedCode value="both" />
+    </element>
+    <element id="Organization.address:Strassenanschrift.line.extension:Postfach">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Postfach" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address:Postfach">
+      <path value="Organization.address" />
+      <sliceName value="Postfach" />
+      <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Organization.address:Postfach.extension">
+      <path value="Organization.address.extension" />
+      <max value="1" />
+    </element>
+    <element id="Organization.address:Postfach.type">
+      <path value="Organization.address.type" />
+      <min value="1" />
+      <fixedCode value="postal" />
+    </element>
+    <element id="Organization.address:Postfach.line.extension:Strasse">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Strasse" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address:Postfach.line.extension:Hausnummer">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Hausnummer" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address:Postfach.line.extension:Adresszusatz">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Adresszusatz" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.telecom">
+      <path value="Organization.contact.telecom" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

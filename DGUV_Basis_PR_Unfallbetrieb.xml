@@ -1,59 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
-  <version value="1.1" />
+  <url value="https://fhir.dguv.de/Basis/Organization/DGUV_Basis_PR_Unfallbetrieb" />
   <name value="DGUV_Basis_PR_Unfallbetrieb" />
   <title value="Unfallbetrieb" />
   <status value="draft" />
-  <date value="2024-01-31" />
   <description value="Dieses Profil bildet den Unfallbetrieb ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
-  <baseDefinition value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <derivation value="constraint" />
   <differential>
-    <element id="Organization">
-      <path value="Organization" />
-      <short value="Dieses Profil bildet den Unfallbetrieb ab." />
-    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <max value="1" />
     </element>
-    <element id="Organization.identifier:Institutionskennzeichen">
-      <path value="Organization.identifier" />
-      <sliceName value="Institutionskennzeichen" />
-      <max value="0" />
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
     </element>
-    <element id="Organization.identifier:Betriebsstaettennummer">
-      <path value="Organization.identifier" />
-      <sliceName value="Betriebsstaettennummer" />
-      <max value="0" />
-    </element>
-    <element id="Organization.identifier:VKNR">
-      <path value="Organization.identifier" />
-      <sliceName value="VKNR" />
-      <max value="0" />
-    </element>
-    <element id="Organization.identifier:KZV-Abrechnungsnummer">
-      <path value="Organization.identifier" />
-      <sliceName value="KZV-Abrechnungsnummer" />
-      <max value="0" />
-    </element>
-    <element id="Organization.identifier:Telematik-ID">
-      <path value="Organization.identifier" />
-      <sliceName value="Telematik-ID" />
-      <max value="0" />
-    </element>
-    <element id="Organization.type">
-      <path value="Organization.type" />
-      <max value="0" />
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <type>
+        <code value="ContactPoint" />
+        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+      </type>
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+    </element>
+    <element id="Organization.address:Strassenanschrift">
+      <path value="Organization.address" />
+      <sliceName value="Strassenanschrift" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Organization.address:Strassenanschrift.type">
+      <path value="Organization.address.type" />
+      <min value="1" />
+      <fixedCode value="both" />
+    </element>
+    <element id="Organization.address:Strassenanschrift.line.extension:Postfach">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Postfach" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address:Postfach">
+      <path value="Organization.address" />
+      <sliceName value="Postfach" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
+    </element>
+    <element id="Organization.address:Postfach.type">
+      <path value="Organization.address.type" />
+      <min value="1" />
+      <fixedCode value="postal" />
+    </element>
+    <element id="Organization.address:Postfach.line.extension:Strasse">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Strasse" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address:Postfach.line.extension:Hausnummer">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Hausnummer" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address:Postfach.line.extension:Adresszusatz">
+      <path value="Organization.address.line.extension" />
+      <sliceName value="Adresszusatz" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
