@@ -1,8 +1,8 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="DGUV-Basis-CS-UnfallereignisAttribute" />
-    <url value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute" />
+    <id value="DGUV-Basis-CS-UnfallereignisComponents" />
+    <url value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents" />
     <version value="1.2" />
-    <name value="DGUV_Basis_CS_UnfallereignisAttribute" />
+    <name value="DGUV_Basis_CS_UnfallereignisComponents" />
     <status value="draft" />
     <date value="2024-05-14" />
     <publisher value="DGUV" />
@@ -10,11 +10,11 @@
     <content value="complete" />
     <concept>
         <code value="01" />
-        <display value="BeginnDerArbeitszeit" />
+        <display value="Beginn der Arbeitszeit" />
     </concept>
     <concept>
         <code value="02" />
-        <display value="EndeDerArbeitszeit" />
+        <display value="Ende der Arbeitszeit" />
     </concept>
     <concept>
         <code value="03" />
@@ -22,18 +22,14 @@
     </concept>
     <concept>
         <code value="04" />
-        <display value="BeschwerdenKlagen" />
-    </concept>
-    <concept>
-        <code value="05" />
-        <display value="Unfallort" />
+        <display value="Beschwerden/Klagen" />
     </concept>
      <concept>
-        <code value="06" />
+        <code value="05" />
         <display value="Beruf" />
     </concept>
      <concept>
-        <code value="07" />
+        <code value="06" />
         <display value="Beschaeftigungsbeginn" />
     </concept>
 </CodeSystem>
