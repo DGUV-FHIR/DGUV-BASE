@@ -3,7 +3,7 @@
   <url value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
   <version value="1.1" />
   <name value="DGUV_Basis_PR_BehandelndeEinrichtung" />
-  <title value="BehandelndeEinrichtung" />
+  <title value="Behandelnde Einrichtung" />
   <status value="draft" />
   <date value="2024-01-31" />
   <description value="Dieses Profil bildet die behandelnde Einrichtung ab." />
