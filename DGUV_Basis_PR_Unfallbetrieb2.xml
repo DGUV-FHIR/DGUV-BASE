@@ -47,6 +47,7 @@
     <element id="Organization.address:Strassenanschrift.type">
       <path value="Organization.address.type" />
       <min value="1" />
+      <fixedCode value="both" />
     </element>
     <element id="Organization.address:Strassenanschrift.line.extension:Postfach">
       <path value="Organization.address.line.extension" />
@@ -64,7 +65,7 @@
     <element id="Organization.address:Postfach.type">
       <path value="Organization.address.type" />
       <min value="1" />
-      <fixedCode value="both" />
+      <fixedCode value="postal" />
     </element>
     <element id="Organization.address:Postfach.line.extension:Strasse">
       <path value="Organization.address.line.extension" />

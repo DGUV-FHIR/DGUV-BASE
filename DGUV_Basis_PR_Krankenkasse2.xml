@@ -88,6 +88,7 @@
     <element id="Organization.address:Postfach.type">
       <path value="Organization.address.type" />
       <min value="1" />
+      <fixedCode value="postal" />
     </element>
     <element id="Organization.address:Postfach.line.extension:Strasse">
       <path value="Organization.address.line.extension" />
