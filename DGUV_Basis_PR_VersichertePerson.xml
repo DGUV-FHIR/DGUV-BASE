@@ -20,21 +20,9 @@
       <short value="Daten zur verunfallten Person" />
       <definition value="Dieses Profil beschreibt demographische und andere administrative Informationen über eine verunfallte Person, die Gesundheitsdienstleistungen in Anspruch nimmt." />
     </element>
-    <element id="Patient.implicitRules">
-      <path value="Patient.implicitRules" />
-      <max value="0" />
-    </element>
-    <element id="Patient.language">
-      <path value="Patient.language" />
-      <max value="0" />
-    </element>
     <element id="Patient.text">
       <path value="Patient.text" />
       <short value="Textzusammenfassung der Ressource" />
-    </element>
-    <element id="Patient.contained">
-      <path value="Patient.contained" />
-      <max value="0" />
     </element>
     <element id="Patient.extension:nationality">
       <path value="Patient.extension" />
@@ -239,10 +227,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.active">
-      <path value="Patient.active" />
-      <max value="0" />
-    </element>
     <element id="Patient.name">
       <path value="Patient.name" />
       <slicing>
@@ -422,10 +406,6 @@
         <code value="ContactPoint" />
         <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
-    </element>
-    <element id="Patient.contact.organization">
-      <path value="Patient.contact.organization" />
-      <max value="0" />
     </element>
     <element id="Patient.communication">
       <path value="Patient.communication" />
