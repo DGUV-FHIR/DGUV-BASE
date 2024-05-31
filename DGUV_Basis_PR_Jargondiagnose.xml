@@ -41,6 +41,34 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.code.coding:ICD-10-GM">
+      <path value="Condition.code.coding" />
+      <sliceName value="ICD-10-GM" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
+      </type>
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation">
+      <path value="Condition.code.coding" />
+      <sliceName value="AO-Klassifikation" />
+    </element>
+    <element id="Condition.code.text">
+      <path value="Condition.code.text" />
+      <short value="Jargondiagnose-Text" />
+      <definition value="Die vom Arzt formulierte freitextliche Beschreibung der Unfallverletzung(en)" />
+      <min value="1" />
+    </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
       <type>
