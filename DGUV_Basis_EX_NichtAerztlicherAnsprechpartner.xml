@@ -17,20 +17,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension.extension:Person">
+    <element id="Extension.extension:NichtAerztlicherKontakt">
       <path value="Extension.extension" />
-      <sliceName value="Person" />
+      <sliceName value="NichtAerztlicherKontakt" />
     </element>
-    <element id="Extension.extension:Person.url">
+    <element id="Extension.extension:NichtAerztlicherKontakt.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Person" />
+      <fixedUri value="NichtAerztlicherKontakt" />
     </element>
-    <element id="Extension.extension:Person.value[x]">
+    <element id="Extension.extension:NichtAerztlicherKontakt.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Person/DGUV-Basis-PR-Kontaktperson" />
-        <aggregation value="referenced" />
+        <code value="boolean" />
       </type>
     </element>
     <element id="Extension.extension:Funktionseinheit">

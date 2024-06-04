@@ -28,12 +28,6 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Person">
-      <path value="PractitionerRole.extension.extension" />
-      <sliceName value="Person" />
-      <short value="nicht-aerztliche Kontaktperson in einer medizinischen Einrichtung" />
-      <max value="1" />
-    </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit">
       <path value="PractitionerRole.extension.extension" />
       <sliceName value="Funktionseinheit" />
