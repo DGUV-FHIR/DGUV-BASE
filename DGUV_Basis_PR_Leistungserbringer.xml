@@ -37,6 +37,10 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-lanr" />
       </type>
     </element>
+    <element id="Practitioner.identifier:ANR.type">
+      <path value="Practitioner.identifier.type" />
+      <min value="1" />
+    </element>
     <element id="Practitioner.identifier:EFN">
       <path value="Practitioner.identifier" />
       <sliceName value="EFN" />
@@ -48,6 +52,10 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-efn" />
       </type>
     </element>
+    <element id="Practitioner.identifier:EFN.type">
+      <path value="Practitioner.identifier.type" />
+      <min value="1" />
+    </element>
     <element id="Practitioner.identifier:ZANR">
       <path value="Practitioner.identifier" />
       <sliceName value="ZANR" />
@@ -58,6 +66,10 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-zanr" />
       </type>
+    </element>
+    <element id="Practitioner.identifier:ZANR.type">
+      <path value="Practitioner.identifier.type" />
+      <min value="1" />
     </element>
     <element id="Practitioner.identifier:Telematik-ID">
       <path value="Practitioner.identifier" />
@@ -92,6 +104,11 @@
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
     </element>
+    <element id="Practitioner.name:Name.use">
+      <path value="Practitioner.name.use" />
+      <min value="1" />
+      <fixedCode value="official" />
+    </element>
     <element id="Practitioner.name:Name.family">
       <path value="Practitioner.name.family" />
       <min value="1" />
@@ -118,6 +135,11 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+    </element>
+    <element id="Practitioner.name:Geburtsname.use">
+      <path value="Practitioner.name.use" />
+      <min value="1" />
+      <fixedCode value="maiden" />
     </element>
     <element id="Practitioner.name:Geburtsname.family.extension">
       <path value="Practitioner.name.family.extension" />
@@ -204,10 +226,6 @@
         <profile value="http://fhir.de/StructureDefinition/gender-amtlich-de" />
       </type>
       <isModifier value="false" />
-    </element>
-    <element id="Practitioner.birthDate">
-      <path value="Practitioner.birthDate" />
-      <max value="0" />
     </element>
     <element id="Practitioner.birthDate.extension:data_absent_reason">
       <path value="Practitioner.birthDate.extension" />
