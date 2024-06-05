@@ -16,19 +16,7 @@
   <differential>
     <element id="Condition.extension">
       <path value="Condition.extension" />
-      <min value="2" />
-    </element>
-    <element id="Condition.extension:JargondiagnoseText">
-      <path value="Condition.extension" />
-      <sliceName value="JargondiagnoseText" />
-      <definition value="Die vom Arzt verfasste Freitextbeschreibung diagnostisch relevanter Informationen." />
       <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="Condition.extension:UnfallJargondiagnose">
       <path value="Condition.extension" />
@@ -62,6 +50,25 @@
     <element id="Condition.code.coding:AO-Klassifikation">
       <path value="Condition.code.coding" />
       <sliceName value="AO-Klassifikation" />
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation.system">
+      <path value="Condition.code.coding.system" />
+      <short value="Platzhalter für ein CodeSystem der AO-Foundation" />
+      <definition value="Solange es kein offizielles CodeSystem, wird eine Platzhalter-Canonical verwendet. Weitere Details hier: https://chat.fhir.org/#narrow/stream/179183-german-.28d-a-ch.29/topic/AO.20Klassifikation.20und.20FHIR" />
+      <binding>
+        <strength value="example" />
+        <description value="AO-Klassifikation" />
+        <valueSet value="http://www.ao-foundation.ch/fhir/ao" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation.code">
+      <path value="Condition.code.coding.code" />
+      <short value="der AO-Klassifikationcode" />
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation.display">
+      <path value="Condition.code.coding.display" />
+      <short value="Anzeigename bzw. Langtext der AO-Klassifikation" />
+      <min value="1" />
     </element>
     <element id="Condition.code.text">
       <path value="Condition.code.text" />
