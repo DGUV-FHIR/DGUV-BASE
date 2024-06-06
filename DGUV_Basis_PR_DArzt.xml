@@ -99,9 +99,5 @@
       <path value="PractitionerRole.specialty.coding.display" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.telecom">
-      <path value="PractitionerRole.telecom" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>
