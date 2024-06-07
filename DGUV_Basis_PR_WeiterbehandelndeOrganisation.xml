@@ -11,4 +11,46 @@
   <type value="Organization" />
   <baseDefinition value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Organization.identifier:Institutionskennzeichen">
+      <path value="Organization.identifier" />
+      <sliceName value="Institutionskennzeichen" />
+    </element>
+    <element id="Organization.identifier:Institutionskennzeichen.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier:Betriebsstaettennummer">
+      <path value="Organization.identifier" />
+      <sliceName value="Betriebsstaettennummer" />
+    </element>
+    <element id="Organization.identifier:Betriebsstaettennummer.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier:VKNR">
+      <path value="Organization.identifier" />
+      <sliceName value="VKNR" />
+    </element>
+    <element id="Organization.identifier:VKNR.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier:KZV-Abrechnungsnummer">
+      <path value="Organization.identifier" />
+      <sliceName value="KZV-Abrechnungsnummer" />
+    </element>
+    <element id="Organization.identifier:KZV-Abrechnungsnummer.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier:Telematik-ID">
+      <path value="Organization.identifier" />
+      <sliceName value="Telematik-ID" />
+    </element>
+    <element id="Organization.identifier:Telematik-ID.type">
+      <path value="Organization.identifier.type" />
+      <min value="1" />
+    </element>
+  </differential>
 </StructureDefinition>
