@@ -39,6 +39,12 @@
       <path value="Patient.extension.extension" />
       <sliceName value="code" />
     </element>
+    <element id="Patient.extension:nationality.extension:code.value[x]">
+      <path value="Patient.extension.extension.value[x]" />
+    </element>
+    <element id="Patient.extension:nationality.extension:code.value[x].coding">
+      <path value="Patient.extension.extension.value[x].coding" />
+    </element>
     <element id="Patient.extension:nationality.extension:code.value[x].coding.system">
       <path value="Patient.extension.extension.value[x].coding.system" />
       <binding>
@@ -50,13 +56,58 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="type.coding.code" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <short value="Ein Identifikator für den Patienten" />
       <definition value="Ein Identifikator für den Patienten." />
+    </element>
+    <element id="Patient.identifier:VersichertenId">
+      <path value="Patient.identifier" />
+      <sliceName value="VersichertenId" />
+      <comment value="Die als 'KVZ10' kodierte Versichertennummer gilt für alle Krankenversichertennummern, unabhängig, ob es sich um GKV, PKV oder Sonderkostenträger handelt." />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
+      </type>
+      <patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+            <code value="KVZ10" />
+          </coding>
+        </type>
+      </patternIdentifier>
+    </element>
+    <element id="Patient.identifier:VersichertenId.type">
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:VersichertenId_GKV">
+      <path value="Patient.identifier" />
+      <sliceName value="VersichertenId_GKV" />
+      <short value="Identifikator-Profil für die Krankenversichertennummer" />
+      <definition value="Identifikator-Profil für die 10-stellige Krankenversichertennummer." />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
+      </type>
+      <patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+            <code value="GKV" />
+          </coding>
+        </type>
+      </patternIdentifier>
+      <mustSupport value="false" />
+    </element>
+    <element id="Patient.identifier:VersichertenId_GKV.type">
+      <path value="Patient.identifier.type" />
+      <min value="1" />
     </element>
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
@@ -67,116 +118,19 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-pid" />
       </type>
+      <patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="MR" />
+          </coding>
+        </type>
+      </patternIdentifier>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.identifier:Patientennummer.type">
-      <path value="Patient.identifier.type" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.type.coding">
-      <path value="Patient.identifier.type.coding" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.type.coding.system">
-      <path value="Patient.identifier.type.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.type.coding.code">
-      <path value="Patient.identifier.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.type.coding.display">
-      <path value="Patient.identifier.type.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.type.coding.userSelected">
-      <path value="Patient.identifier.type.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.type.text">
-      <path value="Patient.identifier.type.text" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.system">
-      <path value="Patient.identifier.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.value">
-      <path value="Patient.identifier.value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.period">
-      <path value="Patient.identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:Patientennummer.assigner">
-      <path value="Patient.identifier.assigner" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV">
+    <element id="Patient.identifier:Versichertennummer_PKV">
       <path value="Patient.identifier" />
-      <sliceName value="versichertenId_GKV" />
-      <short value="Identifikator-Profil für die Krankenversichertennummer" />
-      <definition value="Identifikator-Profil für die 10-stellige Krankenversichertennummer." />
-      <max value="1" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
-      </type>
-      <mustSupport value="false" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type">
-      <path value="Patient.identifier.type" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type.coding">
-      <path value="Patient.identifier.type.coding" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type.coding.system">
-      <path value="Patient.identifier.type.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type.coding.code">
-      <path value="Patient.identifier.type.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type.coding.display">
-      <path value="Patient.identifier.type.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type.coding.userSelected">
-      <path value="Patient.identifier.type.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.type.text">
-      <path value="Patient.identifier.type.text" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.system">
-      <path value="Patient.identifier.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.value">
-      <path value="Patient.identifier.value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.period">
-      <path value="Patient.identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.assigner">
-      <path value="Patient.identifier.assigner" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertennummer_PKV">
-      <path value="Patient.identifier" />
-      <sliceName value="versichertennummer_PKV" />
+      <sliceName value="Versichertennummer_PKV" />
       <short value="Identifikator-Profil für die Privatversichertennummer" />
       <definition value="Identifikator-Profil für die Abbildung einer Privatversichertennummer." />
       <max value="1" />
@@ -184,48 +138,27 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-pkv" />
       </type>
+      <patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+            <code value="PKV" />
+          </coding>
+        </type>
+      </patternIdentifier>
       <mustSupport value="false" />
     </element>
-    <element id="Patient.identifier:versichertennummer_PKV.type">
+    <element id="Patient.identifier:Versichertennummer_PKV.type">
       <path value="Patient.identifier.type" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versichertennummer_PKV.type.coding">
-      <path value="Patient.identifier.type.coding" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertennummer_PKV.type.coding.userSelected">
-      <path value="Patient.identifier.type.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertennummer_PKV.type.text">
-      <path value="Patient.identifier.type.text" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertennummer_PKV.system">
+    <element id="Patient.identifier:Versichertennummer_PKV.system">
       <path value="Patient.identifier.system" />
       <mustSupport value="false" />
     </element>
-    <element id="Patient.identifier:versichertennummer_PKV.value">
+    <element id="Patient.identifier:Versichertennummer_PKV.value">
       <path value="Patient.identifier.value" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertennummer_PKV.period">
-      <path value="Patient.identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="Patient.identifier:versichertennummer_KVK">
-      <path value="Patient.identifier" />
-      <sliceName value="versichertennummer_KVK" />
-      <max value="1" />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Identifier_KVK" />
-      </type>
-      <mustSupport value="false" />
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
