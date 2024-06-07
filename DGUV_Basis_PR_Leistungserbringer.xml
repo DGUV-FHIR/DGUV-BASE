@@ -99,6 +99,7 @@
       <path value="Practitioner.name" />
       <sliceName value="Name" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />

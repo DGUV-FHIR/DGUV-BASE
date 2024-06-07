@@ -249,6 +249,7 @@
       <sliceName value="Name" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
