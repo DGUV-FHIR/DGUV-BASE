@@ -16,11 +16,11 @@
   <differential>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung abgebildet." />
+      <short value="Rolle einer behandelnden Person/Leistungserbringer" />
+      <definition value="Mit diesem Profil wird eine temporäre Rolle einer behandelnden Person/Leistungserbringers abgebildet." />
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
-      <definition value="Dieses Profil stellt eine temporäre Rolle einer behandelnden Person in Bezug auf eine Einrichtung dar." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
@@ -32,7 +32,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
       </type>
     </element>
     <element id="PractitionerRole.code.coding.system">

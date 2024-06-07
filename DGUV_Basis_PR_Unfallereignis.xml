@@ -27,6 +27,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="Einordnung der Verletzung" />
+      <definition value="Angaben zur Verletzung bzw. Einordnung der Verletzung in das entsprechende Verfahren: Durchgangsarztverfahren (DAV), Verletzungsartenverfahren (VAV) oder Schwerstverletzenartenverfahren (SAV)." />
     </element>
     <element id="Observation.code:SAV-VAV">
       <path value="Observation.code" />
@@ -139,6 +141,7 @@
     <element id="Observation.component:EndeDerArbeitszeit">
       <path value="Observation.component" />
       <sliceName value="EndeDerArbeitszeit" />
+      <max value="1" />
     </element>
     <element id="Observation.component:EndeDerArbeitszeit.code">
       <path value="Observation.component.code" />
@@ -178,6 +181,9 @@
     <element id="Observation.component:Unfallhergang">
       <path value="Observation.component" />
       <sliceName value="Unfallhergang" />
+      <short value="Beschreibung Unfallhergang" />
+      <definition value="Von der versicherten Person und/oder Angehörigen vorgetragener Unfallhergang" />
+      <max value="1" />
     </element>
     <element id="Observation.component:Unfallhergang.code">
       <path value="Observation.component.code" />
@@ -217,6 +223,9 @@
     <element id="Observation.component:BeschwerdenKlagen">
       <path value="Observation.component" />
       <sliceName value="BeschwerdenKlagen" />
+      <short value="Beschwerden bzw. Klagen" />
+      <definition value="Vorgetragenen subjektiven Beschwerden der versicherten Person und/oder Angehörigen" />
+      <max value="1" />
     </element>
     <element id="Observation.component:BeschwerdenKlagen.code">
       <path value="Observation.component.code" />
@@ -256,6 +265,9 @@
     <element id="Observation.component:Beruf">
       <path value="Observation.component" />
       <sliceName value="Beruf" />
+      <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
+      <definition value="Konkreter Beschreibung der aktuellen oder zuletzt ausgeübten Tätigkeit." />
+      <max value="1" />
     </element>
     <element id="Observation.component:Beruf.code">
       <path value="Observation.component.code" />
@@ -288,10 +300,16 @@
     <element id="Observation.component:Beruf.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
     </element>
     <element id="Observation.component:Beschaeftigungsbeginn">
       <path value="Observation.component" />
       <sliceName value="Beschaeftigungsbeginn" />
+      <short value="Beginn der Beschäftigung" />
+      <definition value="Seit wann führt der Versicherte die Tätigkeit aus?" />
+      <max value="1" />
     </element>
     <element id="Observation.component:Beschaeftigungsbeginn.code">
       <path value="Observation.component.code" />
@@ -324,6 +342,9 @@
     <element id="Observation.component:Beschaeftigungsbeginn.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

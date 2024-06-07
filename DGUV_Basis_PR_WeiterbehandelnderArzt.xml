@@ -18,5 +18,13 @@
       <path value="PractitionerRole" />
       <short value="Deses Profil bildet den Weiterbehandelnder Arzt (z. B. D-Arzt, Allgemeinarzt) ab." />
     </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

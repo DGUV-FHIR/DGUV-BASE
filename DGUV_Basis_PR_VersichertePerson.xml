@@ -182,11 +182,17 @@
       <sliceName value="Name" />
       <definition value="Personenname mit in Deutschland üblichen Erweiterungen." />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
       <mustSupport value="false" />
+    </element>
+    <element id="Patient.name:Name.use">
+      <path value="Patient.name.use" />
+      <min value="1" />
+      <fixedCode value="official" />
     </element>
     <element id="Patient.name:Name.family">
       <path value="Patient.name.family" />
@@ -210,6 +216,11 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+    </element>
+    <element id="Patient.name:Geburtsname.use">
+      <path value="Patient.name.use" />
+      <min value="1" />
+      <fixedCode value="maiden" />
     </element>
     <element id="Patient.name:Geburtsname.given">
       <path value="Patient.name.given" />

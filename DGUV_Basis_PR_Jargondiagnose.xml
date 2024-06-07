@@ -16,19 +16,7 @@
   <differential>
     <element id="Condition.extension">
       <path value="Condition.extension" />
-      <min value="2" />
-    </element>
-    <element id="Condition.extension:JargondiagnoseText">
-      <path value="Condition.extension" />
-      <sliceName value="JargondiagnoseText" />
-      <definition value="Die vom Arzt verfasste Freitextbeschreibung diagnostisch relevanter Informationen." />
       <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose" />
-      </type>
-      <isModifier value="false" />
     </element>
     <element id="Condition.extension:UnfallJargondiagnose">
       <path value="Condition.extension" />
@@ -40,6 +28,10 @@
         <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfalldiagnose" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
     </element>
     <element id="Condition.code.coding">
       <path value="Condition.code.coding" />
@@ -62,6 +54,24 @@
     <element id="Condition.code.coding:AO-Klassifikation">
       <path value="Condition.code.coding" />
       <sliceName value="AO-Klassifikation" />
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation.system">
+      <path value="Condition.code.coding.system" />
+      <short value="Platzhalter für ein CodeSystem der AO-Foundation" />
+      <definition value="Solange es kein offizielles CodeSystem gibt, wird eine Platzhalter-Canonical verwendet." />
+      <binding>
+        <strength value="example" />
+        <description value="AO-Klassifikation" />
+        <valueSet value="http://www.ao-foundation.ch/fhir/ao" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation.code">
+      <path value="Condition.code.coding.code" />
+      <short value="der AO-Klassifikationcode" />
+    </element>
+    <element id="Condition.code.coding:AO-Klassifikation.display">
+      <path value="Condition.code.coding.display" />
+      <short value="Anzeigename bzw. Langtext der AO-Klassifikation" />
     </element>
     <element id="Condition.code.text">
       <path value="Condition.code.text" />
