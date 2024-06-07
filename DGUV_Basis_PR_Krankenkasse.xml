@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/organization/DGUV_Basis_PR_Krankenkasse" />
+  <url value="http://fhir.dguv.de/Basis/organization/DGUV_Basis_PR_Krankenkasse" />
   <name value="DGUV_Basis_PR_Krankenkasse" />
   <title value="Krankenkasse" />
   <status value="draft" />
@@ -48,7 +48,7 @@
       <path value="Organization.telecom" />
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+        <profile value="http://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
     </element>
     <element id="Organization.address">

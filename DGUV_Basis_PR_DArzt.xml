@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+  <url value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   <version value="1.1" />
   <name value="DGUV_Basis_PR_DArzt" />
   <title value="D-Arzt" />
@@ -11,7 +11,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
-  <baseDefinition value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
+  <baseDefinition value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
   <derivation value="constraint" />
   <differential>
     <element id="PractitionerRole">
@@ -27,7 +27,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
+        <targetProfile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
       </type>
     </element>
     <element id="PractitionerRole.code">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
+  <url value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
   <version value="1.1" />
   <name value="DGUV_Basis_PR_Leistungserbringer" />
   <title value="Leistungserbringer" />
@@ -155,7 +155,7 @@
       <path value="Practitioner.telecom" />
       <type>
         <code value="ContactPoint" />
-        <profile value="https://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
+        <profile value="http://fhir.dguv.de/Basis/ContactPoint/DGUV-Basis-PR-KontaktDaten" />
       </type>
     </element>
     <element id="Practitioner.address">

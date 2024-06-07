@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
+  <url value="http://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
   <version value="1.1" />
   <name value="DGUV_Basis_PR_Unfallort" />
   <title value="Unfallort" />
