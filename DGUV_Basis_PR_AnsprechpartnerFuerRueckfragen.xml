@@ -21,12 +21,22 @@
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt">
       <path value="PractitionerRole.extension" />
       <sliceName value="NichtAerztlicherKontakt" />
+      <short value="Angaben für nicht-ärztlichen Kontakt" />
+      <definition value="Über dieses Element wird angegeben, ob es sich beim Ansprechpartner für Rückfragen um einen nicht ärztlichen Kontakt handelt (z.B. Rezeption, Vorzimmer, Patientenmanagement). Außerdem kann die genaue Funktionseinheit spezifiziert werden." />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-NichtAerztlicherAnsprechpartner" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:NichtAerztlicherKontakt">
+      <path value="PractitionerRole.extension.extension" />
+      <sliceName value="NichtAerztlicherKontakt" />
+    </element>
+    <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:NichtAerztlicherKontakt.value[x]">
+      <path value="PractitionerRole.extension.extension.value[x]" />
+      <definition value="True=NichtAerztlicherKontakt" />
     </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit">
       <path value="PractitionerRole.extension.extension" />
