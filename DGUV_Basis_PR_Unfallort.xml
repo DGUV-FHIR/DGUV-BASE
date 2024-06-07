@@ -31,6 +31,11 @@
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
     </element>
+    <element id="Location.address.line.extension:Postfach">
+      <path value="Location.address.line.extension" />
+      <sliceName value="Postfach" />
+      <max value="0" />
+    </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
       <short value="Referenz auf den Unfallbetrieb." />
