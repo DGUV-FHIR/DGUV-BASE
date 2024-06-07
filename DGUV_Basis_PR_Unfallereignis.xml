@@ -141,6 +141,7 @@
     <element id="Observation.component:EndeDerArbeitszeit">
       <path value="Observation.component" />
       <sliceName value="EndeDerArbeitszeit" />
+      <max value="1" />
     </element>
     <element id="Observation.component:EndeDerArbeitszeit.code">
       <path value="Observation.component.code" />
@@ -182,6 +183,7 @@
       <sliceName value="Unfallhergang" />
       <short value="Beschreibung Unfallhergang" />
       <definition value="Von der versicherten Person und/oder Angehörigen vorgetragener Unfallhergang" />
+      <max value="1" />
     </element>
     <element id="Observation.component:Unfallhergang.code">
       <path value="Observation.component.code" />
@@ -223,6 +225,7 @@
       <sliceName value="BeschwerdenKlagen" />
       <short value="Beschwerden bzw. Klagen" />
       <definition value="Vorgetragenen subjektiven Beschwerden der versicherten Person und/oder Angehörigen" />
+      <max value="1" />
     </element>
     <element id="Observation.component:BeschwerdenKlagen.code">
       <path value="Observation.component.code" />
@@ -264,6 +267,7 @@
       <sliceName value="Beruf" />
       <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
       <definition value="Konkreter Beschreibung der aktuellen oder zuletzt ausgeübten Tätigkeit." />
+      <max value="1" />
     </element>
     <element id="Observation.component:Beruf.code">
       <path value="Observation.component.code" />
@@ -305,6 +309,7 @@
       <sliceName value="Beschaeftigungsbeginn" />
       <short value="Beginn der Beschäftigung" />
       <definition value="Seit wann führt der Versicherte die Tätigkeit aus?" />
+      <max value="1" />
     </element>
     <element id="Observation.component:Beschaeftigungsbeginn.code">
       <path value="Observation.component.code" />
