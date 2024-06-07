@@ -29,6 +29,10 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
+    </element>
     <element id="Condition.code.coding">
       <path value="Condition.code.coding" />
       <slicing>
@@ -54,7 +58,7 @@
     <element id="Condition.code.coding:AO-Klassifikation.system">
       <path value="Condition.code.coding.system" />
       <short value="Platzhalter für ein CodeSystem der AO-Foundation" />
-      <definition value="Solange es kein offizielles CodeSystem, wird eine Platzhalter-Canonical verwendet. Weitere Details hier: https://chat.fhir.org/#narrow/stream/179183-german-.28d-a-ch.29/topic/AO.20Klassifikation.20und.20FHIR" />
+      <definition value="Solange es kein offizielles CodeSystem gibt, wird eine Platzhalter-Canonical verwendet." />
       <binding>
         <strength value="example" />
         <description value="AO-Klassifikation" />
@@ -68,7 +72,6 @@
     <element id="Condition.code.coding:AO-Klassifikation.display">
       <path value="Condition.code.coding.display" />
       <short value="Anzeigename bzw. Langtext der AO-Klassifikation" />
-      <min value="1" />
     </element>
     <element id="Condition.code.text">
       <path value="Condition.code.text" />

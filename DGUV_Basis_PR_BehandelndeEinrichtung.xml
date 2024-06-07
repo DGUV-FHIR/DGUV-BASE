@@ -22,8 +22,8 @@
       <path value="Organization.identifier" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="type" />
+          <type value="value" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -39,10 +39,6 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
       </type>
     </element>
-    <element id="Organization.identifier:Institutionskennzeichen.type">
-      <path value="Organization.identifier.type" />
-      <min value="1" />
-    </element>
     <element id="Organization.identifier:Betriebsstaettennummer">
       <path value="Organization.identifier" />
       <sliceName value="Betriebsstaettennummer" />
@@ -51,10 +47,6 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-bsnr" />
       </type>
-    </element>
-    <element id="Organization.identifier:Betriebsstaettennummer.type">
-      <path value="Organization.identifier.type" />
-      <min value="1" />
     </element>
     <element id="Organization.identifier:VKNR">
       <path value="Organization.identifier" />
@@ -65,10 +57,6 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-vknr" />
       </type>
     </element>
-    <element id="Organization.identifier:VKNR.type">
-      <path value="Organization.identifier.type" />
-      <min value="1" />
-    </element>
     <element id="Organization.identifier:KZV-Abrechnungsnummer">
       <path value="Organization.identifier" />
       <sliceName value="KZV-Abrechnungsnummer" />
@@ -78,10 +66,6 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-kzva" />
       </type>
     </element>
-    <element id="Organization.identifier:KZV-Abrechnungsnummer.type">
-      <path value="Organization.identifier.type" />
-      <min value="1" />
-    </element>
     <element id="Organization.identifier:Telematik-ID">
       <path value="Organization.identifier" />
       <sliceName value="Telematik-ID" />
@@ -89,10 +73,6 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-telematik-id" />
       </type>
-    </element>
-    <element id="Organization.identifier:Telematik-ID.type">
-      <path value="Organization.identifier.type" />
-      <min value="1" />
     </element>
     <element id="Organization.type.coding">
       <path value="Organization.type.coding" />
