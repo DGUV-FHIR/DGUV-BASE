@@ -90,8 +90,10 @@
       <path value="Condition.recorder" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
-        <profile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+        <targetProfile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
     </element>
   </differential>

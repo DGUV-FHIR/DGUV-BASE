@@ -127,7 +127,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
-        <targetProfile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+        <targetProfile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-Leistungserbringerrolle" />
         <targetProfile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer" />
       </type>
     </element>
