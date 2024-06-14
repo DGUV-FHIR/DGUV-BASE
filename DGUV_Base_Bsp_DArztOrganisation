@@ -1,0 +1,35 @@
+<Organization>
+    <id value="D-Arzt Einrichtung-1" />
+    <meta>
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="XX" />
+                <display value="Organisations-ID" />
+            </coding>
+        </type>
+        <system value="http://fhir.de/sid/arge-ik/iknr" />
+        <value value="12345678" />
+    </identifier>
+    <name value="Unfallkrankenhaus Berlin"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="+1-1234565789"/>
+    </telecom>
+    <address>
+        <line value="Musterstraße 1">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                <valueString value="Musterstraße"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                <valueString value="1"/>
+            </extension>
+        </line>
+        <city value="Berlin"/>
+        <postalCode value="11111"/>
+        <country value="DE"/>
+    </address>
+</Organization>

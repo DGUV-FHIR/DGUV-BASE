@@ -1,0 +1,116 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="DArzt_Konstellation"/>
+    <type value="collection" />
+    <entry>
+        <fullUrl value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer/Arzt-1" />
+        <resource>
+           <Practicioner xmlns="http://hl7.org/fhir">
+                <id value="Arzt-1"/>
+                <meta>
+                    <profile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer"/>
+                </meta>   
+                <identifier>
+                    <use value="official"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="LANR" />
+                        </coding>
+                    </type>
+                    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+                    <value value="1234567" />
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Musterarzt"/>
+                    <given value="Matthias"/>
+                    <prefix value="Dr.">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                            <valueCode value="AC" />
+                        </extension>
+                    </prefix>
+                </name>
+                <qualification>
+                    <code>
+                        <coding>
+                            <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_IHEXDS_Facharzttitel_der_Aerztekammern" />
+                            <code value="11001" />
+                            <display value="FA Allgemeinmedizin"/>
+                        </coding>
+                    </code>
+                </qualification>
+            </Practicioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://fhir.dguv.de/Location/Ort-123" />
+        <resource>
+            <?xml version="1.0" encoding="utf-8"?>
+            <PractitionerRole xmlns="http://hl7.org/fhir">
+            <meta>
+                <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+            </meta>
+            <practitioner>
+                <reference value="Practitioner/Arzt-1" />
+            </practitioner>
+            <organization>
+                <reference value="Oragnization/Betrieb-1" />
+            </organization>
+            <code>
+                <coding>
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+                <code value="OA" />
+                <display value="Oberärztin/-arzt" />
+                </coding>
+            </code>
+            <specialty>
+                <coding>
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+                <code value="01" />
+                <display value="Allgemeinmedizin" />
+                </coding>
+            </specialty>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://fhir.dguv.de/Oragnization/Betrieb-1" />
+        <resource>
+             <Organization>
+                <id value="D-Arzt Einrichtung-1" />
+                <meta>
+                    <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="XX" />
+                            <display value="Organisations-ID" />
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/sid/arge-ik/iknr" />
+                    <value value="12345678" />
+                </identifier>
+                <name value="Unfallkrankenhaus Berlin"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="+1-1234565789"/>
+                </telecom>
+                <address>
+                    <line value="Musterstraße 1">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Musterstraße"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="1"/>
+                        </extension>
+                    </line>
+                    <city value="Berlin"/>
+                    <postalCode value="11111"/>
+                    <country value="DE"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+</Bundle>

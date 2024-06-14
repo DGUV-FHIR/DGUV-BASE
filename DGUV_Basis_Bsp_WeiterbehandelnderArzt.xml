@@ -1,20 +1,8 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
     <id value="WeiterbehandelnderArzt"/>
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
+        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
     </meta>
-	<!--  ANR  -->
-    <identifier>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-                <code value="LANR" />
-                <display value="Lifelong physician number" />
-            </coding>
-        </type>
-        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
-        <value value="7777777778" />
-    </identifier>
     <practitioner>
         <reference value="Practitioner/56789" />
     </practitioner>

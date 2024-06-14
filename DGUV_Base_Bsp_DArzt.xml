@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
   <meta>
-    <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+    <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   </meta>
   <practitioner>
-    <reference value="Practitioner/4567" />
+    <reference value="Practitioner/Arzt-1" />
   </practitioner>
   <organization>
     <reference value="organization/234" />
