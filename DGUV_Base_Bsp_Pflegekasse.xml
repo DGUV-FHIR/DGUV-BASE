@@ -1,7 +1,7 @@
 <Organization>
     <id value="Pflegekasse-1" />
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Pflegekasse" />
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV_Basis_PR_Pflegekasse" />
     </meta>
       <identifier>
         <type>
