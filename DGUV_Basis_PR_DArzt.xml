@@ -34,51 +34,14 @@
       <path value="PractitionerRole.code" />
       <short value="Beschreibung von Rolle in Bezug auf die Einrichtung" />
     </element>
-    <element id="PractitionerRole.code.coding">
-      <path value="PractitionerRole.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
       <sliceName value="RolleInDerEinrichtung" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.system">
       <path value="PractitionerRole.code.coding.system" />
       <short value="RolleInDerEinrichtung" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.version">
-      <path value="PractitionerRole.code.coding.version" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.code">
-      <path value="PractitionerRole.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.display">
-      <path value="PractitionerRole.code.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.specialty.coding">
-      <path value="PractitionerRole.specialty.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
       <path value="PractitionerRole.specialty.coding" />
