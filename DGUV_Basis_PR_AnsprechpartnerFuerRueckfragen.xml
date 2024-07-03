@@ -37,6 +37,7 @@
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:NichtAerztlicherKontakt.value[x]">
       <path value="PractitionerRole.extension.extension.value[x]" />
       <definition value="True=NichtAerztlicherKontakt" />
+      <min value="1" />
     </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit">
       <path value="PractitionerRole.extension.extension" />
@@ -44,58 +45,25 @@
       <short value="Funktionseinheit wie z.B. Abteilung/Station/Sekretariat" />
       <max value="1" />
     </element>
-    <element id="PractitionerRole.code.coding">
-      <path value="PractitionerRole.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+    <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit.value[x]">
+      <path value="PractitionerRole.extension.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <short value="Beschreibung der Rolle in der Einrichtung" />
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
       <sliceName value="RolleInDerEinrichtung" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.system">
       <path value="PractitionerRole.code.coding.system" />
       <short value="RolleInDerEinrichtung" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.version">
-      <path value="PractitionerRole.code.coding.version" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.code">
-      <path value="PractitionerRole.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.display">
-      <path value="PractitionerRole.code.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.specialty.coding">
-      <path value="PractitionerRole.specialty.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
       <path value="PractitionerRole.specialty.coding" />
       <sliceName value="KBV-Fachgruppe" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
-      </binding>
     </element>
     <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.system">
       <path value="PractitionerRole.specialty.coding.system" />

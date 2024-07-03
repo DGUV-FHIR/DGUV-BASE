@@ -32,7 +32,7 @@
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
-      <short value="Beschreibung von Rolle in Bezug auf die Einrichtung" />
+      <short value="Beschreibung der Rolle in der Einrichtung" />
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
