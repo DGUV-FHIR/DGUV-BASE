@@ -37,8 +37,8 @@
       <path value="Condition.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="exists" />
+          <path value="version" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -46,6 +46,7 @@
     <element id="Condition.code.coding:ICD-10-GM">
       <path value="Condition.code.coding" />
       <sliceName value="ICD-10-GM" />
+      <max value="1" />
       <type>
         <code value="Coding" />
         <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
@@ -54,11 +55,13 @@
     <element id="Condition.code.coding:AO-Klassifikation">
       <path value="Condition.code.coding" />
       <sliceName value="AO-Klassifikation" />
+      <max value="1" />
     </element>
     <element id="Condition.code.coding:AO-Klassifikation.system">
       <path value="Condition.code.coding.system" />
       <short value="Platzhalter für ein CodeSystem der AO-Foundation" />
       <definition value="Solange es kein offizielles CodeSystem gibt, wird eine Platzhalter-Canonical verwendet." />
+      <min value="1" />
       <binding>
         <strength value="example" />
         <description value="AO-Klassifikation" />
@@ -68,10 +71,12 @@
     <element id="Condition.code.coding:AO-Klassifikation.code">
       <path value="Condition.code.coding.code" />
       <short value="der AO-Klassifikationcode" />
+      <min value="1" />
     </element>
     <element id="Condition.code.coding:AO-Klassifikation.display">
       <path value="Condition.code.coding.display" />
       <short value="Anzeigename bzw. Langtext der AO-Klassifikation" />
+      <min value="1" />
     </element>
     <element id="Condition.code.text">
       <path value="Condition.code.text" />
