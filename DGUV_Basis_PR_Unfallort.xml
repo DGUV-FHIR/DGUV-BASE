@@ -36,10 +36,5 @@
       <sliceName value="Postfach" />
       <max value="0" />
     </element>
-    <element id="Location.managingOrganization">
-      <path value="Location.managingOrganization" />
-      <short value="Referenz auf den Unfallbetrieb." />
-      <min value="1" />
-    </element>
   </differential>
 </StructureDefinition>
