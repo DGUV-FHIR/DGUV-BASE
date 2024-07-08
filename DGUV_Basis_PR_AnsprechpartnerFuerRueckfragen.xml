@@ -16,7 +16,7 @@
   <differential>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen.." />
+      <short value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen." />
     </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt">
       <path value="PractitionerRole.extension" />
@@ -49,9 +49,13 @@
       <path value="PractitionerRole.extension.extension.value[x]" />
       <min value="1" />
     </element>
-    <element id="PractitionerRole.code">
-      <path value="PractitionerRole.code" />
-      <short value="Beschreibung der Rolle in der Einrichtung" />
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <min value="1" />
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
@@ -60,27 +64,6 @@
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.system">
       <path value="PractitionerRole.code.coding.system" />
       <short value="RolleInDerEinrichtung" />
-    </element>
-    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
-      <path value="PractitionerRole.specialty.coding" />
-      <sliceName value="KBV-Fachgruppe" />
-    </element>
-    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.system">
-      <path value="PractitionerRole.specialty.coding.system" />
-      <min value="1" />
-      <patternUri value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
-    </element>
-    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.version">
-      <path value="PractitionerRole.specialty.coding.version" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.code">
-      <path value="PractitionerRole.specialty.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe.display">
-      <path value="PractitionerRole.specialty.coding.display" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

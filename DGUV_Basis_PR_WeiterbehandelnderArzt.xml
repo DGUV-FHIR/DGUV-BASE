@@ -18,8 +18,13 @@
       <path value="PractitionerRole" />
       <short value="Deses Profil bildet den Weiterbehandelnder Arzt (z. B. D-Arzt, Allgemeinarzt) ab." />
     </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <min value="1" />
+    </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />

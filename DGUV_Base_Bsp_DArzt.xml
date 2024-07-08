@@ -7,7 +7,7 @@
     <reference value="Practitioner/Arzt-1" />
   </practitioner>
   <organization>
-    <reference value="organization/234" />
+    <reference value="organization/DArzt-Einrichtung-234" />
   </organization>
   <code>
     <coding>
