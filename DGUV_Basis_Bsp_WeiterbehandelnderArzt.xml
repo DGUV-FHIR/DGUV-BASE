@@ -1,7 +1,7 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
     <id value="WeiterbehandelnderArzt"/>
     <meta>
-        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
+        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-WeiterbehandelnderArzt" />
     </meta>
     <practitioner>
         <reference value="Practitioner/56789" />
