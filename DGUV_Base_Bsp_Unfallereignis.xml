@@ -1,8 +1,7 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="Arbeitsunfall-1"/>
   <meta>
-    <profile
-             value="https://fhir.dguv.de/Basis/Observation/DGUV_Basis_PR_Unfallereignis"/>
+    <profile value="https://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
   </meta>
   <status value="final"/>
   <code>
@@ -34,7 +33,7 @@
         <display value="Ende Der Arbeitszeit"/>
       </coding>
     </code>
-    <valueDateTime value="2024-11-02T016:00:00"/>
+    <valueDateTime value="2024-11-02T16:00:00"/>
   </component>
   <component>
     <code>
@@ -50,7 +49,7 @@
     <code>
       <coding>
         <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
-        <code value="06"/>
+        <code value="05"/>
         <display value="Beruf"/>
       </coding>
     </code>
@@ -60,7 +59,7 @@
     <code>
       <coding>
         <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
-        <code value="07"/>
+        <code value="06"/>
         <display value="Ende Der Arbeitszeit"/>
       </coding>
     </code>

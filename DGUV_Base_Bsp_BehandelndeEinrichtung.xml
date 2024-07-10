@@ -1,7 +1,7 @@
 <Organization>
-    <id value="Behandelnde-Einrichtung-1" />
+    <id value="BehandelndeEinrichtung-234" />
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
     </meta>
     <identifier>
         <type>

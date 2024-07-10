@@ -2,7 +2,7 @@
     <id value="DArzt_Konstellation"/>
     <type value="collection" />
     <entry>
-        <fullUrl value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer/Arzt-1" />
+        <fullUrl value="http://fhir.dguv.de/Basis/Practitioner/Arzt-1" />
         <resource>
            <Practicioner xmlns="http://hl7.org/fhir">
                 <id value="Arzt-1"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.dguv.de/Basis/organization/DGUV_Basis_PR_Krankenkasse" />
+  <url value="http://fhir.dguv.de/Basis/organization/DGUV-Basis-PR-Krankenkasse" />
   <name value="DGUV_Basis_PR_Krankenkasse" />
   <title value="Krankenkasse" />
   <status value="draft" />

@@ -1,10 +1,10 @@
 <Organization>
     <id value="Krankenkasse-1" />
     <meta>
-        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV_Basis_PR_Krankenkasse" />
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse" />
     </meta>
     <!--Bei einer Familienversicherung wird hier die hauptversicherte Person angegeben.-->
-    <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname">      
+    <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname">          
         <valueName>
             <use value="official" />
             <family value="Farad" />
