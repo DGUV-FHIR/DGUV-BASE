@@ -2,6 +2,7 @@
     <id value="DArzt_Konstellation"/>
     <type value="collection" />
     <entry>
+    <!--Hier wird der Leistungserbringer/Arzt beschrieben-->
         <fullUrl value="http://fhir.dguv.de/Basis/Practitioner/Arzt-1" />
         <resource>
            <Practicioner xmlns="http://hl7.org/fhir">
@@ -43,7 +44,8 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhir.dguv.de/Location/Ort-123" />
+      <!--Hier wird die Arzt-Rolle beschrieben-->
+        <fullUrl value="http://fhir.dguv.de/PractitionerRole/DArzt-Rolle-Arzt-1" />
         <resource>
             <?xml version="1.0" encoding="utf-8"?>
             <PractitionerRole xmlns="http://hl7.org/fhir">
@@ -54,7 +56,7 @@
                 <reference value="Practitioner/Arzt-1" />
             </practitioner>
             <organization>
-                <reference value="Oragnization/Betrieb-1" />
+                <reference value="Oragnization/DArzt-Einrichtung-234" />
             </organization>
             <code>
                 <coding>
@@ -74,7 +76,8 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhir.dguv.de/Oragnization/Betrieb-1" />
+     <!--Hier wird die D-Arzt-Organisation beschrieben-->
+        <fullUrl value="http://fhir.dguv.de/Oragnization/DArzt-Einrichtung-234" />
         <resource>
              <Organization>
                 <id value="D-Arzt Einrichtung-1" />
