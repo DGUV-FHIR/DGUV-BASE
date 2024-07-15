@@ -16,7 +16,7 @@
   <differential>
     <element id="PractitionerRole">
       <path value="PractitionerRole" />
-      <short value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen.." />
+      <short value="Dieses Profil beschreibt den Ansprechpartner für Rückfragen." />
     </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt">
       <path value="PractitionerRole.extension" />
@@ -37,12 +37,33 @@
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:NichtAerztlicherKontakt.value[x]">
       <path value="PractitionerRole.extension.extension.value[x]" />
       <definition value="True=NichtAerztlicherKontakt" />
+      <min value="1" />
     </element>
     <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit">
       <path value="PractitionerRole.extension.extension" />
       <sliceName value="Funktionseinheit" />
       <short value="Funktionseinheit wie z.B. Abteilung/Station/Sekretariat" />
       <max value="1" />
+    </element>
+    <element id="PractitionerRole.extension:NichtAerztlicherKontakt.extension:Funktionseinheit.value[x]">
+      <path value="PractitionerRole.extension.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
+      <path value="PractitionerRole.code.coding" />
+      <sliceName value="RolleInDerEinrichtung" />
+    </element>
+    <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.system">
+      <path value="PractitionerRole.code.coding.system" />
+      <short value="RolleInDerEinrichtung" />
     </element>
   </differential>
 </StructureDefinition>

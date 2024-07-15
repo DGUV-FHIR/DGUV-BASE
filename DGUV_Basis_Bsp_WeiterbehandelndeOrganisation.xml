@@ -3,7 +3,6 @@
     <meta>
         <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
     </meta>
-    <!--   BSNR   -->
     <identifier>
         <type>
             <coding>
@@ -15,7 +14,6 @@
         <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR" />
         <value value="012300004" />
     </identifier>
-    <!--   Institutionskennzeichen   -->
     <identifier>
         <type>
             <coding>
@@ -28,11 +26,15 @@
         <value value="123456789" />
     </identifier>
     <name value="Praxis Dr. med. Hans Peter Haas" />
+    <telecom>
+		<system value="phone"/>
+		<value value="0049 458 66 888"/>
+	</telecom>
     <address>
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct">
             <valueString value="Mitte" />
         </extension>
-        <type value="postal" />
+        <type value="both" />
         <line value="Musterstr. 99">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
                 <valueString value="99" />
@@ -55,8 +57,4 @@
         </line>
         <city value="Dortmund" />
     </address>
-	<telecom>
-		<system value="phone"/>
-		<value value="0049 458 66 888"/>
-	</telecom>
 </Organization>

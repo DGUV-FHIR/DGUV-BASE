@@ -1,13 +1,13 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
     <id value="Ansprechpartner für Rückfragen"/>
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-AnsprechpartnerFuerRueckfragen" />
+        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_AnsprechpartnerFuerRueckfragen" />
     </meta>
     <practitioner>
         <reference value="Practitioner/1234" />
     </practitioner>
     <organization>
-        <reference value="organization/234" />
+        <reference value="Organization/BehandelndeEinrichtung-234" />
     </organization>
     <code>
         <coding>

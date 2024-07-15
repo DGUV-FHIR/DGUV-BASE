@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.dguv.de/Basis/Organization/DGUV_Basis_PR_Unfallversicherungstraeger" />
+  <url value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallversicherungstraeger" />
   <name value="DGUV_Basis_PR_Unfallversicherungstraeger" />
   <title value="Unfallversicherungsträger" />
   <status value="draft" />

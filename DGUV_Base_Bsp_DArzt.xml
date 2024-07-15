@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="DArzt-Rolle-Arzt-1"/>
   <meta>
-    <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+    <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   </meta>
   <practitioner>
-    <reference value="Practitioner/4567" />
+    <reference value="Practitioner/Arzt-1" />
   </practitioner>
   <organization>
-    <reference value="organization/234" />
+    <reference value="organization/DArzt-Einrichtung-234" />
   </organization>
   <code>
     <coding>
       <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
       <code value="OA" />
+      <version value"1.6.0"/>
       <display value="Oberärztin/-arzt" />
     </coding>
   </code>
   <specialty>
     <coding>
       <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+      <version value="1.03"/>
       <code value="01" />
       <display value="Allgemeinmedizin" />
     </coding>

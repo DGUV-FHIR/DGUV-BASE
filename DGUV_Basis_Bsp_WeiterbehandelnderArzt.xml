@@ -1,29 +1,18 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
     <id value="WeiterbehandelnderArzt"/>
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_WeiterbehandelnderArzt" />
+        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-WeiterbehandelnderArzt" />
     </meta>
-	<!--  ANR  -->
-    <identifier>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-                <code value="LANR" />
-                <display value="Lifelong physician number" />
-            </coding>
-        </type>
-        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
-        <value value="7777777778" />
-    </identifier>
     <practitioner>
-        <reference value="Practitioner/56789" />
+        <reference value="Practitioner/Arzt-14" />
     </practitioner>
     <organization>
-        <reference value="Organization/567" />
+        <reference value="Organization/WeiterbehandelndeOrganisation-cf042e44-086a-4d51-9c77-172f9a972e3b" />
     </organization>
     <code>
         <coding>
             <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+            <version value="1.6.0"/>
             <code value="FA" />
             <display value="Fachärztin/-arzt" />
         </coding>
@@ -31,12 +20,9 @@
     <specialty>
         <coding>
             <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+            <version value="1.03"/>
             <code value="57" />
             <display value="Physikalische und Rehabilitative Medizin/Physiotherapie" />
         </coding>
     </specialty>
-	<telecom>
-		<system value="phone"/>
-		<value value="0049 458 66 97852"/>
-	</telecom>
 </PractitionerRole>

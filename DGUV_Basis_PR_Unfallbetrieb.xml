@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.dguv.de/Basis/Organization/DGUV_Basis_PR_Unfallbetrieb" />
+  <url value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
   <name value="DGUV_Basis_PR_Unfallbetrieb" />
   <title value="Unfallbetrieb" />
   <status value="draft" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://fhir.dguv.de/Basis/organization/DGUV_Basis_PR_Krankenkasse" />
+  <url value="http://fhir.dguv.de/Basis/organization/DGUV-Basis-PR-Krankenkasse" />
   <name value="DGUV_Basis_PR_Krankenkasse" />
   <title value="Krankenkasse" />
   <status value="draft" />
@@ -12,6 +12,22 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Organization.extension:Mitgliedsname">
+      <path value="Organization.extension" />
+      <sliceName value="Mitgliedsname" />
+      <short value="Mitgliedsname des Hauptversicherten" />
+      <definition value="Bei einer Familienversicherung wird über dieses Attribut der Mitgliedsname des Hauptversicherten angegeben." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Organization.extension:Mitgliedsname.value[x]">
+      <path value="Organization.extension.value[x]" />
+      <min value="1" />
+    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <slicing>

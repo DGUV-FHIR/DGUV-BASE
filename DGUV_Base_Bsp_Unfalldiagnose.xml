@@ -1,10 +1,10 @@
 <Condition>
     <id value="Diagnose-1" />
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Unfalldiagnose" />
+        <profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Jargondiagnose" />
     </meta>
-    <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Jargondiagnose">
-        <valueString value="Schädelprellung"/>
+    <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfalldiagnose">
+        <valueBoolean value="true"/>
     </extension>
     <code>
         <coding>
@@ -17,8 +17,14 @@
             </extension>
             <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
             <code value="S06.0"/>
-            <display value="Gehirnerschütterung"/>
+            <display value="Gehirnerschütterung"/> 
         </coding>
+        <coding>
+            <system value="http://www.ao-foundation.ch/fhir/ao"/>
+            <code value="91-A3"/>
+            <display value="schwere komplexe Schaftfraktur proximal am Schädel"/> 
+        </coding>
+        <text value="Starke Erschütterung des Gehirns"/>
     </code>
     <subject>
         <reference value="Patient/111-222-333-444"/>

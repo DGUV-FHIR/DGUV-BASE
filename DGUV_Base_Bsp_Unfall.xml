@@ -2,43 +2,77 @@
     <id value="100"/>
     <type value="collection" />
     <entry>
-        <fullUrl value="https://fhir.dguv.de/AdverseEvent/Unfallereignise-1" />
+        <fullUrl value="https://fhir.dguv.de/Observation/Arbeitsunfall-1" />
         <resource>
             <!--Hier wird das Unfallereignise beschrieben-->
-            <AdverseEvent>
-                <id value="Unfallereignise-1" />
+            <Observation>
+                <id value="Arbeitsunfall-1" />
                 <meta>
-                    <profile value="https://fhir.dguv.de/Basis/AdverseEvent/DGUV-Basis-PR-Unfallereignis" />
+                    <profile value="https://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis" />
                 </meta>
-                <extension url="https://fhir.dguv.de/Basis/Extension/DGUV_Basis_EX_BeginnDerArbeitszeit">
-                    <valueDateTime value="2018-08-24T08:00:00Z"/>
-                </extension>
-                <extension url=" https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfallhergang">
-                    <valueString value="Der Versicherte ist auf dem Weg zum Sechstagerennen mit seinem Motorrad mit einer geschätzten Geschwindigkeit von 60 km/h gegen eine Leitplanke gefahren"/>
-                </extension>
-                <extension url=" https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-VerhaltenDesPatienten">
-                    <valueString value="Patient ist wach, ansprechbar und vollständig orientiert."/>
-                </extension>
-                <actuality value="actual"/>
-                <!--Angabe der SAV-->
-                <category>
-                    <coding>
-                        <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"/>
-                        <code value="10.1V"/>
-                        <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma) − bei Erwachsenen mit ISS ab 25 − bei Kindern mit ISS ab 16. Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)."/>
-                    </coding>
-                </category>
-                <!--Referenz auf Patient Rudi Farad-->
-                <subject>
-                    <reference value="Patient/111-222-333-444"/>
-                </subject>
-                <!--Aus Beispiel: "Unfalltag"-->
-                <date value="2018-08-24T10:15:28Z"/>
-                <!--Referenz auf den Unfallort-->
-                <location>
-                    <reference value="Location/Ort-123"/>
-                </location>
-            </AdverseEvent>
+            <status value="final"/>
+            <code>
+                <coding>
+                <system value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis"/>
+                <code value="10.1V"/>
+                <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma) − bei Erwachsenen mit ISS ab 25 − bei Kindern mit ISS ab 16. Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)."/>
+                </coding>
+            </code>
+            <subject>🔗 
+                <reference value="Patient/111-222-333-444"/>
+            </subject>
+            <effectiveDateTime value="2024-11-02T13:00:00"/>
+            <component>
+                <code>
+                <coding>
+                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <code value="01"/>
+                    <display value="Beginn Der Arbeitszeit"/>
+                </coding>
+                </code>
+                <valueDateTime value="2024-11-02T08:00:00"/>
+            </component>
+            <component>
+                <code>
+                <coding>
+                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <code value="02"/>
+                    <display value="Ende Der Arbeitszeit"/>
+                </coding>
+                </code>
+                <valueDateTime value="2024-11-02T16:00:00"/>
+            </component>
+            <component>
+                <code>
+                <coding>
+                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <code value="03"/>
+                    <display value="Unfallhergang"/>
+                </coding>
+                </code>
+                <valueString value="Der Versicherte ist auf dem Weg zum Sechstagerennen mit seinem Motorrad mit einer geschätzten Geschwindigkeit von 60 km/h gegen eine Leitplanke gefahren"/>
+            </component>
+            <component>
+                <code>
+                <coding>
+                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <code value="05"/>
+                    <display value="Beruf"/>
+                </coding>
+                </code>
+                <valueString value="Informatiker"/>
+            </component>
+            <component>
+                <code>
+                <coding>
+                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <code value="06"/>
+                    <display value="Ende Der Arbeitszeit"/>
+                </coding>
+                </code>
+                <valueDateTime value="2018-01-01"/>
+            </component>   
+            </Observation>
         </resource>
     </entry>
     <entry>
@@ -46,18 +80,14 @@
         <fullUrl value="https://fhir.dguv.de/Location/Ort-123" />
         <resource>
             <Location>
-                <id value="Ort-123" />
-                <meta>
+               <id value="Ort-123" />
+               <meta>
                     <profile value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
-                </meta>
-                <name value="Auf dem Weg zum Unfallbetrieb. Genauer Ort nicht bekannt."/>
-                <address>
+               </meta>
+               <name value="Auf dem Weg zum Unfallbetrieb. Genauer Ort nicht bekannt."/>
+               <address>
                     <line value="Auf dem Weg zur Johann-Lafer-Gasse 2 in 53757 Sankt Augustin"/>
-                </address>
-                <!--Referenz auf den Unfallbetrieb-->
-                <managingOrganization>
-                    <reference value="Oragnization/Betrieb-1"/>
-                </managingOrganization>
+               </address>
             </Location>
         </resource>
     </entry>
@@ -68,10 +98,11 @@
             <Organization>
                 <id value="Betrieb-1" />
                 <meta>
-                    <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
+                    <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Unfallbetrieb" />
                 </meta>
                 <name value="Sankt Augustiner 6 Tage Rennen GmbH"/>
                 <address>
+                    <type value="both"/>
                     <line value="Johann-Lafer-Gasse 2">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
                             <valueString value="Johann-Lafer-Gasse"/>

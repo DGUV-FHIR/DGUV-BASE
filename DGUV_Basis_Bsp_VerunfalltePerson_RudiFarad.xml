@@ -2,12 +2,12 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="111-222-333-444"/>
   <meta>
-    <profile value="https://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-Patient"/>
+    <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
   </meta>   
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h1>Hier finden Sie ein vollständiges Beispiel einer verunfallten Person entsprechend des Patients-Profils der DGUV</h1>
+      <h1>Hier finden Sie ein vollständiges Beispiel einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
     </div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
@@ -19,29 +19,11 @@
         </valueCoding>
     </extension>
   </extension>
-  <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beruf">
-    <valueString value= "Maurer" />
-  </extension>
-  <extension url="https://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Beschaeftigungsbeginn">
-    <valueDate value="2010" />
-  </extension>
-  <!-- Patientennummer slice als Fallnummer abgebildet. Ist das an dieser Stelle sinnvoll? Wir ordnen in diesem Kontext einem Patienten einen konkreten Fall zu. Wird der Patient wegen einem anderen Fall eingewiesen, so muss eine neue Instanz für diesen Patienten angelegt werden. -->
-  <identifier>
-    <type>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-            <code value="MR" />
-        </coding>
-    </type>
-    <system value="http://www.acme.com/identifiers/patient" /> <!--hier eventuell ein passenderes system finden-->
-    <value value="RA-171819-009" />
-  </identifier>
-  <!--KVID-->
   <identifier>
     <type>
         <coding>
             <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
-            <code value="GKV" />
+            <code value="KVZ10" />
         </coding>
     </type>
     <system value="http://fhir.de/sid/gkv/kvid-10" />
@@ -60,10 +42,10 @@
     <system value="phone"/>
     <value value="+49-228-12345678"/>
   </telecom>
-  <gender value="male"/>
+  <gender value="männlich"/>
   <birthDate value="1946-12-20"/>
   <address>
-    <type value="physical" />
+    <type value="both" />
     <line value="Fritz-Müntefering-Weg 2">
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
             <valueString value="Fritz-Müntefering-Weg" />
