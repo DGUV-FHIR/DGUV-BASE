@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Practicioner xmlns="http://hl7.org/fhir">
+<Practitioner xmlns="http://hl7.org/fhir">
     <id value="Arzt-1"/>
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer"/>
@@ -34,4 +34,4 @@
             </coding>
         </code>
     </qualification>
-</Practicioner>
+</Practitioner>
