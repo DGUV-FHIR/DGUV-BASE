@@ -1,7 +1,7 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="WeiterbehandelndeOrganisation-cf042e44-086a-4d51-9c77-172f9a972e3b" />
+    <id value="WeiterbehandelndeOrganisation-1" />
     <meta>
-        <profile value="https://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
     </meta>
     <identifier>
         <type>
@@ -19,7 +19,7 @@
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                 <code value="XX" />
-                <display value="Organisations-ID" />
+                <display value="Organization identifier" />
             </coding>
         </type>
         <system value="http://fhir.de/sid/arge-ik/iknr" />
@@ -46,7 +46,7 @@
         <line value="Mitte" />
         <city value="Dortmund" />
         <postalCode value="44227" />
-        <country value="D" />
+        <country value="DE" />
     </address>
     <address>
         <type value="postal" />
