@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient xmlns="http://hl7.org/fhir">
-  <id value="Verunfallte Person nach DGUV Profil"/>
+  <id value="Verunfallte-Person-1"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
   </meta>   
@@ -12,11 +12,19 @@
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
     <extension url="code" >
-        <valueCoding>
-            <system value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166" />
             <code value="DE" />
             <display value="Germany" />
-        </valueCoding>
+          </coding>
+        </valueCodeableConcept>
+    </extension>
+     <extension url="period" >
+      <valuePeriod>
+        <start value="2004-11-12"/>
+        <end value="2024-01-01"/>
+      </valuePeriod>
     </extension>
   </extension>
   <identifier>
@@ -42,7 +50,7 @@
     <system value="phone"/>
     <value value="0049177/00000000"/>
   </telecom>
-  <gender value="männlich"/>
+  <gender value="male"/>
   <birthDate value="2004-11-12"/>
   <address>
     <type value="both" />
