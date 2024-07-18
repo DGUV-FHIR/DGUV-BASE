@@ -1,11 +1,11 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="DArzt_Konstellation"/>
+    <id value="DArzt-Konstellation"/>
     <type value="collection" />
     <entry>
     <!--Hier wird der Leistungserbringer/Arzt beschrieben-->
         <fullUrl value="http://fhir.dguv.de/Basis/Practitioner/Arzt-1" />
         <resource>
-           <Practicioner xmlns="http://hl7.org/fhir">
+           <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="Arzt-1"/>
                 <meta>
                     <profile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer"/>
@@ -40,47 +40,49 @@
                         </coding>
                     </code>
                 </qualification>
-            </Practicioner>
+            </Practitioner>
         </resource>
     </entry>
     <entry>
       <!--Hier wird die Arzt-Rolle beschrieben-->
         <fullUrl value="http://fhir.dguv.de/PractitionerRole/DArzt-Rolle-Arzt-1" />
         <resource>
-            <?xml version="1.0" encoding="utf-8"?>
             <PractitionerRole xmlns="http://hl7.org/fhir">
-            <meta>
-                <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
-            </meta>
-            <practitioner>
-                <reference value="Practitioner/Arzt-1" />
-            </practitioner>
-            <organization>
-                <reference value="Oragnization/DArzt-Einrichtung-234" />
-            </organization>
-            <code>
-                <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
-                <code value="OA" />
-                <display value="Oberärztin/-arzt" />
-                </coding>
-            </code>
-            <specialty>
-                <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
-                <code value="01" />
-                <display value="Allgemeinmedizin" />
-                </coding>
-            </specialty>
+                <id value="DArzt-Rolle-Arzt-1"/>
+                <meta>
+                    <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
+                </meta>
+                <practitioner>
+                    <reference value="Practitioner/Arzt-1" />
+                </practitioner>
+                <organization>
+                    <reference value="Organization/DArzt-Einrichtung-234" />
+                </organization>
+                <code>
+                    <coding>
+                    <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
+                    <version value="1.6.0" />
+                    <code value="OA" />
+                    <display value="Oberaerztin/-arzt" />
+                    </coding>
+                </code>
+                <specialty>
+                    <coding>
+                    <system value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+                    <version value="1.03"/>
+                    <code value="01" />
+                    <display value="Allgemeinmedizin" />
+                    </coding>
+                </specialty>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
      <!--Hier wird die D-Arzt-Organisation beschrieben-->
         <fullUrl value="http://fhir.dguv.de/Oragnization/DArzt-Einrichtung-234" />
-        <resource>
-             <Organization>
-                <id value="D-Arzt Einrichtung-1" />
+        <resource>  
+             <Organization xmlns="http://hl7.org/fhir">
+                <id value="DArzt-Einrichtung-234" />
                 <meta>
                     <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
                 </meta>

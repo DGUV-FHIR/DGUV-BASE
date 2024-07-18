@@ -2,9 +2,9 @@
     <id value="100"/>
     <type value="collection" />
     <entry>
+      <!--Hier wird das Unfallereignise beschrieben-->
         <fullUrl value="https://fhir.dguv.de/Observation/Arbeitsunfall-1" />
         <resource>
-            <!--Hier wird das Unfallereignise beschrieben-->
             <Observation>
                 <id value="Arbeitsunfall-1" />
                 <meta>
@@ -21,7 +21,7 @@
             <subject>🔗 
                 <reference value="Patient/111-222-333-444"/>
             </subject>
-            <effectiveDateTime value="2024-11-02T13:00:00"/>
+            <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>
             <component>
                 <code>
                 <coding>
@@ -30,7 +30,7 @@
                     <display value="Beginn Der Arbeitszeit"/>
                 </coding>
                 </code>
-                <valueDateTime value="2024-11-02T08:00:00"/>
+                <valueDateTime value="2024-11-02T08:00:00+00:00"/>
             </component>
             <component>
                 <code>
@@ -40,7 +40,7 @@
                     <display value="Ende Der Arbeitszeit"/>
                 </coding>
                 </code>
-                <valueDateTime value="2024-11-02T16:00:00"/>
+                <valueDateTime value="2024-11-02T16:00:00+00:00"/>
             </component>
             <component>
                 <code>
