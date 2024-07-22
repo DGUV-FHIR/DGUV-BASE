@@ -11,10 +11,10 @@
       <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma) − bei Erwachsenen mit ISS ab 25 − bei Kindern mit ISS ab 16. Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)."/>
     </coding>
   </code>
-  <subject>🔗 
-    <reference value="Patient/111-222-333-444"/>
+  <subject> 
+    <reference value="Patient/111" />
   </subject>
-  <effectiveDateTime value="2024-11-02T13:00:00"/>
+  <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>
   <component>
     <code>
       <coding>
@@ -23,7 +23,7 @@
         <display value="Beginn Der Arbeitszeit"/>
       </coding>
     </code>
-    <valueDateTime value="2024-11-02T08:00:00"/>
+    <valueDateTime value="2024-11-02T08:00:00+00:00"/>
   </component>
   <component>
     <code>
@@ -33,7 +33,7 @@
         <display value="Ende Der Arbeitszeit"/>
       </coding>
     </code>
-    <valueDateTime value="2024-11-02T16:00:00"/>
+    <valueDateTime value="2024-11-02T16:00:00+00:00"/>
   </component>
   <component>
     <code>
