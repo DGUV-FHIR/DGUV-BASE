@@ -72,6 +72,10 @@
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.code">
       <path value="PractitionerRole.code.coding.code" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
+      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.display">
       <path value="PractitionerRole.code.coding.display" />
