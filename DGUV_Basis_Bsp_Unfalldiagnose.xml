@@ -16,6 +16,7 @@
                 </valueCoding>
             </extension>
             <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+            <version value="2019" />
             <code value="S06.0"/>
             <display value="Gehirnerschütterung"/> 
         </coding>

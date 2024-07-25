@@ -11,19 +11,23 @@
                     <profile value="http://fhir.dguv.de/Basis/Practitioner/DGUV-Basis-PR-Leistungserbringer"/>
                 </meta>   
                 <identifier>
-                    <use value="official"/>
                     <type>
                         <coding>
                             <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                             <code value="LANR" />
+                            <display value="Lifelong physician number" />
                         </coding>
                     </type>
                     <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
-                    <value value="1234567" />
+                    <value value="123456789" />
                 </identifier>
                 <name>
                     <use value="official"/>
-                    <family value="Musterarzt"/>
+                    <family value="Musterarzt"> 
+                        <extension url="http://hl7.org/StructureDefinition/humanname-own-name">
+                                <valueString value="Musterarzt" />
+                        </extension>
+                    </family>
                     <given value="Matthias"/>
                     <prefix value="Dr.">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">

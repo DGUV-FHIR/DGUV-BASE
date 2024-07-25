@@ -23,6 +23,7 @@
                             </valueCoding>
                         </extension>
                         <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+                        <version value="2019"/>
                         <code value="S06.0"/>
                         <display value="Gehirnerschütterung"/> 
                     </coding>
@@ -65,6 +66,7 @@
             </Condition>
         </resource>
     </entry>
+    <!--Ab hier werden die unfallunabhängigen Diagnosen beschrieben-->
     <entry>
         <fullUrl value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Diagnose/UnfallunabhängigeDiagnose-1" />
         <resource>
@@ -81,12 +83,12 @@
                         <extension url="http://fhir.de/StructureDefinition/seitenlokalisation">
                             <valueCoding>
                                 <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION" />
-                                <version value="2019"/>
                                 <code value="L" />
                                 <display value="links" />
                             </valueCoding>
                         </extension>
                         <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+                        <version value="2019"/>
                         <code value="S22.43"/>
                         <display value="Rippenserienfraktur: Mit Beteiligung von drei Rippen"/>
                     </coding>

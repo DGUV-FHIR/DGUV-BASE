@@ -18,7 +18,7 @@
                 <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma) − bei Erwachsenen mit ISS ab 25 − bei Kindern mit ISS ab 16. Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)."/>
                 </coding>
             </code>
-            <subject>🔗 
+            <subject>
                 <reference value="Patient/111-222-333-444"/>
             </subject>
             <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>

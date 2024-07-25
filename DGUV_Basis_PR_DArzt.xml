@@ -30,6 +30,16 @@
         <targetProfile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
       </type>
     </element>
+    <element id="PractitionerRole.code.coding">
+      <path value="PractitionerRole.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
       <sliceName value="RolleInDerEinrichtung" />

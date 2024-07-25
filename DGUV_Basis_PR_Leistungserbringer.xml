@@ -22,8 +22,8 @@
       <path value="Practitioner.identifier" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="type.coding.code" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -40,12 +40,6 @@
     <element id="Practitioner.identifier:ANR.type">
       <path value="Practitioner.identifier.type" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-          <code value="LANR" />
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Practitioner.identifier:ANR.type.coding">
       <path value="Practitioner.identifier.type.coding" />
@@ -85,12 +79,6 @@
     <element id="Practitioner.identifier:EFN.type">
       <path value="Practitioner.identifier.type" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-          <code value="DN" />
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Practitioner.identifier:EFN.type.coding">
       <path value="Practitioner.identifier.type.coding" />
@@ -133,7 +121,6 @@
       <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-          <code value="ZANR" />
         </coding>
       </patternCodeableConcept>
     </element>
@@ -173,12 +160,6 @@
     <element id="Practitioner.identifier:Telematik-ID.type">
       <path value="Practitioner.identifier.type" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-          <code value="PRN" />
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Practitioner.identifier:Telematik-ID.type.coding">
       <path value="Practitioner.identifier.type.coding" />

@@ -13,8 +13,8 @@
     <coding>
       <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
       <version value="1.6.0" />
-      <code value="OA" />
-      <display value="Oberaerztin/-arzt" />
+      <code value="AD" />
+      <display value="&#196;rztliche(r) DirektorIn" />
     </coding>
   </code>
   <specialty>
