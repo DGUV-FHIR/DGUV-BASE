@@ -892,9 +892,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCode" />
         </extension>
-        <strength value="required" />
-        <description value="Angabe der Verletzung nach dem Verletzungsartenverzeichnis" />
-        <valueSet value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis" />
+        <strength value="example" />
+        <description value="Codes identifying names of simple observations." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1174,7 +1174,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis" />
+      <fixedUri value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5280,7 +5280,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Beginn Der Arbeitszeit" />
+      <fixedString value="Beginn der Arbeitszeit" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10408,16 +10408,11 @@
       <sliceName value="SAV-VAV" />
       <short value="Die vorliegende Verletzung fällt unter SAV/VAV" />
       <definition value="Die vorliegende Verletzung fällt unter das Verletzungsartenverfahren (VAV) oder Schwerstverletzenartenverfahren (SAV)." />
-      <binding>
-        <strength value="required" />
-        <description value="Angabe der Verletzung nach dem Verletzungsartenverzeichnis" />
-        <valueSet value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis" />
-      </binding>
     </element>
     <element id="Observation.code:SAV-VAV.coding.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis" />
+      <fixedUri value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
     </element>
     <element id="Observation.code:SAV-VAV.coding.code">
       <path value="Observation.code.coding.code" />
@@ -10502,7 +10497,7 @@
     <element id="Observation.component:BeginnDerArbeitszeit.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Beginn Der Arbeitszeit" />
+      <fixedString value="Beginn der Arbeitszeit" />
     </element>
     <element id="Observation.component:BeginnDerArbeitszeit.value[x]">
       <path value="Observation.component.value[x]" />

@@ -18,7 +18,7 @@
     <name>
         <use value="official"/>
         <family value="Musteraerztin14">
-            <extension url="http://hl7.org/StructureDefinition/humanname-own-name">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
                     <valueString value="Musteraerztin14" />
             </extension>
         </family>
