@@ -24,7 +24,7 @@
                 <name>
                     <use value="official"/>
                     <family value="Musterarzt"> 
-                        <extension url="http://hl7.org/StructureDefinition/humanname-own-name">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
                                 <valueString value="Musterarzt" />
                         </extension>
                     </family>
@@ -65,7 +65,7 @@
                 <code>
                     <coding>
                     <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-                    <version value="1.6.0" />
+                    <version value="1.4.0" />
                     <code value="OA" />
                     <display value="Oberaerztin/-arzt" />
                     </coding>
@@ -95,7 +95,7 @@
                         <coding>
                             <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                             <code value="XX" />
-                            <display value="Organisations-ID" />
+                            <display value="Organization identifier" />
                         </coding>
                     </type>
                     <system value="http://fhir.de/sid/arge-ik/iknr" />
