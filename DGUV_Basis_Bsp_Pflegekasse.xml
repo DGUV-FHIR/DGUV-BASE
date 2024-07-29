@@ -12,7 +12,7 @@
             </coding>
         </type>
         <system value="http://fhir.de/sid/arge-ik/iknr" />
-        <value value="99999999" />
+        <value value="999999999" />
     </identifier>
     <name value="Pflegekasse Nord-Ostwestfalen Süd"/>
 </Organization>

@@ -12,7 +12,7 @@
             </coding>
         </type>
         <system value="http://fhir.de/sid/arge-ik/iknr" />
-        <value value="12345678" />
+        <value value="123456789" />
     </identifier>
     <name value="Unfallkrankenhaus Berlin"/>
     <telecom>
@@ -20,6 +20,7 @@
         <value value="+1-1234565789"/>
     </telecom>
     <address>
+        <type value="both"/>
         <line value="Musterstraße 1">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
                 <valueString value="Musterstraße"/>

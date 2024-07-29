@@ -1,7 +1,7 @@
 <Organization xmlns="http://hl7.org/fhir">
     <id value="BehandelndeEinrichtung-234" />
     <meta>
-        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Einrichtung" />
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
     </meta>
     <identifier>
         <type>
@@ -20,6 +20,7 @@
         <value value="+1-1234565789"/>
     </telecom>
     <address>
+        <type value="both"/>
         <line value="Genesungsweg 4">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
                 <valueString value="Genesungsweg"/>
