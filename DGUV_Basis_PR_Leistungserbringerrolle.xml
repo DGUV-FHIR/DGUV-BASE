@@ -858,7 +858,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -867,7 +867,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -929,7 +929,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -1087,10 +1087,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1176,10 +1172,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1562,7 +1554,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -2818,14 +2810,16 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <max value="1" />
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
       <sliceName value="RolleInDerEinrichtung" />
+      <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
@@ -2834,10 +2828,6 @@
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.system">
       <path value="PractitionerRole.code.coding.system" />
       <min value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.version">
       <path value="PractitionerRole.code.coding.version" />
@@ -2846,10 +2836,6 @@
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.code">
       <path value="PractitionerRole.code.coding.code" />
       <min value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung.display">
       <path value="PractitionerRole.code.coding.display" />
@@ -2868,6 +2854,7 @@
     <element id="PractitionerRole.specialty.coding:KBV-Fachgruppe">
       <path value="PractitionerRole.specialty.coding" />
       <sliceName value="KBV-Fachgruppe" />
+      <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />

@@ -867,7 +867,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -929,7 +929,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -1087,10 +1087,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1176,10 +1172,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1562,7 +1554,7 @@
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -3129,16 +3121,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
       </type>
-    </element>
-    <element id="PractitionerRole.code.coding">
-      <path value="PractitionerRole.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
   </differential>
 </StructureDefinition>
