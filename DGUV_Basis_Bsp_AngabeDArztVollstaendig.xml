@@ -38,7 +38,7 @@
                 <qualification>
                     <code>
                         <coding>
-                            <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_IHEXDS_Facharzttitel_der_Aerztekammern" />
+                            <system value="http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern" />
                             <code value="11001" />
                             <display value="FA Allgemeinmedizin"/>
                         </coding>
@@ -57,22 +57,22 @@
                     <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
                 </meta>
                 <practitioner>
-                    <reference value="Practitioner/Arzt-1" />
+                    <reference value="http://fhir.dguv.de/Basis/Practitioner/Arzt-1" />
                 </practitioner>
                 <organization>
-                    <reference value="Organization/DArzt-Einrichtung-234" />
+                    <reference value="http://fhir.dguv.de/Oragnization/DArzt-Einrichtung-234" />
                 </organization>
                 <code>
                     <coding>
-                    <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care" />
+                    <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
                     <version value="1.4.0" />
                     <code value="OA" />
-                    <display value="Oberaerztin/-arzt" />
+                    <display value="Oberärztin/-arzt" />
                     </coding>
                 </code>
                 <specialty>
                     <coding>
-                    <system value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+                    <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
                     <version value="1.03"/>
                     <code value="01" />
                     <display value="Allgemeinmedizin" />
@@ -99,7 +99,7 @@
                         </coding>
                     </type>
                     <system value="http://fhir.de/sid/arge-ik/iknr" />
-                    <value value="12345678" />
+                    <value value="123456789" />
                 </identifier>
                 <name value="Unfallkrankenhaus Berlin"/>
                 <telecom>
@@ -107,6 +107,7 @@
                     <value value="+1-1234565789"/>
                 </telecom>
                 <address>
+                    <type value="both"/>
                     <line value="Musterstraße 1">
                         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
                             <valueString value="Musterstraße"/>
