@@ -6,7 +6,7 @@
   <status value="final"/>
   <code>
     <coding>
-      <system value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis"/>
+      <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"/>
       <code value="3.1S"/>
       <display value="Verletzungen des Rückenmarks."/>
     </coding>
@@ -18,7 +18,7 @@
   <component>
     <code>
       <coding>
-        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="01"/>
         <display value="Beginn der Arbeitszeit"/>
       </coding>
@@ -28,7 +28,7 @@
   <component>
     <code>
       <coding>
-        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="02"/>
         <display value="Ende der Arbeitszeit"/>
       </coding>
@@ -38,7 +38,7 @@
   <component>
     <code>
       <coding>
-        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="03"/>
         <display value="Unfallhergang"/>
       </coding>
@@ -48,7 +48,7 @@
   <component>
     <code>
       <coding>
-        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="05"/>
         <display value="Beruf"/>
       </coding>
@@ -58,7 +58,7 @@
   <component>
     <code>
       <coding>
-        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="06"/>
         <display value="Beschaeftigungsbeginn"/>
       </coding>

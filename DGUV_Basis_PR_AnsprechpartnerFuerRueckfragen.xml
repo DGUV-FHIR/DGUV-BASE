@@ -1586,7 +1586,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -3883,6 +3883,16 @@
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization" />
       <min value="1" />
+    </element>
+    <element id="PractitionerRole.code.coding">
+      <path value="PractitionerRole.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="PractitionerRole.code.coding:RolleInDerEinrichtung">
       <path value="PractitionerRole.code.coding" />
