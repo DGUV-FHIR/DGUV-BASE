@@ -32,7 +32,7 @@
     <qualification>
         <code>
             <coding>
-                <system value="https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_IHEXDS_Facharzttitel_der_Aerztekammern" />
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Practitioner_IHEXDS_Facharzttitel_der_Aerztekammern" />
                 <code value="11001" />
                 <display value="FA Allgemeinmedizin"/>
             </coding>
