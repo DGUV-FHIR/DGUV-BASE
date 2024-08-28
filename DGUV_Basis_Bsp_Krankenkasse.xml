@@ -17,7 +17,7 @@
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="XX"/>
-                <display value="Organisations-ID" />
+                <display value="Organization identifier" />
              </coding>
         </type>
         <system value="http://fhir.de/sid/arge-ik/iknr"/>
