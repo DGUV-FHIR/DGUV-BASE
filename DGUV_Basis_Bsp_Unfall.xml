@@ -2,50 +2,50 @@
     <id value="100"/>
     <type value="collection" />
     <entry>
-        <fullUrl value="https://fhir.dguv.de/Observation/Arbeitsunfall-1" />
+      <!--Hier wird das Unfallereignise beschrieben-->
+        <fullUrl value="http://fhir.dguv.de/Observation/Arbeitsunfall-1" />
         <resource>
-            <!--Hier wird das Unfallereignise beschrieben-->
             <Observation>
                 <id value="Arbeitsunfall-1" />
                 <meta>
-                    <profile value="https://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis" />
+                    <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis" />
                 </meta>
             <status value="final"/>
             <code>
                 <coding>
-                <system value="https://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-Verletzungsartenverzeichnis"/>
-                <code value="10.1V"/>
-                <display value="Schwerste Verletzungen und Verletzungskombinationen (Polytrauma) − bei Erwachsenen mit ISS ab 25 − bei Kindern mit ISS ab 16. Verläufe mit Sepsis oder Organversagen insbesondere bei Indikation zu Organersatzverfahren (siehe auch Ziffer 11)."/>
+                <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"/>
+                <code value="3.1S"/>
+                <display value="Verletzungen des Rückenmarks."/>
                 </coding>
             </code>
-            <subject>🔗 
+            <subject>
                 <reference value="Patient/111-222-333-444"/>
             </subject>
-            <effectiveDateTime value="2024-11-02T13:00:00"/>
+            <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>
             <component>
                 <code>
                 <coding>
-                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
                     <code value="01"/>
-                    <display value="Beginn Der Arbeitszeit"/>
+                    <display value="Beginn der Arbeitszeit"/>
                 </coding>
                 </code>
-                <valueDateTime value="2024-11-02T08:00:00"/>
+                <valueDateTime value="2024-11-02T08:00:00+00:00"/>
             </component>
             <component>
                 <code>
                 <coding>
-                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
                     <code value="02"/>
-                    <display value="Ende Der Arbeitszeit"/>
+                    <display value="Ende der Arbeitszeit"/>
                 </coding>
                 </code>
-                <valueDateTime value="2024-11-02T16:00:00"/>
+                <valueDateTime value="2024-11-02T16:00:00+00:00"/>
             </component>
             <component>
                 <code>
                 <coding>
-                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
                     <code value="03"/>
                     <display value="Unfallhergang"/>
                 </coding>
@@ -55,7 +55,7 @@
             <component>
                 <code>
                 <coding>
-                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
                     <code value="05"/>
                     <display value="Beruf"/>
                 </coding>
@@ -65,9 +65,9 @@
             <component>
                 <code>
                 <coding>
-                    <system value="https://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisAttribute"/>
+                    <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
                     <code value="06"/>
-                    <display value="Ende Der Arbeitszeit"/>
+                    <display value="Beschaeftigungsbeginn"/>
                 </coding>
                 </code>
                 <valueDateTime value="2018-01-01"/>
@@ -77,23 +77,23 @@
     </entry>
     <entry>
         <!--Hier wird der Unfallort beschrieben-->
-        <fullUrl value="https://fhir.dguv.de/Location/Ort-123" />
+        <fullUrl value="http://fhir.dguv.de/Location/Ort-123" />
         <resource>
             <Location>
                <id value="Ort-123" />
                <meta>
-                    <profile value="https://fhir.dguv.de/StructureDefinition/Location/DGUV-Basis-PR-Unfallort" />
-               </meta>
-               <name value="Auf dem Weg zum Unfallbetrieb. Genauer Ort nicht bekannt."/>
-               <address>
+                    <profile value="http://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
+                </meta>
+                <name value="Auf dem Weg zum Unfallbetrieb. Genauer Ort nicht bekannt."/>
+                <address>
                     <line value="Auf dem Weg zur Johann-Lafer-Gasse 2 in 53757 Sankt Augustin"/>
-               </address>
+                </address>
             </Location>
         </resource>
     </entry>
     <entry>
          <!--Hier wird der Unfallbetrieb beschrieben-->
-        <fullUrl value="https://fhir.dguv.de/Oragnization/Betrieb-1" />
+        <fullUrl value="http://fhir.dguv.de/Oragnization/Betrieb-1" />
         <resource>
             <Organization>
                 <id value="Betrieb-1" />

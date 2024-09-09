@@ -1,26 +1,27 @@
-<Organization>
+<Organization xmlns="http://hl7.org/fhir">
     <id value="Krankenkasse-1" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse" />
     </meta>
     <!--Bei einer Familienversicherung wird hier die hauptversicherte Person angegeben.-->
     <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname">          
-        <valueName>
+        <valueHumanName>
             <use value="official" />
             <family value="Farad" />
             <given value="Friedrich" />
-        </valueName>
+        </valueHumanName>
     </extension>
     <!--IK-Nummer-->
     <identifier>
         <type>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-            <code value="XX"/>
-        </coding>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="XX"/>
+                <display value="Organization identifier" />
+             </coding>
         </type>
         <system value="http://fhir.de/sid/arge-ik/iknr"/>
-        <valueString value="107202793"/>
+        <value value="107202793"/>
     </identifier>
     <name value="AOK Herzogtum Lauenburg"/>
     <address>

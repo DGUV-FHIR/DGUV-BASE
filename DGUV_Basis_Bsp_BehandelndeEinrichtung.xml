@@ -1,35 +1,36 @@
-<Organization>
-    <id value="DArzt-Einrichtung-234" />
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="BehandelndeEinrichtung-234" />
     <meta>
-        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
+        <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
     </meta>
     <identifier>
         <type>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
                 <code value="XX" />
-                <display value="Organisations-ID" />
+                <display value="Organization identifier" />
             </coding>
         </type>
         <system value="http://fhir.de/sid/arge-ik/iknr" />
-        <value value="12345678" />
+        <value value="260530784" />
     </identifier>
-    <name value="Unfallkrankenhaus Berlin"/>
+    <name value="Unfallkrankenhaus Frechen"/>
     <telecom>
         <system value="phone"/>
         <value value="+1-1234565789"/>
     </telecom>
     <address>
-        <line value="Musterstraße 1">
+        <type value="both"/>
+        <line value="Genesungsweg 4">
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-                <valueString value="Musterstraße"/>
+                <valueString value="Genesungsweg"/>
             </extension>
             <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-                <valueString value="1"/>
+                <valueString value="4"/>
             </extension>
         </line>
-        <city value="Berlin"/>
-        <postalCode value="11111"/>
+        <city value="Frechen"/>
+        <postalCode value="50226"/>
         <country value="DE"/>
     </address>
 </Organization>

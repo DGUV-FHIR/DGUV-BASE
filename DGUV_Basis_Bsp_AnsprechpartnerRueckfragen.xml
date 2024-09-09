@@ -1,7 +1,7 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="Ansprechpartner für Rückfragen"/>
+    <id value="Ansprechpartner-fuer-Rueckfragen"/>
     <meta>
-        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV_Basis_PR_AnsprechpartnerFuerRueckfragen" />
+        <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-AnsprechpartnerFuerRueckfragen" />
     </meta>
     <practitioner>
         <reference value="Practitioner/1234" />
@@ -11,14 +11,16 @@
     </organization>
     <code>
         <coding>
-            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+           <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+            <version value="1.6.0" />
             <code value="FA" />
-            <display value="Fachärztin/-arzt" />
+            <display value="Fach&#196;rztin/-arzt" />
         </coding>
     </code>
     <specialty>
         <coding>
             <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+            <version value="1.03" />
             <code value="01" />
             <display value="Allgemeinmedizin" />
         </coding>

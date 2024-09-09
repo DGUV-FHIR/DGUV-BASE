@@ -12,11 +12,13 @@
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
     <extension url="code" >
-        <valueCoding>
-            <system value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166" />
             <code value="DE" />
             <display value="Germany" />
-        </valueCoding>
+          </coding>
+        </valueCodeableConcept>
     </extension>
   </extension>
   <identifier>
@@ -42,7 +44,7 @@
     <system value="phone"/>
     <value value="+49-228-12345678"/>
   </telecom>
-  <gender value="männlich"/>
+  <gender value="male"/>
   <birthDate value="1946-12-20"/>
   <address>
     <type value="both" />

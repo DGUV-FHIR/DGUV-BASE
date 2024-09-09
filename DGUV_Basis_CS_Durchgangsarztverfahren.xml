@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DGUV-Basis-CS-Durchgangsarztverfahren" />
+  <url value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Durchgangsarztverfahren" />
+  <version value="1.2" />
+  <name value="DGUV_Basis_CS_Durchgangsarztverfahren" />
+  <title value="Durchgangsarztverfahren" />
+  <status value="draft" />
+  <date value="2024-08-29" />
+  <publisher value="DGUV" />
+  <description value="Kennzeichen Durchgangsarztverfahren" />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="DAV" />
+    <display value="Durchgangsarztverfahren" />
+  </concept>
+</CodeSystem>
