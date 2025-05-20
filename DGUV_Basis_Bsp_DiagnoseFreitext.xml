@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="Freitext-123" />
+	<meta>
+		<profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-DiagnoseFreitext" />
+	</meta>
+	<code>
+        <text value="Hier steht der Freitext!"/>
+    </code>
+    <subject>
+      <reference value="Patient/T37501234" />
+    </subject>
+</Condition>
