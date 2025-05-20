@@ -856,7 +856,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.subject" />
-      <short value="Who and/or what the observation is about" />
+      <short value="Verweis auf betroffene versicherte Person" />
       <definition value="The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation." />
       <comment value="One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated." />
       <requirements value="Observations have no value if you don't know who or what they're about." />
@@ -1062,7 +1062,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.effective[x]" />
-      <short value="Clinically relevant time/time-period for observation" />
+      <short value="Zeitpunkt des Datenschutzhinweises" />
       <definition value="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself." />
       <comment value="At least a date should be present unless this observation is a historical report.  For recording imprecise or &quot;fuzzy&quot; times (For example, a blood glucose measurement taken &quot;after breakfast&quot;) use the [Timing](datatypes.html#timing) datatype which allow the measurement to be tied to regular life events." />
       <requirements value="Knowing when an observation was deemed true is important to its relevance as well as determining trends." />
@@ -1158,7 +1158,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.performer" />
-      <short value="Who is responsible for the observation" />
+      <short value="Verweis auf Leistungserbringer" />
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="May give a degree of confidence in the observation and also indicates where follow-up questions should be directed." />
@@ -3485,6 +3485,7 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <short value="Verweis auf betroffene versicherte Person" />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -3497,12 +3498,14 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <short value="Zeitpunkt des Datenschutzhinweises" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer" />
+      <short value="Verweis auf Leistungserbringer" />
       <min value="1" />
       <max value="1" />
       <type>
