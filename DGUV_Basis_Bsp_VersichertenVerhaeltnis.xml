@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Coverage xmlns="http://hl7.org/fhir">
+    <status value="active"/>
+    <beneficiary>
+        <reference value="Patient/T37501234" />
+    </beneficiary>
+    <payor>
+        <reference value="Payor/Versicherung"/>
+    </payor>
+</Coverage>
