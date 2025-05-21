@@ -551,7 +551,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="active" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -870,6 +869,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2214,9 +2214,13 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Coverage.status">
-      <path value="Coverage.status" />
-      <fixedCode value="active" />
+    <element id="Coverage.beneficiary">
+      <path value="Coverage.beneficiary" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
