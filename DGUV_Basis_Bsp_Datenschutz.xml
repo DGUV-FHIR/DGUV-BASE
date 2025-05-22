@@ -5,10 +5,14 @@
         <profile value="http://fhir.dguv.de/BASIS/Observation/DGUV-Basis-PR-Datenschutz" />
     </meta>
     <status value="final"/>
+    <code>
+        <text value="Datenschutz" />
+    </code>
     <subject>
         <reference value="Patient/VersichertePerson-1"/>
     </subject>
     <performer>
         <reference value="Performer/DArzt"/>
     </performer>
+    <valueBoolean value="false" />
 </Observation>
