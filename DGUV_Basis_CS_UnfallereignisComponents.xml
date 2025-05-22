@@ -30,6 +30,6 @@
     </concept>
      <concept>
         <code value="06" />
-        <display value="Beschaeftigungsbeginn" />
+        <display value="Beschäftigungsbeginn" />
     </concept>
 </CodeSystem>
