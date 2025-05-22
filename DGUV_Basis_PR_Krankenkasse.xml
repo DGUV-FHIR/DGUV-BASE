@@ -751,9 +751,9 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
-      <short value="Name used for the organization" />
+      <short value="Name der Krankenkasse" />
       <definition value="A name associated with the organization." />
-      <comment value="If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <comment value="Bei nicht bekannter Krankenkasse darf auch &quot;unbekannt&quot; eingetragen werden." />
       <requirements value="Need to use the name as the label of the organization." />
       <min value="1" />
       <max value="1" />
@@ -5222,6 +5222,8 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <short value="Name der Krankenkasse" />
+      <comment value="Bei nicht bekannter Krankenkasse darf auch &quot;unbekannt&quot; eingetragen werden." />
       <min value="1" />
     </element>
     <element id="Organization.telecom">
