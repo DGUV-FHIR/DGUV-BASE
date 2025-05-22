@@ -5,12 +5,12 @@
 		<profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-DiagnoseStrukturiert" />
 	</meta>
 	<code>
-      <ICD-10-GM>
+      <coding>
           <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
           <version value="2019" />
           <code value="S06.0"/>
           <display value="Gehirnerschütterung"/>
-      </ICD-10-GM>
+      </coding>
   </code>
   <subject>
     <reference value="Patient/T37501234" />
