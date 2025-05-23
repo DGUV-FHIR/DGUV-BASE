@@ -22,7 +22,7 @@
   </concept>
   <concept>
     <code value="A 2202" />
-    <display value="Gutachtenauftrag zur Zusammenhangsfrage bei psychischen Gesundheitsstörunge" />
+    <display value="Gutachtenauftrag zur Zusammenhangsfrage bei psychischen Gesundheitsstörungen" />
   </concept>
   <concept>
     <code value="A 2204" />
@@ -198,7 +198,7 @@
   </concept>
   <concept>
     <code value="F 2102" />
-    <display value="Entlassungsbericht aus stationärer Behandlung (DAV/VAV/SAV) (PDF ausfüllbar)" />
+    <display value="Entlassungsbericht aus stationärer Behandlung (DAV/VAV/SAV)" />
   </concept>
   <concept>
     <code value="F 2150" />
