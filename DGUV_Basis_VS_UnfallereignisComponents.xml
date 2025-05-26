@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DGUV-Basis-VS-UnfallereignisComponents" />
     <url value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisComponents" />
-    <version value="1.2" />
+    <version value="1.3" />
     <name value="DGUV_Basis_VS_UnfallereignisComponents" />
     <title value="UnfallereignisComponents" />
     <status value="draft" />
