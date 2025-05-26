@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?> 
 <Coverage xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir.dguv.de/Basis/DGUV_Basis_EX_Familienversicherung">
-        <extension url="http://fhir.dguv.de/Basis/DGUV_Basis_EX_Familienversicherung">
-            <valueBoolean value="true" />
-        </extension>
-        <extension>
-            <text value="Ludwig Maler" />
-        </extension>
+    <extension  url="http://fhir.dguv.de/Basis/DGUV-Basis-EX-Familienversicherung">
+            <extension url="Familienversichert">
+                <valueBoolean value="false" />
+            </extension>
+            <extension url="Mitgliedsname">
+                <valueString value="Martha Maler" />
+            </extension>
     </extension>
     <status value="active"/>
     <beneficiary>
