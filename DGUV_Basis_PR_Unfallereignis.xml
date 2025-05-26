@@ -10051,7 +10051,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Beschaeftigungsbeginn" />
+      <fixedString value="Beschäftigungsbeginn" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10720,7 +10720,7 @@
     <element id="Observation.component:Beschaeftigungsbeginn.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Beschaeftigungsbeginn" />
+      <fixedString value="Beschäftigungsbeginn" />
     </element>
     <element id="Observation.component:Beschaeftigungsbeginn.value[x]">
       <path value="Observation.component.value[x]" />
