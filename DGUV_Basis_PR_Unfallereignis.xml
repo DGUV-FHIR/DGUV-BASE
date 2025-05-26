@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis" />
-  <version value="1.2" />
+  <version value="1.3" />
   <name value="DGUV_Basis_PR_Unfallereignis" />
   <title value="Unfallereignis" />
   <status value="draft" />
@@ -7529,7 +7529,7 @@
       </extension>
       <path value="Observation.component" />
       <sliceName value="BeschwerdenKlagen" />
-      <short value="Beschwerden bzw. Klagen" />
+      <short value="Beschwerden / Klagen bei Aufnahme, Anamnese" />
       <definition value="Vorgetragenen subjektiven Beschwerden der versicherten Person und/oder Angehörigen" />
       <comment value="For a discussion on the ways Observations can be assembled in groups together see [Notes](observation.html#notes) below." />
       <requirements value="Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).   However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation." />
@@ -8474,7 +8474,7 @@
         <map value="outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf">
+    <element id="Observation.component:BeschaeftigtAls">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8482,7 +8482,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.component" />
-      <sliceName value="Beruf" />
+      <sliceName value="BeschaeftigtAls" />
       <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
       <definition value="Konkreter Beschreibung der aktuellen oder zuletzt ausgeübten Tätigkeit." />
       <comment value="For a discussion on the ways Observations can be assembled in groups together see [Notes](observation.html#notes) below." />
@@ -8520,7 +8520,7 @@
         <map value="outBoundRelationship[typeCode=COMP]" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.id">
+    <element id="Observation.component:BeschaeftigtAls.id">
       <path value="Observation.component.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -8543,7 +8543,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.extension">
+    <element id="Observation.component:BeschaeftigtAls.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8600,7 +8600,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.modifierExtension">
+    <element id="Observation.component:BeschaeftigtAls.modifierExtension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8654,7 +8654,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code">
+    <element id="Observation.component:BeschaeftigtAls.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8727,7 +8727,7 @@
         <map value="code" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.id">
+    <element id="Observation.component:BeschaeftigtAls.code.id">
       <path value="Observation.component.code.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -8750,7 +8750,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.extension">
+    <element id="Observation.component:BeschaeftigtAls.code.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8807,7 +8807,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding">
+    <element id="Observation.component:BeschaeftigtAls.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8868,7 +8868,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.id">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.id">
       <path value="Observation.component.code.coding.id" />
       <representation value="xmlAttr" />
       <short value="Unique id for inter-element referencing" />
@@ -8891,7 +8891,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.extension">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.extension">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -8948,7 +8948,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.system">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -8992,7 +8992,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.version">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.version">
       <path value="Observation.component.code.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -9034,7 +9034,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.code">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -9078,7 +9078,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.display">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -9097,7 +9097,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Beruf" />
+      <fixedString value="Beschäftigt als" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -9125,7 +9125,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.coding.userSelected">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.userSelected">
       <path value="Observation.component.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." />
@@ -9168,7 +9168,7 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.code.text">
+    <element id="Observation.component:BeschaeftigtAls.code.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -9214,7 +9214,7 @@
         <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.value[x]">
+    <element id="Observation.component:BeschaeftigtAls.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -9267,7 +9267,7 @@
         <map value="363714003 |Interprets|" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.dataAbsentReason">
+    <element id="Observation.component:BeschaeftigtAls.dataAbsentReason">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -9332,7 +9332,7 @@
         <map value="value.nullFlavor" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.interpretation">
+    <element id="Observation.component:BeschaeftigtAls.interpretation">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -9405,7 +9405,7 @@
         <map value="363713009 |Has interpretation|" />
       </mapping>
     </element>
-    <element id="Observation.component:Beruf.referenceRange">
+    <element id="Observation.component:BeschaeftigtAls.referenceRange">
       <path value="Observation.component.referenceRange" />
       <short value="Provides guide for interpretation of component result" />
       <definition value="Guidance on how to interpret the value by comparison to a normal or recommended range." />
@@ -10051,7 +10051,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Beschaeftigungsbeginn" />
+      <fixedString value="Beschäftigungsbeginn" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10606,7 +10606,7 @@
     <element id="Observation.component:BeschwerdenKlagen">
       <path value="Observation.component" />
       <sliceName value="BeschwerdenKlagen" />
-      <short value="Beschwerden bzw. Klagen" />
+      <short value="Beschwerden / Klagen bei Aufnahme, Anamnese" />
       <definition value="Vorgetragenen subjektiven Beschwerden der versicherten Person und/oder Angehörigen" />
       <max value="1" />
     </element>
@@ -10645,14 +10645,14 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Observation.component:Beruf">
+    <element id="Observation.component:BeschaeftigtAls">
       <path value="Observation.component" />
-      <sliceName value="Beruf" />
+      <sliceName value="BeschaeftigtAls" />
       <short value="Aktuelle oder zuletzt ausgeübte Tätigkeit" />
       <definition value="Konkreter Beschreibung der aktuellen oder zuletzt ausgeübten Tätigkeit." />
       <max value="1" />
     </element>
-    <element id="Observation.component:Beruf.code">
+    <element id="Observation.component:BeschaeftigtAls.code">
       <path value="Observation.component.code" />
       <binding>
         <strength value="required" />
@@ -10660,27 +10660,27 @@
         <valueSet value="http://fhir.dguv.de/Basis/ValueSet/DGUV-Basis-VS-UnfallereignisComponents" />
       </binding>
     </element>
-    <element id="Observation.component:Beruf.code.coding">
+    <element id="Observation.component:BeschaeftigtAls.code.coding">
       <path value="Observation.component.code.coding" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Observation.component:Beruf.code.coding.system">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents" />
     </element>
-    <element id="Observation.component:Beruf.code.coding.code">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <fixedCode value="05" />
     </element>
-    <element id="Observation.component:Beruf.code.coding.display">
+    <element id="Observation.component:BeschaeftigtAls.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Beruf" />
+      <fixedString value="Beschäftigt als" />
     </element>
-    <element id="Observation.component:Beruf.value[x]">
+    <element id="Observation.component:BeschaeftigtAls.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
       <type>
@@ -10720,7 +10720,7 @@
     <element id="Observation.component:Beschaeftigungsbeginn.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Beschaeftigungsbeginn" />
+      <fixedString value="Beschäftigungsbeginn" />
     </element>
     <element id="Observation.component:Beschaeftigungsbeginn.value[x]">
       <path value="Observation.component.value[x]" />

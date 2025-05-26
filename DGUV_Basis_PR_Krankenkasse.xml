@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Krankenkasse" />
-  <version value="1.2" />
+  <version value="1.3" />
   <name value="DGUV_Basis_PR_Krankenkasse" />
   <title value="Krankenkasse" />
   <status value="draft" />
@@ -358,243 +358,6 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Organization.extension:Mitgliedsname">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Organization.extension" />
-      <sliceName value="Mitgliedsname" />
-      <short value="Mitgliedsname des Hauptversicherten" />
-      <definition value="Bei einer Familienversicherung wird über dieses Attribut der Mitgliedsname des Hauptversicherten angegeben." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
-      </constraint>
-      <isModifier value="false" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Organization.extension:Mitgliedsname.id">
-      <path value="Organization.extension.id" />
-      <representation value="xmlAttr" />
-      <short value="Unique id for inter-element referencing" />
-      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string" />
-        </extension>
-        <code value="http://hl7.org/fhirpath/System.String" />
-      </type>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Organization.extension:Mitgliedsname.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Organization.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Organization.extension:Mitgliedsname.url">
-      <path value="Organization.extension.url" />
-      <representation value="xmlAttr" />
-      <short value="identifies the meaning of the extension" />
-      <definition value="Source of the definition for the extension code - a logical name or a URL." />
-      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Extension.url" />
-        <min value="1" />
-        <max value="1" />
-      </base>
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="uri" />
-        </extension>
-        <code value="http://hl7.org/fhirpath/System.String" />
-      </type>
-      <fixedUri value="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Organization.extension:Mitgliedsname.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Organization.extension.value[x]" />
-      <short value="Personenname" />
-      <definition value="Personenname mit in Deutschland üblichen Erweiterungen" />
-      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Extension.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="HumanName" />
-        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Element" />
-      </constraint>
-      <constraint>
-        <key value="hum-1" />
-        <severity value="error" />
-        <human value="Wenn die Extension 'namenszusatz' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
-        <expression value="family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz').empty() or family.hasValue()" />
-        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
-      </constraint>
-      <constraint>
-        <key value="hum-2" />
-        <severity value="error" />
-        <human value="Wenn die Extension 'nachname' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
-        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty() or family.hasValue()" />
-        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
-      </constraint>
-      <constraint>
-        <key value="hum-3" />
-        <severity value="error" />
-        <human value="Wenn die Extension 'vorsatzwort' verwendet wird, dann muss der vollständige Name im Attribut 'family' angegeben werden" />
-        <expression value="family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty() or family.hasValue()" />
-        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
-      </constraint>
-      <constraint>
-        <key value="hum-4" />
-        <severity value="error" />
-        <human value="Wenn die Extension 'prefix-qualifier' verwendet wird, dann muss ein Namenspräfix im Attribut 'prefix' angegeben werden" />
-        <expression value="prefix.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').empty() or $this.hasValue())" />
-        <source value="http://fhir.de/StructureDefinition/humanname-de-basis" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="XPN" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="EN (actually, PN)" />
-      </mapping>
-      <mapping>
-        <identity value="servd" />
-        <map value="ProviderName" />
       </mapping>
     </element>
     <element id="Organization.modifierExtension">
@@ -988,9 +751,9 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
-      <short value="Name used for the organization" />
+      <short value="Name der Krankenkasse" />
       <definition value="A name associated with the organization." />
-      <comment value="If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <comment value="Bei nicht bekannter Krankenkasse darf auch &quot;unbekannt&quot; eingetragen werden." />
       <requirements value="Need to use the name as the label of the organization." />
       <min value="1" />
       <max value="1" />
@@ -5429,22 +5192,6 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Organization.extension:Mitgliedsname">
-      <path value="Organization.extension" />
-      <sliceName value="Mitgliedsname" />
-      <short value="Mitgliedsname des Hauptversicherten" />
-      <definition value="Bei einer Familienversicherung wird über dieses Attribut der Mitgliedsname des Hauptversicherten angegeben." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Mitgliedsname" />
-      </type>
-      <isModifier value="false" />
-    </element>
-    <element id="Organization.extension:Mitgliedsname.value[x]">
-      <path value="Organization.extension.value[x]" />
-      <min value="1" />
-    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <slicing>
@@ -5475,6 +5222,8 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <short value="Name der Krankenkasse" />
+      <comment value="Bei nicht bekannter Krankenkasse darf auch &quot;unbekannt&quot; eingetragen werden." />
       <min value="1" />
     </element>
     <element id="Organization.telecom">

@@ -50,7 +50,7 @@
       <coding>
         <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="05"/>
-        <display value="Beruf"/>
+        <display value="Beschäftigt als"/>
       </coding>
     </code>
     <valueString value="Informatiker"/>
@@ -60,7 +60,7 @@
       <coding>
         <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
         <code value="06"/>
-        <display value="Beschaeftigungsbeginn"/>
+        <display value="Beschäftigungsbeginn"/>
       </coding>
     </code>
     <valueDateTime value="2018-01-01"/>
