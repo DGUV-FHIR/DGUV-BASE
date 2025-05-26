@@ -9,7 +9,7 @@
     <description value="Terminologien für die Verwendung des Verletzungsartenverzeichnis " />
     <compose>
         <include>
-            <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnisses" />
+            <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
         </include>
     </compose>
 </ValueSet>
