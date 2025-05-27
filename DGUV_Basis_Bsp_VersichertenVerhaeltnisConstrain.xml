@@ -10,7 +10,7 @@
     <status value="active"/>
     <beneficiary>
         <reference value="Patient/T37501234" />
-    </beneficiZry>
+    </beneficiary>
     <payor>
         <reference value="Payor/Versicherung"/>
     </payor>
