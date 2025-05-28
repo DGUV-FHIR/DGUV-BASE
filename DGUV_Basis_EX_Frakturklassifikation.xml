@@ -7,7 +7,7 @@
   <title value="Frakturklassifikation" />
   <status value="draft" />
   <publisher value="Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)" />
-  <description value="Diese Extension ermöglicht über einen Boolean-Wert die Kennzeichnung einer Verletzung als Fraktur sowie die Angabe der zugehörigen AO-Klassifikation in einem String." />
+  <description value="Diese Extension ermöglicht über einen Boolean-Wert die Kennzeichnung von Frakturen sowie die Angabe der zugehörigen AO-Klassifikationen in einem String." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -151,7 +151,7 @@
       </extension>
       <path value="Extension.extension" />
       <sliceName value="Fraktur" />
-      <short value="Kennzeichnung einer Verletzung als Fraktur" />
+      <short value="Kennzeichnung von Frakturen" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -344,7 +344,7 @@
       </extension>
       <path value="Extension.extension" />
       <sliceName value="AO-Klassifikation" />
-      <short value="AO-Klassifikation bei Fraktur" />
+      <short value="AO-Klassifikation bei Frakturen" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
@@ -748,7 +748,7 @@
     <element id="Extension.extension:Fraktur">
       <path value="Extension.extension" />
       <sliceName value="Fraktur" />
-      <short value="Kennzeichnung einer Verletzung als Fraktur" />
+      <short value="Kennzeichnung von Frakturen" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -771,7 +771,7 @@
     <element id="Extension.extension:AO-Klassifikation">
       <path value="Extension.extension" />
       <sliceName value="AO-Klassifikation" />
-      <short value="AO-Klassifikation bei Fraktur" />
+      <short value="AO-Klassifikation bei Frakturen" />
       <max value="1" />
     </element>
     <element id="Extension.extension:AO-Klassifikation.extension">
