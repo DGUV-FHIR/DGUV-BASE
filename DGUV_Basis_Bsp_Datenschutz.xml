@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="Datenschutz" />
+    <id value="DGUV-Basis-Bsp-Datenschutz" />
     <meta>
-        <profile value="http://fhir.dguv.de/BASIS/Observation/DGUV-Basis-PR-Datenschutz" />
+        <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Datenschutz" />
     </meta>
     <status value="final"/>
     <code>

@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <Coverage xmlns="http://hl7.org/fhir">
+    <id value="DGUV-Basis-Bsp-VersichertenVerhaeltnis" />
+    <meta>
+		<profile value="http://fhir.dguv.de/Basis/Coverage/DGUV-Basis-PR-VersichertenVerhaeltnis" />
+	</meta>
+    <extension  url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Familienversicherung">
+            <extension url="Familienversichert">
+                <valueBoolean value="false" />
+            </extension>
+            <extension url="Mitgliedsname">
+                <valueString value="Martha Maler" />
+            </extension>
+    </extension>
     <status value="active"/>
     <beneficiary>
         <reference value="Patient/T37501234" />

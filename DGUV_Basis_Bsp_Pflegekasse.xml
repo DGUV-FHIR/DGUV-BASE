@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="Pflegekasse-1" />
+    <id value="DGUV-Basis-Bsp-Pflegekasse" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Pflegekasse" />
     </meta>

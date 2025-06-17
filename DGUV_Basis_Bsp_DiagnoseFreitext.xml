@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <Condition xmlns="http://hl7.org/fhir">
-	<id value="Freitext-123" />
+	<id value="DGUV-Basis-Bsp-DiagnoseFreitext" />
 	<meta>
 		<profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-DiagnoseFreitext" />
 	</meta>

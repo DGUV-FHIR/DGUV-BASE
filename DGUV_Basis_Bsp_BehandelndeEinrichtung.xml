@@ -1,5 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="BehandelndeEinrichtung-234" />
+    <id value="DGUV-Basis-Bsp-BehandelndeEinrichtung" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
     </meta>
@@ -17,7 +17,7 @@
     <identifier>
         <type>
             <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.7.0" />
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type" />
                 <code value="KSN" />
             </coding>
         </type>

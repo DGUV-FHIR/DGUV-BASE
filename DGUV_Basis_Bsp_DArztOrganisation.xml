@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="DArzt-Einrichtung-234" />
+    <id value="DGUV-Basis-Bsp-DArztOrganisation" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
     </meta>

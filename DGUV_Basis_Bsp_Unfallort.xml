@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <Location xmlns="http://hl7.org/fhir">
-	<id value="Ort-123" />
+	<id value="DGUV-Basis-Bsp-Unfallort" />
 	<meta>
 		<profile value="http://fhir.dguv.de/Basis/Location/DGUV-Basis-PR-Unfallort" />
 	</meta>
