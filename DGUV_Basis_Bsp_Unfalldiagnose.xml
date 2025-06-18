@@ -10,7 +10,7 @@
         <coding>
              <extension url="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit">
                 <valueCoding>
-                    <system value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT" />
+                    <system value="https://fhir.kbv.de/ValueSet/KBV-VS-SFHIR-ICD-DIAGNOSESICHERHEIT" />
                     <code value="G" />
                     <display value="gesicherte Diagnose"/>
                 </valueCoding>

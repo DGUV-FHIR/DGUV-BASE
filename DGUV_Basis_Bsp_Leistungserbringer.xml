@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Practitioner xmlns="http://hl7.org/fhir">
     <id value="DGUV-Basis-Bsp-Leistungserbringer" />
     <meta>
@@ -12,7 +11,7 @@
                 <display value="Lifelong physician number" />
             </coding>
         </type>
-        <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+        <system value="https://fhir.kbv.de/NamingSystem/KBV-NS-Base-ANR" />
         <value value="123456799" />
     </identifier>
     <name>

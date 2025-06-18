@@ -12,7 +12,7 @@
     </organization>
     <code>
         <coding>
-            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
+            <system value="https://fhir.kbv.de/CodeSystem/KBV-CS-Base-Role-Care" />
             <version value="1.6.0"/>
             <code value="FA" />
             <display value="Fachärztin/-arzt" />
@@ -20,7 +20,7 @@
     </code>
     <specialty>
         <coding>
-            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE" />
+            <system value="https://fhir.kbv.de/CodeSystem/KBV-CS-SFHIR-BAR2-ARZTNRFACHGRUPPE" />
             <version value="1.03"/>
             <code value="57" />
             <display value="Physikalische und Rehabilitative Medizin/Physiotherapie" />

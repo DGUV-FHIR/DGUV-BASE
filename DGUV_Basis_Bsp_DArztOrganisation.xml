@@ -18,7 +18,7 @@
     <identifier>
         <type>
             <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.7.0" />
+                <system value="https://fhir.kbv.de/CodeSystem/KBV-CS-Base-identifier-type|1.7.0" />
                 <code value="KSN" />
             </coding>
         </type>
