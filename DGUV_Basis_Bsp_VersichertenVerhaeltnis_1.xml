@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    In der vorliegenden Beispieldatei geht es um den Test bei einem fehlende Eintrag des Bezahlenden.
+    Dieser Fall muss unbedingt vermieden werden und daher durch einen Constrain gescützt werden.
+-->
+<Coverage xmlns="http://hl7.org/fhir">
+    <id value="DGUV-Basis-Bsp-VersichertenVerhaeltnis-1" />
+    <meta>
+		<profile value="http://fhir.dguv.de/Basis/Coverage/DGUV-Basis-PR-VersichertenVerhaeltnis" />
+	</meta>
+    <extension  url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Familienversicherung">
+            <extension url="Familienversichert">
+                <valueBoolean value="false" />
+            </extension>
+            <extension url="Mitgliedsname">
+                <valueString value="Martha Maler" />
+            </extension>
+    </extension>
+    <status value="active"/>
+    <beneficiary>
+        <reference value="Patient/T37501234" />
+    </beneficiary>
+<!-- 
+    Hier ist das leere value Feld für den Eintrag des Bezahlenden!
+    Ein constrain sollte mindestens einen Eintrag mit Bezug auf eine 
+    Organisation/Patient/RelatedPerson verlangen.
+--> 
+    <payor>
+        <reference value=""/>
+    </payor>
+</Coverage>
