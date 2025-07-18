@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    In der vorliegenden Beispieldatei geht es um den Test bei einem fehlende Eintrag des Bezahlenden.
+    Dieser Fall muss unbedingt vermieden werden und daher durch einen Constrain gescützt werden.
+-->
 <Observation xmlns="http://hl7.org/fhir">
     <id value="DGUV-Basis-Bsp-Datenschutz" />
     <meta>
@@ -8,9 +12,19 @@
     <code>
         <text value="Datenschutz" />
     </code>
+<!-- 
+    Hier ist das value Feld für den Verweis auf die Versicherte Person!
+    Ein constrain sollte mindestens einen Eintrag mit Bezug auf eine 
+    Organisation/Patient/RelatedPerson verlangen.
+--> 
     <subject>
         <reference value="Patient/VersichertePerson-1"/>
     </subject>
+<!-- 
+    Hier ist das value Feld für den Verweis auf den Leistungserbringer!
+    Ein constrain sollte mindestens einen Verweis mit Bezug auf einen 
+    Performer verlangen.
+--> 
     <performer>
         <reference value="Performer/DArzt"/>
     </performer>
