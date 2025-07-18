@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient xmlns="http://hl7.org/fhir">
-  <id value="111-222-333-444"/>
+  <id value="DGUV-Basis-Bsp-VersPerson-RudiFarad"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
   </meta>   
