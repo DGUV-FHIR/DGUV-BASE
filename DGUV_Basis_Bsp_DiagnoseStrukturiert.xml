@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:  
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_DiagnoseStrukturiert.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_DiagnoseStrukturiert.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+--> 
 <Condition xmlns="http://hl7.org/fhir">
+<!--  Die Notation der id  wird analog zu Profil durchgeführt nur statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-DiagnoseStrukturiert -->
 	<id value="DGUV-Basis-Bsp-DiagnoseStrukturiert" />
 	<meta>
 		<profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-DiagnoseStrukturiert" />
