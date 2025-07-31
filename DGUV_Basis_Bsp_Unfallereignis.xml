@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei: 
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Unfallereignis.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Unfallereignis.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <Observation xmlns="http://hl7.org/fhir">
+<!--  
+      Die Notation der id  wird analog zu Profil durchgeführt nur 
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Unfallereignis 
+-->
   <id value="DGUV-Basis-Bsp-Unfallereignis"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
