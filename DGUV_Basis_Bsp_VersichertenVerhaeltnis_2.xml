@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-    In der vorliegenden Beispieldatei geht es um den Test bei einem fehlende Eintrag des Bezahlenden.
-    Dieser Fall muss unbedingt vermieden werden und daher durch einen Constrain gescützt werden.
--->
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:  
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_VersichertenVerhaeltnis_2.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_VersichertenVerhaeltnis.xm
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+--> 
 <Coverage xmlns="http://hl7.org/fhir">
+<!--  
+      Die Notation der id  wird analog zu Profil durchgeführt nur 
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-VersichertenVerhaeltnis
+      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+      mit einer Nummerierung versehen:
+            Datei DGUV_Basis_Bsp_VersichertenVerhaeltnis_1.xml
+            Datei DGUV_Basis_Bsp_VersichertenVerhaeltnis_2.xml
+                            ....
+
+      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+      Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertenVerhaeltnis-2 für die id.
+-->
     <id value="DGUV-Basis-Bsp-VersichertenVerhaeltnis-2" />
     <meta>
 		<profile value="http://fhir.dguv.de/Basis/Coverage/DGUV-Basis-PR-VersichertenVerhaeltnis" />
