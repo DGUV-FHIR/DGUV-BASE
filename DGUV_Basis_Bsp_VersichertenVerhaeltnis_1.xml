@@ -18,8 +18,7 @@
     
 --> 
 <Coverage xmlns="http://hl7.org/fhir">
-<!--  
-<!--  
+<!--    
       Die Notation der id  wird analog zu Profil durchgeführt nur 
       statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-VersichertenVerhaeltnis
       Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
@@ -30,7 +29,6 @@
 
       Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
       Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertenVerhaeltnis-1 für die id.
--->
 -->
     <id value="DGUV-Basis-Bsp-VersichertenVerhaeltnis-1" />
     <meta>
