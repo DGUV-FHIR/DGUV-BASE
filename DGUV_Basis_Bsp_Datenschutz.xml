@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei: 
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Datenschutz.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Datenschutz.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <!-- 
     In der vorliegenden Beispieldatei geht es um den Test bei einem fehlende Eintrag des Bezahlenden.
     Dieser Fall muss unbedingt vermieden werden und daher durch einen Constrain gescützt werden.
