@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei: DGUV_Basis_Bsp_Arzt14.xml
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Pflegekasse.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Pflegekasse.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <Organization xmlns="http://hl7.org/fhir">
     <id value="DGUV-Basis-Bsp-Pflegekasse" />
     <meta>
