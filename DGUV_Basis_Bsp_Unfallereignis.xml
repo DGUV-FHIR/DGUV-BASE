@@ -18,10 +18,18 @@
     
 -->
 <Observation xmlns="http://hl7.org/fhir">
-<!--  
+  <!--    
       Die Notation der id  wird analog zu Profil durchgeführt nur 
-      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Unfallereignis 
--->
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Unfallereignis
+      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+      mit einer Nummerierung versehen:
+            Datei DGUV_Basis_Bsp_Unfallereignis_1.xml
+            Datei DGUV_Basis_Bsp_Unfallereignis_2.xml
+                            ....
+
+      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+      Im vorliegenden Fall also DGUV-Basis-Bsp-Unfallereignis für die id.
+    -->
   <id value="DGUV-Basis-Bsp-Unfallereignis"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
