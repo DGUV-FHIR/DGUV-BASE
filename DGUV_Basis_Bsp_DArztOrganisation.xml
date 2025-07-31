@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_DArztOrganisation.xml dient der Validierung 
+    des Profils DGUV_Basis_Pr_DArztOrganisation.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <Organization xmlns="http://hl7.org/fhir">
     <id value="DGUV-Basis-Bsp-DArztOrganisation" />
     <meta>
