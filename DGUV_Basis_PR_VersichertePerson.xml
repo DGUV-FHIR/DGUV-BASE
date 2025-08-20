@@ -1301,7 +1301,7 @@
       <sliceName value="VersichertenId" />
       <short value="Lebenslange Krankenversichertennummer" />
       <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
-      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt. Deshalb: 0..1." />
+      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare, für jede versicherte Person einmalige Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt. Deshalb: 0..1." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
       <max value="1" />
@@ -12222,7 +12222,7 @@
       <path value="Patient.identifier" />
       <sliceName value="VersichertenId" />
       <short value="Lebenslange Krankenversichertennummer" />
-      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt. Deshalb: 0..1." />
+      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare, für jede versicherte Person einmalige Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt. Deshalb: 0..1." />
       <max value="1" />
       <type>
         <code value="Identifier" />
