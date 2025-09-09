@@ -107,12 +107,6 @@
       <isSummary value="true" />
     </element>
     <element id="Coverage.meta">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.meta" />
       <short value="Metadata about the resource" />
       <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." />
@@ -208,9 +202,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language" />
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="preferred" />
         <description value="A human language." />
         <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
@@ -221,12 +212,6 @@
       </mapping>
     </element>
     <element id="Coverage.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.text" />
       <short value="Text summary of the resource, for human interpretation" />
       <definition value="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." />
@@ -295,12 +280,6 @@
       </mapping>
     </element>
     <element id="Coverage.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.extension" />
       <slicing>
         <discriminator>
@@ -352,12 +331,6 @@
       </mapping>
     </element>
     <element id="Coverage.extension:Familienversicherung">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.extension" />
       <sliceName value="Familienversicherung" />
       <short value="Optional Extensions Element" />
@@ -366,7 +339,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="DomainResource.extension" />
         <min value="0" />
@@ -404,12 +377,6 @@
       </mapping>
     </element>
     <element id="Coverage.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.modifierExtension" />
       <slicing>
         <discriminator>
@@ -464,12 +431,6 @@
       </mapping>
     </element>
     <element id="Coverage.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.identifier" />
       <short value="Business Identifier for the coverage" />
       <definition value="A unique identifier assigned to this coverage." />
@@ -590,12 +551,6 @@
       </mapping>
     </element>
     <element id="Coverage.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.type" />
       <short value="Coverage category such as medical or accident" />
       <definition value="The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization." />
@@ -655,12 +610,6 @@
       </mapping>
     </element>
     <element id="Coverage.policyHolder">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.policyHolder" />
       <short value="Owner of the policy" />
       <definition value="The party who 'owns' the insurance policy." />
@@ -727,12 +676,6 @@
       </mapping>
     </element>
     <element id="Coverage.subscriber">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.subscriber" />
       <short value="Subscriber to the policy" />
       <definition value="The party who has signed-up for or 'owns' the contractual relationship to the policy or to whom the benefit of the policy for services rendered to them or their family is due." />
@@ -849,12 +792,6 @@
       </mapping>
     </element>
     <element id="Coverage.beneficiary">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.beneficiary" />
       <short value="Plan beneficiary" />
       <definition value="The party who benefits from the insurance coverage; the patient when products and/or services are provided." />
@@ -963,12 +900,6 @@
       </mapping>
     </element>
     <element id="Coverage.relationship">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.relationship" />
       <short value="Beneficiary relationship to the subscriber" />
       <definition value="The relationship of beneficiary (patient) to the subscriber." />
@@ -1023,12 +954,6 @@
       </mapping>
     </element>
     <element id="Coverage.period">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.period" />
       <short value="Coverage start and end dates" />
       <definition value="Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force." />
@@ -1092,12 +1017,6 @@
       </mapping>
     </element>
     <element id="Coverage.payor">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.payor" />
       <short value="Issuer of the policy" />
       <definition value="The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements." />
@@ -1160,12 +1079,6 @@
       </mapping>
     </element>
     <element id="Coverage.class">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Class" />
       </extension>
@@ -1222,12 +1135,6 @@
       </mapping>
     </element>
     <element id="Coverage.class.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.class.extension" />
       <slicing>
         <discriminator>
@@ -1279,12 +1186,6 @@
       </mapping>
     </element>
     <element id="Coverage.class.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.class.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -1333,12 +1234,6 @@
       </mapping>
     </element>
     <element id="Coverage.class.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.class.type" />
       <short value="Type of class such as 'group' or 'plan'" />
       <definition value="The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan." />
@@ -1546,12 +1441,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="CostToBeneficiary" />
       </extension>
@@ -1611,12 +1500,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.extension" />
       <slicing>
         <discriminator>
@@ -1668,12 +1551,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -1722,12 +1599,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.type" />
       <short value="Cost category" />
       <definition value="The category of patient centric costs associated with treatment." />
@@ -1779,12 +1650,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.value[x]" />
       <short value="The amount or percentage due from the beneficiary" />
       <definition value="The amount due from the patient for the cost category." />
@@ -1832,12 +1697,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.exception">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Exemption" />
       </extension>
@@ -1893,12 +1752,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.exception.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.exception.extension" />
       <slicing>
         <discriminator>
@@ -1950,12 +1803,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.exception.modifierExtension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.exception.modifierExtension" />
       <short value="Extensions that cannot be ignored even if unrecognized" />
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." />
@@ -2004,12 +1851,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.exception.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.exception.type" />
       <short value="Exception category" />
       <definition value="The code for the specific exception." />
@@ -2061,12 +1902,6 @@
       </mapping>
     </element>
     <element id="Coverage.costToBeneficiary.exception.period">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.costToBeneficiary.exception.period" />
       <short value="The effective period of the exception" />
       <definition value="The timeframe during when the exception is in force." />
@@ -2144,12 +1979,6 @@
       </mapping>
     </element>
     <element id="Coverage.contract">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Coverage.contract" />
       <short value="Contract details" />
       <definition value="The policy(s) which constitute this insurance coverage." />
@@ -2209,6 +2038,7 @@
     <element id="Coverage.extension:Familienversicherung">
       <path value="Coverage.extension" />
       <sliceName value="Familienversicherung" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Familienversicherung" />
