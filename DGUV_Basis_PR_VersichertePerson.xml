@@ -5219,6 +5219,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="AC" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12414,6 +12415,14 @@
       <path value="Patient.name.family.extension" />
       <sliceName value="nachname" />
       <min value="1" />
+    </element>
+    <element id="Patient.name:Name.prefix.extension:prefix-qualifier">
+      <path value="Patient.name.prefix.extension" />
+      <sliceName value="prefix-qualifier" />
+    </element>
+    <element id="Patient.name:Name.prefix.extension:prefix-qualifier.value[x]">
+      <path value="Patient.name.prefix.extension.value[x]" />
+      <fixedCode value="AC" />
     </element>
     <element id="Patient.name:Geburtsname">
       <path value="Patient.name" />
