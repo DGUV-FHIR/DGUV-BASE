@@ -1299,9 +1299,8 @@
     <element id="Patient.identifier:VersichertenId">
       <path value="Patient.identifier" />
       <sliceName value="VersichertenId" />
-      <short value="Lebenslange Krankenversichertennummer" />
-      <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
-      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare, für jede versicherte Person einmalige Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt. Deshalb: 0..1." />
+      <short value="Unveränderlicher Teil der einheitlichen Krankenversicherungsnummer" />
+      <definition value="Hier wird der unveränderliche Teil der einheitlichen Krankenversicherungsnummer der GKV gemäß § 290 SGB V angegeben. Die 10-stellige Zeichenfolge beginnt mit einem zufällig vergebene Großbuchstaben, darauf folgen 8 zufällige Ziffern. Das 10.Zeichen ist eine Prüfziffer." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
       <max value="1" />
@@ -2256,8 +2255,8 @@
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
       <sliceName value="Patientennummer" />
-      <short value="Organisationsinterner Patienten-Identifier (PID)" />
-      <definition value="Ein Identifikator - Eindeutige und unmissverständliche Identifizierung innerhalb einer Entität" />
+      <short value="Abbildung einer organisationsspezifischen Patienten-ID" />
+      <definition value="Die PID im Kontext Patientennummer steht für die Patientenidentifikation und ist eine Kennung, die Patienten in medizinischen Systemen eindeutig identifiziert." />
       <comment value="Organisationsintere Patienten-Identifier werden von z. B. von KIS-Systemen vergeben und dienen innerhalb einer Einreichtung meist als primäres Identifikationsmerkmal für Patienten, u. A. in der HL7 V2-Kommunikation.&#xD;&#xA;Es ist möglich, dass eine versicherte Person - z. B. durch verschiedene Institutionen - mehrere Patientennummern gleichzeitig zugeordnet bekommt (deshalb: 0..*)." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
@@ -2721,7 +2720,7 @@
       <path value="Patient.identifier" />
       <sliceName value="Versichertennummer_PKV" />
       <short value="Private Krankenversichertennummer" />
-      <definition value="An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers." />
+      <definition value="Hier wird der Identifikator für eine Privatversichertennummer angegeben." />
       <comment value="Für Privatpatienten, die noch nicht über eine lebenslange, unveränderliche Krankenversichertennummer (KVNR) verfügen, können bis auf weiteres noch die versicherungsspezifischen PKV-Nummern angegeben werden. Da bei diesen der Bezeichner des vom Kostenträger verwendeten Namensraums meist nicht ermittelt werden kann, ist statt dessen der Name des Kostenträgers in assigner anzugeben." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
@@ -12222,8 +12221,8 @@
     <element id="Patient.identifier:VersichertenId">
       <path value="Patient.identifier" />
       <sliceName value="VersichertenId" />
-      <short value="Lebenslange Krankenversichertennummer" />
-      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare, für jede versicherte Person einmalige Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt. Deshalb: 0..1." />
+      <short value="Unveränderlicher Teil der einheitlichen Krankenversicherungsnummer" />
+      <definition value="Hier wird der unveränderliche Teil der einheitlichen Krankenversicherungsnummer der GKV gemäß § 290 SGB V angegeben. Die 10-stellige Zeichenfolge beginnt mit einem zufällig vergebene Großbuchstaben, darauf folgen 8 zufällige Ziffern. Das 10.Zeichen ist eine Prüfziffer." />
       <max value="1" />
       <type>
         <code value="Identifier" />
@@ -12293,8 +12292,8 @@
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
       <sliceName value="Patientennummer" />
-      <short value="Organisationsinterner Patienten-Identifier (PID)" />
-      <definition value="Ein Identifikator - Eindeutige und unmissverständliche Identifizierung innerhalb einer Entität" />
+      <short value="Abbildung einer organisationsspezifischen Patienten-ID" />
+      <definition value="Die PID im Kontext Patientennummer steht für die Patientenidentifikation und ist eine Kennung, die Patienten in medizinischen Systemen eindeutig identifiziert." />
       <comment value="Organisationsintere Patienten-Identifier werden von z. B. von KIS-Systemen vergeben und dienen innerhalb einer Einreichtung meist als primäres Identifikationsmerkmal für Patienten, u. A. in der HL7 V2-Kommunikation.&#xD;&#xA;Es ist möglich, dass eine versicherte Person - z. B. durch verschiedene Institutionen - mehrere Patientennummern gleichzeitig zugeordnet bekommt (deshalb: 0..*)." />
       <type>
         <code value="Identifier" />
@@ -12329,6 +12328,7 @@
       <path value="Patient.identifier" />
       <sliceName value="Versichertennummer_PKV" />
       <short value="Private Krankenversichertennummer" />
+      <definition value="Hier wird der Identifikator für eine Privatversichertennummer angegeben." />
       <comment value="Für Privatpatienten, die noch nicht über eine lebenslange, unveränderliche Krankenversichertennummer (KVNR) verfügen, können bis auf weiteres noch die versicherungsspezifischen PKV-Nummern angegeben werden. Da bei diesen der Bezeichner des vom Kostenträger verwendeten Namensraums meist nicht ermittelt werden kann, ist statt dessen der Name des Kostenträgers in assigner anzugeben." />
       <max value="1" />
       <type>
