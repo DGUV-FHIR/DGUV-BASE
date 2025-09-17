@@ -20,12 +20,6 @@
   <derivation value="constraint" />
   <snapshot>
     <element id="Extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
@@ -86,12 +80,6 @@
       </mapping>
     </element>
     <element id="Extension.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <slicing>
         <discriminator>
@@ -143,12 +131,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Familienversichert">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <sliceName value="Familienversichert" />
       <short value="Beschreibung des Patientenverhältnisses zur Versicherung" />
@@ -216,12 +198,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Familienversichert.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -298,12 +274,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Familienversichert.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Kennzeichnung als familien- (true) oder selbstversichert (false)" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -336,12 +306,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Mitgliedsname">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension" />
       <sliceName value="Mitgliedsname" />
       <short value="Versicherter bei Familien(mit)versicherung des Patienten" />
@@ -409,12 +373,6 @@
       </mapping>
     </element>
     <element id="Extension.extension:Mitgliedsname.extension">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.extension" />
       <slicing>
         <discriminator>
@@ -491,16 +449,11 @@
       </mapping>
     </element>
     <element id="Extension.extension:Mitgliedsname.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.extension.value[x]" />
       <short value="Name des Versicherten bei Familien(mit)versicherung des Patienten" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
-      <min value="0" />
+      <comment value="Nur wenn in Familienversichert.value[x] &quot;true&quot; eingetragen ist, muss hier zwingend der Name des eigentlich Versicherten angegeben werden." />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -554,12 +507,6 @@
       </mapping>
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
@@ -785,6 +732,8 @@
     <element id="Extension.extension:Mitgliedsname.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Name des Versicherten bei Familien(mit)versicherung des Patienten" />
+      <comment value="Nur wenn in Familienversichert.value[x] &quot;true&quot; eingetragen ist, muss hier zwingend der Name des eigentlich Versicherten angegeben werden." />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>
