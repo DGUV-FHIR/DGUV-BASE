@@ -36,14 +36,14 @@
     <identifier>
         <type>
             <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV-CS-Base-identifier-type|1.7.0" />
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type" />
                 <code value="KSN" />
             </coding>
         </type>
         <system value="http://fhir.de/sid/dkgev/standortnummer" />
         <value value="243234999" />
     </identifier>
-    <name value="Unfallkrankenhaus Berlin"/>
+    <name value="Unfallkrankenhaus Berlin"/>    
     <telecom>
         <system value="phone"/>
         <value value="+1-1234565789"/>
