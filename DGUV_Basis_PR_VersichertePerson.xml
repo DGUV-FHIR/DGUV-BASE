@@ -73,6 +73,13 @@
         <xpath value="not(exists(f:contained/*/f:meta/f:security))" />
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
       </constraint>
+      <constraint>
+        <key value="isik-pat-1" />
+        <severity value="error" />
+        <human value="Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden." />
+        <expression value="gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()" />
+        <source value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="Entity. Role, or Act" />
@@ -12179,6 +12186,12 @@
       <path value="Patient" />
       <short value="Daten zur verunfallten Person" />
       <definition value="Dieses Profil beschreibt demographische und andere administrative Informationen über eine verunfallte Person, die Gesundheitsdienstleistungen in Anspruch nimmt." />
+      <constraint>
+        <key value="isik-pat-1" />
+        <severity value="error" />
+        <human value="Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden." />
+        <expression value="gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()" />
+      </constraint>
     </element>
     <element id="Patient.text">
       <path value="Patient.text" />
