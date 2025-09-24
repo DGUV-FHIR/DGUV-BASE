@@ -1306,8 +1306,9 @@
     <element id="Patient.identifier:VersichertenId">
       <path value="Patient.identifier" />
       <sliceName value="VersichertenId" />
-      <short value="Unveränderlicher Teil der einheitlichen Krankenversicherungsnummer" />
+      <short value="Lebenslange Krankenversichertennummer" />
       <definition value="Hier wird der unveränderliche Teil der einheitlichen Krankenversicherungsnummer der GKV gemäß § 290 SGB V angegeben. Die 10-stellige Zeichenfolge beginnt mit einem zufällig vergebene Großbuchstaben, darauf folgen 8 zufällige Ziffern. Das 10.Zeichen ist eine Prüfziffer." />
+      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
       <min value="0" />
       <max value="1" />
@@ -1528,8 +1529,8 @@
       <constraint>
         <key value="kvid-2" />
         <severity value="warning" />
-        <human value="Als Type sollte der Code 'KVZ10' verwendet werden, die Codes 'GKV' und 'PKV' haben den Status 'retired'" />
-        <expression value="($this.identifier.type.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='GKV') or $this.identifier.type.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='PKV')).not()" />
+        <human value="Die type Codes 'GKV' und 'PKV' haben den Status 'retired', daher sollen diese nicht mehr verwendet werden" />
+        <expression value="($this.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='GKV') or $this.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='PKV')).not()" />
         <source value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
       </constraint>
       <isSummary value="true" />
@@ -2007,8 +2008,8 @@
       <constraint>
         <key value="kvid-2" />
         <severity value="warning" />
-        <human value="Als Type sollte der Code 'KVZ10' verwendet werden, die Codes 'GKV' und 'PKV' haben den Status 'retired'" />
-        <expression value="($this.identifier.type.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='GKV') or $this.identifier.type.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='PKV')).not()" />
+        <human value="Die type Codes 'GKV' und 'PKV' haben den Status 'retired', daher sollen diese nicht mehr verwendet werden" />
+        <expression value="($this.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='GKV') or $this.coding.exists(system='http://fhir.de/CodeSystem/identifier-type-de-basis' and code='PKV')).not()" />
         <source value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
       </constraint>
       <isSummary value="true" />
@@ -2262,7 +2263,7 @@
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
       <sliceName value="Patientennummer" />
-      <short value="Abbildung einer organisationsspezifischen Patienten-ID" />
+      <short value="Organisationsinterner Patienten-Identifier (PID)" />
       <definition value="Die PID im Kontext Patientennummer steht für die Patientenidentifikation und ist eine Kennung, die Patienten in medizinischen Systemen eindeutig identifiziert." />
       <comment value="Organisationsintere Patienten-Identifier werden von z. B. von KIS-Systemen vergeben und dienen innerhalb einer Einreichtung meist als primäres Identifikationsmerkmal für Patienten, u. A. in der HL7 V2-Kommunikation.&#xD;&#xA;Es ist möglich, dass eine versicherte Person - z. B. durch verschiedene Institutionen - mehrere Patientennummern gleichzeitig zugeordnet bekommt (deshalb: 0..*)." />
       <requirements value="Patients are almost always assigned specific numerical identifiers." />
@@ -12234,8 +12235,9 @@
     <element id="Patient.identifier:VersichertenId">
       <path value="Patient.identifier" />
       <sliceName value="VersichertenId" />
-      <short value="Unveränderlicher Teil der einheitlichen Krankenversicherungsnummer" />
+      <short value="Lebenslange Krankenversichertennummer" />
       <definition value="Hier wird der unveränderliche Teil der einheitlichen Krankenversicherungsnummer der GKV gemäß § 290 SGB V angegeben. Die 10-stellige Zeichenfolge beginnt mit einem zufällig vergebene Großbuchstaben, darauf folgen 8 zufällige Ziffern. Das 10.Zeichen ist eine Prüfziffer." />
+      <comment value="Die als 'KVZ10' kodierte Versichertennummer ist der 10-stellige, unveränderbare Teil der Versichertennummer, der lesbar auf die Elektronische Gesundheitskarte aufgedruckt ist. Er gilt für alle Krankenversichertennummern, unabhängig davon, ob es sich um GKV, PKV oder Sonderkostenträger handelt." />
       <max value="1" />
       <type>
         <code value="Identifier" />
@@ -12305,7 +12307,7 @@
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
       <sliceName value="Patientennummer" />
-      <short value="Abbildung einer organisationsspezifischen Patienten-ID" />
+      <short value="Organisationsinterner Patienten-Identifier (PID)" />
       <definition value="Die PID im Kontext Patientennummer steht für die Patientenidentifikation und ist eine Kennung, die Patienten in medizinischen Systemen eindeutig identifiziert." />
       <comment value="Organisationsintere Patienten-Identifier werden von z. B. von KIS-Systemen vergeben und dienen innerhalb einer Einreichtung meist als primäres Identifikationsmerkmal für Patienten, u. A. in der HL7 V2-Kommunikation.&#xD;&#xA;Es ist möglich, dass eine versicherte Person - z. B. durch verschiedene Institutionen - mehrere Patientennummern gleichzeitig zugeordnet bekommt (deshalb: 0..*)." />
       <type>
