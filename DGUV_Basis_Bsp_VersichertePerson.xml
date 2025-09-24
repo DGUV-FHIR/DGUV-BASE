@@ -80,7 +80,13 @@
     <system value="phone"/>
     <value value="0049177/00000000"/>
   </telecom>
-  <gender value="male"/>
+  <gender>
+    <extension url="http://fhir.de/StructureDefinition/gender-amtlich-de">
+      <valueString value="male"/>
+    </extension>
+  </gender>
+
+
   <birthDate value="2004-11-12"/>
   <address>
     <type value="both" />
