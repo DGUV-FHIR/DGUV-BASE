@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_VersichertePerson.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_VersichertePerson.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
+<Patient xmlns="http://hl7.org/fhir">
+    <!--    
+      Die Notation der id  wird analog zu Profil durchgeführt nur 
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-VersichertePerson
+      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+      mit einer Nummerierung versehen:
+            Datei DGUV_Basis_Bsp_VersichertePerson_1.xml
+            Datei DGUV_Basis_Bsp_VersichertePerson_2.xml
+                            ....
+
+      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+      Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertePerson für die id.
+    -->
+  <id value="DGUV-Basis-Bsp-VersichertePerson-2"/>
+  <meta>
+    <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
+  </meta>   
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Hier finden Sie ein Beispiel einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
+    <extension url="code" >
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="DE" />
+            <display value="Germany" />
+          </coding>
+        </valueCodeableConcept>
+    </extension>
+     <extension url="period" >
+      <valuePeriod>
+        <start value="2004-11-12"/>
+        <end value="2024-01-01"/>
+      </valuePeriod>
+    </extension>
+  </extension>
+  <identifier>
+    <type>
+        <coding>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+            <code value="KVZ10" />
+        </coding>
+    </type>
+    <system value="http://fhir.de/sid/gkv/kvid-10" />
+    <value value="S123456789" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <family value="Mustermann">
+        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+            <valueString value="Mustermann" />
+        </extension>
+    </family> 
+    <given value="Lionel" />
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="0049177/00000000"/>
+  </telecom>
+
+   <!-- Extension zur amtlichen Differenzierung -->
+   <gender value="other">
+     <extension url="http://fhir.de/StructureDefinition/gender-amtlich-de">
+       <valueCoding>
+         <system value="http://fhir.de/CodeSystem/gender-amtlich-de" />
+         <code value="D"/>
+         <display value="divers"/>
+       </valueCoding>
+     </extension>
+   </gender>
+
+  <birthDate value="2004-11-12"/>
+  <address>
+    <type value="both" />
+    <line value="Musterweg 1">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+            <valueString value="Musterweg" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+            <valueString value="1" />
+        </extension>
+    </line>
+    <city value="Musterhausen" />
+    <postalCode value="11111" />
+    <country value="DE" />
+  </address>
+</Patient>
