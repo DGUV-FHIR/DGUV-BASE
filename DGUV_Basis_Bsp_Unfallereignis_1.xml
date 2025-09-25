@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei: 
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Unfallereignis.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Unfallereignis.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
+<Observation xmlns="http://hl7.org/fhir">
+  <!--    
+      Die Notation der id  wird analog zu Profil durchgeführt nur 
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Unfallereignis
+      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+      mit einer Nummerierung versehen:
+            Datei DGUV_Basis_Bsp_Unfallereignis_1.xml
+            Datei DGUV_Basis_Bsp_Unfallereignis_2.xml
+                            ....
+
+      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+      Im vorliegenden Fall also DGUV-Basis-Bsp-Unfallereignis für die id.
+    -->
+    <id value="DGUV-Basis-Bsp-Unfallereignis-1"/>
+    <meta>
+        <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
+    </meta>
+    <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Pflegeunfall">
+        <extension>
+            <extension url="Pflegeunfall">
+                <valueBoolean value="true"/>
+            </extension>
+            <extension url="Pflegekasse">
+                <value>      
+                    <valueString value="Pflegekasse/123" />
+                </value>
+            </extension>
+        </extension>
+    </extension>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"/>
+            <code value="3.1S"/>
+            <display value="Verletzungen des Rückenmarks."/>
+        </coding>
+    </code>
+    <subject> 
+        <reference value="Patient/111" />
+    </subject>
+        <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>
+    <component>
+        <code>
+            <coding>
+                <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
+                <code value="01"/>
+                <display value="Beginn der Arbeitszeit"/>
+            </coding>
+        </code>
+        <valueDateTime value="2024-11-02T08:00:00+00:00"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
+                <code value="02"/>
+                <display value="Ende der Arbeitszeit"/>
+            </coding>
+        </code>
+        <valueDateTime value="2024-11-02T16:00:00+00:00"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
+                <code value="03"/>
+                <display value="Unfallhergang"/>
+            </coding>
+        </code>
+        <valueString value="Der Versicherte ist auf dem Weg zum Sechstagerennen mit seinem Motorrad mit einer geschätzten Geschwindigkeit von 60 km/h gegen eine Leitplanke gefahren"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
+                <code value="05"/>
+                <display value="Beschäftigt als"/>
+            </coding>
+        </code>
+        <valueString value="Informatiker"/>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
+                <code value="06"/>
+                <display value="Beschäftigungsbeginn"/>
+            </coding>
+        </code>
+        <valueDateTime value="2018-01-01"/>
+    </component>
+</Observation>
