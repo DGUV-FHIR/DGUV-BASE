@@ -145,6 +145,15 @@ C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_DArztOrgani
 
 ```
 
+**Validierung:**   25.09.2025
+
+```
+----------------------------------------------------------------------------------
+C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_DArztOrganisation.xml 02:15:33
+[20, 43] Organization: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+[37, 15] Organization.identifier[1].type: Warning - Keiner der angegebenen Codes ist im Valueset 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), und ein Code sollte aus diesem Valueset stammen, es sei denn, er enthält keinen geeigneten Code) (Codes = https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type#KSN)
+```
+
 
 
  <a id="Datenschutz">Datenschutz</a>
@@ -572,7 +581,9 @@ C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_Versicherte
 **Validierung:** 
 
 ```
-
+----------------------------------------------------------------------------------
+C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_VersichertePerson_2.xml 11:21:25
+[-1, -1] n/a: Information - Alles OK
 ```
 
 
