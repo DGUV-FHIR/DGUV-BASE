@@ -35,15 +35,13 @@
         <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
     </meta>
     <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Pflegeunfall">
-        <extension>
-            <extension url="Pflegeunfall">
-                <valueBoolean value="true"/>
-            </extension>
-            <extension url="Pflegekasse">
-                <value>      
-                    <valueString value="Pflegekasse/123" />
-                </value>
-            </extension>
+        <extension url="Pflegeunfall">
+            <valueBoolean value="true"/>
+        </extension>
+        <extension url="Pflegekasse">
+            <value>      
+                <reference value="Pflegekasse/123" />
+            </value>
         </extension>
     </extension>
     <status value="final"/>
