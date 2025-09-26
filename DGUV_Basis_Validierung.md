@@ -413,7 +413,7 @@ C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_Unfallbetri
 | Profil        | DGUV_Basis_PR_Unfallereignis.xml  |           |
 | Code Set(s)   |                                   |           |
 | Value Set(s)  |                                   |           |
-| Validiert am: | 24.09.2025                        |           |
+| Validiert am: | 26.09.2025                        |           |
 
 **Validierung 22.09.2025:**
 
@@ -436,7 +436,7 @@ C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_Unfallereig
 
 
 
-**Validierung:**
+**Validierung 24.10.2025:**
 
 ```
 ----------------------------------------------------------------------------------
@@ -454,6 +454,23 @@ C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_Unfallereig
 [90, 11] Observation.component[3].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
 [100, 11] Observation.component[4].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
 
+```
+
+
+
+**Validierung  26.09.2025: ** 
+
+```
+----------------------------------------------------------------------------------
+C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_Unfallereignis.xml 12:23:47
+[20, 42] Observation: Warning - !!Alle Observations sollten einen Performer haben
+[20, 42] Observation: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+[49, 9] Observation.code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis|1.3
+[61, 11] Observation.component[0].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
+[71, 11] Observation.component[1].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
+[81, 11] Observation.component[2].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
+[91, 11] Observation.component[3].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
+[101, 11] Observation.component[4].code: Information - Reference to draft CodeSystem http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents|1.3
 ```
 
 
@@ -628,6 +645,15 @@ C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_Weiterbehan
 [2, 43] Organization: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 [29, 21] Organization.identifier[2]: Information - !!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation|1.3 überein.
 [30, 15] Organization.identifier[2].type: Warning - Keiner der angegebenen Codes ist im Valueset 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), und ein Code sollte aus diesem Valueset stammen, es sei denn, er enthält keinen geeigneten Code) (Codes = https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.7.0#KSN)
+```
+
+**Validierung 25.09.2025:** 
+
+```
+----------------------------------------------------------------------------------
+C:\Users\Ext.Matten.Friedhelm\sources\repos\DGUV-BASE\DGUV_Basis_Bsp_WeiterbehandelndeOrganisation.xml 10:12:10
+[2, 43] Organization: Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+[30, 15] Organization.identifier[2].type: Warning - Keiner der angegebenen Codes ist im Valueset 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), und ein Code sollte aus diesem Valueset stammen, es sei denn, er enthält keinen geeigneten Code) (Codes = https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type#KSN)
 ```
 
 
