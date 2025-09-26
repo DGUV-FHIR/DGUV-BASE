@@ -3,7 +3,7 @@
   <url value="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-NichtAerztlicherAnsprechpartner" />
   <version value="1.3" />
   <name value="DGUV_Basis_EX_NichtAerztlicherAnsprechpartner" />
-  <title value="Nichtärztlicher Ansprechpartner" />
+  <title value="Nichtärztlicher Ansprechpartner (Erweiterung)" />
   <status value="draft" />
   <date value="2024-01-31" />
   <fhirVersion value="4.0.1" />
