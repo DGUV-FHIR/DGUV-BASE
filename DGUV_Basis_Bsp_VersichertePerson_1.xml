@@ -4,12 +4,13 @@
     Datum:  21.07.2025
     Letzte Änderung:31.07.2025
 
-    Ursprüngliche Datei:
-
-    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_VersichertePerson.xml dient der Validierung 
+    Ursprüngliche Datei: DGUV_Basis_Bsp_VersPerson_RudiFarad.xml
+ 
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_VersichertePerson-1.xml dient der Validierung 
     des Profils DGUV_Basis_PR_VersichertePerson.xml
     
-    Zu beachten ist dabei:
+    Zu beachten ist dabei: Namen Änderung der Datei von DGUV_Basis_Bsp_VersPerson_RudiFarad.xml
+    nach DGUV_Basis_Bsp_VersichertePerson-1.xml.
 
 
     Durchzuführende Massnahmen:
@@ -28,16 +29,16 @@
                             ....
 
       Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
-      Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertePerson für die id.
+      Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertePerson-1 für die id.
     -->
-  <id value="DGUV-Basis-Bsp-VersichertePerson"/>
+  <id value="DGUV-Basis-Bsp-VersichertePerson-1"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
   </meta>   
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h1>Hier finden Sie ein Beispiel einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
+      <h1>Hier finden Sie ein vollständiges Beispiel einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
     </div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
@@ -50,12 +51,6 @@
           </coding>
         </valueCodeableConcept>
     </extension>
-     <extension url="period" >
-      <valuePeriod>
-        <start value="2004-11-12"/>
-        <end value="2024-01-01"/>
-      </valuePeriod>
-    </extension>
   </extension>
   <identifier>
     <type>
@@ -65,38 +60,35 @@
         </coding>
     </type>
     <system value="http://fhir.de/sid/gkv/kvid-10" />
-    <value value="S123456789" />
+    <value value="T995030511" />
   </identifier>
   <name>
     <use value="official" />
-    <family value="Mustermann">
+    <family value="Farad">
         <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
-            <valueString value="Mustermann" />
+            <valueString value="Farad" />
         </extension>
-    </family> 
-    <given value="Lionel" />
+    </family>
+    <given value="Rudi" />
   </name>
   <telecom>
     <system value="phone"/>
-    <value value="0049177/00000000"/>
+    <value value="+49-228-12345678"/>
   </telecom>
-
-  <gender value="male">
-
-
-  <birthDate value="2004-11-12"/>
+  <gender value="female"/>
+  <birthDate value="1946-12-20"/>
   <address>
     <type value="both" />
-    <line value="Musterweg 1">
+    <line value="Fritz-Müntefering-Weg 2">
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
-            <valueString value="Musterweg" />
+            <valueString value="Fritz-Müntefering-Weg" />
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
-            <valueString value="1" />
+            <valueString value="2" />
         </extension>
     </line>
-    <city value="Musterhausen" />
-    <postalCode value="11111" />
+    <city value="Bonn-Vilich" />
+    <postalCode value="53225" />
     <country value="DE" />
   </address>
 </Patient>

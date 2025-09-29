@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="WeiterbehandelndeOrganisation-1" />
+    <id value="DGUV-Basis-Bsp-WeiterbehandelndeOrganisation" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
     </meta>
@@ -25,10 +26,10 @@
         <system value="http://fhir.de/sid/arge-ik/iknr" />
         <value value="123456789" />
     </identifier>
-        <identifier>
+    <identifier>
         <type>
             <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.7.0" />
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type" />
                 <code value="KSN" />
             </coding>
         </type>

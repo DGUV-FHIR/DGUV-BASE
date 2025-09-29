@@ -1,8 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei: 
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Unfallereignis.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Unfallereignis.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="Arbeitsunfall-1"/>
+  <!--    
+      Die Notation der id  wird analog zu Profil durchgeführt nur 
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Unfallereignis
+      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+      mit einer Nummerierung versehen:
+            Datei DGUV_Basis_Bsp_Unfallereignis_1.xml
+            Datei DGUV_Basis_Bsp_Unfallereignis_2.xml
+                            ....
+
+      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+      Im vorliegenden Fall also DGUV-Basis-Bsp-Unfallereignis für die id.
+    -->
+  <id value="DGUV-Basis-Bsp-Unfallereignis"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
   </meta>
+  <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Pflegeunfall">
+      <extension url="Pflegeunfall">
+        <valueBoolean value="true"/>
+      </extension>
+      <extension url="Pflegekasse">
+        <valueReference>      
+          <reference value="Pflegekasse/123" />
+          <type value="Organization"/>
+        </valueReference>
+      </extension>
+    </extension>
   <status value="final"/>
   <code>
     <coding>

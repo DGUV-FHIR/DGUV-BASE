@@ -1,5 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei: 
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_UnfallJargondiagnose.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Jargondiagnose.xml
+    
+    Zu beachten ist dabei:  DGUV-Basis-PR-Jargondiagnose wird ersetzt durch DGUV-Basis-PR-DiagnoseFreitext
+
+
+    Durchzuführende Massnahmen:
+                                1. Überblick bezüglich der betroffenen Beispiel Dateien verschaffen
+                                2. Können die Beispiel Dateien einfach angepasst werden oder müssen 
+                                   neue Beispiel Dateien erstellt werden.
+
+
+    
+-->
 <Condition xmlns="http://hl7.org/fhir">
-    <id value="Diagnose-1" />
+    <id value="DGUV-Basis-Bsp-Unfalldiagnose" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Jargondiagnose" />
     </meta>

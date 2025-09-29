@@ -6,7 +6,7 @@
 
     Ursprüngliche Datei: 
 
-    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Datenschutz.xml dient der Validierung 
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Datenschutz_1.xml dient der Validierung 
     des Profils DGUV_Basis_PR_Datenschutz.xml
     
     Zu beachten ist dabei:
@@ -23,18 +23,18 @@
 -->
 <Observation xmlns="http://hl7.org/fhir">
     <!--    
-      Die Notation der id  wird analog zu Profil durchgeführt nur 
-      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Datenschutz
-      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
-      mit einer Nummerierung versehen:
-            Datei DGUV_Basis_Bsp_Datenschutz_1.xml
-            Datei DGUV_Basis_Bsp_Datenschutz_2.xml
-                            ....
+        Die Notation der id  wird analog zu Profil durchgeführt nur 
+        statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Datenschutz
+        Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+        mit einer Nummerierung versehen:
+                Datei DGUV_Basis_Bsp_Datenschutz_1.xml
+                Datei DGUV_Basis_Bsp_Datenschutz_2.xml
+                                ....
 
-      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
-      Im vorliegenden Fall also DGUV-Basis-Bsp-Datenschutz für die id.
+        Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+        Im vorliegenden Fall also DGUV-Basis-Bsp-Datenschutz-1 für die id.
     -->
-    <id value="DGUV-Basis-Bsp-Datenschutz" />
+    <id value="DGUV-Basis-Bsp-Datenschutz-1" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Datenschutz" />
     </meta>

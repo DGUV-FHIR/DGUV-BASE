@@ -1,0 +1,39 @@
+<Condition xmlns="http://hl7.org/fhir">
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:  DGUV_Basis_Bsp_Diagnose_01_Gehirnerschuetterung.xml
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_Diagnose.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_Diagnose.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
+	<id value="DGUV-Basis-Bsp-Diagnose" />
+	<meta>
+		<profile value="http://fhir.dguv.de/Basis/Condition/DGUV-Basis-PR-Diagnose" />
+	</meta>
+	<extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Unfalldiagnose">
+        <valueBoolean value="true"/>
+    </extension>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+			<version value="2019"/>
+			<code value="S06.0"/>
+			<display value="Gehirnerschütterung"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/111-222-333-444"/>
+	</subject>
+	<recordedDate value="2019-02-21" />
+</Condition>

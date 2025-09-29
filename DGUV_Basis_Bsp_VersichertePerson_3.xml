@@ -30,7 +30,7 @@
       Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
       Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertePerson für die id.
     -->
-  <id value="DGUV-Basis-Bsp-VersichertePerson"/>
+  <id value="DGUV-Basis-Bsp-VersichertePerson-2"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
   </meta>   
@@ -81,8 +81,16 @@
     <value value="0049177/00000000"/>
   </telecom>
 
-  <gender value="male">
-
+   <!-- Extension zur amtlichen Differenzierung -->
+   <gender value="other">
+     <extension url="http://fhir.de/StructureDefinition/gender-amtlich-de">
+       <valueCoding>
+         <system value="http://fhir.de/CodeSystem/gender-amtlich-de" />
+         <code value="D"/>
+         <display value="male"/>
+       </valueCoding>
+     </extension>
+   </gender>
 
   <birthDate value="2004-11-12"/>
   <address>

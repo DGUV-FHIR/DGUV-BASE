@@ -1,5 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_DArzt.xml dient der Validierung 
+    des Profils DGUV_Basis_PR_DArzt.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <PractitionerRole xmlns="http://hl7.org/fhir">
-  <id value="DArzt-Rolle-Arzt-1"/>
+  <id value="DGUV-Basis-Bsp-DArzt"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/PractitionerRole/DGUV-Basis-PR-DArzt" />
   </meta>
@@ -12,7 +31,7 @@
   <code>
     <coding>
       <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care" />
-      <version value="1.6.0" />
+      <version value="1.7.0" />
       <code value="AD" />
       <display value="&#196;rztliche(r) DirektorIn" />
     </coding>

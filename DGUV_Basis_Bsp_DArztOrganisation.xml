@@ -1,5 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Author: Friedhelm Matten
+    Datum:  21.07.2025
+    Letzte Änderung:31.07.2025
+
+    Ursprüngliche Datei:
+
+    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_DArztOrganisation.xml dient der Validierung 
+    des Profils DGUV_Basis_Pr_DArztOrganisation.xml
+    
+    Zu beachten ist dabei:
+
+
+    Durchzuführende Massnahmen:
+
+
+    
+-->
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="DArzt-Einrichtung-234" />
+    <id value="DGUV-Basis-Bsp-DArztOrganisation" />
     <meta>
         <profile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-DArztOrganisation" />
     </meta>
@@ -17,14 +36,14 @@
     <identifier>
         <type>
             <coding>
-                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type|1.7.0" />
+                <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type" />
                 <code value="KSN" />
             </coding>
         </type>
         <system value="http://fhir.de/sid/dkgev/standortnummer" />
         <value value="243234999" />
     </identifier>
-    <name value="Unfallkrankenhaus Berlin"/>
+    <name value="Unfallkrankenhaus Berlin"/>    
     <telecom>
         <system value="phone"/>
         <value value="+1-1234565789"/>
@@ -43,4 +62,14 @@
         <postalCode value="11111"/>
         <country value="DE"/>
     </address>
+    <contact>
+        <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-NichtAerztlicherAnsprechpartner">
+            <extension url="NichtAerztlicherKontakt">
+            <valueBoolean value="true"/>
+        </extension>
+        <extension url="Funktionseinheit">
+            <valueString value="Physiotherapie"/>
+        </extension>
+    </extension>
+   </contact>
 </Organization>
