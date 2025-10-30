@@ -211,9 +211,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language" />
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="preferred" />
         <description value="A human language." />
         <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
@@ -682,9 +679,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSet value="http://fhir.de/ValueSet/identifier-type-de-basis" />
@@ -1148,9 +1142,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
@@ -1745,9 +1736,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
@@ -2248,9 +2236,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
@@ -2838,9 +2823,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
@@ -3334,9 +3316,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
@@ -3931,9 +3910,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
@@ -4426,9 +4402,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
@@ -5851,7 +5824,7 @@
       <path value="Organization.type.coding" />
       <sliceName value="IHE-Code" />
       <short value="Code defined by a terminology system" />
-      <definition value="A reference to a code defined by a terminology system." />
+      <definition value="Hier wird der Typus der Einrichtung anhand eines Codes aus dem Codesystem IHE Deutschland e.V. angegeben." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
@@ -6202,7 +6175,7 @@
       <path value="Organization.type.coding" />
       <sliceName value="HL7-Fachschluesselgruppe" />
       <short value="Code defined by a terminology system" />
-      <definition value="A reference to a code defined by a terminology system." />
+      <definition value="Hier wird die Fachrichtung/Fachabteilung anhand eines Codes aus dem Codesystem 'Fachabteilungsschlüssel' der HL7 Basis Deutschland angegeben." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
@@ -6553,7 +6526,7 @@
       <path value="Organization.type.coding" />
       <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
       <short value="Code defined by a terminology system" />
-      <definition value="A reference to a code defined by a terminology system." />
+      <definition value="Hier wird die Fachrichtung/Fachabteilung anhand eines Codes aus dem Codesystem &quot;FachabteilungsschlüsselErweitert&quot; der HL7 Basis Deutschland angegeben." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
       <min value="0" />
@@ -10951,9 +10924,6 @@
         <max value="1" />
       </base>
       <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
-          <valueBoolean value="true" />
-        </extension>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
       </type>
@@ -12397,115 +12367,20 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Organization.language">
-      <path value="Organization.language" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="preferred" />
-      </binding>
+    <element id="Organization.type.coding:IHE-Code">
+      <path value="Organization.type.coding" />
+      <sliceName value="IHE-Code" />
+      <definition value="Hier wird der Typus der Einrichtung anhand eines Codes aus dem Codesystem IHE Deutschland e.V. angegeben." />
     </element>
-    <element id="Organization.identifier:Institutionskennzeichen">
-      <path value="Organization.identifier" />
-      <sliceName value="Institutionskennzeichen" />
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe">
+      <path value="Organization.type.coding" />
+      <sliceName value="HL7-Fachschluesselgruppe" />
+      <definition value="Hier wird die Fachrichtung/Fachabteilung anhand eines Codes aus dem Codesystem 'Fachabteilungsschlüssel' der HL7 Basis Deutschland angegeben." />
     </element>
-    <element id="Organization.identifier:Institutionskennzeichen.type">
-      <path value="Organization.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:Betriebsstaettennummer">
-      <path value="Organization.identifier" />
-      <sliceName value="Betriebsstaettennummer" />
-    </element>
-    <element id="Organization.identifier:Betriebsstaettennummer.type">
-      <path value="Organization.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:Betriebsstaettennummer.assigner.identifier.type">
-      <path value="Organization.identifier.assigner.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:VKNR">
-      <path value="Organization.identifier" />
-      <sliceName value="VKNR" />
-    </element>
-    <element id="Organization.identifier:VKNR.type">
-      <path value="Organization.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:VKNR.assigner.identifier.type">
-      <path value="Organization.identifier.assigner.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:KZV-Abrechnungsnummer">
-      <path value="Organization.identifier" />
-      <sliceName value="KZV-Abrechnungsnummer" />
-    </element>
-    <element id="Organization.identifier:KZV-Abrechnungsnummer.type">
-      <path value="Organization.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:KZV-Abrechnungsnummer.assigner.identifier.type">
-      <path value="Organization.identifier.assigner.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.identifier:Telematik-ID">
-      <path value="Organization.identifier" />
-      <sliceName value="Telematik-ID" />
-    </element>
-    <element id="Organization.identifier:Telematik-ID.type">
-      <path value="Organization.identifier.type" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-      </binding>
-    </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
-          <valueBoolean value="true" />
-        </extension>
-        <code value="Reference" />
-      </type>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert">
+      <path value="Organization.type.coding" />
+      <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
+      <definition value="Hier wird die Fachrichtung/Fachabteilung anhand eines Codes aus dem Codesystem &quot;FachabteilungsschlüsselErweitert&quot; der HL7 Basis Deutschland angegeben." />
     </element>
     <element id="Organization.contact">
       <path value="Organization.contact" />
