@@ -81,7 +81,7 @@
     <value value="0049177/00000000"/>
   </telecom>
 
-  <gender value="male">
+  <gender value="male" />
 
 
   <birthDate value="2004-11-12"/>
