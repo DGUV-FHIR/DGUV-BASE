@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="DGUV-Basis-CS-Formtexte" />
   <url value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Formtexte" />
-  <version value="1.3" />
+  <version value="1.4" />
   <name value="DGUV_Basis_CS_Formtexte" />
   <title value="Formtexte" />
   <status value="draft" />
@@ -74,7 +74,7 @@
   </concept>
   <concept>
     <code value="A4520" />
-    <display value="Gutachten Rente nach Gesamtvergütung " />
+    <display value="Gutachten Rente nach Gesamtvergütung" />
   </concept>
   <concept>
     <code value="A4550" />
@@ -230,7 +230,7 @@
   </concept>
   <concept>
     <code value="F2166" />
-    <display value="ABMR-Abschlussbericht " />
+    <display value="ABMR-Abschlussbericht" />
   </concept>
   <concept>
     <code value="F2168" />
@@ -297,147 +297,147 @@
     <display value="Stellungnahme Beratender Akustiker VbgHG" />
   </concept>
   <concept>
-   <code value="F2902" />
+    <code value="F2902" />
     <display value="Überweisung Augen-, Hautarzt, Neurologe, anderer Facharzt" />
   </concept>
   <concept>
-  <code value="F3110" />
+    <code value="F3110" />
     <display value="Stufenweise Wiedereingliederung" />
   </concept>
   <concept>
-  <code value="F3112" />
+    <code value="F3112" />
     <display value="Arbeitsplatzbeschreibung" />
   </concept>
   <concept>
-  <code value="F4030" />
+    <code value="F4030" />
     <display value="Info Messblatt Neutral-0-Methode" />
   </concept>
   <concept>
-  <code value="F4220" />
+    <code value="F4220" />
     <display value="Messblatt Finger" />
   </concept>
   <concept>
-  <code value="F4222" />
+    <code value="F4222" />
     <display value="Messblatt obere Gliedmaßen" />
   </concept>
   <concept>
-  <code value="F4224" />
+    <code value="F4224" />
     <display value="Messblatt untere Gliedmaßen" />
   </concept>
   <concept>
-  <code value="F4230" />
+    <code value="F4230" />
     <display value="Skizze Gesamtskelett" />
   </concept>
   <concept>
-  <code value="F4232" />
-    <display value="Skizze Hand " />
+    <code value="F4232" />
+    <display value="Skizze Hand" />
   </concept>
   <concept>
-  <code value="F4234" />
+    <code value="F4234" />
     <display value="Skizze Fuß" />
   </concept>
   <concept>
-  <code value="F4236" />
+    <code value="F4236" />
     <display value="Skizze Bein" />
   </concept>
   <concept>
-  <code value="F4238" />
-    <display value="Skizze Schädel " />
+    <code value="F4238" />
+    <display value="Skizze Schädel" />
   </concept>
   <concept>
-  <code value="F4240" />
+    <code value="F4240" />
     <display value="Skizze Zahnschaden" />
   </concept>
   <concept>
-   <code value="F6000" />
-    <display value="Ärztliche Anzeige Verdacht BK " />
+    <code value="F6000" />
+    <display value="Ärztliche Anzeige Verdacht BK" />
   </concept>
   <concept>
-  <code value="F6000-E" />
+    <code value="F6000-E" />
     <display value="Erläuterungen ärztliche Anzeige Verdacht BK" />
   </concept>
   <concept>
-  <code value="F6050" />
+    <code value="F6050" />
     <display value="Erstbericht Hautarzt BK 5101" />
   </concept>
   <concept>
-  <code value="F6052" />
+    <code value="F6052" />
     <display value="Verlaufsbericht Hautarzt" />
   </concept>
   <concept>
-  <code value="F6060-5101" />
+    <code value="F6060-5101" />
     <display value="Betriebsärztlicher Gefährdungsbericht BK 5101" />
   </concept>
   <concept>
-  <code value="F6120-2108/2109/2110" />
+    <code value="F6120-2108/2109/2110" />
     <display value="Bericht Wirbelsäule BK 2108, 2109, 2110" />
   </concept>
   <concept>
-  <code value="F6120-2113" />
+    <code value="F6120-2113" />
     <display value="Bericht Carpaltunnel-Syndrom BK 2113" />
   </concept>
   <concept>
-  <code value="F6120-5103" />
+    <code value="F6120-5103" />
     <display value="Bericht Hautkrebs BK-Nr. 5103" />
   </concept>
   <concept>
-  <code value="F6122-5103" />
+    <code value="F6122-5103" />
     <display value="Nachsorgebericht Hautkrebs BK-Nr. 5103" />
   </concept>
   <concept>
-  <code value="F6220" />
+    <code value="F6220" />
     <display value="Untersuchung Bericht Wirbelsäule BK 2108, 2109, 2110" />
   </concept>
   <concept>
-  <code value="F6222" />
+    <code value="F6222" />
     <display value="Messblatt Wirbelsäule BK 2108, 2109, 2110" />
   </concept>
   <concept>
-  <code value="F7140" />
+    <code value="F7140" />
     <display value="Verlaufsbericht Atemwegserkrankungen" />
   </concept>
   <concept>
-  <code value="F7142-1315-4301-4302" />
-    <display value="Verlaufsbericht bei anerkannter BK 1315, 4301, 4302 " />
+    <code value="F7142-1315-4301-4302" />
+    <display value="Verlaufsbericht bei anerkannter BK 1315, 4301, 4302" />
   </concept>
   <concept>
-  <code value="F7220" />
+    <code value="F7220" />
     <display value="Bericht Counseling Tinnitus" />
   </concept>
   <concept>
-  <code value="F7222" />
+    <code value="F7222" />
     <display value="Bericht Erfolgskontrolle Tinnitusrehabilitation" />
   </concept>
   <concept>
-  <code value="F9000" />
+    <code value="F9000" />
     <display value="Kausalitäts- und Beweisgrundsätze der gesetzlichen Unfallversicherung" />
   </concept>
   <concept>
-  <code value="F9990" />
-    <display value="Rechnung ambulante/stationäre Behandlung - R 1 - " />
+    <code value="F9990" />
+    <display value="Rechnung ambulante/stationäre Behandlung - R 1 -" />
   </concept>
   <concept>
-  <code value="F9992" />
+    <code value="F9992" />
     <display value="Rechnung ambulante/stationäre Behandlung - R 2 -" />
   </concept>
   <concept>
-  <code value="F9994" />
+    <code value="F9994" />
     <display value="Rechnung ambulante/stationäre Behandlung - R 3 -" />
   </concept>
   <concept>
-  <code value="F9996" />
+    <code value="F9996" />
     <display value="Rechnung Hörgeräteversorgung" />
   </concept>
   <concept>
-  <code value="KSR" />
+    <code value="KSR" />
     <display value="Verlängerungsverordnung KSR" />
   </concept>
   <concept>
-  <code value="OPER" />
+    <code value="OPER" />
     <display value="Operationsbericht" />
   </concept>
   <concept>
-  <code value="S2428" />
+    <code value="S2428" />
     <display value="Vergleichsübersicht HG - Anlage zum Anpassbericht" />
-     </concept>
+  </concept>
 </CodeSystem>
