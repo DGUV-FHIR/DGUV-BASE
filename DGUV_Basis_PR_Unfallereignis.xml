@@ -50,66 +50,61 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <short value="Einordnung der Verletzung" />
       <definition value="Angaben zur Verletzung bzw. Einordnung der Verletzung in das entsprechende Verfahren: Durchgangsarztverfahren (DAV), Verletzungsartenverfahren (VAV) oder Schwerstverletzenartenverfahren (SAV)." />
     </element>
-    <element id="Observation.code:SAV-VAV">
-      <path value="Observation.code" />
-      <sliceName value="SAV-VAV" />
-      <short value="Die vorliegende Verletzung fällt unter SAV/VAV" />
-      <definition value="Die vorliegende Verletzung fällt unter das Verletzungsartenverfahren (VAV) oder Schwerstverletzenartenverfahren (SAV)." />
-    </element>
-    <element id="Observation.code:SAV-VAV.coding">
+    <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Observation.code:SAV-VAV.coding.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
-    </element>
-    <element id="Observation.code:SAV-VAV.coding.code">
-      <path value="Observation.code.coding.code" />
-      <short value="Code nach VAV oder SAV" />
-      <min value="1" />
-    </element>
-    <element id="Observation.code:SAV-VAV.coding.display">
-      <path value="Observation.code.coding.display" />
-      <short value="Display nach VAV oder SAV" />
-      <min value="1" />
-    </element>
-    <element id="Observation.code:DAV">
-      <path value="Observation.code" />
+    <element id="Observation.code.coding:DAV">
+      <path value="Observation.code.coding" />
       <sliceName value="DAV" />
-      <short value="Die vorliegende Verletzung fällt unter DAV" />
-      <definition value="Die vorliegende Verletzung fällt unter das Durchgangsarztverfahren (DAV). Sie fällt nicht unter das Verletzungsartenverfahren (VAV) oder Schwerstverletzenartenverfahren (SAV)." />
-    </element>
-    <element id="Observation.code:DAV.coding">
-      <path value="Observation.code.coding" />
       <max value="1" />
     </element>
-    <element id="Observation.code:DAV.coding.system">
+    <element id="Observation.code.coding:DAV.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Durchgangsarztverfahren" />
+      <mustSupport value="false" />
     </element>
-    <element id="Observation.code:DAV.coding.code">
+    <element id="Observation.code.coding:DAV.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <fixedCode value="DAV" />
     </element>
-    <element id="Observation.code:DAV.coding.display">
+    <element id="Observation.code.coding:DAV.display">
       <path value="Observation.code.coding.display" />
       <min value="1" />
       <fixedString value="Durchgangsarztverfahren" />
+    </element>
+    <element id="Observation.code.coding:SAV-VAV">
+      <path value="Observation.code.coding" />
+      <sliceName value="SAV-VAV" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:SAV-VAV.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis" />
+    </element>
+    <element id="Observation.code.coding:SAV-VAV.code">
+      <path value="Observation.code.coding.code" />
+      <short value="Code nach VAV oder SAV" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:SAV-VAV.display">
+      <path value="Observation.code.coding.display" />
+      <short value="Display nach VAV oder SAV" />
+      <min value="1" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
