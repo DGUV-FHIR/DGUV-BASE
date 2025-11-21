@@ -34,6 +34,15 @@
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
   </meta>
+
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h1>Hier finden Sie ein Beispiel des Basis Unfallereignis einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
+    </div>
+  </text> 
+
+
   <extension url="http://fhir.dguv.de/Basis/Extension/DGUV-Basis-EX-Pflegeunfall">
       <extension url="Pflegeunfall">
         <valueBoolean value="true"/>
@@ -45,7 +54,9 @@
         </valueReference>
       </extension>
     </extension>
+    
   <status value="final"/>
+
   <code>
     <coding>
       <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Verletzungsartenverzeichnis"/>
@@ -53,10 +64,13 @@
       <display value="Verletzungen des Rückenmarks."/>
     </coding>
   </code>
+
   <subject> 
     <reference value="Patient/111" />
   </subject>
+
   <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>
+
   <component>
     <code>
       <coding>
