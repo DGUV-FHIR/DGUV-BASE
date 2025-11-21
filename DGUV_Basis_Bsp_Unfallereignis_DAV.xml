@@ -1,7 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Observation xmlns="http://hl7.org/fhir">
+  <!--    
+      Die Notation der id  wird analog zu Profil durchgeführt nur 
+      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-Unfallereignis
+      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
+      mit einer Nummerierung versehen:
+            Datei DGUV_Basis_Bsp_Unfallereignis_1.xml
+            Datei DGUV_Basis_Bsp_Unfallereignis_2.xml
+                            ....
 
-  <id value="DGUV-Basis-Bsp-Unfallereignis"/>
+      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
+      Im vorliegenden Fall also DGUV-Basis-Bsp-Unfallereignis für die id.
+    -->
+  <id value="DGUV-Basis-Bsp-Unfallereignis-DAV"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis"/>
   </meta>
@@ -9,7 +20,7 @@
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h1>Hier finden Sie ein Beispiel des Basis Unfallereignis einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
+      <h1>Hier finden Sie ein Beispiel des Unfallereignis einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
     </div>
   </text> 
 
@@ -20,13 +31,15 @@
       </extension>
       <extension url="Pflegekasse">
         <valueReference>      
-          <reference value="Pflegekasse/123" />
+          <reference value="Pflegekasse/987"/>
           <type value="Organization"/>
         </valueReference>
       </extension>
-    </extension>
-    
+  </extension>
+
+
   <status value="final"/>
+
 
   <code>
     <coding>
@@ -34,13 +47,24 @@
       <code value="3.1S"/>
       <display value="Verletzungen des Rückenmarks."/>
     </coding>
+    <coding>
+      <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-Durchgangsarztverfahren"/>
+      <code value="DAV"/>
+      <display value="Durchgangsarztverfahren"/>
+    </coding>
   </code>
 
+
   <subject> 
-    <reference value="Patient/111" />
+    <reference value="Patient/222"/>
   </subject>
 
-  <effectiveDateTime value="2024-11-02T13:00:00+00:00"/>
+  <effectiveDateTime value="2025-01-10T10:15:00+01:00"/>
+
+  <!-- Behandelnde(-r) Ärtztin/Arzt-->
+  <performer>
+    <reference value="urn:uuid:93ad5198-d79b-4436-9e1e-aaa69acb2d08" />
+  </performer>
 
   <component>
     <code>
@@ -50,7 +74,7 @@
         <display value="Beginn der Arbeitszeit"/>
       </coding>
     </code>
-    <valueDateTime value="2024-11-02T08:00:00+00:00"/>
+    <valueDateTime value="2025-01-10T08:00:00+01:00"/>
   </component>
   <component>
     <code>
@@ -60,7 +84,7 @@
         <display value="Ende der Arbeitszeit"/>
       </coding>
     </code>
-    <valueDateTime value="2024-11-02T16:00:00+00:00"/>
+    <valueDateTime value="2025-01-10T17:00:00+01:00"/>
   </component>
   <component>
     <code>
@@ -70,7 +94,7 @@
         <display value="Unfallhergang"/>
       </coding>
     </code>
-    <valueString value="Der Versicherte ist auf dem Weg zum Sechstagerennen mit seinem Motorrad mit einer geschätzten Geschwindigkeit von 60 km/h gegen eine Leitplanke gefahren"/>
+    <valueString value="Der Versicherte stolperte in der Werkhalle über ein Kabel und stürzte auf den Rücken. Dabei kam es zu Prellungen der Lendenwirbelsäule."/>
   </component>
   <component>
     <code>
@@ -80,7 +104,7 @@
         <display value="Beschäftigt als"/>
       </coding>
     </code>
-    <valueString value="Informatiker"/>
+    <valueString value="Industriemechaniker"/>
   </component>
   <component>
     <code>
@@ -90,6 +114,16 @@
         <display value="Beschäftigungsbeginn"/>
       </coding>
     </code>
-    <valueDateTime value="2018-01-01"/>
+    <valueDateTime value="2020-06-01"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://fhir.dguv.de/Basis/CodeSystem/DGUV-Basis-CS-UnfallereignisComponents"/>
+        <code value="04"/>
+        <display value="Beschwerden/Klagen"/>
+      </coding>
+    </code>
+    <valueString value="Der Versicherte berichtet über starke Schmerzen im unteren Rückenbereich und leichte Übelkeit direkt nach dem Sturz."/>
   </component>
 </Observation>
