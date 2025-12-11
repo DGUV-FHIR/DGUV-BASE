@@ -44,6 +44,17 @@
         <targetProfile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Pflegekasse" />
       </type>
     </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <short value="Aktenzeichen" />
+      <max value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.identifier.value">
+      <path value="Observation.identifier.value" />
+      <short value="Konkreter Inhalt von identifier &quot;Aktenzeichen&quot;" />
+      <min value="1" />
+    </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <fixedCode value="final" />
