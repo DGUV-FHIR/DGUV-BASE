@@ -46,13 +46,17 @@
     </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
-      <short value="Aktenzeichen" />
+      <short value="Aktenzeichen als Identifier" />
       <max value="1" />
-      <mustSupport value="false" />
+    </element>
+    <element id="Observation.identifier.system">
+      <path value="Observation.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.dguv.de/Basis/NamingSystem/DGUV-Basis-NS-Aktenzeichen" />
     </element>
     <element id="Observation.identifier.value">
       <path value="Observation.identifier.value" />
-      <short value="Konkreter Inhalt von identifier &quot;Aktenzeichen&quot;" />
+      <short value="Konkreter Inhalt des Identifiers &quot;Aktenzeichen&quot;" />
       <min value="1" />
     </element>
     <element id="Observation.status">
