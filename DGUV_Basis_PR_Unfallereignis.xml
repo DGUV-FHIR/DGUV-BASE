@@ -18,14 +18,9 @@
       <path value="Observation" />
       <short value="Dieses Profil bildet das Unfallereignis ab." />
     </element>
-    <element id="Observation.extension">
-      <path value="Observation.extension" />
-      <min value="1" />
-    </element>
     <element id="Observation.extension:Pflegeunfall">
       <path value="Observation.extension" />
       <sliceName value="Pflegeunfall" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
