@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-WeiterbehandelndeOrganisation" />
-  <version value="1.4" />
+  <version value="1.5" />
   <name value="DGUV_Basis_PR_WeiterbehandelndeOrganisation" />
   <title value="Weiterbehandelnde Organisation" />
   <status value="draft" />
@@ -13,4 +13,21 @@
   <type value="Organization" />
   <baseDefinition value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-BehandelndeEinrichtung" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Organization.type.coding:IHE-Code">
+      <path value="Organization.type.coding" />
+      <sliceName value="IHE-Code" />
+      <definition value="Hier wird der Typus der Einrichtung anhand eines Codes aus dem Codesystem IHE Deutschland e.V. angegeben." />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe">
+      <path value="Organization.type.coding" />
+      <sliceName value="HL7-Fachschluesselgruppe" />
+      <definition value="Hier wird die Fachrichtung/Fachabteilung anhand eines Codes aus dem Codesystem 'Fachabteilungsschlüssel' der HL7 Basis Deutschland angegeben." />
+    </element>
+    <element id="Organization.type.coding:HL7-Fachschluesselgruppe-erweitert">
+      <path value="Organization.type.coding" />
+      <sliceName value="HL7-Fachschluesselgruppe-erweitert" />
+      <definition value="Hier wird die Fachrichtung/Fachabteilung anhand eines Codes aus dem Codesystem &quot;FachabteilungsschlüsselErweitert&quot; der HL7 Basis Deutschland angegeben." />
+    </element>
+  </differential>
 </StructureDefinition>
