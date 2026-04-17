@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson" />
-  <version value="1.4" />
+  <version value="1.5" />
   <name value="DGUV_Basis_PR_VersichertePerson" />
   <title value="Versicherte Person" />
   <status value="draft" />
@@ -306,7 +306,6 @@
       <path value="Patient.gender" />
       <short value="männlich | weiblich | unbestimmt | divers" />
       <comment value="Für die Geschlechtskennzeichen &quot;unbestimmt&quot; und &quot;divers&quot; ist der code &quot;other&quot; zu verwenden. Falls ein administratives Geschlecht 'divers' abzubilden ist (z.B. da dieses Geschlecht auf offiziellen Ausweisen eingetragen ist) muss eine Differenzierung zwischen 'other' und 'divers' als positiver Geschlechtseintrag erfolgen. Hierfür ist die 'other-amtlich'-Extension zu verwenden." />
-      <min value="1" />
     </element>
     <element id="Patient.gender.extension:gender-amtlich">
       <path value="Patient.gender.extension" />
@@ -347,7 +346,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Patient.address:Strassenanschrift">
       <path value="Patient.address" />

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DGUV-Basis-PR-VersichertenVerhaeltnis" />
   <url value="http://fhir.dguv.de/Basis/Coverage/DGUV-Basis-PR-VersichertenVerhaeltnis" />
-  <version value="1.4" />
+  <version value="1.5" />
   <name value="DGUV_Basis_PR_VersichertenVerhaeltnis" />
   <title value="Versichertenverhältnis" />
   <status value="draft" />

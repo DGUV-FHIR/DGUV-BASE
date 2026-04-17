@@ -2,7 +2,7 @@
 <!--
     Author: Friedhelm Matten
     Datum:  21.07.2025
-    Letzte Änderung:31.07.2025
+    Letzte Änderung:18.03.2026
 
     Ursprüngliche Datei: 
 
@@ -46,6 +46,12 @@
             </valueReference>
         </extension>
     </extension>
+
+  <identifier>
+    <system value="http://fhir.dguv.de/Basis/NamingSystem/DGUV-Basis-NS-Aktenzeichen"/>
+    <value value="BGV-AZ-2025/365" />
+  </identifier>
+
     <status value="final"/>
     <code>
         <coding>

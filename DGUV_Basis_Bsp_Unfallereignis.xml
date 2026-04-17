@@ -25,6 +25,11 @@
         </valueReference>
       </extension>
     </extension>
+
+  <identifier>
+   <system value="http://fhir.dguv.de/Basis/NamingSystem/DGUV-Basis-NS-Aktenzeichen"/>
+   <value value="BGV-AZ-2025/365" />
+  </identifier>
     
   <status value="final"/>
 

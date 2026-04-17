@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.dguv.de/Basis/Observation/DGUV-Basis-PR-Unfallereignis" />
-  <version value="1.4" />
+  <version value="1.5" />
   <name value="DGUV_Basis_PR_Unfallereignis" />
   <title value="Unfallereignis" />
   <status value="draft" />
@@ -18,14 +18,9 @@
       <path value="Observation" />
       <short value="Dieses Profil bildet das Unfallereignis ab." />
     </element>
-    <element id="Observation.extension">
-      <path value="Observation.extension" />
-      <min value="1" />
-    </element>
     <element id="Observation.extension:Pflegeunfall">
       <path value="Observation.extension" />
       <sliceName value="Pflegeunfall" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -43,6 +38,21 @@
         <code value="Reference" />
         <targetProfile value="http://fhir.dguv.de/Basis/Organization/DGUV-Basis-PR-Pflegekasse" />
       </type>
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <short value="Aktenzeichen als Identifier" />
+      <max value="1" />
+    </element>
+    <element id="Observation.identifier.system">
+      <path value="Observation.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.dguv.de/Basis/NamingSystem/DGUV-Basis-NS-Aktenzeichen" />
+    </element>
+    <element id="Observation.identifier.value">
+      <path value="Observation.identifier.value" />
+      <short value="Konkreter Inhalt des Identifiers &quot;Aktenzeichen&quot;" />
+      <min value="1" />
     </element>
     <element id="Observation.status">
       <path value="Observation.status" />
