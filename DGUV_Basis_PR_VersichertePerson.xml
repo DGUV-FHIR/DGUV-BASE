@@ -118,7 +118,6 @@
           </coding>
         </type>
       </patternIdentifier>
-      <mustSupport value="false" />
     </element>
     <element id="Patient.identifier:VersichertenId_GKV.type">
       <path value="Patient.identifier.type" />
@@ -154,7 +153,6 @@
           </coding>
         </type>
       </patternIdentifier>
-      <mustSupport value="false" />
     </element>
     <element id="Patient.identifier:Patientennummer.type">
       <path value="Patient.identifier.type" />
@@ -190,7 +188,6 @@
           </coding>
         </type>
       </patternIdentifier>
-      <mustSupport value="false" />
     </element>
     <element id="Patient.identifier:Versichertennummer_PKV.use">
       <path value="Patient.identifier.use" />
@@ -393,10 +390,6 @@
     <element id="Patient.address:Postfach.line.extension:Adresszusatz">
       <path value="Patient.address.line.extension" />
       <sliceName value="Adresszusatz" />
-      <max value="0" />
-    </element>
-    <element id="Patient.photo">
-      <path value="Patient.photo" />
       <max value="0" />
     </element>
     <element id="Patient.contact.name">
