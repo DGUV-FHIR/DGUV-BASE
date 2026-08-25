@@ -45,8 +45,8 @@
       <path value="Patient.extension.extension" />
       <sliceName value="code" />
     </element>
-    <element id="Patient.extension:nationality.extension:code.value[x].coding">
-      <path value="Patient.extension.extension.value[x].coding" />
+    <element id="Patient.extension:nationality.extension:code.value[x]">
+      <path value="Patient.extension.extension.value[x]" />
       <binding>
         <strength value="required" />
         <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
