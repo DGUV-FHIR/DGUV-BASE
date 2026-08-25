@@ -100,41 +100,6 @@
       <short value="Konkrete lebenslange Krankenversichertennummer" />
       <comment value="Der 10-stellige, unveränderbare Teil der Versichertennummer" />
     </element>
-    <element id="Patient.identifier:VersichertenId_GKV">
-      <path value="Patient.identifier" />
-      <sliceName value="VersichertenId_GKV" />
-      <short value="Gesetzliche Krankenversichertennummer" />
-      <comment value="WARNUNG: Die Verwendung der 'GKV'-Kodierung einer Versichertennummer ist abgekündigt, da die lebenslange Versichertennummer ab 2024 auch für PKV oder Sonderkostenträger eingeführt wird. Bitte statt dessen künftig den 'VersichertenId'-Slice verwenden." />
-      <max value="1" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
-      </type>
-      <patternIdentifier>
-        <type>
-          <coding>
-            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
-            <code value="GKV" />
-          </coding>
-        </type>
-      </patternIdentifier>
-    </element>
-    <element id="Patient.identifier:VersichertenId_GKV.type">
-      <path value="Patient.identifier.type" />
-      <short value="Art des Identifiers" />
-      <comment value="Hier ist stets der Code GKV aus dem CodeSystem http://fhir.de/CodeSystem/identifier-type-de-basis anzugeben.&#xD;&#xA;Begründung Pflichtfeld: type dient der Unterscheidung verschiedener Identifier-Typen" />
-      <min value="1" />
-    </element>
-    <element id="Patient.identifier:VersichertenId_GKV.system">
-      <path value="Patient.identifier.system" />
-      <short value="Namensraum der Versichertennummer" />
-      <comment value="Hier ist stets der Wert http://fhir.de/sid/gkv/kvid-10 anzugeben.&#xD;&#xA;Begründung Pflichtfeld: system stellt in Kombination mit value die Eindeutigkeit eines Identifiers sicher." />
-    </element>
-    <element id="Patient.identifier:VersichertenId_GKV.value">
-      <path value="Patient.identifier.value" />
-      <short value="Konkrete gesetzliche Krankenversichertennummer" />
-      <comment value="Enthält den eigentlichen Wert des Identifiers.&#xD;&#xA;Begründung Pflichtfeld: Ist der Wert nicht bekannt, sollte der gesamte Slice weggelassen werden." />
-    </element>
     <element id="Patient.identifier:Patientennummer">
       <path value="Patient.identifier" />
       <sliceName value="Patientennummer" />
