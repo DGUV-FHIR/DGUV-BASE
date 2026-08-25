@@ -1,45 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Author: Friedhelm Matten
-    Datum:  21.07.2025
-    Letzte Änderung:31.07.2025
+ Author: FMa, LSc
+ Datum: 24.08.2026
 
-    Ursprüngliche Datei:
+ Die vorliegende Beispiel-Datei "DGUV_Basis_Bsp_VersichertePerson_2LSc.xml" dient der Validierung
+ folgenden Szenarios (Standardfall):
 
-    Die vorliegende Beispiel Datei DGUV_Basis_Bsp_VersichertePerson.xml dient der Validierung 
-    des Profils DGUV_Basis_PR_VersichertePerson.xml
-    
-    Zu beachten ist dabei:
-
-
-    Durchzuführende Massnahmen:
-
-
-    
+ P: Maximalbefüllung einer Instanz VersichertePerson (Meta-Daten, Narrativ, Nationalität, Identifier: VersNr. / Pat.-Nr. / PKV / OHNE GKV),
+    Namen, Kontakte, Geschlecht, Geburtsdatum, Adressen).
 -->
-<Patient xmlns="http://hl7.org/fhir">
-    <!--    
-      Die Notation der id  wird analog zu Profil durchgeführt nur 
-      statt "PR" eben "Bsp" also:  DGUV-Basis-Bsp-VersichertePerson
-      Bei mehreren Beispiel Dateien wir die zweite, dritte, usw.
-      mit einer Nummerierung versehen:
-            Datei DGUV_Basis_Bsp_VersichertePerson_1.xml
-            Datei DGUV_Basis_Bsp_VersichertePerson_2.xml
-                            ....
 
-      Die id wird entsprechend um -i i=1,2,3,... hochgezählt.  
-      Im vorliegenden Fall also DGUV-Basis-Bsp-VersichertePerson für die id.
-    -->
+<Patient xmlns="http://hl7.org/fhir">
+  <!--Meta-Daten-->
   <id value="DGUV-Basis-Bsp-VersichertePerson-2"/>
   <meta>
     <profile value="http://fhir.dguv.de/Basis/Patient/DGUV-Basis-PR-VersichertePerson"/>
   </meta>   
+
+  <!--Narrativ-->
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       <h1>Hier finden Sie ein Beispiel einer verunfallten Person entsprechend des VersichertePerson-Profils der DGUV</h1>
     </div>
   </text>
+
+  <!--Nationalität der versicherten Person-->
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">      
     <extension url="code" >
         <valueCodeableConcept>
@@ -57,6 +43,8 @@
       </valuePeriod>
     </extension>
   </extension>
+
+<!-- Identifier: VersichertenId -->
   <identifier>
     <type>
         <coding>
@@ -67,6 +55,46 @@
     <system value="http://fhir.de/sid/gkv/kvid-10" />
     <value value="S123456789" />
   </identifier>
+
+<!-- Identifier: VersichertenId_GKV
+  <identifier>
+    <type>
+        <coding>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+            <code value="GKV" />
+        </coding>
+    </type>
+    <system value="http://fhir.de/sid/gkv/kvid-10" />
+    <value value="A987654321" />
+  </identifier> -->
+
+<!-- Identifier: Patientennummer -->
+  <identifier>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="MR" />
+        </coding>
+    </type>
+    <system value="http://patientennummern.elisabethhospital-gt.org" />
+    <value value="2025-000123" />
+  </identifier>
+
+<!-- Identifier: VersichertenId_PKV -->
+  <identifier>
+    <type>
+        <coding>
+            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+            <code value="PKV" />
+        </coding>
+    </type>
+    <value value="H242424242" />
+    <assigner>
+      <display value="Versichert bei HUK24" />
+    </assigner>
+  </identifier>
+
+  <!--Name, Vorname der versicherten Person-->
   <name>
     <use value="official" />
     <family value="Mustermann">
@@ -76,12 +104,14 @@
     </family> 
     <given value="Lionel" />
   </name>
+
+  <!--Kontaktmöglichkeiten zur versicherten Person-->
   <telecom>
     <system value="phone"/>
     <value value="0049177/00000000"/>
   </telecom>
 
-   <!-- Extension zur amtlichen Differenzierung -->
+   <!-- Geschlecht der versicherten Person für administrative Zwecke -->
    <gender value="other">
      <extension url="http://fhir.de/StructureDefinition/gender-amtlich-de">
        <valueCoding>
@@ -92,7 +122,10 @@
      </extension>
    </gender>
 
+  <!--Geburtsdatum der versicherten Person-->
   <birthDate value="2004-11-12"/>
+
+  <!--Strassenadresse der versicherten Person-->
   <address>
     <type value="both" />
     <line value="Musterweg 1">
@@ -107,4 +140,18 @@
     <postalCode value="11111" />
     <country value="DE" />
   </address>
+
+  <!-- Postfachadresse der versicherten Person-->
+  <address>
+    <type value="postal" />
+    <line value="Postfach 670525">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+            <valueString value="Postfach 670525" />
+        </extension>
+    </line>
+    <city value="Musterhausen" />
+    <postalCode value="11117" />
+    <country value="DE" />
+  </address>
+
 </Patient>
