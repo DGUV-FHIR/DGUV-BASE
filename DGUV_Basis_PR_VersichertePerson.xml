@@ -5,7 +5,6 @@
   <name value="DGUV_Basis_PR_VersichertePerson" />
   <title value="Versicherte Person" />
   <status value="draft" />
-  <date value="2024-01-31T12:19:42+00:00" />
   <publisher value="Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)" />
   <description value="Dieses Profil beschreibt die versicherte Person." />
   <fhirVersion value="4.0.1" />
