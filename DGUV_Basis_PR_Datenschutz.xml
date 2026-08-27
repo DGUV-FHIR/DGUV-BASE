@@ -15,10 +15,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <mustSupport value="false" />
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <short value="Verweis auf betroffene versicherte Person" />
