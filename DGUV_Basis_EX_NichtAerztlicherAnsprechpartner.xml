@@ -5,7 +5,6 @@
   <name value="DGUV_Basis_EX_NichtAerztlicherAnsprechpartner" />
   <title value="Nichtärztlicher Ansprechpartner (Erweiterung)" />
   <status value="draft" />
-  <date value="2024-01-31" />
   <publisher value="Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)" />
   <description value="Diese Extension ermöglicht die Kennzeichnung eines Ansprechpartners als ärztlich oder nicht-ärztlich und die Angabe der Funktionseinheit des Ansprechpartners." />
   <fhirVersion value="4.0.1" />
